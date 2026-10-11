@@ -135,6 +135,13 @@ def run_fold(df: Any, trait: str, rank: str, outer: IntArray, fold: int,
     if len({groups[i] for i in proper}) < 5 or (trait == 'oxygen' and len(set(y[proper])) < 2):
         result['status'] = 'insufficient_proper_training_taxa_or_classes'
         return result
+    if trait == 'oxygen':
+        tuning_partition = grouped_folds([groups[i] for i in proper], seed + 3)
+        if len(set(y[naive_fit])) < 2 or any(
+            len(set(y[proper[tuning_partition != f]])) < 2 for f in range(5)
+        ):
+            result['status'] = 'insufficient_oxygen_classes_in_inner_fitting_side'
+            return result
     alphas = {}
     tuning = {}
     for method, whole in [('B3', True), ('method', False)]:
