@@ -67,7 +67,8 @@ label. No accession is substituted if its files are unavailable.
 The upstream feature implementation needs both protein and nucleotide FASTA.
 The sequence-size estimate therefore includes both compressed files for all
 100 sampled genomes before any sequence download. The limit is 8,000,000,000
-bytes. Requests are serial, at most one per second, without a key or account.
+bytes. Request starts are spaced by at least one second, with at most three
+connections, without a key or account.
 Sample, source and acquisition receipts remain untracked under
 `data/raw/verification/`. The upstream release's own code and signal-peptide
 parameters are used unchanged. Verification compares all 230 flattened feature

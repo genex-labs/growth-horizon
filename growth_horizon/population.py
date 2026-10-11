@@ -56,6 +56,7 @@ def load_population(trees: list[TreeIndex]) -> tuple[Any, dict[str, Any]]:
                               'traits': {}}
     for trait in TRAITS:
         reasons: Counter[str] = Counter()
+        dispositions: list[dict[str, str]] = []
         usable = []
         for i, (acc, row) in enumerate(df.iterrows()):
             y = row[trait]
@@ -75,6 +76,9 @@ def load_population(trees: list[TreeIndex]) -> tuple[Any, dict[str, Any]]:
                 reason = 'usable'
                 usable.append(acc)
             reasons[reason] += 1
+            dispositions.append({'accession': acc, 'trait': trait, 'reason': reason})
+        pd.DataFrame(dispositions).to_csv(
+            ROOT / f'data/gtdb-derived/local/{trait}-dispositions.tsv', sep='\t', index=False)
         summary['traits'][trait] = {'usable': len(usable), 'counts_by_reason': dict(reasons),
             'taxa': {rank: len({mappings[a][rank] for a in usable})
                      for rank in TAXON_RANKS}}
