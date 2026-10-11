@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Any
 from unittest.mock import patch
 
+import joblib  # type: ignore[import-untyped]
 import numpy as np
 import pandas as pd  # type: ignore[import-untyped]
 import pytest
@@ -12,6 +13,25 @@ from growth_horizon import crossfit, phase1
 from growth_horizon.folds import grouped_folds
 from growth_horizon.models import ALL_AA, COMPARTMENT_AA, prediction
 from growth_horizon.tree import TreeIndex
+
+
+def test_serialized_fit_is_independent_of_feature_name_object_sharing(tmp_path: Path) -> None:
+    from growth_horizon.models import published
+    from scripts.acquire import digest
+
+    estimator, features = published('temperature_optimum')
+    rng = np.random.default_rng(50)
+    frame = pd.DataFrame(rng.normal(size=(80, len(features))), columns=features)
+    estimator.fit(frame, 10 + frame[features[0]])
+    original = np.array(estimator[-1].coef_, copy=True)
+    first = {'estimator': estimator, 'features': features, 'proper_indices': np.arange(80)}
+    # Force the alternative object-identity arrangement without changing a name.
+    second = joblib.load(joblib.dump(first, tmp_path / 'source.joblib')[0])
+    second['features'] = [('!' + f)[1:] for f in features]
+    crossfit.save_calibration_fit(first, tmp_path / 'first.joblib')
+    crossfit.save_calibration_fit(second, tmp_path / 'second.joblib')
+    assert digest(tmp_path / 'first.joblib') == digest(tmp_path / 'second.joblib')
+    assert np.array_equal(estimator[-1].coef_, original)
 
 
 def test_class_scores_invert_randomized_sets_from_equation_five() -> None:

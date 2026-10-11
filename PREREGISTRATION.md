@@ -57,7 +57,7 @@ recorded findings and do not change the common feature table.
 | `data/source-manifest.json` | `f9614b0a5364d505f6deb3b7ef009bbba11bfd659bc79a38abd54208f04ef35a` |
 | `data/gtdb-derived/population-summary.json` | `6a4ca31f2e14a2e6700d2f2fe7efb0ec7f0a53385fefa0c88bc334333ba6b1f5` |
 | `data/gtdb-derived/development-summary.json` | `56e9ac24419ce4d30f4be7b123ce96d58ae7b4d40ee598c5024b0db856958cb7` |
-| `data/artifact-manifest.json` | `42ab939eb6b6dcd54577be90fbc9e2c94ccef3c72cf893cd219c4e5b228a9dad` |
+| `data/artifact-manifest.json` | `9b58fc05e0db33cf4cfef909b9d864b336f2e4d9b952a05a15f732d1e2aaab1e` |
 | `data/feature-verification.json` | `b60a732e52f74ece40e9c4bed3f402683128ddb13064074b60ec3590f29240a4` |
 | `data/verification-plan.json` | `ffbd10de4c921932c40645aeebffb98c7d85f42a14810030d597c854bb49b69b` |
 | `data/experimental-label-audit.json` | `06fb84b948434dd171133f0d795464779c307eee2e515ed9690fc30d11bf64e9` |

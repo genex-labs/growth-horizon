@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -20,6 +21,38 @@ from growth_horizon.population import TRAITS, load_trees
 from growth_horizon.tree import TreeIndex
 from scripts.acquire import ROOT, digest
 from scripts.preflight_sample import check_space
+
+
+def save_calibration_fit(payload: dict[str, Any], path: Path) -> None:
+    """Canonicalise metadata identities without changing a fitted value.
+
+    Pickle memoisation otherwise depends on shared string and dtype objects,
+    which vary with earlier fits and unpickling in a process.
+    """
+    def canonical(value: Any) -> Any:
+        if isinstance(value, str):
+            return sys.intern(value)
+        if isinstance(value, np.ndarray):
+            result = np.empty(value.shape, dtype=np.dtype(value.dtype.str), order='C')
+            if value.dtype.kind == 'O':
+                result.flat[:] = [canonical(v) for v in value.flat]
+            else:
+                result[...] = value
+            return result
+        if isinstance(value, np.generic):
+            return np.dtype(value.dtype.str).type(value)
+        if isinstance(value, dict):
+            return {canonical(k): canonical(value[k]) for k in sorted(value)}
+        if isinstance(value, list):
+            return [canonical(v) for v in value]
+        if isinstance(value, tuple):
+            return tuple(canonical(v) for v in value)
+        if type(value).__module__.startswith('sklearn.'):
+            attributes = {k: canonical(v) for k, v in sorted(vars(value).items())}
+            vars(value).clear()
+            vars(value).update(attributes)
+        return value
+    joblib.dump(canonical(payload), path)
 
 
 def inverse_quantile_scores(probabilities: Any, uniforms: Any, tie_first: Any) -> Any:
@@ -102,7 +135,7 @@ def fit_calibration_fold(df: Any, trait: str, groups: list[str], proper: IntArra
             estimator.fit(df.iloc[proper][features], y[proper])
             pred = prediction(estimator, df.iloc[calibration][features], trait)
             payload = {'estimator': estimator, 'features': features, 'proper_indices': proper}
-        joblib.dump(payload, directory / f'{method}.joblib')
+        save_calibration_fit(payload, directory / f'{method}.joblib')
         if trait == 'oxygen':
             all_scores = inverse_quantile_scores(pred, uniforms, tie_first)
             score = all_scores[np.arange(len(calibration)), y[calibration].astype(int)]
