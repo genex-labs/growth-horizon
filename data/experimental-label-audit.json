@@ -1,0 +1,138 @@
+{
+  "status": "blocked_experimental_label_provenance",
+  "checked_at_pt": "2026-10-11 04:11:10 PDT",
+  "label_sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc",
+  "label_bytes": 64412996,
+  "label_asset_created_at": "2026-03-16T12:25:19Z",
+  "label_asset_updated_at": "2026-03-16T12:25:50Z",
+  "release_published_at": "2026-03-16T12:27:17Z",
+  "verified_snapshot_date": null,
+  "verified_table_build_date": null,
+  "notebook_historical_filename_hint": "training_data_20231203.tsv",
+  "notebook_last_commit_at": "2024-03-21T03:17:27Z",
+  "notebook_last_commit": "f994ef50450f3362a4d6f93ccd3260c80e8ca45c",
+  "notebook_evidence_limit": "A commented historical filename, displayed row subset and matching aggregate counts do not authenticate the full 2026 asset or a raw BacDive snapshot.",
+  "record_provenance_columns": [],
+  "predicted_record_identification": "Koblitz 2025 data-availability section describes the API parameter predictions=1; the release parser requests client.retrieve without this parameter and reads ordinary phenotype sections. The raw snapshot and its retrieval receipt are absent, and provenance flags are not retained in the TSV.",
+  "traits": {
+    "temperature_optimum": {
+      "status": "experimental_predicted_unresolved",
+      "nonmissing_labels": 4783,
+      "confirmed_experimental_labels": null,
+      "identified_predicted_labels": null,
+      "excluded_identified_predicted_labels": null,
+      "unresolved_labels": 4783,
+      "authorised_for_new_fitting_or_scoring": 0,
+      "evidence": [
+        "data/raw/source-audit/releases.json",
+        "data/raw/source-audit/resume4-tag.json",
+        "data/raw/source-audit/resume4-tag-commit.json",
+        "data/raw/source-audit/resume4-parser-history.json",
+        "data/raw/source-audit/resume4-release-parser.py",
+        "data/raw/source-audit/resume4-prepare-training.ipynb",
+        "data/raw/source-audit/resume4-notebook-history.json",
+        "data/raw/source-audit/koblitz.html"
+      ]
+    },
+    "oxygen": {
+      "status": "experimental_predicted_unresolved",
+      "nonmissing_labels": 7300,
+      "confirmed_experimental_labels": null,
+      "identified_predicted_labels": null,
+      "excluded_identified_predicted_labels": null,
+      "unresolved_labels": 7300,
+      "authorised_for_new_fitting_or_scoring": 0,
+      "evidence": [
+        "data/raw/source-audit/releases.json",
+        "data/raw/source-audit/resume4-tag.json",
+        "data/raw/source-audit/resume4-tag-commit.json",
+        "data/raw/source-audit/resume4-parser-history.json",
+        "data/raw/source-audit/resume4-release-parser.py",
+        "data/raw/source-audit/resume4-prepare-training.ipynb",
+        "data/raw/source-audit/resume4-notebook-history.json",
+        "data/raw/source-audit/koblitz.html"
+      ]
+    },
+    "salinity_optimum": {
+      "status": "experimental_predicted_unresolved",
+      "nonmissing_labels": 2376,
+      "confirmed_experimental_labels": null,
+      "identified_predicted_labels": null,
+      "excluded_identified_predicted_labels": null,
+      "unresolved_labels": 2376,
+      "authorised_for_new_fitting_or_scoring": 0,
+      "evidence": [
+        "data/raw/source-audit/releases.json",
+        "data/raw/source-audit/resume4-tag.json",
+        "data/raw/source-audit/resume4-tag-commit.json",
+        "data/raw/source-audit/resume4-parser-history.json",
+        "data/raw/source-audit/resume4-release-parser.py",
+        "data/raw/source-audit/resume4-prepare-training.ipynb",
+        "data/raw/source-audit/resume4-notebook-history.json",
+        "data/raw/source-audit/koblitz.html"
+      ]
+    },
+    "ph_optimum": {
+      "status": "experimental_predicted_unresolved",
+      "nonmissing_labels": 3549,
+      "confirmed_experimental_labels": null,
+      "identified_predicted_labels": null,
+      "excluded_identified_predicted_labels": null,
+      "unresolved_labels": 3549,
+      "authorised_for_new_fitting_or_scoring": 0,
+      "evidence": [
+        "data/raw/source-audit/releases.json",
+        "data/raw/source-audit/resume4-tag.json",
+        "data/raw/source-audit/resume4-tag-commit.json",
+        "data/raw/source-audit/resume4-parser-history.json",
+        "data/raw/source-audit/resume4-release-parser.py",
+        "data/raw/source-audit/resume4-prepare-training.ipynb",
+        "data/raw/source-audit/resume4-notebook-history.json",
+        "data/raw/source-audit/koblitz.html"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "path": "data/raw/source-audit/releases.json",
+      "bytes": 5724,
+      "sha256": "daff56a68de143653f17f65b6954a0d8187cf30d0532b4be252fe66ae98db078"
+    },
+    {
+      "path": "data/raw/source-audit/resume4-tag.json",
+      "bytes": 345,
+      "sha256": "5f477db31283a6e82eee172c773079b9f9171cc02d916d43fbd73186b2fb7749"
+    },
+    {
+      "path": "data/raw/source-audit/resume4-tag-commit.json",
+      "bytes": 2729,
+      "sha256": "5d40593e92ad2f09b1dd8164f2c121beadb9c1273c0a067ea3f2f95f3ba9025b"
+    },
+    {
+      "path": "data/raw/source-audit/resume4-parser-history.json",
+      "bytes": 4815,
+      "sha256": "635ea316c935feb58944456395fa0119fe04cfab485b4a84847871d676fe5afe"
+    },
+    {
+      "path": "data/raw/source-audit/resume4-release-parser.py",
+      "bytes": 25160,
+      "sha256": "704b4b578bc4bcdc2224841f45cd6691606431940a9ab6d9a5be758037b41840"
+    },
+    {
+      "path": "data/raw/source-audit/resume4-prepare-training.ipynb",
+      "bytes": 716926,
+      "sha256": "81ccde8065261f8a62a12c01040d4fa1de906c31f0b95a54aa9b5e81b03fc8e3"
+    },
+    {
+      "path": "data/raw/source-audit/resume4-notebook-history.json",
+      "bytes": 12082,
+      "sha256": "cecedebd6792a3f79453a4c029d96f89d9a36ad5ef7dd493be8bdc867b48f78c"
+    },
+    {
+      "path": "data/raw/source-audit/koblitz.html",
+      "bytes": 440126,
+      "sha256": "e2401c0abedaa766d9964e09f81bb624fa5b4b21f70d236edb647565ca511b1f"
+    }
+  ],
+  "outer_fold_predictions_or_metrics_computed": false
+}

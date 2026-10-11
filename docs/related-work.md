@@ -40,6 +40,11 @@ that related studies do not exist.
   The paper's title, DOI and code-availability statement were read at source.
   B4 is omitted for the repository licence and input reasons in baselines.md.
 
+- Vovk, *Conditional validity of inductive conformal predictors* (2012),
+  [arXiv 1209.2673](https://arxiv.org/abs/1209.2673).
+  The public record confirms the author, title and year. Mondrian categories
+  motivate the fixed distance bins used here.
+
 Mondrian split conformal provides within-bin coverage only under appropriate
 exchangeability of calibration and test units in that bin. Taxonomic
 holdouts, a distance axis, or bin merging alone do not establish that

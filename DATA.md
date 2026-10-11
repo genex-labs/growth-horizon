@@ -1,5 +1,48 @@
 # Data provenance and permitted use
 
+## Resume 4: experimental-label provenance stop
+
+All four traits are stopped before pre-registration. The authorised asset was
+uploaded on 2026-03-16, after the predicted phenotypes described by Koblitz et
+al. (2025). Its verified table build date and BacDive snapshot date are unknown.
+The TSV has no per-value experimental/predicted flag, source reference or
+measurement provenance. Upstream use flags express filtering decisions and
+do not identify experimental measurements.
+
+The release's preparation notebook contains a commented historical filename,
+`training_data_20231203.tsv`, and its latest recorded change is 2024-03-21.
+Its 15,596-row count and several phenotype counts match the release table.
+This is evidence consistent with an older table, but no complete historical
+table checksum or raw BacDive snapshot ties that date to the 2026 asset.
+The commented date is not recorded as a verified build date.
+
+The Koblitz paper's data-availability section identifies predicted records via
+the API parameter `predictions=1`. The GenomeSPOT release parser does not request
+that parameter and extracts conventional phenotype sections. Its source recipe
+therefore suggests experimental inputs, but the asset omits the raw snapshot,
+retrieval receipt and per-value provenance needed to confirm that recipe for
+every value. No API account or replacement label source was used.
+
+`data/experimental-label-audit.json` records the source checksums and unresolved
+counts: temperature 4,783; oxygen 7,300; salinity 2,376; pH 3,549. Identified
+predicted exclusions and confirmed experimental counts are unknown, not zero.
+None of these labels is authorised for further fitting or scoring. Existing
+populations and inner-only fitted artefacts remain preserved as historical
+work, without experimental-only qualification. The rebuild, population loader
+and pre-registration generator now stop on this unresolved provenance.
+
+To resume, the authorised asset needs evidence establishing its experimental
+snapshot and date, or per-value experimental provenance permitting predicted
+values to be excluded and counted. Any replacement input needs an owner
+decision. No pre-registration has been created or committed.
+
+BacDive's [About page](https://bacdive.dsmz.de/about) asks commercial users to
+contact DSMZ. This request is recorded alongside the CC BY 4.0 licence basis;
+no contact was made. GenomeSPOT's MIT notice remains preserved in
+`docs/GenomeSPOT-MIT.txt`.
+
+The sections below preserve the earlier decisions and acquisition findings.
+
 GenomeSPOT's README states that its training data were downloaded from the BacDive API and the Genome Taxonomy Database. BacDive states: 'This work is licensed under a Creative Commons Attribution 4.0 International License' (https://bacdive.dsmz.de/about, read 2026-10-11). GTDB data are licensed under CC BY-SA 4.0. GenomeSPOT's code is under the MIT licence. We use the labels with attribution to BacDive (CC BY 4.0) and GTDB (CC BY-SA 4.0), and cite GenomeSPOT (Barnum et al., bioRxiv 2024, doi 10.1101/2024.03.22.586313).
 
 The paragraph above is the owner's prescribed licence basis from the Resume

@@ -2,6 +2,8 @@
 
 All available baselines use identical primary populations and outer folds.
 Phase 1 only fits models and predicts inside each outer training side.
+Comparison with GenomeSPOT is exclusively through B1 retrained on these folds;
+published GenomeSPOT performance numbers are not a matched comparator.
 
 B1 retrains GenomeSPOT's release v1.0.0 published specification. The three
 numeric traits use 60 compartment-specific amino-acid frequencies, standard

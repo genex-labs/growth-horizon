@@ -1,5 +1,15 @@
 # Current phase-1 resume
 
+Resume 4 supersedes the completion language below. All four traits are stopped
+at the experimental-label provenance gate. No pre-registration exists and the
+clean rebuild remains incomplete. The 2026 release asset has no verified build
+or BacDive snapshot date and no retained per-label measurement/prediction
+provenance. The source audit, unresolved counts and guard are documented in
+DATA.md and `data/experimental-label-audit.json`. Prior inner-only artefacts
+are preserved and have not been promoted to experimental ground truth.
+
+## Historical Resume 3 development status
+
 Resume 3 resolves the unavailable-proteome stop and makes feature differences
 a reportable finding. Acquisition and inner development are complete. The
 following earlier status records are historical; they do not describe the
@@ -18,8 +28,8 @@ B1, B2 and B3 are fitted and calibrated only on inner queries. B4 is omitted
 for the documented licence and input limitations. The 100-calibration-taxon
 requirement leaves every family, order, class and phylum fold unsupported;
 this prevents assessment of the family/order calibration target under the
-prescribed design. No outer prediction or metric was computed. The frozen
-pre-registration and its receipt document the completed build and checks.
+prescribed design. No outer prediction or metric was computed. Pre-registration
+and complete clean rebuild verification had not finished when the run stopped.
 
 # Resume 2: feature-verification source blocker
 

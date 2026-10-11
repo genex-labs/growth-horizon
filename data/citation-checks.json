@@ -36,5 +36,14 @@
     "title": "Predicting microbial growth conditions from amino acid composition",
     "url": "https://www.biorxiv.org/content/10.1101/2024.03.22.586313v1",
     "date": "2026-10-11"
+  },
+  {
+    "source": "Vovk",
+    "identifier": "arXiv:1209.2673",
+    "title": "Conditional validity of inductive conformal predictors",
+    "year": 2012,
+    "url": "https://arxiv.org/abs/1209.2673",
+    "date": "2026-10-11",
+    "source_sha256": "c419e658c2d2e44b04c66f9d1c0c4321bee6d69e704861c00b0963aab11193a3"
   }
 ]
