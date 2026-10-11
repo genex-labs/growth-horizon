@@ -35,6 +35,10 @@ def main() -> None:
     request_lock = Lock()
     last_start = [0.0]
     def download(record: dict[str, Any]) -> dict[str, Any]:
+        cached = ROOT / record['path']
+        if cached.exists() and cached.stat().st_size == record['bytes']:
+            acquire(record['url'], record['path'], record['bytes'])
+            return record
         with request_lock:
             time.sleep(max(0.0, 1 - (time.monotonic() - last_start[0])))
             last_start[0] = time.monotonic()
