@@ -3,14 +3,27 @@
 A draft open benchmark for growth-temperature, oxygen-tolerance, salinity and
 pH predictions from microbial genomes under nested taxonomic holdout.
 
-Resume 5 accepts the documented experimental-label provenance for the exact
-release table. Phase 1 is complete, with inner-only development artefacts and
-[a locally committed pre-registration](PREREGISTRATION.md). A fresh
-reconstruction reproduced all frozen scientific artefacts and the record
-byte for byte. Family and order calibration remain unsupported under the
-prescribed 100-calibration-taxon rule; the limitation is frozen for review.
-See [data provenance](DATA.md) and
-`data/experimental-label-audit.json` for the decision and residual risk.
+The exact release table has documented experimental-label provenance.
+Phase 1C freezes amendment C in [pre-registration v2](PREREGISTRATION.md),
+with five inner cross-fits, a 50-taxon calibration support rule and a
+strong-support flag at 100 taxa. Family and order now have supported
+calibration bins; these counts are calibration-side information, not measured
+coverage. See [data provenance](DATA.md) and
+`data/experimental-label-audit.json` for the source decision and residual risk.
+
+A clean reconstruction reproduced all 7,257 frozen scientific artefacts,
+548 source records and the v2 pre-registration byte for byte. The original
+1,113 v1 scientific artefacts remain unchanged. See
+[reconstruction details](docs/reproducibility.md).
+
+Both versions were frozen before any outer-fold prediction or metric.
+V2 supersedes v1 for the proposed locked run; scientific review and a separate
+authorised phase-2 run remain required.
+
+| Version | Local freeze commit | Freeze time | PREREGISTRATION.md SHA-256 |
+| --- | --- | --- | --- |
+| v1 | `22bc860563c0397e8ab935f6517892370f21afcd` | 2026-10-11 04:30:02 PT | `d7ae79e500b27fdea91693aa5bd7038e701ff84909b9b896eef000cb322b5c3d` |
+| v2, amendment C | `54d803cefa1414a8aaec960d746cdc2463e59f84` | 2026-10-11 07:46:14 PT | `cabc7ecffdd2e11246c8ab7b08b3103b09819f3fde1bcae87ab9cb649330a179` |
 
 Calibrated per-distance intervals for this matched growth-condition benchmark
 were not found in our literature check of 2026-10-11. Related work includes
@@ -36,7 +49,8 @@ The command accepts only the documented release-table provenance or verified
 experimental provenance for another source. It verifies existing raw files
 or reacquires missing downloadable sources, recomputes the authorised 71-genome feature check without resampling,
 and rebuilds all local populations, folds, distances, fitted estimators,
-naive intervals and Mondrian calibration summaries. Source and derived
+naive calibration spreads, cross-fitted calibration scores and support bins,
+and common horizon cut points. Source and derived
 checksums are in `data/source-manifest.json` and `data/artifact-manifest.json`.
 Historical incomplete-download and process receipts are provenance evidence,
 not rebuild inputs. Downloads stay below the recorded 8 GB estimates and
