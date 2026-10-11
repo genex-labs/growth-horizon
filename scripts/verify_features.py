@@ -2,9 +2,12 @@
 """Verify the fixed sample with the unchanged upstream feature implementation."""
 import csv
 import json
+import os
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from collections import defaultdict
+from threading import Lock
 from typing import Any
 
 import numpy as np
@@ -26,11 +29,22 @@ def main() -> None:
         'limit_bytes': LIMIT, 'missing_accessions': missing,
         'rtol': 1e-7, 'atol': 1e-9}, indent=2) + '\n')
     paths: dict[str, dict[str, str]] = defaultdict(dict)
-    for i, record in enumerate(records):
+    workers = int(os.environ.get('GENEX_SEQUENCE_WORKERS', '1'))
+    if not 1 <= workers <= 3:
+        raise ValueError('Sequence workers must be between one and three')
+    request_lock = Lock()
+    last_start = [0.0]
+    def download(record: dict[str, Any]) -> dict[str, Any]:
+        with request_lock:
+            time.sleep(max(0.0, 1 - (time.monotonic() - last_start[0])))
+            last_start[0] = time.monotonic()
         acquire(record['url'], record['path'], record['bytes'])
+        return record
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        downloaded = list(pool.map(download, records))
+    for i, record in enumerate(downloaded):
         key = 'faa' if '_protein.faa' in record['path'] else 'fna'
         paths[record['accession']][key] = str(ROOT / record['path'])
-        time.sleep(1)
         if i % 10 == 0:
             print(f'Acquired {i + 1}/{len(records)} sequence files', flush=True)
     sys.path.insert(0, str(raw / 'upstream'))
@@ -73,8 +87,10 @@ def main() -> None:
         genome_results.append({'accession': acc, 'disagreeing_features': disagreement})
         result = {'seed': 20261011, 'rtol': 1e-7, 'atol': 1e-9,
                   'download_bytes': total, 'unavailable': missing,
-                  'recomputed': len(genome_results), 'groups': groups, 'genomes': genome_results,
+                  'recomputed': len(genome_results), 'groups': groups,
+                  'genomes_fully_agree': sum(not r['disagreeing_features'] for r in genome_results),
                   'status': 'complete' if len(genome_results) == 71 else 'running'}
+        (raw / 'comparison-details.json').write_text(json.dumps(genome_results, indent=2) + '\n')
         (ROOT / 'data/feature-verification.json').write_text(json.dumps(result, indent=2) + '\n')
         print(f'Recomputed {i + 1}/71: {acc}, disagreements={len(disagreement)}', flush=True)
 

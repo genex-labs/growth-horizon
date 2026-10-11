@@ -112,6 +112,7 @@ def run_fold(df: Any, trait: str, rank: str, outer: IntArray, fold: int,
     # These outer test quantities are phenotype-free distances and memberships only.
     outer_rows = np.flatnonzero(outer == fold)
     outer_distances, _ = nearest_rows(df, proper, outer_rows, trees)
+    outer_training_distances, _ = nearest_rows(df, training, outer_rows, trees)
     random_partition = grouped_folds([str(df.index[i]) for i in training], seed + 2)
     naive_fit, naive_cal = training[random_partition != 0], training[random_partition == 0]
     naive_distances, naive_neighbours = nearest_rows(df, naive_fit, naive_cal, trees)
@@ -121,6 +122,7 @@ def run_fold(df: Any, trait: str, rank: str, outer: IntArray, fold: int,
              outer_training=training, inner_assignment=inner, proper=proper,
              calibration=calibration, training_side_distances=bin_distances,
              calibration_distances=cal_distances, outer_distances=outer_distances,
+             outer_training_distances=outer_training_distances,
              naive_fit=naive_fit, naive_calibration=naive_cal, distance_edges=edges)
     result: dict[str, Any] = {
         'trait': trait, 'rank': rank, 'outer_fold': fold, 'seed': seed,

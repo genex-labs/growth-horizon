@@ -33,3 +33,30 @@ def test_disk_space_stop_boundary() -> None:
     usage = shutil._ntuple_diskusage(100_000_000_000, 75_000_000_000, 25_000_000_000)
     with patch("scripts.preflight_sample.shutil.disk_usage", return_value=usage):
         check_space()
+
+
+def test_manifest_replay_requires_pinned_download_inputs_only(tmp_path: object) -> None:
+    import hashlib
+    import json
+    from pathlib import Path
+    from unittest.mock import patch
+
+    from scripts import acquire
+
+    root = Path(str(tmp_path))
+    path = root / 'data/raw/labels/training_data.tsv'
+    path.parent.mkdir(parents=True)
+    path.write_bytes(b'fixture')
+    manifest = root / 'manifest.json'
+    expected = hashlib.sha256(b'fixture').hexdigest()
+    manifest.write_text(json.dumps({'records': [
+        {'path': 'data/raw/labels/training_data.tsv', 'sha256': expected,
+         'url': 'https://github.com/example/release', 'bytes': 7, 'kind': 'verified_source'},
+        {'path': 'data/raw/source-audit/historical.json', 'sha256': 'historical',
+         'url': None, 'bytes': 1, 'kind': 'local_process_receipt'},
+    ]}))
+    with patch.object(acquire, 'ROOT', root), patch.object(acquire, 'MANIFEST', manifest):
+        acquire.replay()
+        path.write_bytes(b'tampered')
+        with pytest.raises(ValueError, match='checksum mismatch'):
+            acquire.replay()

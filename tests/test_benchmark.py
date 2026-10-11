@@ -161,3 +161,38 @@ def test_balanced_oxygen_error_and_paired_taxon_inference() -> None:
     summary = interval_summary(np.array([1., 4.]), np.array([0., 0.]),
                                np.array([1., 1.]), np.array([True, False]))
     assert summary == {'coverage': 1., 'mean_width': 2., 'abstention_rate': 0.5}
+
+
+def test_complete_synthetic_inner_run_never_queries_outer_test(tmp_path: object) -> None:
+    from pathlib import Path
+    from unittest.mock import patch
+
+    import pandas as pd  # type: ignore[import-untyped]
+
+    from growth_horizon import phase1
+    from growth_horizon.models import COMPARTMENT_AA, ALL_AA
+
+    rng = np.random.default_rng(17)
+    n = 750
+    features = sorted(set(COMPARTMENT_AA + ALL_AA))
+    df = pd.DataFrame(rng.uniform(0, 1, (n, len(features))), columns=features,
+                      index=[f'a{i:04d}' for i in range(n)])
+    df['temperature_optimum'] = 10 + 3 * df['all_aa_A']
+    df['genus'] = df.index
+    df['leaf'] = df.index
+    tree = TreeIndex([list(range(1, n + 1))] + [[] for _ in range(n)],
+                     [0.0] + [1.0] * n, {str(a): i + 1 for i, a in enumerate(df.index)})
+    outer = grouped_folds(df.index.tolist())
+    test_accessions = set(df.index[outer == 0])
+    base = Path(str(tmp_path))
+    (base / 'data/derived').mkdir(parents=True)
+    from growth_horizon.models import prediction as actual_prediction
+    def audited_prediction(model: object, x: object, trait: str) -> object:
+        assert not test_accessions & set(x.index)  # type: ignore[attr-defined]
+        return actual_prediction(model, x, trait)
+    with patch.object(phase1, 'ROOT', base), patch.object(phase1, 'prediction', audited_prediction):
+        result = phase1.run_fold(df, 'temperature_optimum', 'genus', outer, 0, [tree])
+    assert result['status'] == 'inner_fitted_outer_unscored'
+    assert set(result['methods']) == {'B1', 'B2', 'B3', 'method'}
+    assert result['no_outer_fold_scoring']
+    assert any(b['supported'] for b in result['methods']['B1']['mondrian']['bins'])
