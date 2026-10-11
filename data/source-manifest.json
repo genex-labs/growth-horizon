@@ -174,6 +174,34 @@
       "kind": "local_acquisition_receipt"
     },
     {
+      "path": "data/raw/source-audit/bacdive-api.html",
+      "url": "https://api.bacdive.dsmz.de/",
+      "bytes": 14936,
+      "sha256": "9127c3e761333287dba90115a22dd5f3469a513b1407b58ba2d98eaf0bce802b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/bacdive-news.html",
+      "url": "https://bacdive.dsmz.de/news",
+      "bytes": 43208,
+      "sha256": "946c72d652501d3e862efccb3f92017cb6667438435895b64ee63bbe503b00bf",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/barber-jackknife.html",
+      "url": "https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-1/Predictive-inference-with-the-jackknife/10.1214/20-AOS1965.full",
+      "bytes": 1151,
+      "sha256": "e511ccb5c39e9fe8f8786cfad6e5fc2e3c612d91034076d39a7e0e3eb9d50b0c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/barber-reference.json",
+      "url": "https://doi.org/10.1214/20-AOS1965",
+      "bytes": 10831,
+      "sha256": "06c9e2591463169b7970503c5c0933db98f7e7736ac7f9581654b118235dd0d4",
+      "kind": "source_audit_evidence"
+    },
+    {
       "path": "data/raw/source-audit/calpred.html",
       "url": "https://www.nature.com/articles/s41588-024-01792-w",
       "bytes": 403449,
@@ -391,6 +419,13 @@
       "kind": "verified_source"
     },
     {
+      "path": "data/raw/source-audit/romano-classification.html",
+      "url": "https://arxiv.org/html/2006.02544v1",
+      "bytes": 200722,
+      "sha256": "580a76dbe5be71e550dedfa172252531e2bb26b6863a0fd880da9cd891898063",
+      "kind": "source_audit_evidence"
+    },
+    {
       "path": "data/raw/source-audit/run_model_selection.py",
       "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/model_training/run_model_selection.py",
       "bytes": 15960,
@@ -403,6 +438,13 @@
       "bytes": 28211,
       "sha256": "4625d140aef9b138d8db9c0eb6d885d1359715be444561e528edfe668414c71a",
       "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/vovk-2013.html",
+      "url": "https://link.springer.com/article/10.1007/s10994-013-5355-6",
+      "bytes": 463610,
+      "sha256": "e891f3ece1edd409d747a508140c6b3fc156759c82bd11ddff08108cff23c237",
+      "kind": "source_audit_evidence"
     },
     {
       "path": "data/raw/transfer-parts/ar53_r232.tree.gz/0-156359.bin",

@@ -1,0 +1,24 @@
+{
+  "read_at_pt": "2026-10-11 05:35:53 PT",
+  "parameter": "predictions=1",
+  "parameter_source": {
+    "url": "https://www.nature.com/articles/s42003-025-08313-3",
+    "section": "Data availability",
+    "path": "data/raw/source-audit/koblitz.html",
+    "sha256": "e2401c0abedaa766d9964e09f81bb624fa5b4b21f70d236edb647565ca511b1f"
+  },
+  "bacdive_pages": [
+    {
+      "url": "https://api.bacdive.dsmz.de/",
+      "path": "data/raw/source-audit/bacdive-api.html",
+      "sha256": "9127c3e761333287dba90115a22dd5f3469a513b1407b58ba2d98eaf0bce802b"
+    },
+    {
+      "url": "https://bacdive.dsmz.de/news",
+      "path": "data/raw/source-audit/bacdive-news.html",
+      "sha256": "946c72d652501d3e862efccb3f92017cb6667438435895b64ee63bbe503b00bf"
+    }
+  ],
+  "finding": "The February 2023 release announcement says predicted data were not yet available through the API. The current API homepage does not document predictions=1; the parameter is documented in the 2025 paper.",
+  "limit": "These pages do not authenticate GenomeSPOT's historical raw BacDive snapshot."
+}

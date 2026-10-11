@@ -40,14 +40,27 @@ that related studies do not exist.
   The paper's title, DOI and code-availability statement were read at source.
   B4 is omitted for the repository licence and input reasons in baselines.md.
 
-- Vovk, *Conditional validity of inductive conformal predictors* (2012),
-  [arXiv 1209.2673](https://arxiv.org/abs/1209.2673).
-  The public record confirms the author, title and year. Mondrian categories
-  motivate the fixed distance bins used here.
+- Vovk, V. (2013), *Conditional validity of inductive conformal predictors*,
+  Machine Learning 92, 349 to 376,
+  [doi 10.1007/s10994-013-5355-6](https://link.springer.com/article/10.1007/s10994-013-5355-6).
+  The publisher confirms the journal reference. The earlier 2012 conference
+  version remains historical prior art for the fixed-bin rationale.
+- Barber, R. F., Candès, E. J., Ramdas, A. and Tibshirani, R. J. (2021),
+  *Predictive inference with the jackknife+*, The Annals of Statistics 49(1),
+  486 to 507, [doi 10.1214/20-AOS1965](https://doi.org/10.1214/20-AOS1965).
+  DOI-deposited metadata confirms the reference. CV+ accounts for fitting
+  variation when constructing numeric endpoints.
+- Romano, Y., Sesia, M. and Candès, E. J. (2020), *Classification with Valid
+  and Adaptive Coverage*, [arXiv 2006.02544v1](https://arxiv.org/html/2006.02544v1).
+  Algorithm 2 uses the randomized inverse-quantile score and the strict
+  comparison count in equation (11). Its score differs from the originally
+  proposed one-minus-probability score, while its count threshold agrees.
+  The classification-rule receipt records this source check.
 
-Mondrian split conformal provides within-bin coverage only under appropriate
-exchangeability of calibration and test units in that bin. Taxonomic
-holdouts, a distance axis, or bin merging alone do not establish that
-assumption. The 100-taxon gate and taxon bootstrap do not themselves establish
-exchangeability of residuals among genomes. Correlated genomes, population
-shift and coverage among non-abstained predictions remain empirical questions.
+Appropriate exchangeability is an assumption, not a consequence of taxonomic
+holdout or phylogenetic distance. Grouped unequal-size folds and calibration
+conditioned on distance bins do not inherit a demonstrated finite-sample
+coverage guarantee from the cited unconditioned CV+ results. The 50-taxon
+support rule, 100-taxon strong-support flag and taxon bootstrap do not establish
+exchangeability among genomes. Correlated genomes, population shift and
+coverage among non-abstained predictions remain empirical questions.

@@ -1,0 +1,50 @@
+{
+  "checked_at_pt": "2026-10-11 05:31:40 PT",
+  "classification": {
+    "url": "https://arxiv.org/html/2006.02544v1",
+    "path": "data/raw/source-audit/romano-classification.html",
+    "sha256": "580a76dbe5be71e550dedfa172252531e2bb26b6863a0fd880da9cd891898063",
+    "algorithm": 2,
+    "score_equations": [
+      5,
+      7
+    ],
+    "set_equation": 11,
+    "threshold": "sum of strict comparisons < 0.9 (n + 1)",
+    "result": "Count threshold confirmed; score corrected to randomized inverse quantile E. Naive oxygen score remains unchanged.",
+    "difference_from_proposed_text": "E replaces 1 minus class probability for cross-fitted oxygen calibration only.",
+    "limitations": "Grouped unequal-size folds and distance conditioning do not establish the exchangeability assumptions or the cited finite-sample guarantee."
+  },
+  "references": [
+    {
+      "doi": "10.1214/20-AOS1965",
+      "title": "Predictive inference with the jackknife+",
+      "authors": [
+        "Rina Foygel Barber",
+        "Emmanuel J. Cand\u00e8s",
+        "Aaditya Ramdas",
+        "Ryan J. Tibshirani"
+      ],
+      "journal": "The Annals of Statistics",
+      "year": 2021,
+      "volume": 49,
+      "issue": 1,
+      "pages": "486 to 507",
+      "path": "data/raw/source-audit/barber-reference.json",
+      "sha256": "06c9e2591463169b7970503c5c0933db98f7e7736ac7f9581654b118235dd0d4",
+      "publisher_page_status": "Access check returned a challenge page; DOI content negotiation confirmed deposited bibliographic metadata."
+    },
+    {
+      "doi": "10.1007/s10994-013-5355-6",
+      "title": "Conditional validity of inductive conformal predictors",
+      "author": "Vladimir Vovk",
+      "journal": "Machine Learning",
+      "year": 2013,
+      "volume": 92,
+      "pages": "349 to 376",
+      "url": "https://link.springer.com/article/10.1007/s10994-013-5355-6",
+      "path": "data/raw/source-audit/vovk-2013.html",
+      "sha256": "e891f3ece1edd409d747a508140c6b3fc156759c82bd11ddff08108cff23c237"
+    }
+  ]
+}

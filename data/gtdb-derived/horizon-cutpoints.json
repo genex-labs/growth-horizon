@@ -1,0 +1,427 @@
+{
+  "quantiles": [
+    0.2,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "traits": {
+    "temperature_optimum": {
+      "genus": {
+        "distance_edges": [
+          0.07935999999999999,
+          0.10622999999999999,
+          0.14684,
+          0.2143140000000001
+        ],
+        "tuning_distances": 75440,
+        "finite_tuning_distances": 75440,
+        "fold_tuning_distances": [
+          15072,
+          15088,
+          15092,
+          15092,
+          15096
+        ]
+      },
+      "family": {
+        "distance_edges": [
+          0.23397600000000005,
+          0.30013999999999996,
+          0.3713960000000001,
+          0.4493899999999999
+        ],
+        "tuning_distances": 75440,
+        "finite_tuning_distances": 75440,
+        "fold_tuning_distances": [
+          15084,
+          15088,
+          15088,
+          15088,
+          15092
+        ]
+      },
+      "order": {
+        "distance_edges": [
+          0.37360000000000004,
+          0.45581000000000005,
+          0.51735,
+          0.5895
+        ],
+        "tuning_distances": 75440,
+        "finite_tuning_distances": 75440,
+        "fold_tuning_distances": [
+          15088,
+          15088,
+          15088,
+          15088,
+          15088
+        ]
+      },
+      "class": {
+        "distance_edges": [
+          0.73715,
+          0.8141700000000001,
+          0.8813,
+          0.9998499999999996
+        ],
+        "tuning_distances": 75440,
+        "finite_tuning_distances": 75440,
+        "fold_tuning_distances": [
+          13204,
+          15388,
+          15604,
+          15620,
+          15624
+        ]
+      },
+      "phylum": {
+        "distance_edges": [
+          0.85868,
+          0.9538999999999996,
+          1.06473,
+          1.21145
+        ],
+        "tuning_distances": 75440,
+        "finite_tuning_distances": 75365,
+        "fold_tuning_distances": [
+          12612,
+          13148,
+          15944,
+          15952,
+          17784
+        ]
+      },
+      "random": {
+        "distance_edges": [
+          0.01361,
+          0.03102,
+          0.06024,
+          0.11155000000000001
+        ],
+        "tuning_distances": 75440,
+        "finite_tuning_distances": 75440,
+        "fold_tuning_distances": [
+          15088,
+          15088,
+          15088,
+          15088,
+          15088
+        ]
+      }
+    },
+    "oxygen": {
+      "genus": {
+        "distance_edges": [
+          0.07741800000000003,
+          0.11041000000000001,
+          0.1587379999999999,
+          0.22978
+        ],
+        "tuning_distances": 115680,
+        "finite_tuning_distances": 115680,
+        "fold_tuning_distances": [
+          23136,
+          23136,
+          23136,
+          23136,
+          23136
+        ]
+      },
+      "family": {
+        "distance_edges": [
+          0.22091999999999998,
+          0.2916480000000002,
+          0.36535,
+          0.44951
+        ],
+        "tuning_distances": 115680,
+        "finite_tuning_distances": 115680,
+        "fold_tuning_distances": [
+          23132,
+          23136,
+          23136,
+          23136,
+          23140
+        ]
+      },
+      "order": {
+        "distance_edges": [
+          0.37362999999999996,
+          0.45794,
+          0.5297999999999999,
+          0.6203200000000001
+        ],
+        "tuning_distances": 115680,
+        "finite_tuning_distances": 115680,
+        "fold_tuning_distances": [
+          23136,
+          23136,
+          23136,
+          23136,
+          23136
+        ]
+      },
+      "class": {
+        "distance_edges": [
+          0.6987299999999997,
+          0.7898299999999998,
+          0.8598100000000001,
+          0.9663120000000001
+        ],
+        "tuning_distances": 115680,
+        "finite_tuning_distances": 115680,
+        "fold_tuning_distances": [
+          22552,
+          23268,
+          23280,
+          23308,
+          23272
+        ]
+      },
+      "phylum": {
+        "distance_edges": [
+          0.8190200000000002,
+          0.9020440000000001,
+          1.0111,
+          1.1753300000000002
+        ],
+        "tuning_distances": 115680,
+        "finite_tuning_distances": 115680,
+        "fold_tuning_distances": [
+          19168,
+          21816,
+          23488,
+          24712,
+          26496
+        ]
+      },
+      "random": {
+        "distance_edges": [
+          0.00822,
+          0.02493,
+          0.053059999999999996,
+          0.10239995
+        ],
+        "tuning_distances": 115680,
+        "finite_tuning_distances": 115680,
+        "fold_tuning_distances": [
+          23136,
+          23136,
+          23136,
+          23136,
+          23136
+        ]
+      }
+    },
+    "salinity_optimum": {
+      "genus": {
+        "distance_edges": [
+          0.079164,
+          0.10789,
+          0.15123999999999999,
+          0.22085999999999997
+        ],
+        "tuning_distances": 37552,
+        "finite_tuning_distances": 37552,
+        "fold_tuning_distances": [
+          7508,
+          7508,
+          7508,
+          7512,
+          7516
+        ]
+      },
+      "family": {
+        "distance_edges": [
+          0.22239,
+          0.30293,
+          0.3798099999999999,
+          0.4665799999999999
+        ],
+        "tuning_distances": 37552,
+        "finite_tuning_distances": 37552,
+        "fold_tuning_distances": [
+          7500,
+          7504,
+          7512,
+          7516,
+          7520
+        ]
+      },
+      "order": {
+        "distance_edges": [
+          0.37032,
+          0.44920600000000027,
+          0.5171699999999999,
+          0.58515
+        ],
+        "tuning_distances": 37552,
+        "finite_tuning_distances": 37552,
+        "fold_tuning_distances": [
+          7508,
+          7512,
+          7508,
+          7512,
+          7512
+        ]
+      },
+      "class": {
+        "distance_edges": [
+          0.761794,
+          0.8293899999999997,
+          0.8814499999999998,
+          1.0052400000000004
+        ],
+        "tuning_distances": 37552,
+        "finite_tuning_distances": 37552,
+        "fold_tuning_distances": [
+          7164,
+          7480,
+          7600,
+          7652,
+          7656
+        ]
+      },
+      "phylum": {
+        "distance_edges": [
+          0.8552699999999998,
+          0.9394999999999997,
+          1.0537959999999997,
+          1.2319899999999997
+        ],
+        "tuning_distances": 37552,
+        "finite_tuning_distances": 37552,
+        "fold_tuning_distances": [
+          5316,
+          7612,
+          7856,
+          7908,
+          8860
+        ]
+      },
+      "random": {
+        "distance_edges": [
+          0.02365,
+          0.05,
+          0.08068999999999998,
+          0.13773000000000002
+        ],
+        "tuning_distances": 37552,
+        "finite_tuning_distances": 37552,
+        "fold_tuning_distances": [
+          7508,
+          7508,
+          7512,
+          7512,
+          7512
+        ]
+      }
+    },
+    "ph_optimum": {
+      "genus": {
+        "distance_edges": [
+          0.08055000000000001,
+          0.10970999999999999,
+          0.15533000000000002,
+          0.22464000000000026
+        ],
+        "tuning_distances": 56208,
+        "finite_tuning_distances": 56208,
+        "fold_tuning_distances": [
+          11240,
+          11240,
+          11240,
+          11244,
+          11244
+        ]
+      },
+      "family": {
+        "distance_edges": [
+          0.22223400000000004,
+          0.29174,
+          0.37633199999999994,
+          0.47406000000000004
+        ],
+        "tuning_distances": 56208,
+        "finite_tuning_distances": 56208,
+        "fold_tuning_distances": [
+          11232,
+          11236,
+          11244,
+          11248,
+          11248
+        ]
+      },
+      "order": {
+        "distance_edges": [
+          0.36743000000000003,
+          0.4577,
+          0.52057,
+          0.5964900000000002
+        ],
+        "tuning_distances": 56208,
+        "finite_tuning_distances": 56208,
+        "fold_tuning_distances": [
+          11240,
+          11240,
+          11240,
+          11244,
+          11244
+        ]
+      },
+      "class": {
+        "distance_edges": [
+          0.71373,
+          0.80875,
+          0.8786200000000001,
+          1.00883
+        ],
+        "tuning_distances": 56208,
+        "finite_tuning_distances": 56208,
+        "fold_tuning_distances": [
+          11188,
+          11244,
+          11256,
+          11256,
+          11264
+        ]
+      },
+      "phylum": {
+        "distance_edges": [
+          0.846,
+          0.92605,
+          1.03994,
+          1.2118199999999997
+        ],
+        "tuning_distances": 56208,
+        "finite_tuning_distances": 55920,
+        "fold_tuning_distances": [
+          8584,
+          11536,
+          11540,
+          11544,
+          13004
+        ]
+      },
+      "random": {
+        "distance_edges": [
+          0.020184000000000014,
+          0.04292,
+          0.07406,
+          0.13446
+        ],
+        "tuning_distances": 56208,
+        "finite_tuning_distances": 56208,
+        "fold_tuning_distances": [
+          11240,
+          11240,
+          11240,
+          11244,
+          11244
+        ]
+      }
+    }
+  },
+  "no_outer_fold_scoring": true
+}
