@@ -23,6 +23,8 @@ def canonical(accession: str) -> str:
 
 
 def load_population(trees: list[TreeIndex]) -> tuple[Any, dict[str, Any]]:
+    # Common species contain thousands of accessions in one official TSV field.
+    csv.field_size_limit(10_000_000)
     df = pd.read_csv(ROOT / 'data/raw/labels/training_data.tsv', sep='\t', index_col=0)
     df.index = df.index.astype(str)
     features = list(df.columns[:230])
