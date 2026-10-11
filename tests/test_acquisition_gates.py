@@ -60,3 +60,44 @@ def test_manifest_replay_requires_pinned_download_inputs_only(tmp_path: object) 
         path.write_bytes(b'tampered')
         with pytest.raises(ValueError, match='checksum mismatch'):
             acquire.replay()
+
+
+def test_pinned_gtdb_rebuild_does_not_require_new_size_requests(tmp_path: object) -> None:
+    import hashlib
+    import json
+    from pathlib import Path
+    from typing import Any
+
+    from scripts import acquire_gtdb
+
+    root = Path(str(tmp_path))
+    raw = root / 'data/raw/gtdb'
+    raw.mkdir(parents=True)
+    (raw / 'releases.html').write_text('<a href="release232/">release</a>')
+    files = ['auxillary_files/sp_clusters_r232.tsv', 'ar53_r232.tree.gz', 'bac120_r232.tree.gz']
+    base = 'https://data.gtdb.ecogenomic.org/releases/release232/232.0/'
+    records = []
+    md5s = []
+    for file in files:
+        target = raw / file
+        target.parent.mkdir(parents=True, exist_ok=True)
+        data = file.encode()
+        target.write_bytes(data)
+        records.append({'path': 'data/raw/gtdb/' + file, 'url': base + file, 'bytes': len(data)})
+        md5s.append(hashlib.md5(data).hexdigest() + '  ' + file)
+    (raw / 'MD5SUM.txt').write_text('\n'.join(md5s))
+    (root / 'data/source-manifest.json').write_text(json.dumps({'records': records}))
+
+    def cached(url: str, path: str, size: int | None = None) -> dict[str, Any]:
+        if size is not None:
+            assert (root / path).stat().st_size == size
+        return {'path': path, 'url': url}
+
+    with patch.object(acquire_gtdb, 'ROOT', root), \
+            patch.object(acquire_gtdb, 'acquire', cached), \
+            patch.object(acquire_gtdb, 'ranged_acquire', cached), \
+            patch('scripts.acquire_gtdb.urllib.request.urlopen') as network:
+        acquire_gtdb.main()
+        network.assert_not_called()
+    assert json.loads((raw / 'size-preflight.json').read_text()) == {
+        file: len(file.encode()) for file in files}

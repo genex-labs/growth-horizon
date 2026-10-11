@@ -26,9 +26,17 @@ def main() -> None:
     files = ['auxillary_files/sp_clusters_r232.tsv',
              'ar53_r232.tree.gz', 'bac120_r232.tree.gz']
     estimates = {}
+    pinned = {r['path']: r for r in
+              json.loads((ROOT / 'data/source-manifest.json').read_text())['records']}
     for file in files:
-        with urllib.request.urlopen(urllib.request.Request(base + file, method='HEAD')) as r:
-            estimates[file] = int(r.headers['Content-Length'])
+        record = pinned.get('data/raw/gtdb/' + file)
+        if record is not None and record['url'] == base + file:
+            # Replay already checks the pinned SHA-256; reuse its recorded size.
+            estimates[file] = int(record['bytes'])
+        else:
+            with urllib.request.urlopen(urllib.request.Request(base + file, method='HEAD'),
+                                        timeout=120) as r:
+                estimates[file] = int(r.headers['Content-Length'])
     (ROOT / 'data/raw/gtdb/size-preflight.json').write_text(json.dumps(estimates, indent=2)+'\n')
     assert sum(estimates.values()) < 8_000_000_000
     for file in files:
