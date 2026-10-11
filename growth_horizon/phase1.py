@@ -227,6 +227,24 @@ def main() -> None:
                                                        'taxa': len(set(groups))}
                     continue
                 outer = grouped_folds(groups, SEED + 1000 * RANKS.index(rank))
+                infeasible = []
+                for f in range(5):
+                    training_rows = np.flatnonzero(outer != f)
+                    training_groups = [groups[i] for i in training_rows]
+                    if len(set(training_groups)) < 5:
+                        infeasible.append({'fold': f, 'training_taxa': len(set(training_groups))})
+                        continue
+                    partition = grouped_folds(training_groups,
+                                              SEED + 1000 * RANKS.index(rank) + 10 * f + 1)
+                    proper_groups = {training_groups[i] for i in np.flatnonzero(partition != 0)}
+                    if len(proper_groups) < 5:
+                        infeasible.append({'fold': f, 'proper_training_taxa': len(proper_groups)})
+                if infeasible:
+                    summary['traits'][trait][rank] = {
+                        'status': 'insufficient_taxa_for_nested_five_folds', 'taxa': len(set(groups)),
+                        'infeasible_outer_folds': infeasible,
+                        'fold_taxa': [len({groups[i] for i in np.flatnonzero(outer == f)}) for f in range(5)]}
+                    continue
                 folder = ROOT / f'data/gtdb-derived/local/{trait}'
                 folder.mkdir(exist_ok=True)
                 pd.DataFrame({'accession': df.index, 'taxon': groups, 'fold': outer}).to_csv(
@@ -245,7 +263,7 @@ def main() -> None:
     artefacts = []
     for base in ('data/gtdb-derived/local',):
         for path in sorted((ROOT / base).rglob('*')):
-            if path.is_file():
+            if path.is_file() and '/evidence/' not in str(path):
                 artefacts.append({'path': str(path.relative_to(ROOT)), 'bytes': path.stat().st_size,
                                   'sha256': digest(path)})
     (ROOT / 'data/artifact-manifest.json').write_text(json.dumps(artefacts, indent=2)+'\n')

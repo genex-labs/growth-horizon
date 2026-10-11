@@ -76,7 +76,10 @@ GTDB-derived summaries reside separately under CC BY-SA 4.0.
 Five outer grouped folds per eligible rank: genus, family, order, class and
 phylum; a five-fold random partition is the optimistic reference. A taxon is
 never divided. Groups are shuffled using a seeded generator and allocated
-largest-first to the least loaded fold, breaking ties by fold number. The
+largest-first to the least loaded fold, subject to a cap of ceil(n_taxa / 5)
+taxa per fold, breaking ties by fold number. The taxon cap repairs a structural
+problem observed before freezing: genome balancing alone left only four
+training phyla in one outer split. No prediction performance chose this rule. The
 outer seed is 20261011 + 1000 * rank index, with rank order genus, family,
 order, class, phylum, random. Fold f uses base seed outer seed + 10 * f; inner
 calibration uses base + 1, naive random calibration base + 2, and proper-side

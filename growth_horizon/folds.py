@@ -1,6 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 """Deterministic balanced grouped partitions, independent of phenotype values."""
 from collections import Counter
+import math
 
 import numpy as np
 import numpy.typing as npt
@@ -17,11 +18,15 @@ def grouped_folds(groups: list[str], seed: int = SEED, k: int = 5) -> npt.NDArra
     shuffled = list(np.array(sorted(counts))[rng.permutation(len(counts))])
     ordered = sorted(shuffled, key=lambda g: -counts[g])
     loads = [0] * k
+    taxon_loads = [0] * k
+    taxon_cap = math.ceil(len(counts) / k)
     assignment = {}
     for group in ordered:
-        fold = min(range(k), key=lambda f: (loads[f], f))
+        fold = min((f for f in range(k) if taxon_loads[f] < taxon_cap),
+                   key=lambda f: (loads[f], f))
         assignment[group] = fold
         loads[fold] += counts[group]
+        taxon_loads[fold] += 1
     return np.array([assignment[group] for group in groups], dtype=np.int64)
 
 

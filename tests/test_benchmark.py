@@ -227,3 +227,12 @@ def test_oxygen_with_one_positive_taxon_is_explicitly_unsupported(tmp_path: obje
     assert result['status'] == 'insufficient_oxygen_classes_in_inner_fitting_side'
     assert not result['methods']
     assert result['no_outer_fold_scoring']
+
+
+def test_taxon_cap_keeps_nested_holdout_feasible_with_dominant_clades() -> None:
+    groups = [f'large{i}' for i in range(4) for _ in range(500)] + [f'rare{i}' for i in range(30)]
+    outer = grouped_folds(groups)
+    assert max(len({groups[i] for i in np.flatnonzero(outer == f)}) for f in range(5)) <= 7
+    for f in range(5):
+        rows, inner = nested_membership(groups, outer, f, 20 + f)
+        assert len({groups[rows[i]] for i in np.flatnonzero(inner != 0)}) >= 5
