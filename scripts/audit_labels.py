@@ -73,7 +73,7 @@ def main() -> None:
         },
         "outer_fold_predictions_or_metrics_computed": False,
     }
-    output = ROOT / "data/label-audit.json"
+    output = ROOT / "data/gtdb-derived/label-audit.json"
     output.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({key: value for key, value in result.items()
                       if key != "column_sources"}, indent=2))

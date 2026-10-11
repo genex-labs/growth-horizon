@@ -11,14 +11,14 @@ TARGETS = '''1. Calibration: at family and order holdout, nominal 90% intervals 
 
 
 def main() -> None:
-    population = json.loads((ROOT / 'data/population-summary.json').read_text())
-    development = json.loads((ROOT / 'data/development-summary.json').read_text())
+    population = json.loads((ROOT / 'data/gtdb-derived/population-summary.json').read_text())
+    development = json.loads((ROOT / 'data/gtdb-derived/development-summary.json').read_text())
     verification = json.loads((ROOT / 'data/feature-verification.json').read_text())
     if verification['status'] != 'complete' or verification['recomputed'] != 71:
         raise ValueError('The verification comparison has not finished')
     assert development['no_outer_fold_scoring']
-    files = ['data/source-manifest.json', 'data/population-summary.json',
-             'data/development-summary.json', 'data/artifact-manifest.json',
+    files = ['data/source-manifest.json', 'data/gtdb-derived/population-summary.json',
+             'data/gtdb-derived/development-summary.json', 'data/artifact-manifest.json',
              'data/feature-verification.json', 'data/verification-plan.json', 'uv.lock']
     hashes = '\n'.join(f'| `{f}` | `{digest(ROOT / f)}` |' for f in files)
     counts = '\n'.join(f"| {t} | {r['usable']} | {json.dumps(r['counts_by_reason'], sort_keys=True)} |"
@@ -109,7 +109,7 @@ and 80th percentiles of finite distances. Equal cut points collapse and equal
 distances are never split arbitrarily. Right-side search assigns boundaries.
 Outer test distances and labels never set cut points. Initial cut points,
 all original-to-merged bin maps, and calibration-taxon counts are frozen in
-data/development-summary.json and individual calibration records.
+data/gtdb-derived/development-summary.json and individual calibration records.
 
 Require 100 distinct calibration taxa per merged bin. Merge a deficient bin
 with an adjacent bin having the smaller distinct-taxon count, left on ties,

@@ -37,9 +37,9 @@ def main() -> None:
                                        'kind': ('incomplete_download_preserved_as_evidence' if '.partial.' in relative
                                                 else 'source_audit_evidence' if url else 'local_acquisition_receipt')})
             indexed.add(relative)
-    population = json.loads((ROOT / 'data/population-summary.json').read_text())
+    population = json.loads((ROOT / 'data/gtdb-derived/population-summary.json').read_text())
     verification = json.loads((ROOT / 'data/feature-verification.json').read_text())
-    audit_path = ROOT / 'data/label-audit.json'
+    audit_path = ROOT / 'data/gtdb-derived/label-audit.json'
     audit = json.loads(audit_path.read_text())
     audit['status'] = 'primary_populations_established'
     audit['analysis_exclusions'] = population['traits']

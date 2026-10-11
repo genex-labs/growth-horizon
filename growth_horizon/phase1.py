@@ -116,7 +116,7 @@ def run_fold(df: Any, trait: str, rank: str, outer: IntArray, fold: int,
     random_partition = grouped_folds([str(df.index[i]) for i in training], seed + 2)
     naive_fit, naive_cal = training[random_partition != 0], training[random_partition == 0]
     naive_distances, naive_neighbours = nearest_rows(df, naive_fit, naive_cal, trees)
-    directory = ROOT / f'data/derived/{trait}/{rank}/fold{fold}'
+    directory = ROOT / f'data/gtdb-derived/local/analysis/{trait}/{rank}/fold{fold}'
     directory.mkdir(parents=True, exist_ok=True)
     np.savez(directory / 'membership-distances.npz', outer_test=outer_rows,
              outer_training=training, inner_assignment=inner, proper=proper,
@@ -212,13 +212,13 @@ def main() -> None:
     load_population(trees)
     all_leaves = set()
     for trait in TRAITS:
-        all_leaves.update(pd.read_pickle(ROOT / f'data/derived/{trait}.pkl')['leaf'])
+        all_leaves.update(pd.read_pickle(ROOT / f'data/gtdb-derived/local/analysis/{trait}.pkl')['leaf'])
     trees = [tree.prune(all_leaves) for tree in trees]
     summary: dict[str, Any] = {'seed': SEED, 'folds_per_rank': 5, 'traits': {},
                               'no_outer_fold_scoring': True}
     with threadpool_limits(limits=1):
         for trait in TRAITS:
-            df = pd.read_pickle(ROOT / f'data/derived/{trait}.pkl').sort_index()
+            df = pd.read_pickle(ROOT / f'data/gtdb-derived/local/analysis/{trait}.pkl').sort_index()
             summary['traits'][trait] = {}
             for rank in RANKS:
                 groups = list(df.index.astype(str)) if rank == 'random' else df[rank].tolist()
@@ -240,10 +240,10 @@ def main() -> None:
                     'taxa': len(set(groups)), 'fold_genomes': dict(Counter(map(int, outer))),
                     'fold_taxa': [len({groups[i] for i in np.flatnonzero(outer == f)}) for f in range(5)],
                     'folds': summaries}
-                (ROOT / 'data/development-summary.json').write_text(
+                (ROOT / 'data/gtdb-derived/development-summary.json').write_text(
                     json.dumps(summary, indent=2, allow_nan=False)+'\n')
     artefacts = []
-    for base in ('data/derived', 'data/gtdb-derived/local'):
+    for base in ('data/gtdb-derived/local',):
         for path in sorted((ROOT / base).rglob('*')):
             if path.is_file():
                 artefacts.append({'path': str(path.relative_to(ROOT)), 'bytes': path.stat().st_size,

@@ -46,7 +46,7 @@ def load_population(trees: list[TreeIndex]) -> tuple[Any, dict[str, Any]]:
                     raise ValueError('Ambiguous assembly representative mapping')
                 mappings[acc] = record
     mapping_df = pd.DataFrame.from_dict(mappings, orient='index')
-    (ROOT / 'data/gtdb-derived/local').mkdir(exist_ok=True)
+    (ROOT / 'data/gtdb-derived/local/analysis').mkdir(parents=True, exist_ok=True)
     mapping_df.to_csv(ROOT / 'data/gtdb-derived/local/mapping.tsv', sep='\t', index=False)
     # Ignore the release's use flags: the primary population contains every usable nonmissing label.
     feature_good = np.isfinite(df[features].to_numpy(dtype=float)).all(axis=1)
@@ -77,8 +77,8 @@ def load_population(trees: list[TreeIndex]) -> tuple[Any, dict[str, Any]]:
             'taxa': {rank: len({mappings[a][rank] for a in usable})
                      for rank in TAXON_RANKS}}
         subset = df.loc[usable, features + [trait]].join(mapping_df[TAXON_RANKS + ['leaf']])
-        subset.to_pickle(ROOT / f'data/derived/{trait}.pkl')
-    (ROOT / 'data/population-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
+        subset.to_pickle(ROOT / f'data/gtdb-derived/local/analysis/{trait}.pkl')
+    (ROOT / 'data/gtdb-derived/population-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
     return df, summary
 
 

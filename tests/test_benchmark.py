@@ -190,7 +190,7 @@ def test_complete_synthetic_inner_run_never_queries_outer_test(tmp_path: object)
     outer = grouped_folds(df.index.tolist())
     test_accessions = set(df.index[outer == 0])
     base = Path(str(tmp_path))
-    (base / 'data/derived').mkdir(parents=True)
+    (base / 'data/gtdb-derived/local/analysis').mkdir(parents=True)
     from growth_horizon.models import prediction as actual_prediction
     def audited_prediction(model: object, x: object, trait: str) -> object:
         assert not test_accessions & set(x.index)  # type: ignore[attr-defined]
@@ -221,7 +221,7 @@ def test_oxygen_with_one_positive_taxon_is_explicitly_unsupported(tmp_path: obje
     tree = TreeIndex([list(range(1, n + 1))] + [[] for _ in range(n)],
                      [0.] + [1.] * n, {f'l{i}': i + 1 for i in range(n)})
     base = Path(str(tmp_path))
-    (base / 'data/derived').mkdir(parents=True)
+    (base / 'data/gtdb-derived/local/analysis').mkdir(parents=True)
     with patch.object(phase1, 'ROOT', base):
         result = phase1.run_fold(df, 'oxygen', 'genus', outer, 0, [tree])
     assert result['status'] == 'insufficient_oxygen_classes_in_inner_fitting_side'
