@@ -9,6 +9,7 @@ from scripts.verify_features import main as verify_features
 from growth_horizon.phase1 import main as develop
 from scripts.finalise_manifest import main as finalise
 from scripts.preregister import main as preregister
+from growth_horizon.label_gate import require_experimental_labels
 
 
 def main() -> None:
@@ -17,6 +18,7 @@ def main() -> None:
     (ROOT / 'data/gtdb-derived/local/analysis').mkdir(parents=True, exist_ok=True)
     (ROOT / 'data/gtdb-derived').mkdir(exist_ok=True)
     replay()
+    require_experimental_labels(ROOT)
     audit_labels()
     acquire_gtdb()
     verify_features()

@@ -165,7 +165,28 @@ def test_balanced_oxygen_error_and_paired_taxon_inference() -> None:
     assert interval == (1., 1.)
     summary = interval_summary(np.array([1., 4.]), np.array([0., 0.]),
                                np.array([1., 1.]), np.array([True, False]))
-    assert summary == {'coverage': 1., 'mean_width': 2., 'abstention_rate': 0.5}
+    assert summary == {'coverage_all': 0.5, 'coverage_accepted': 1.,
+                       'mean_width_all': 2., 'mean_width_accepted': 2., 'abstention_rate': 0.5}
+
+
+def test_coverage_keeps_abstentions_and_reports_accepted_oxygen_accuracy() -> None:
+    from growth_horizon.metrics import interval_summary, oxygen_summary
+
+    # The rejected doubleton covers its label; the accepted singleton is wrong.
+    result = oxygen_summary(np.array([0, 1]), [[0, 1], [0]])
+    assert result['coverage_all'] == 0.5
+    assert result['accuracy_accepted'] == 0.0
+    assert result['balanced_accuracy_accepted'] == 0.0
+    assert result['abstention_rate'] == 0.5
+    assert 'coverage_accepted' not in result
+    result = oxygen_summary(np.array([0, 1]), [[], [0, 1]])
+    assert result['coverage_all'] == 0.5
+    assert result['accuracy_accepted'] is None
+    assert result['abstention_rate'] == 1.0
+    numeric = interval_summary(np.array([0., 4.]), np.zeros(2), np.ones(2),
+                               np.array([False, False]))
+    assert numeric['coverage_all'] == 0.5
+    assert numeric['coverage_accepted'] is None
 
 
 def test_complete_synthetic_inner_run_never_queries_outer_test(tmp_path: object) -> None:

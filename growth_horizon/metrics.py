@@ -24,8 +24,31 @@ def paired_improvement(y: Any, reference: Any, proposed: Any, taxa: list[str],
 
 
 def interval_summary(y: Any, centres: Any, half_widths: Any, accepted: Any) -> dict[str, Any]:
-    if not np.any(accepted):
-        return {'coverage': None, 'mean_width': None, 'abstention_rate': 1.0}
-    return {'coverage': float(np.mean(np.abs(y[accepted] - centres[accepted]) <= half_widths[accepted])),
-            'mean_width': float(np.mean(2 * half_widths[accepted])),
+    """Keep coverage over all items separate from selection-dependent coverage."""
+    covered = np.abs(y - centres) <= half_widths
+    return {'coverage_all': float(np.mean(covered)),
+            'coverage_accepted': float(np.mean(covered[accepted])) if np.any(accepted) else None,
+            'mean_width_all': float(np.mean(2 * half_widths)),
+            'mean_width_accepted': float(np.mean(2 * half_widths[accepted]))
+            if np.any(accepted) else None,
             'abstention_rate': float(1 - np.mean(accepted))}
+
+
+def oxygen_summary(y: Any, prediction_sets: list[list[int]]) -> dict[str, Any]:
+    """Set coverage includes abstentions; accepted accuracy is reported separately."""
+    if len(y) != len(prediction_sets) or not len(y):
+        raise ValueError('Labels and prediction sets must have the same nonzero length')
+    covered = np.array([int(label) in classes
+                        for label, classes in zip(y, prediction_sets, strict=True)])
+    accepted = np.array([len(classes) == 1 for classes in prediction_sets])
+    predictions = np.array([classes[0] if len(classes) == 1 else -1
+                            for classes in prediction_sets])
+    return {'coverage_all': float(np.mean(covered)),
+            'mean_cardinality_all': float(np.mean([len(classes) for classes in prediction_sets])),
+            'abstention_rate': float(1 - np.mean(accepted)),
+            'accepted_count': int(np.sum(accepted)),
+            'accuracy_accepted': float(np.mean(predictions[accepted] == y[accepted]))
+            if np.any(accepted) else None,
+            'balanced_accuracy_accepted': 1 - accuracy_error(y[accepted], predictions[accepted], True)
+            if np.any(accepted) else None,
+            'accepted_class_counts': {str(c): int(np.sum(y[accepted] == c)) for c in (0, 1)}}

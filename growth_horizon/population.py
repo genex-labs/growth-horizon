@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd  # type: ignore[import-untyped]
 
 from growth_horizon.tree import TreeIndex
+from growth_horizon.label_gate import require_experimental_labels
 from scripts.acquire import ROOT
 
 TRAITS = ['temperature_optimum', 'oxygen', 'salinity_optimum', 'ph_optimum']
@@ -23,6 +24,7 @@ def canonical(accession: str) -> str:
 
 
 def load_population(trees: list[TreeIndex]) -> tuple[Any, dict[str, Any]]:
+    require_experimental_labels(ROOT)
     # Common species contain thousands of accessions in one official TSV field.
     csv.field_size_limit(10_000_000)
     df = pd.read_csv(ROOT / 'data/raw/labels/training_data.tsv', sep='\t', index_col=0)

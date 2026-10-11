@@ -3,6 +3,7 @@
 import json
 
 from scripts.acquire import ROOT, digest
+from growth_horizon.label_gate import require_experimental_labels
 
 TARGETS = '''1. Calibration: at family and order holdout, nominal 90% intervals cover within 3 points of 90% in every distance bin for all four traits, where the naive intervals of B1 and B2 under-cover by 10 points or more in the far bins.
 2. Accuracy: at order holdout, error at least 10% lower than B1 on at least two traits, with the paired bootstrap interval (by held-out taxon) excluding zero.
@@ -11,6 +12,7 @@ TARGETS = '''1. Calibration: at family and order holdout, nominal 90% intervals 
 
 
 def main() -> None:
+    require_experimental_labels(ROOT)
     population = json.loads((ROOT / 'data/gtdb-derived/population-summary.json').read_text())
     development = json.loads((ROOT / 'data/gtdb-derived/development-summary.json').read_text())
     verification = json.loads((ROOT / 'data/feature-verification.json').read_text())
@@ -161,6 +163,9 @@ conditioning. No calibration labels are used to refit a calibrated estimator.
 
 Numeric intervals are prediction plus or minus the bin quantile. Abstain when
 full width exceeds 20 °C for temperature, 3 pH units or 8% NaCl for salinity.
+Absolute-error scores give the same width throughout each fold/bin cell.
+Width-based abstention therefore drops whole cells; report their identities,
+support flags and counts, while retaining coverage over all items in every bin.
 These design limits are retained, without evidence-based tightening. Oxygen
 uses the binary classes 0 = not oxygen tolerant and 1 = oxygen tolerant from
 the release table. Include class c when 1 - p(c) is at most the bin quantile.
@@ -178,9 +183,13 @@ limitations. All nominal targets are evaluated empirically in phase 2.
 
 Primary, per trait, per rank and per distance bin: mean absolute error
 (balanced accuracy for oxygen), interval coverage and mean width, abstention
-rate. Report unconditional coverage and coverage/width among non-abstained
-predictions, counts and support flags, and coverage per phylum. Report oxygen
-set coverage and mean cardinality. Error for oxygen comparisons is one minus
+rate. Coverage is measured over all items in each bin, including abstentions.
+Report numeric coverage and width among accepted items separately, whole-cell
+width abstentions, counts and support flags, and coverage over all items per
+phylum. Oxygen set coverage and mean cardinality include all items. Report
+accuracy and balanced accuracy among accepted oxygen items separately, with
+accepted class counts; nominal coverage among accepted oxygen items is never
+asserted. Error for oxygen comparisons is one minus
 balanced accuracy. Numeric errors retain their original units.
 
 Use 2,000 paired bootstrap replicates with seed 20261011 and percentile 95%
