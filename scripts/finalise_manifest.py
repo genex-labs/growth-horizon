@@ -10,6 +10,12 @@ def main() -> None:
     path = ROOT / 'data/source-manifest.json'
     manifest = json.loads(path.read_text())
     page_urls = {
+        'bacdive-api.html': 'https://api.bacdive.dsmz.de/',
+        'bacdive-news.html': 'https://bacdive.dsmz.de/news',
+        'romano-classification.html': 'https://arxiv.org/html/2006.02544v1',
+        'barber-jackknife.html': 'https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-1/Predictive-inference-with-the-jackknife/10.1214/20-AOS1965.full',
+        'barber-reference.json': 'https://doi.org/10.1214/20-AOS1965',
+        'vovk-2013.html': 'https://link.springer.com/article/10.1007/s10994-013-5355-6',
         'carbon.html': 'https://www.biorxiv.org/content/10.64898/2026.08.06.743333v1',
         'plos.html': 'https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011705',
         'calpred.html': 'https://www.nature.com/articles/s41588-024-01792-w',

@@ -7,6 +7,7 @@ from scripts.audit_labels import main as audit_labels
 from scripts.preflight_sample import check_space
 from scripts.verify_features import main as verify_features
 from growth_horizon.phase1 import main as develop
+from growth_horizon.crossfit import main as crossfit
 from scripts.finalise_manifest import main as finalise
 from scripts.preregister import main as preregister
 from growth_horizon.label_gate import require_experimental_labels
@@ -23,6 +24,7 @@ def main() -> None:
     acquire_gtdb()
     verify_features()
     develop()
+    crossfit()
     audit_optimisation()
     finalise()
     preregister()
