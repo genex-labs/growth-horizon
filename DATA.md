@@ -3,8 +3,7 @@
 GenomeSPOT's README states that its training data were downloaded from the BacDive API and the Genome Taxonomy Database. BacDive states: 'This work is licensed under a Creative Commons Attribution 4.0 International License' (https://bacdive.dsmz.de/about, read 2026-10-11). GTDB data are licensed under CC BY-SA 4.0. GenomeSPOT's code is under the MIT licence. We use the labels with attribution to BacDive (CC BY 4.0) and GTDB (CC BY-SA 4.0), and cite GenomeSPOT (Barnum et al., bioRxiv 2024, doi 10.1101/2024.03.22.586313).
 
 The paragraph above is the owner's prescribed licence basis from the Resume
-decision. It resolves the earlier label-licence gate. It does not authorise other
-sources in the supplied table.
+decision. Resume 2, recorded below, also accepts the sequence-derived features.
 
 The authorised asset is GenomeSPOT release `v1.0.0`:
 
@@ -26,7 +25,7 @@ has not been implemented because the mandatory source-column gate was reached.
 The raw table is never redistributed in the repository. Aggregate inspection
 counts contain no individual label records.
 
-## Additional source found in the table
+## Historical additional-source gate (resolved by Resume 2)
 
 The table contains 230 precomputed feature columns. The release README's
 training recipe downloads genomic and protein FASTA files from GenBank using
@@ -54,3 +53,29 @@ No GTDB-derived data table has been produced or redistributed. Future such
 tables must stay in their own folder under CC BY-SA 4.0 with GTDB attribution.
 The upstream MIT notice is preserved as raw source-audit evidence; no upstream
 code has been incorporated into the inspection script.
+
+## Resume 2: accepted sequence-derived features
+
+Feature columns were computed by GenomeSPOT from public NCBI sequence data. NCBI states: 'NCBI places no restrictions on the use or distribution of the GenBank data. However, some submitters may claim patent, copyright, or other intellectual property rights in all or a portion of the data they have submitted' (https://www.ncbi.nlm.nih.gov/genbank/about/, read 2026-10-11). We publish only derived aggregate results, never the raw table or sequences.
+
+This decision supersedes the additional-source stop above. B1 and the proposed
+calibration method may use the precomputed features after the prescribed
+100-genome verification. The sample uses seed `20261011`, sampled without
+replacement from the sorted 8,174 accessions with at least one nonmissing target
+label. No accession is substituted if its files are unavailable.
+
+The upstream feature implementation needs both protein and nucleotide FASTA.
+The sequence-size estimate therefore includes both compressed files for all
+100 sampled genomes before any sequence download. The limit is 8,000,000,000
+bytes. Requests are serial, at most one per second, without a key or account.
+Sample, source and acquisition receipts remain untracked under
+`data/raw/verification/`. The upstream release's own code and signal-peptide
+parameters are used unchanged. Verification compares all 230 flattened feature
+columns, filling absent compartment statistics with zero as the upstream table
+construction does, at relative tolerance `1e-7` and absolute tolerance `1e-9`.
+Any discrepancy beyond these tolerances requires stopping and reporting.
+
+The table includes `all_aa_A` through `all_aa_Y` for the 20 standard amino acids.
+These are protein-length-weighted whole-proteome frequencies in the upstream
+implementation, after its signal-peptide handling. B3 needs no further proteome
+download if feature verification passes.

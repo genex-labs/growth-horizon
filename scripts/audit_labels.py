@@ -53,7 +53,7 @@ def main() -> None:
             if row["oxygen"]:
                 oxygen_values[row["oxygen"]] += 1
     result = {
-        "status": "stopped_third_source_feature_columns",
+        "status": "sources_accepted_feature_verification_pending",
         "bytes": SIZE,
         "sha256": digest,
         "rows": accessions.total(),
@@ -63,7 +63,7 @@ def main() -> None:
         "trait_inspection_counts": counts,
         "oxygen_value_counts": dict(sorted(oxygen_values.items())),
         "analysis_exclusions": None,
-        "analysis_exclusions_reason": "Not assessed after mandatory column-source gate",
+        "analysis_exclusions_reason": "GTDB mapping pending verified feature sample",
         "column_count_including_accession": len(columns),
         "column_sources": {
             "accession_from_bacdive": columns[:1],
