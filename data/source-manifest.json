@@ -1,6 +1,6 @@
 {
-  "status": "stopped_third_source_feature_columns",
-  "recorded_at_pt": "2026-10-11 02:02:18 PDT",
+  "status": "blocked_sample_proteomes_unavailable",
+  "recorded_at_pt": "2026-10-11 02:15:46 PDT",
   "source_commit": "f79f7d6fdece71b766ff47f4fb7114daae5287d7",
   "repository_licence": "MIT",
   "label_data_licence": "Owner-authorised BacDive CC BY 4.0 and GTDB CC BY-SA 4.0 basis; see DATA.md",
@@ -123,6 +123,412 @@
       "bytes": 11359,
       "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7",
       "kind": "downloaded_licence_record"
+    },
+    {
+      "path": "data/raw/verification/GCA_001552635-download-summary.json",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCA_001552635/download_summary?include_annotation_type=PROT_FASTA&include_annotation_type=GENOME_FASTA",
+      "bytes": 679,
+      "sha256": "6e47890abb31fa381034034661e93542e8238bca1596a641054270f86ada57de",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/GCA_002091755-download-summary.json",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCA_002091755/download_summary?include_annotation_type=PROT_FASTA&include_annotation_type=GENOME_FASTA",
+      "bytes": 679,
+      "sha256": "a6367704b443e97fe4365d80734cee2ba27f2b7dde751d1ca748da28ed9bb2fa",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/GCA_003946545-download-summary.json",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCA_003946545/download_summary?include_annotation_type=PROT_FASTA&include_annotation_type=GENOME_FASTA",
+      "bytes": 679,
+      "sha256": "0000e7759f92aa5df861227aa614785924b4568814d2f7c40ba9e0c952d421b0",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/assembly-reports.json",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCA_003946545,GCA_002091755,GCA_003966145,GCA_002006205,GCA_001552635,GCA_000218875,GCA_000173915,GCA_002214365,GCA_003726035,GCA_000166275,GCA_014490445,GCA_000021925,GCA_014644955,GCA_900103275,GCA_016907615,GCA_014197035,GCA_002087335,GCA_000969705,GCA_900186925,GCA_013416335,GCA_009299835,GCA_004347715,GCA_900101845,GCA_000425025,GCA_003635025,GCA_900115955,GCA_000143845,GCA_000012545,GCA_001053095,GCA_900475735,GCA_900110585,GCA_901543985,GCA_001311865,GCA_000473865,GCA_000745905,GCA_002441825,GCA_900112235,GCA_023284005,GCA_014646975,GCA_003391395,GCA_009709575,GCA_001598055,GCA_000023065,GCA_000429405,GCA_001435375,GCA_901472485,GCA_003096335,GCA_014635785,GCA_002119805,GCA_017873185,GCA_014655195,GCA_000771625,GCA_001653135,GCA_000980815,GCA_900095795,GCA_002201795,GCA_004028235,GCA_000382325,GCA_014270035,GCA_000565015,GCA_014397255,GCA_003369815,GCA_000285915,GCA_900706855,GCA_900104475,GCA_003663885,GCA_002026305,GCA_002019645,GCA_002269345,GCA_001591345,GCA_001866055,GCA_003583925,GCA_900105965,GCA_000975055,GCA_022568795,GCA_014650295,GCA_000970145,GCA_000194155,GCA_000420605,GCA_004368535,GCA_000156015,GCA_009870755,GCA_003987555,GCA_001313705,GCA_003001905,GCA_900186995,GCA_000710615,GCA_002155305,GCA_900101825,GCA_900172235,GCA_001643015,GCA_900624775,GCA_001571225,GCA_001439735,GCA_006519715,GCA_001885905,GCA_021134395,GCA_902141845,GCA_000966265,GCA_011927725/dataset_report?page_size=1000",
+      "bytes": 400681,
+      "sha256": "5fc0067c31287841aa09886a96fcfad6539fa54b2e2b7f36882302b4dd8f8ecc",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000194155.1_ASM19415v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/194/155/GCA_000194155.1_ASM19415v1/",
+      "bytes": 2563,
+      "sha256": "9379e1d3f9006a34d6dd478ca3d793b69ed10d630d3c7e131328022f17b71ed6",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000285915.1_ASM28591v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/285/915/GCA_000285915.1_ASM28591v1/",
+      "bytes": 2293,
+      "sha256": "e08eac58c307a618d65987a53bc6d6aeee98af975a343483e31d5f91b36e6286",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000382325.1_ASM38232v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/382/325/GCA_000382325.1_ASM38232v1/",
+      "bytes": 2563,
+      "sha256": "528869d26b75df24475f1c41f53d0f71cbb6fde0b5523a85c02f4c8e2bf488f4",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000420605.1_ASM42060v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/420/605/GCA_000420605.1_ASM42060v1/",
+      "bytes": 2428,
+      "sha256": "f39fde10e348a186c7986854d843a3a1d42d356a43088db6ea55916aabd6be9f",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000425025.1_ASM42502v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/425/025/GCA_000425025.1_ASM42502v1/",
+      "bytes": 2563,
+      "sha256": "be3ffde5005f3704f6b83176ba607f9e7b4e5d5170b5bb3c1323d4cf74a029cd",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000429405.1_ASM42940v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/429/405/GCA_000429405.1_ASM42940v1/",
+      "bytes": 2563,
+      "sha256": "a80483fa088905acff89866243985284e424a89861580ba3fba97760a3f4ff24",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000710615.1_HAPD43.1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/710/615/GCA_000710615.1_HAPD43.1/",
+      "bytes": 2239,
+      "sha256": "2e75e1bea3777888bb0b06f7d4b9f9cbc9ab35c4c22cf130373423bb2003947f",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000745905.1_ASM74590v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/745/905/GCA_000745905.1_ASM74590v1/",
+      "bytes": 2563,
+      "sha256": "bf86bbca0e342a60f9af8599763aeede7cc7bae08e3253d39760cdb48b9e8324",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000771625.1_DSM-23967.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/771/625/GCA_000771625.1_DSM-23967/",
+      "bytes": 2266,
+      "sha256": "bbf85d20da5ba09eabd16de23bdf8947d253747e9ec26cea1b2db45a5a8c2b17",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000966265.1_ASM96626v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/966/265/GCA_000966265.1_ASM96626v1/",
+      "bytes": 2293,
+      "sha256": "1af3c0b0c956b50dc64edf90ac6389685d13c5eab30e3dd933b9ddfb1bcd6585",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000969705.1_ASM96970v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/969/705/GCA_000969705.1_ASM96970v1/",
+      "bytes": 2563,
+      "sha256": "2f6f0b8238dd1d177db285ab8a411615c044fec47ec3783090effab7b521c69a",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_000975055.1_ASM97505v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/975/055/GCA_000975055.1_ASM97505v1/",
+      "bytes": 2428,
+      "sha256": "1da22c329d04ff50cf8eb511fd39bd45a96fd5a57ff2851bcb08a7d6dd7f86fb",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_001311865.1_ASM131186v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/311/865/GCA_001311865.1_ASM131186v1/",
+      "bytes": 2320,
+      "sha256": "b68b35abd5a41285eb0c6a1834ff6c5c0eb113647b1947e4f9a8220da9e16ffe",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_001313705.1_ASM131370v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/313/705/GCA_001313705.1_ASM131370v1/",
+      "bytes": 2320,
+      "sha256": "cd8fa1cd966dec5eee06493270121bcf4a0d0072c26881c8909a048ac4591b88",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_001552635.1_ASM155263v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/552/635/GCA_001552635.1_ASM155263v1/",
+      "bytes": 2320,
+      "sha256": "23e1361baa41b1ae8302fade68b242c9d34a0e9dd1afe4c91389863dc90880e7",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_001571225.1_ASM157122v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/571/225/GCA_001571225.1_ASM157122v1/",
+      "bytes": 2320,
+      "sha256": "221275f57f64d21d8e06a68e5ced9c1dfcaeb69eb33fa5b3c8417f5ddd887481",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_001591345.1_ASM159134v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/591/345/GCA_001591345.1_ASM159134v1/",
+      "bytes": 2320,
+      "sha256": "db234fd424e110a32f8dab740e4d796817427e8ba8f8307e70d909780eddaaae",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_001653135.1_ASM165313v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/653/135/GCA_001653135.1_ASM165313v1/",
+      "bytes": 2320,
+      "sha256": "d40f5447a6e01ac9a3f3da6f9a44bb9c79c86451793bfde6ad8c5e82d57c3e1c",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_002019645.1_ASM201964v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/019/645/GCA_002019645.1_ASM201964v1/",
+      "bytes": 2594,
+      "sha256": "5ce5e901dea0edaf400233e2dee447e2917204b0bd0d036c920948b3dcdb7167",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_002087335.1_ASM208733v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/087/335/GCA_002087335.1_ASM208733v1/",
+      "bytes": 2320,
+      "sha256": "46103a57e92b7e46b008a1d30092607f62ed660b808323c5d0958757cde1e8a1",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_002091755.1_ASM209175v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/091/755/GCA_002091755.1_ASM209175v1/",
+      "bytes": 2320,
+      "sha256": "ea37f30f7fe3a123586378f3211559c6816e13f0a868da42d5325e94e81339fc",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_002155305.1_ASM215530v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/155/305/GCA_002155305.1_ASM215530v1/",
+      "bytes": 2320,
+      "sha256": "72c82c647629717ad9ff4169b8d73cbaa22a28770dc9305dfe272e0edccddfcb",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_002269345.1_ASM226934v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/269/345/GCA_002269345.1_ASM226934v1/",
+      "bytes": 2188,
+      "sha256": "146024cd9ae728fd088c24e2cccc665b8a92b659363a9695e8ff0e49c1e37268",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_003946545.1_ASM394654v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/946/545/GCA_003946545.1_ASM394654v1/",
+      "bytes": 2320,
+      "sha256": "3ef55de6adf401d81f81145d19e8834ecdf4753c1ae79d5f2ac8b22708e41f85",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_004368535.1_ASM436853v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/368/535/GCA_004368535.1_ASM436853v1/",
+      "bytes": 2320,
+      "sha256": "f11cb653393ebede43fd105750f37441576ff6cbfac4440448f13f8ccda85a5f",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_006519715.1_ASM651971v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/006/519/715/GCA_006519715.1_ASM651971v1/",
+      "bytes": 2320,
+      "sha256": "6f0b32413a5e4576e5d33a97e822c1a4fae5ceb10cc87cb6909c3b4f663dbf80",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_009299835.1_ASM929983v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/299/835/GCA_009299835.1_ASM929983v1/",
+      "bytes": 2320,
+      "sha256": "c0ae9c882521c55147ede5beb7aa7613febdcfcf777e4e0ccbe9d6ebc18ac926",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_009870755.1_ASM987075v1.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/870/755/GCA_009870755.1_ASM987075v1/",
+      "bytes": 2323,
+      "sha256": "96a5a17364059a8144af54f50ad667a722878c33ecd55368c04d38afc06523fd",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directories/GCA_900624775.1_82B11.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/624/775/GCA_900624775.1_82B11/",
+      "bytes": 2161,
+      "sha256": "c7d0b849a2bb1f5157a2d8f3f1a3cfe707d4d0f926f2b9cf3c9a354191c59e5b",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/directory-audit.json",
+      "url": null,
+      "bytes": 10906,
+      "sha256": "556c66a8393bff4b54048182b1044ab67daafe267c211349521a1cbf3d61a4b6",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/download-summary-probe.json",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCA_003946545.1/download_summary?include_annotation_type=PROT_FASTA&include_annotation_type=GENOME_FASTA",
+      "bytes": 1040,
+      "sha256": "4ab22a4e4a0ff0edd01a82b53c4808576dea516073838de661a26c6743d40bda",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/first-directory.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/946/545/GCA_003946545.1_ASM394654v1/",
+      "bytes": 2320,
+      "sha256": "3ef55de6adf401d81f81145d19e8834ecdf4753c1ae79d5f2ac8b22708e41f85",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/label-recheck.log",
+      "url": null,
+      "bytes": 1284,
+      "sha256": "84ceab6150780db19ce14520c7cb3fec2ec193eeb905633d7d6798ff90a2a9b5",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/ncbi-genbank-about.html",
+      "url": "https://www.ncbi.nlm.nih.gov/genbank/about/",
+      "bytes": 34463,
+      "sha256": "a6b836253fa2f38e3f7af22ad09f03f596b570f74b4c95e1e8a1c969d2679b6c",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/ncbi-rate-policy.html",
+      "url": "https://www.ncbi.nlm.nih.gov/datasets/docs/v2/api/api-keys/",
+      "bytes": 107999,
+      "sha256": "4b8ab5fe233fc58e9b8723daabe04706f24dbfacbce9fb9df2fd8757c14648eb",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/ncbi-service-policy.html",
+      "url": "https://www.ncbi.nlm.nih.gov/datasets/docs/v2/api/rest-api/",
+      "bytes": 104658,
+      "sha256": "0abcb1e72a4d3fec371261ffa3b49647c02f5035ab3c3a608098a1081c2fde22",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/preflight-final.log",
+      "url": null,
+      "bytes": 7341,
+      "sha256": "a2ff9d05dfe74aef2382ac0f6dcc68bd71ff7f74cfe41fae945066d5c6c55573",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/preflight-resume.log",
+      "url": null,
+      "bytes": 7808,
+      "sha256": "9963253e1015163fe3e3137aba6e0bca55f00d00cd3ce9d4a289a2c164850416",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/preflight.log",
+      "url": null,
+      "bytes": 3392,
+      "sha256": "116ae0f6ad2a8b15b6252e0430b6b85ec0ec1fb89f1bd29b739814b0ab54c2d7",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/report-probe.json",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCA_003946545/dataset_report",
+      "bytes": 3342,
+      "sha256": "77b7d275e633385ed48f915e6e6f06e89df04350c10be1ba14ae93dc031eed55",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/sample.json",
+      "url": null,
+      "bytes": 2299,
+      "sha256": "a452c0f366ac7cec9b4906d5f1c1ecce2219869d7a40284ef3119892d40f6c2a",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/sequence-preflight-path-audit-v1.json",
+      "url": null,
+      "bytes": 78109,
+      "sha256": "ced85a160d1e8a67a6a9e3577b0d8a707aa21e73dffcc96d959178593ec81def",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/sequence-preflight.json",
+      "url": null,
+      "bytes": 78442,
+      "sha256": "1d4e48e32d526e140b8deb922e35dd81f759e07dd6ae5b615340f8cc8f8efd9d",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/special-name-parent.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/053/095/",
+      "bytes": 550,
+      "sha256": "02ed09eff67047cd733038555565b5d27d6325dc63f3c934b702f3cf2860ca39",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream/genome_spot/__init__.py",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream/genome_spot/bioinformatics/__init__.py",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/bioinformatics/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream/genome_spot/bioinformatics/dna.py",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/bioinformatics/dna.py",
+      "bytes": 4130,
+      "sha256": "c6b4e5c749b7b9182e38b02015f45b5cd99823c84149b1cc0e4a6853323416ae",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream/genome_spot/bioinformatics/genome.py",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/bioinformatics/genome.py",
+      "bytes": 11565,
+      "sha256": "d7ef21d62a339b5b06864fe9776369ff59fa8221bee01c7b1f00a965513a352f",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream/genome_spot/bioinformatics/hmm/hmm_signal_peptide.joblib",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/bioinformatics/hmm/hmm_signal_peptide.joblib",
+      "bytes": 3651,
+      "sha256": "9a2746c53fc84860c6d2ed6d0719464497fb754bf37527121e49ef96864e3a07",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream/genome_spot/bioinformatics/protein.py",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/bioinformatics/protein.py",
+      "bytes": 7521,
+      "sha256": "51a16fda4d53b07f415c02ce041b0c219617c899dc4dcfe9db840a3e644381c3",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream/genome_spot/bioinformatics/signal_peptide.py",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/bioinformatics/signal_peptide.py",
+      "bytes": 3575,
+      "sha256": "3fdd5d0e74527e828889ad630bc33597434ace9572c6849158f1fcedd421194d",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream/genome_spot/helpers.py",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/helpers.py",
+      "bytes": 5756,
+      "sha256": "7370c5ed4069c6b04f33cbe3a0a8b78139601463d78d867106ddf4764963ad90",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream/requirements.txt",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/requirements.txt",
+      "bytes": 2478,
+      "sha256": "207bc913548a6418a9cddfe0facac95f8c27f56b003d85872522bdc9f4080aa0",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream-source-manifest.json",
+      "url": null,
+      "bytes": 2723,
+      "sha256": "17371969ef7ef43af4b1ce9ea6d0ee85e6bc0f665297d80343324165c79c030c",
+      "kind": "local_acquisition_receipt"
     }
   ],
   "gtdb_release": null,
@@ -134,7 +540,7 @@
       "upstream_use_true": 2420,
       "analysis_usable": null,
       "excluded": null,
-      "reason": "Analysis mapping and exclusions not assessed after mandatory column-source gate"
+      "reason": "GTDB mapping and analysis exclusions pending required feature verification"
     },
     "oxygen": {
       "labelled_nonmissing_in_raw_table": 7300,
@@ -142,7 +548,7 @@
       "upstream_use_true": 7300,
       "analysis_usable": null,
       "excluded": null,
-      "reason": "Analysis mapping and exclusions not assessed after mandatory column-source gate"
+      "reason": "GTDB mapping and analysis exclusions pending required feature verification"
     },
     "salinity_optimum": {
       "labelled_nonmissing_in_raw_table": 2376,
@@ -150,7 +556,7 @@
       "upstream_use_true": 846,
       "analysis_usable": null,
       "excluded": null,
-      "reason": "Analysis mapping and exclusions not assessed after mandatory column-source gate"
+      "reason": "GTDB mapping and analysis exclusions pending required feature verification"
     },
     "ph_optimum": {
       "labelled_nonmissing_in_raw_table": 3549,
@@ -158,7 +564,7 @@
       "upstream_use_true": 1022,
       "analysis_usable": null,
       "excluded": null,
-      "reason": "Analysis mapping and exclusions not assessed after mandatory column-source gate"
+      "reason": "GTDB mapping and analysis exclusions pending required feature verification"
     }
   },
   "previous_status": {
@@ -178,5 +584,28 @@
     "actual_sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc"
   },
   "gtdb_newest_numbered_release_observed": "232",
-  "no_outer_fold_scoring": true
+  "no_outer_fold_scoring": true,
+  "resume_2_previous_status": {
+    "status": "stopped_third_source_feature_columns",
+    "recorded_at_pt": "2026-10-11 02:02:18 PDT",
+    "commit": "5e1c843"
+  },
+  "feature_verification": {
+    "status": "not_run_source_unavailable",
+    "sample_seed": 20261011,
+    "sample_size": 100,
+    "population_size": 8174,
+    "available_proteomes": 71,
+    "available_nucleotide_fastas": 100,
+    "missing_proteomes": 29,
+    "known_compressed_sequence_bytes": 170786627,
+    "total_sequence_bytes": null,
+    "size_gate_status": "size_unknown",
+    "sequence_bytes_downloaded": 0,
+    "agreement": null,
+    "relative_tolerance": 1e-07,
+    "absolute_tolerance": 1e-09,
+    "sample_path": "data/raw/verification/sample.json",
+    "preflight_path": "data/raw/verification/sequence-preflight.json"
+  }
 }

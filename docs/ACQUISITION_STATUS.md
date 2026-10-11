@@ -1,3 +1,79 @@
+# Resume 2: feature-verification source blocker
+
+Current status: blocked on unavailable sampled GenBank proteomes, 2026-10-11 PT.
+Resume began from the clean commit `5e1c843`. Resume 2's prescribed licence
+paragraph is recorded word for word in [DATA.md](../DATA.md). The training
+asset was rechecked: 64,412,996 bytes, SHA-256
+`19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc`.
+
+## Fixed verification sample and size audit
+
+Seed `20261011` selects 100 genomes without replacement from the sorted 8,174
+accessions with at least one nonmissing target label. Sample replay matched
+under Python 3.13.15. The release's own feature code and signal-peptide parameters
+were acquired again, unchanged, with source hashes in the manifest. Its MIT
+notice is retained. Incomplete clone material was absent from `work-tmp/`;
+the historical partial source archive remains preserved as acquisition evidence.
+
+The official NCBI Datasets service resolved all 100 accession reports. The
+preflight examines both protein FASTA and nucleotide FASTA because the full
+feature implementation requires both. After correcting path formatting for
+spaces and `#`, the final audit found 100 nucleotide files and 71 proteomes:
+171 files totalling 170,786,627 compressed bytes. The remaining 29 proteomes
+return HTTP 404. Their official assembly directories were each read and contain
+no protein FASTA. Datasets summaries independently confirm no protein file for
+three of these assemblies. The earlier path-audit receipt is preserved separately
+and superseded by the corrected receipt.
+
+The complete 100-genome download size cannot be established, so the size gate
+is `size_unknown`, not exceeded or passed. No sequence was downloaded, no sampled
+genome was substituted and no feature agreement was calculated. There is no
+observed floating-point mismatch; the required comparison could not run. NCBI's
+published unkeyed Datasets limit is five requests per second. Preflight requests
+were serial and spaced by at least one second; supplemental source probes stayed
+below the published limit. No account or key was used.
+
+## Remaining phase 1 work
+
+The source manifest records URLs, actual sizes and SHA-256 for every acquired
+record, plus the available sequence URLs and estimated sizes in the raw preflight
+receipt. Raw labels, sequences and individual feature records are untracked.
+No GTDB-derived table has been produced. The earlier GTDB release index records
+release 232 as the newest numbered release; reference trees and metadata have
+not been acquired or selected for the benchmark.
+
+Observed labels are temperature 4,783; oxygen 7,300; salinity 2,376; pH 3,549.
+There are 15,596 distinct accessions and no duplicate or blank accession.
+Analysis populations and exclusion counts remain unknown pending feature
+verification and GTDB mapping. Upstream inclusion flags are inspection counts,
+not adopted exclusions.
+
+B1 and the proposed method's precomputed features await verification. B2 awaits
+the tree. B3's 20 whole-proteome amino-acid frequency columns exist and need no
+additional full-population sequence download, but B3 has not run. B4's code and
+licence were not assessed after the source blocker. No folds, distances, bins,
+training, calibration, bootstrap, DOI verification or pre-registration has been
+completed. The full clean-checkout benchmark rebuild command is not implemented.
+No outer-fold prediction or metric was computed, and no integrity incident or
+quarantine was required.
+
+The Python environment has a pinned lock. Four offline acquisition-gate tests,
+Ruff and mypy pass with exit code 0. Tests of folds, distances, bins, conformal
+quantiles, abstention and bootstrap remain unimplemented with those components.
+Initial test imports and a duplicate-module typing error were corrected before
+the passing run. No process was forcibly stopped in this resume. Free space
+remained above 25 GB. No manually created `/private/tmp` test directory exists.
+
+Hub: no (the brief prohibits additional language-model calls). Planning,
+implementation and review stayed in the root session under the best-effort
+routing override. No workers were started. Nothing was pushed or published.
+
+Resume needs the original annotated proteomes for the 29 fixed-sample accessions
+at permitted NCBI paths, or an explicit amendment to the verification protocol.
+Current RefSeq annotations have not been substituted for original GenBank inputs.
+
+## Historical records, superseded where stated
+
 # Label-source acquisition gate
 
 Current status: resumed from the licence decision and stopped at the mandatory

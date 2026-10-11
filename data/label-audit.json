@@ -1,5 +1,5 @@
 {
-  "status": "stopped_third_source_feature_columns",
+  "status": "sources_accepted_feature_verification_pending",
   "bytes": 64412996,
   "sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc",
   "rows": 15596,
@@ -41,7 +41,7 @@
     "1": 5604
   },
   "analysis_exclusions": null,
-  "analysis_exclusions_reason": "Not assessed after mandatory column-source gate",
+  "analysis_exclusions_reason": "GTDB mapping pending verified feature sample",
   "column_count_including_accession": 267,
   "column_sources": {
     "accession_from_bacdive": [
