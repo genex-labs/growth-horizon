@@ -29,5 +29,12 @@
     "doi": "10.1038/s42003-025-08313-3",
     "title": "Predicting bacterial phenotypic traits through improved machine learning using high-quality, curated datasets",
     "date": "2026-10-11"
+  },
+  {
+    "source": "GenomeSPOT",
+    "doi": "10.1101/2024.03.22.586313",
+    "title": "Predicting microbial growth conditions from amino acid composition",
+    "url": "https://www.biorxiv.org/content/10.1101/2024.03.22.586313v1",
+    "date": "2026-10-11"
   }
 ]

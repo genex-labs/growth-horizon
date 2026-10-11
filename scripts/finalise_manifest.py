@@ -14,6 +14,7 @@ def main() -> None:
         'plos.html': 'https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011705',
         'calpred.html': 'https://www.nature.com/articles/s41588-024-01792-w',
         'koblitz.html': 'https://www.nature.com/articles/s42003-025-08313-3',
+        'genomespot-paper.html': 'https://www.biorxiv.org/content/10.1101/2024.03.22.586313v1',
         'instructions.json': 'https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/models/instructions.json',
         'run_model_selection.py': 'https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/model_training/run_model_selection.py',
         'b4-readme.json': 'https://api.github.com/repos/LeibnizDSMZ/bacdive-AI/readme',
