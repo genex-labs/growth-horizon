@@ -1,0 +1,90 @@
+{
+  "status": "stopped_label_data_licence_unclear",
+  "recorded_at_pt": "2026-10-11 01:53:41 PDT",
+  "source_commit": "f79f7d6fdece71b766ff47f4fb7114daae5287d7",
+  "repository_licence": "MIT",
+  "label_data_licence": "unclear",
+  "records": [
+    {
+      "path": "data/raw/source-audit/GenomeSPOT-LICENSE.txt",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/license",
+      "bytes": 1068,
+      "sha256": "3f6ae28036d1d671f0c97ee76cadab9c73a8379c1eaedb36b0c0a44872d16091",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/licence.json",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/license",
+      "bytes": 2388,
+      "sha256": "10cb25046de486519ce13d9529c004cd892f9b8a6147f4adfcde9bfc52e1a589",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/process-stop.json",
+      "url": null,
+      "bytes": 89,
+      "sha256": "6c26129c2022fd58d50d4b3068a466e14c9f65689575bd323bf03f2ae04d7654",
+      "kind": "local_process_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/readme.txt",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/README.md",
+      "bytes": 15999,
+      "sha256": "0e01eaba91bfbf9491878e577cc3d350432467bf18f41dae66fb1f0bcb9dcc2e",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/release-licence.txt",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/LICENSE?ref=v1.0.0",
+      "bytes": 1068,
+      "sha256": "3f6ae28036d1d671f0c97ee76cadab9c73a8379c1eaedb36b0c0a44872d16091",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/releases.json",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/releases",
+      "bytes": 5724,
+      "sha256": "daff56a68de143653f17f65b6954a0d8187cf30d0532b4be252fe66ae98db078",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/tree.json",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/git/trees/main?recursive=1",
+      "bytes": 28211,
+      "sha256": "4625d140aef9b138d8db9c0eb6d885d1359715be444561e528edfe668414c71a",
+      "kind": "downloaded_source_record"
+    }
+  ],
+  "undownloaded_label_asset": {
+    "url": "https://github.com/cultivarium/GenomeSPOT/releases/download/v1.0.0/training_data.tsv",
+    "release": "v1.0.0",
+    "published_at": "2026-03-16T12:27:17Z",
+    "advertised_bytes": 64412996,
+    "advertised_sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc",
+    "locally_verified": false
+  },
+  "gtdb_release": null,
+  "proteome_bytes": null,
+  "trait_counts": {
+    "temperature_optimum": {
+      "labelled": null,
+      "excluded": null,
+      "reason": "not acquired: mandatory licence gate"
+    },
+    "oxygen": {
+      "labelled": null,
+      "excluded": null,
+      "reason": "not acquired: mandatory licence gate"
+    },
+    "salinity_optimum": {
+      "labelled": null,
+      "excluded": null,
+      "reason": "not acquired: mandatory licence gate"
+    },
+    "ph_optimum": {
+      "labelled": null,
+      "excluded": null,
+      "reason": "not acquired: mandatory licence gate"
+    }
+  }
+}
