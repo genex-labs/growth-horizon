@@ -1,0 +1,15 @@
+{
+  "tracked_files_scanned": 142,
+  "rules": [
+    "home_path",
+    "em_dash",
+    "assistant_name",
+    "credential_or_signed_url",
+    "trailer"
+  ],
+  "output_hashes_checked": 68,
+  "site_links_checked": 59,
+  "preregistration_unchanged": true,
+  "failures": [],
+  "exit_code": 0
+}

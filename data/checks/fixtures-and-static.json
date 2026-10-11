@@ -1,0 +1,14 @@
+{
+  "fixtures": {
+    "exit_code": 0,
+    "log": "work-tmp.noindex/fixtures-final.log"
+  },
+  "lint": {
+    "exit_code": 0,
+    "log": "work-tmp.noindex/lint-final.log"
+  },
+  "types": {
+    "exit_code": 0,
+    "log": "work-tmp.noindex/types-final.log"
+  }
+}

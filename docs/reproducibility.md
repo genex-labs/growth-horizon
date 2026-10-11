@@ -1,4 +1,11 @@
-# Rebuilding phase 1
+# Reconstructing the release candidate
+
+The complete command is `uv run --project release --frozen python -m scripts.release`. It reconstructs all frozen inputs and fits, verifies the pre-registration, evaluates the locked outer folds, runs the separate measure-next experiment and generates the public package. Analysis and rendering locks are separate. Scratch is confined to `work-tmp.noindex/`, added to the local Git exclude list by the entry point; TMPDIR is set there.
+
+The final replay uses a fresh local clone with checksum-verified source-cache files only. No population, fitted estimator, fold, calibration score or individual prediction is copied. The complete command must run and every pinned scientific output must match. Output hashes are in `data/release-manifest.json`; process, fixture and scan receipts are in `data/checks`. The final exact-commit replay receipt is kept in the replay checkout and named in the completion record. This does not claim a new from-empty-network download.
+
+## Earlier frozen reconstructions
+
 
 Table-level experimental provenance is accepted for the exact authorised
 release checksum and documented chain. Other label sources retain the verified
@@ -70,5 +77,5 @@ from publishing, and phase 2's locked scoring is absent from this command.
 Historical failed transfers and superseded preflight receipts are preserved as
 evidence under data/raw and labelled accordingly in the source manifest.
 A stopped transfer has an owned-process-tree receipt that confirms no surviving
-descendant. Test scratch stays under ignored work-tmp, not a system temporary
+descendant. Test scratch stays under ignored scratch, not a system temporary
 folder. No directory is removed by the build scripts.

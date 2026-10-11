@@ -1,0 +1,28 @@
+name: Offline fixtures
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.9.2"
+      - name: Install pinned fixture environment
+        run: uv sync --frozen --group dev
+      - name: Run fixtures without network access
+        env:
+          UV_OFFLINE: "1"
+          GROWTH_HORIZON_OFFLINE: "1"
+        run: |
+          mkdir -p work-tmp.noindex
+          export TMPDIR="$PWD/work-tmp.noindex"
+          uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures
+      - name: Lint and check types
+        env:
+          UV_OFFLINE: "1"
+        run: |
+          uv run --frozen ruff check scripts growth_horizon tests
+          uv run --frozen mypy scripts growth_horizon tests

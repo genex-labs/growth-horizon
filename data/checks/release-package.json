@@ -1,0 +1,7 @@
+{
+  "module": "scripts.package_release",
+  "exit_code": 1,
+  "log": "work-tmp.noindex/release-package.log",
+  "natural_exit": true,
+  "surviving_descendants": []
+}

@@ -16,8 +16,7 @@ that related studies do not exist.
   [doi 10.64898/2026.08.06.743333](https://www.biorxiv.org/content/10.64898/2026.08.06.743333v1).
   The preprint page's citation metadata confirms the title and DOI. Its
   confidence-based applicability domain and uncertainty-led sampling are
-  prior art for the proposed phase-2 measure-next experiment. That experiment
-  is not run in phase 1.
+  prior art for the retrospective measure-next experiment in this package.
 - Li, Selim and Kuehn, *Statistical prediction of microbial metabolic traits
   from genomes*, PLOS Computational Biology (2023),
   [doi 10.1371/journal.pcbi.1011705](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011705).
@@ -64,3 +63,5 @@ coverage guarantee from the cited unconditioned CV+ results. The 50-taxon
 support rule, 100-taxon strong-support flag and taxon bootstrap do not establish
 exchangeability among genomes. Correlated genomes, population shift and
 coverage among non-abstained predictions remain empirical questions.
+
+Adjacent conformal work also includes [Boger et al. (2025)](https://www.nature.com/articles/s41467-024-55676-y), *Functional protein mining with conformal guarantees*; [Fannjiang et al. (2022)](https://www.pnas.org/doi/10.1073/pnas.2204569119), *Conformal prediction under feedback covariate shift for biomolecular design*; and [Barber et al. (2023)](https://doi.org/10.1214/23-AOS2276), *Conformal prediction beyond exchangeability*. They are adjacent work on protein retrieval, adaptive selection and distribution shift, not direct proofs for this benchmark. The technical note gives full references, including Vovk (2013), with source checks in data/paper-source-checks.json.

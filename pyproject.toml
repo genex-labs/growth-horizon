@@ -29,3 +29,7 @@ strict = true
 addopts = "-q"
 testpaths = ["tests"]
 pythonpath = ["."]
+
+[[tool.mypy.overrides]]
+module = ["matplotlib.*", "reportlab.*", "pypdf.*"]
+ignore_missing_imports = true

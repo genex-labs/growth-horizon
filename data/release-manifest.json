@@ -1,0 +1,342 @@
+[
+  {
+    "bytes": 8299,
+    "path": "DATA.md",
+    "sha256": "a921c6cd215e4b2ae66ad286b6a7b82b397fd63d128fa1ca138d9014cc3cef9e"
+  },
+  {
+    "bytes": 11358,
+    "path": "LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "bytes": 272,
+    "path": "NOTICE",
+    "sha256": "53be530813a7166b091f2c4ddcd4016b54e302236b34ce2e25fe7b2343db34b1"
+  },
+  {
+    "bytes": 417,
+    "path": "CITATION.cff",
+    "sha256": "98865dc2dfa1fe5d69c2780cb376fe6fe17785de281caf8b090a5584a8dd024a"
+  },
+  {
+    "bytes": 424,
+    "path": "CHANGELOG.md",
+    "sha256": "691cbecf6fa021ee7bb2d6b7c4f99ae00b1c6731f5938578be4e7f82d0680036"
+  },
+  {
+    "bytes": 5675,
+    "path": "docs/reproducibility.md",
+    "sha256": "0079404eb6dba88e3e7878d6e4199a5196847648ad8d29ceeff8d3f4a09988a4"
+  },
+  {
+    "bytes": 2164,
+    "path": "docs/INTEGRITY.md",
+    "sha256": "7420fae63632eaacb803f8393119c43b86befe1f10ef203d9e9190e961982ab2"
+  },
+  {
+    "bytes": 5097,
+    "path": "docs/related-work.md",
+    "sha256": "4ed94a0b6efa9d9b2e11601701fe3e7cd92fb0cf55e59c6a03a0c7ec9ca13983"
+  },
+  {
+    "bytes": 11049,
+    "path": "data/paper-source-checks.json",
+    "sha256": "af2cbd110e850d0200f852fe5f0ae6e67d56680760fb755b0436df3623c420bf"
+  },
+  {
+    "bytes": 11337,
+    "path": "README.md",
+    "sha256": "7de3b0bb8c54d0c341aa342356f758646a47f9ed19f73c41edc3b394efb7183d"
+  },
+  {
+    "bytes": 24179,
+    "path": "docs/TECHNICAL_NOTE.md",
+    "sha256": "e917fb51df2da1aa383c086836bfa2847aea1b085f3cefa8abf464a985ceea20"
+  },
+  {
+    "bytes": 150203,
+    "path": "docs/TECHNICAL_NOTE.pdf",
+    "sha256": "899673a93e2d7ad8b3a12c3dedcc20b6ed17c260469b3e04050d70099941b6e9"
+  },
+  {
+    "bytes": 24832,
+    "path": "docs/RESULTS.md",
+    "sha256": "7f6a972387bc6d64128523005eb04fbb8f5f7ec7db8d1f6f9c615440fcced85d"
+  },
+  {
+    "bytes": 11193,
+    "path": "docs/site/index.html",
+    "sha256": "daafdf546437c7a94253b002e92fdc0332e637e77d0c70f2ea6731a95196958f"
+  },
+  {
+    "bytes": 2140,
+    "path": "docs/site/style.css",
+    "sha256": "b8fc818b990b3839d692152c46f6a0fd03ed4731465cb54b9d0cabbe4ecc167e"
+  },
+  {
+    "bytes": 6783855,
+    "path": "data/gtdb-derived/results/figure-data.json",
+    "sha256": "9a3c1592cba14c04ebade25ec447e45f78bcf23d59fee5e4d34c0c171272b4ce"
+  },
+  {
+    "bytes": 2423,
+    "path": "data/gtdb-derived/results/locked-run.json",
+    "sha256": "6ca680373ba81abd52578ac35efe026035a57ea52fc2affbd978650633eff581"
+  },
+  {
+    "bytes": 827282,
+    "path": "data/gtdb-derived/results/measure-next.json",
+    "sha256": "761b08b44b6eb33edaa6d9a3d3ba5e7e7273b50c7e7fdc8d976d261771f14460"
+  },
+  {
+    "bytes": 59742,
+    "path": "data/gtdb-derived/results/measure-oxygen-farthest.json",
+    "sha256": "ac49972bf7bcaeea67d84ab9f3372ac94f8bde236d46d29f44b055d84033ce2f"
+  },
+  {
+    "bytes": 60310,
+    "path": "data/gtdb-derived/results/measure-oxygen-random.json",
+    "sha256": "e0883b5bee64d2408cd748b41e939823e0940d695c4a06f5e8d5809eb2e4b5d1"
+  },
+  {
+    "bytes": 60227,
+    "path": "data/gtdb-derived/results/measure-oxygen-widest.json",
+    "sha256": "30e22e888fcf3b555412099c969aa575a42630818e97830dbd9a57b755c40c92"
+  },
+  {
+    "bytes": 55271,
+    "path": "data/gtdb-derived/results/measure-ph_optimum-farthest.json",
+    "sha256": "d9453e8f86224476f3d138b84743f4dd1a79b15cc6663a61737477cf070601c9"
+  },
+  {
+    "bytes": 55285,
+    "path": "data/gtdb-derived/results/measure-ph_optimum-random.json",
+    "sha256": "737406052d77bfc1ea93d9ee3887440714787abb6ab3b10e4e42805c8f492159"
+  },
+  {
+    "bytes": 55353,
+    "path": "data/gtdb-derived/results/measure-ph_optimum-widest.json",
+    "sha256": "0ce94bc31682e2dcd345d75d28933c739c968556229cc72fb281902e00f36a4b"
+  },
+  {
+    "bytes": 47877,
+    "path": "data/gtdb-derived/results/measure-salinity_optimum-farthest.json",
+    "sha256": "80a243c1a6022ac00e7d28865f98e3bf89911532af18d1c1a17fb0d0f8e8e107"
+  },
+  {
+    "bytes": 49436,
+    "path": "data/gtdb-derived/results/measure-salinity_optimum-random.json",
+    "sha256": "03d127a496666a3a9ac9808aaa15c995f79f28fc194c8523eb8203605168151b"
+  },
+  {
+    "bytes": 48395,
+    "path": "data/gtdb-derived/results/measure-salinity_optimum-widest.json",
+    "sha256": "7c08b729858177a2c7bce4eb271b1dd9852bb854e9df1533a4de7cdd46ab0800"
+  },
+  {
+    "bytes": 51908,
+    "path": "data/gtdb-derived/results/measure-temperature_optimum-farthest.json",
+    "sha256": "8ec8d606b5f7e4d44e3f26e02b0cee99b9ca61039921a6705ab483b879891e13"
+  },
+  {
+    "bytes": 51360,
+    "path": "data/gtdb-derived/results/measure-temperature_optimum-random.json",
+    "sha256": "bcaf6a45bdd376d898d81b80b8a69ffd17bbf12e1e38d8d5124e6b81d1630580"
+  },
+  {
+    "bytes": 51073,
+    "path": "data/gtdb-derived/results/measure-temperature_optimum-widest.json",
+    "sha256": "5dd916dfea1d27226566b0c1270c1dcaaf2e4651ae48d3ea9c9c96790e66e9d8"
+  },
+  {
+    "bytes": 485915,
+    "path": "data/gtdb-derived/results/oxygen-class.json",
+    "sha256": "6b94d3ccc8fe2b4e095c0c0138849ef3282b81b3b00374ceb40e496b71e66255"
+  },
+  {
+    "bytes": 965365,
+    "path": "data/gtdb-derived/results/oxygen-family.json",
+    "sha256": "f5c1e799c7f503a6ae86d7ef96baaecd3c58e67371f59e77757551b3386482d3"
+  },
+  {
+    "bytes": 980585,
+    "path": "data/gtdb-derived/results/oxygen-genus.json",
+    "sha256": "305be8ead575137f6fe966d537db107a94fa8f749cfbc038ec46f2d6e3bccd8f"
+  },
+  {
+    "bytes": 726733,
+    "path": "data/gtdb-derived/results/oxygen-order.json",
+    "sha256": "281273076663009fb1e87b0c425b5b8cfe7ff2a63b9b7f17b3c86f3dc7751fcc"
+  },
+  {
+    "bytes": 399872,
+    "path": "data/gtdb-derived/results/oxygen-phylum.json",
+    "sha256": "59ec87691f6749d68516fc448701481fb5a307d0a76b6a3d78b008e565d0601d"
+  },
+  {
+    "bytes": 993206,
+    "path": "data/gtdb-derived/results/oxygen-random.json",
+    "sha256": "690e036cdd887ed9d28da520b52c2cad05bac89ac32c73921894161adf27ec4d"
+  },
+  {
+    "bytes": 398222,
+    "path": "data/gtdb-derived/results/ph_optimum-class.json",
+    "sha256": "28e135bd226ed40fca95fcc2e70fa550ef5b3f3c096818d5f2244d48ad9fa00e"
+  },
+  {
+    "bytes": 840882,
+    "path": "data/gtdb-derived/results/ph_optimum-family.json",
+    "sha256": "48133603118ae88a5727d1a66985deb486585598f96dc54cbb955946fdffd007"
+  },
+  {
+    "bytes": 851476,
+    "path": "data/gtdb-derived/results/ph_optimum-genus.json",
+    "sha256": "e15e0d769ccf583d61a5de415bf040b03f9dfd8b9c3da8a5f4ac028c1a8ff735"
+  },
+  {
+    "bytes": 587677,
+    "path": "data/gtdb-derived/results/ph_optimum-order.json",
+    "sha256": "8335c542317d8525bfce67498eb50d93f0a6860d27b4d5fbe27e5cc97258b27b"
+  },
+  {
+    "bytes": 322313,
+    "path": "data/gtdb-derived/results/ph_optimum-phylum.json",
+    "sha256": "ef9e97f29f4d3aa96bc078e349f04f7d7b0fec3ed36345a03a00c27fccc9efc5"
+  },
+  {
+    "bytes": 852569,
+    "path": "data/gtdb-derived/results/ph_optimum-random.json",
+    "sha256": "5494edc76528af6af616fc93a5261bb36e03e91b929857a6b04e1a0fd06eae78"
+  },
+  {
+    "bytes": 1606874,
+    "path": "data/gtdb-derived/results/public-results.tsv",
+    "sha256": "cc8d2ee3361dc55e772caad5e671da8fd920177c110f7d7f71dfb95c37e94f0c"
+  },
+  {
+    "bytes": 307534,
+    "path": "data/gtdb-derived/results/salinity_optimum-class.json",
+    "sha256": "04de123481889dd1981488e72c744e16503453baa1c06cec1335bc6e78d74313"
+  },
+  {
+    "bytes": 735191,
+    "path": "data/gtdb-derived/results/salinity_optimum-family.json",
+    "sha256": "4d4fd41da11f87a1d8520a49a3e1586c16c0766f5980681c1b708933d377a63c"
+  },
+  {
+    "bytes": 801945,
+    "path": "data/gtdb-derived/results/salinity_optimum-genus.json",
+    "sha256": "6fdc4ceae6fddc1c6cd8d854a95896864193693b5d1422cd605dfa11d3c5bc5d"
+  },
+  {
+    "bytes": 478456,
+    "path": "data/gtdb-derived/results/salinity_optimum-order.json",
+    "sha256": "13ae186a6ef41cdae8bd0dd2c066b22228a3ef08692581b5d2bd6880780d14ee"
+  },
+  {
+    "bytes": 303687,
+    "path": "data/gtdb-derived/results/salinity_optimum-phylum.json",
+    "sha256": "fab77ed8f4f836229b10b0ea0e1e80120911d20c87602a4f1b138b71fe424764"
+  },
+  {
+    "bytes": 818434,
+    "path": "data/gtdb-derived/results/salinity_optimum-random.json",
+    "sha256": "37ff57365c9a88f16b705028e793375f6a1fbb4c7309d03dbaa011e6051dde14"
+  },
+  {
+    "bytes": 152961,
+    "path": "data/gtdb-derived/results/targets.json",
+    "sha256": "673490a8b4f4d7fd51313519bbeb32596bab028c34adf2c52009c35a727ef052"
+  },
+  {
+    "bytes": 392972,
+    "path": "data/gtdb-derived/results/temperature_optimum-class.json",
+    "sha256": "233527705d8c98e0537cfd350f79fa072b5c00ceb1cbd047a78751064a1bb17e"
+  },
+  {
+    "bytes": 828035,
+    "path": "data/gtdb-derived/results/temperature_optimum-family.json",
+    "sha256": "1994ae98b99a2aa5db038418b3eca0b3df2189f6eca58383cd2a25e498ab1a81"
+  },
+  {
+    "bytes": 835571,
+    "path": "data/gtdb-derived/results/temperature_optimum-genus.json",
+    "sha256": "62ec638e90480118608b363b93681555a2c19eabe2af977549ddad2261582001"
+  },
+  {
+    "bytes": 600396,
+    "path": "data/gtdb-derived/results/temperature_optimum-order.json",
+    "sha256": "8024a7fcde00ca3c320009f87895a38e0a046ce9dbf5f315173b8fa738d20dc2"
+  },
+  {
+    "bytes": 334175,
+    "path": "data/gtdb-derived/results/temperature_optimum-phylum.json",
+    "sha256": "333763481e84dc970be14e80dc010ac6387067972dd6aafa22ac5afaeca72868"
+  },
+  {
+    "bytes": 854224,
+    "path": "data/gtdb-derived/results/temperature_optimum-random.json",
+    "sha256": "315e063b0816279c08d627f9d1c2d0173e47ab958a6afacaf0fa488f805781bb"
+  },
+  {
+    "bytes": 138433,
+    "path": "data/gtdb-derived/figures/coverage-family.png",
+    "sha256": "5c5ff72fc4dab5ef67c64208e8923858d497a492e8e7f7198e882a5d3932718a"
+  },
+  {
+    "bytes": 190945,
+    "path": "data/gtdb-derived/figures/coverage-family.svg",
+    "sha256": "83b1a1e879e3269caaec11e8edb6d85817de522fd9b7ef67c3b25bf397d6b8ea"
+  },
+  {
+    "bytes": 124360,
+    "path": "data/gtdb-derived/figures/coverage-order.png",
+    "sha256": "9fe2e288780630a1c9fe556412ade484faccaae13187c000491f58e442313436"
+  },
+  {
+    "bytes": 139282,
+    "path": "data/gtdb-derived/figures/coverage-order.svg",
+    "sha256": "f3eb24d31bb31ecd0590ad04828d67ae243ef505d1892162605e052440a28ab8"
+  },
+  {
+    "bytes": 424743,
+    "path": "data/gtdb-derived/figures/measure-next.png",
+    "sha256": "fb2f9dca2a32d9a2aeac191c9f4895f5f8128cd77cd87e5ec760d7adf7b5a499"
+  },
+  {
+    "bytes": 168547,
+    "path": "data/gtdb-derived/figures/measure-next.svg",
+    "sha256": "4bc85b6242c6f8aad9bccdcbccdb5a93fe6d084ab5410380b299495ff7744692"
+  },
+  {
+    "bytes": 127255,
+    "path": "data/gtdb-derived/figures/nearest-relative-profile.png",
+    "sha256": "c7efb30fd3601da369e90e930ebe36595e0ce155e3f9c6166373683fffdd07d7"
+  },
+  {
+    "bytes": 99174,
+    "path": "data/gtdb-derived/figures/nearest-relative-profile.svg",
+    "sha256": "86a0bca934e1df8ea0e307983f9308aee0ca40a9992f7da131ea503d6d35c1cf"
+  },
+  {
+    "bytes": 95698,
+    "path": "data/gtdb-derived/figures/secondary-coverage.png",
+    "sha256": "2d69f2d860eb4c402bb1891e8b3f005ef1dd6dc1581ffc4d35762872aed50e5f"
+  },
+  {
+    "bytes": 69721,
+    "path": "data/gtdb-derived/figures/secondary-coverage.svg",
+    "sha256": "cda2874928ab768efc7ce0c2119a8ba4e7e455eedba3967056037bdeea161ac0"
+  },
+  {
+    "bytes": 200465,
+    "path": "data/gtdb-derived/figures/ten-column-refit.png",
+    "sha256": "5054be82aa3dcdb961955eb53f8a03b5419dafde2f1a047dd8972a7b1326d15e"
+  },
+  {
+    "bytes": 102944,
+    "path": "data/gtdb-derived/figures/ten-column-refit.svg",
+    "sha256": "498b6c008499d5a4cb2ad0876cf51eec3ae7f791994b2f1f865f77122b5860b1"
+  }
+]

@@ -236,7 +236,8 @@
         ]
       },
       "DOI": "10.1073/pnas.2204569119"
-    }
+    },
+    "publisher_page_check": "Title, authors, year, volume and article number checked on the public publisher page; local HTTP request was refused. No access check was passed."
   },
   {
     "name": "Barber",
@@ -246,7 +247,8 @@
     "html": {
       "status": 200,
       "path": "data/raw/release-sources/barber.html",
-      "sha256": "66f358735b63889b98e582bdb2a9a32e4ab1f4c9f1ba2dc7edb46e06eba013db"
+      "sha256": "66f358735b63889b98e582bdb2a9a32e4ab1f4c9f1ba2dc7edb46e06eba013db",
+      "content_check": "Bibliography independently confirmed using DOI-deposited metadata; publisher HTML may be an access-challenge response."
     },
     "json": {
       "status": 200,
@@ -383,5 +385,12 @@
       },
       "DOI": "10.1007/s10994-013-5355-6"
     }
+  },
+  {
+    "name": "BacDive About",
+    "url": "https://bacdive.dsmz.de/about",
+    "read_date": "2026-10-11",
+    "path": "data/raw/release-sources/bacdive-about.html",
+    "sha256": "28d4023918bb35eb9c052dcdd1fa2cc98f7b734c1a7e49b9ea1f19289a370319"
   }
 ]

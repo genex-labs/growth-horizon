@@ -1,0 +1,15 @@
+{
+  "license_verbatim": true,
+  "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "local_html_visual_check": "blocked_by_browser_url_policy",
+  "static_page_checks": [
+    "no_script_or_tracking_resources",
+    "all_local_links_resolve",
+    "images_have_alternative_text",
+    "table_headers_have_scope",
+    "skip_link",
+    "responsive_layout_and_scrollable_tables",
+    "visible_keyboard_focus"
+  ],
+  "exit_code": 0
+}

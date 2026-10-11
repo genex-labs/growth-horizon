@@ -1,72 +1,86 @@
 # Growth Horizon
 
-A draft open benchmark for growth-temperature, oxygen-tolerance, salinity and
-pH predictions from microbial genomes under nested taxonomic holdout.
+GeneX Labs Inc. measures how growth-condition predictions behave as microbial genomes become more distant from labelled relatives. The benchmark combines taxonomic holdout, empirical interval coverage and abstention, so a laboratory can see both predictive error and how often uncertainty prevents a useful answer.
 
-The exact release table has documented experimental-label provenance.
-Phase 1C freezes amendment C in [pre-registration v2](PREREGISTRATION.md),
-with five inner cross-fits, a 50-taxon calibration support rule and a
-strong-support flag at 100 taxa. Family and order now have supported
-calibration bins; these counts are calibration-side information, not measured
-coverage. See [data provenance](DATA.md) and
-`data/experimental-label-audit.json` for the source decision and residual risk.
+The locked calibration and accuracy targets failed. B1 has lower order-holdout error for temperature and salinity. The proposed predictor does not achieve the required accuracy improvement on any trait. These are descriptive results from the full usable labelled population; no estimator or target was changed after outer scoring.
 
-A clean reconstruction reproduced all 7,257 frozen scientific artefacts,
-548 source records and the v2 pre-registration byte for byte. The original
-1,113 v1 scientific artefacts remain unchanged. See
-[reconstruction details](docs/reproducibility.md).
+- Target 1: failed. [data/gtdb-derived/results/public-results.tsv:L602](data/gtdb-derived/results/public-results.tsv)
+- Target 2: failed. [data/gtdb-derived/results/public-results.tsv:L603](data/gtdb-derived/results/public-results.tsv)
+- Target 3: failed. [data/gtdb-derived/results/public-results.tsv:L604](data/gtdb-derived/results/public-results.tsv)
+- Target 4: passed. [data/gtdb-derived/results/public-results.tsv:L605](data/gtdb-derived/results/public-results.tsv)
 
-Both versions were frozen before any outer-fold prediction or metric.
-V2 supersedes v1 for the proposed locked run; scientific review and a separate
-authorised phase-2 run remain required.
+## Order-holdout accuracy
 
-| Version | Local freeze commit | Freeze time | PREREGISTRATION.md SHA-256 |
-| --- | --- | --- | --- |
-| v1 | `22bc860563c0397e8ab935f6517892370f21afcd` | 2026-10-11 04:30:02 PT | `d7ae79e500b27fdea91693aa5bd7038e701ff84909b9b896eef000cb322b5c3d` |
-| v2, amendment C | `54d803cefa1414a8aaec960d746cdc2463e59f84` | 2026-10-11 07:46:14 PT | `cabc7ecffdd2e11246c8ab7b08b3103b09819f3fde1bcae87ab9cb649330a179` |
+Numeric error is mean absolute error in degrees C, percent NaCl or pH units. Oxygen error is one minus balanced accuracy. Positive paired reduction favours the proposed predictor. All intervals resample held-out taxa.
 
-Calibrated per-distance intervals for this matched growth-condition benchmark
-were not found in our literature check of 2026-10-11. Related work includes
-GenomeSPOT, Bac2Feature, out-of-clade phenotype prediction and CalPred; see
-[related work](docs/related-work.md). The statement is a search finding, not a
-priority claim or a measured result.
+| Trait | B1 error [95% interval] | Proposed error [95% interval] | Paired reduction [95% interval] | Pinned source line |
+| --- | --- | --- | --- | --- |
+| Temperature | 4.4857 [4.0306, 4.9648] | 4.4886 [4.0228, 4.9747] | -0.0029 [-0.0251, 0.0177] | [data/gtdb-derived/results/public-results.tsv:L56](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L69](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L76](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen | 0.1415 [0.0904, 0.2003] | 0.1307 [0.0794, 0.1936] | 0.0108 [-0.0054, 0.0283] | [data/gtdb-derived/results/public-results.tsv:L206](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L219](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L226](data/gtdb-derived/results/public-results.tsv) |
+| Salinity | 1.6909 [1.3177, 2.2457] | 1.7306 [1.3117, 2.4045] | -0.0397 [-0.1677, 0.0247] | [data/gtdb-derived/results/public-results.tsv:L356](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L369](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L376](data/gtdb-derived/results/public-results.tsv) |
+| pH | 0.5250 [0.4789, 0.5832] | 0.5093 [0.4697, 0.5570] | 0.0157 [0.0006, 0.0407] | [data/gtdb-derived/results/public-results.tsv:L506](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L519](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L526](data/gtdb-derived/results/public-results.tsv) |
 
-Phase 1 acquires and verifies inputs, counts every label and exclusion, builds
-nested grouped folds, computes phenotype-free distances, fits baselines on
-training sides and calibrates using inner holdouts. It does not compute any
-outer-fold prediction or performance metric. Phase 2 requires a reviewed
-pre-registration and a separate authorised locked run. No scientific outcome
-is claimed here.
+## Coverage and useful uncertainty
 
-With Python 3.13 and the pinned `uv.lock`, rebuild every phase-1 artefact from
-the source manifest with:
+Coverage includes supported abstentions exactly when the computed interval or set contains the true label. Unsupported items are excluded from coverage and reported as abstentions. Width is in the trait's original units; oxygen uses set cardinality. Every coverage estimate is accompanied by abstentions.
+
+| Trait / rank | Coverage [95% interval] | Abstention | Mean width or cardinality | Pinned source line |
+| --- | --- | --- | --- | --- |
+| Temperature / family | 90.07% [88.05%, 91.94%] | 8.06% | 17.8647 | [data/gtdb-derived/results/public-results.tsv:L44](data/gtdb-derived/results/public-results.tsv) |
+| Temperature / order | 90.29% [87.99%, 92.25%] | 20.38% | 18.7015 | [data/gtdb-derived/results/public-results.tsv:L69](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen / family | 90.89% [89.20%, 92.39%] | 22.53% | 1.1141 | [data/gtdb-derived/results/public-results.tsv:L194](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen / order | 92.10% [89.46%, 94.37%] | 25.56% | 1.1779 | [data/gtdb-derived/results/public-results.tsv:L219](data/gtdb-derived/results/public-results.tsv) |
+| Salinity / family | 90.63% [87.84%, 92.97%] | 6.69% | 6.8323 | [data/gtdb-derived/results/public-results.tsv:L344](data/gtdb-derived/results/public-results.tsv) |
+| Salinity / order | 89.99% [82.28%, 94.97%] | 48.15% | 7.7806 | [data/gtdb-derived/results/public-results.tsv:L369](data/gtdb-derived/results/public-results.tsv) |
+| pH / family | 90.35% [88.49%, 91.97%] | 0.06% | 2.2096 | [data/gtdb-derived/results/public-results.tsv:L494](data/gtdb-derived/results/public-results.tsv) |
+| pH / order | 89.04% [86.64%, 91.07%] | 0.00% | 2.1944 | [data/gtdb-derived/results/public-results.tsv:L519](data/gtdb-derived/results/public-results.tsv) |
+
+## Horizons and measurement selection
+
+Horizon bins use the frozen common cuts. The first failure compares with a training-side constant and checks whether most predictions abstain. Zero-based bin ordinals and their exploratory bootstrap intervals are discrete summaries. A right-censored horizon extends beyond the observed bins; it is not an infinite or universal threshold.
+
+| Trait | Proposed horizon | B1 horizon | Proposed ordinal interval | Pinned source line |
+| --- | --- | --- | --- | --- |
+| Temperature | Bin 1 (0.3736 to 0.4558) | Bin 1 (0.3736 to 0.4558) | [1, 4] | [data/gtdb-derived/results/public-results.tsv:L75](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L74](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen | Beyond observed range | Beyond observed range | [5, 5] | [data/gtdb-derived/results/public-results.tsv:L225](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L224](data/gtdb-derived/results/public-results.tsv) |
+| Salinity | Bin 2 (0.4492 to 0.5172) | Bin 2 (0.4492 to 0.5172) | [1, 3] | [data/gtdb-derived/results/public-results.tsv:L375](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L374](data/gtdb-derived/results/public-results.tsv) |
+| pH | Bin 2 (0.4577 to 0.5206) | Bin 1 (0.3674 to 0.4577) | [2, 5] | [data/gtdb-derived/results/public-results.tsv:L525](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L524](data/gtdb-derived/results/public-results.tsv) |
+
+The retrospective measurement experiment acquires whole orders under the stated organism budget, refits and recalibrates, and measures error and width on the remaining far organisms. Evaluation populations change as orders are acquired. A smaller area under the budget curve is preferable; the estimates below average the fold curves and have no confirmatory target.
+
+| Trait | Widest error AUC | Farthest error AUC | Random error AUC | Pinned source line |
+| --- | --- | --- | --- | --- |
+| Temperature | 5.1394 | 5.2161 | 5.5904 | [data/gtdb-derived/results/public-results.tsv:L606](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L607](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L608](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen | 0.1517 | 0.1750 | 0.1625 | [data/gtdb-derived/results/public-results.tsv:L609](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L610](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L611](data/gtdb-derived/results/public-results.tsv) |
+| Salinity | 2.5746 | 2.6690 | 2.6345 | [data/gtdb-derived/results/public-results.tsv:L612](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L613](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L614](data/gtdb-derived/results/public-results.tsv) |
+| pH | 0.5423 | 0.5075 | 0.5567 | [data/gtdb-derived/results/public-results.tsv:L615](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L616](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L617](data/gtdb-derived/results/public-results.tsv) |
+
+## Limits and sources
+
+Exchangeability within distance bins is assumed, not demonstrated. Grouped unequal-size folds and distance conditioning do not inherit a demonstrated finite-sample guarantee from unconditioned CV+ results. Labels are table-level experimental records exported through GenomeSPOT, with residual per-value provenance uncertainty. Correlated genomes, small distant taxa, changing annotations and unsupported ranks limit generalisation. Accepted-item coverage has no nominal guarantee.
+
+Calibrated per-distance intervals for this matched growth-condition benchmark were not found in our literature check of 2026-10-11. This is a bounded search finding. Adjacent work includes GenomeSPOT, Bac2Feature, CalPred, Boger and colleagues on conformal protein retrieval, Fannjiang and colleagues on feedback covariate shift, and Barber and colleagues on nonexchangeability. See [related work](docs/related-work.md), [technical note](docs/TECHNICAL_NOTE.md) and [data attribution](DATA.md).
+
+Secondary figures report taxon-weighted coverage, the mean of the five fit-specific distances, and explicit refits after removing the ten disputed descriptor columns. The frozen feature lists contain none of those descriptors; the refitted point predictions are identical. No target uses these secondary analyses. [data/gtdb-derived/results/public-results.tsv:L618](data/gtdb-derived/results/public-results.tsv)
+
+## Rebuild and reuse
+
+With Python and the pinned analysis and rendering dependencies, one command acquires missing official inputs, verifies cached source hashes, reconstructs the frozen analysis, scores all outer folds, runs measurement selection and regenerates every public table, figure, note and page:
 
 ```sh
-uv run --frozen python -m scripts.rebuild
+uv run --project release --frozen python -m scripts.release
 ```
 
-The command accepts only the documented release-table provenance or verified
-experimental provenance for another source. It verifies existing raw files
-or reacquires missing downloadable sources, recomputes the authorised 71-genome feature check without resampling,
-and rebuilds all local populations, folds, distances, fitted estimators,
-naive calibration spreads, cross-fitted calibration scores and support bins,
-and common horizon cut points. Source and derived
-checksums are in `data/source-manifest.json` and `data/artifact-manifest.json`.
-Historical incomplete-download and process receipts are provenance evidence,
-not rebuild inputs. Downloads stay below the recorded 8 GB estimates and
-stop if root-volume free space falls below 25 GB. No account or key is needed.
+Scratch is confined to ignored `work-tmp.noindex/`. Raw labels, sequences, fitted estimators and individual predictions remain untracked. Aggregate GTDB-derived analyses and figures are under CC BY-SA 4.0; BacDive labels are attributed under CC BY 4.0. Code is Apache-2.0, with GenomeSPOT's MIT notice retained. DATA.md records the commercial-contact condition and Cali Fund guidance.
 
-Raw labels, sequences, individual feature comparisons, fitted estimators and
-individual derived records stay untracked. Published data files are aggregate
-summaries and provenance. GTDB-derived tables stay in their own CC BY-SA 4.0
-folder. Our code is Apache-2.0; upstream GenomeSPOT source retains MIT terms.
-See [data provenance](DATA.md), [baseline specifications](docs/baselines.md),
-and [integrity](docs/INTEGRITY.md).
+Every result shown above cites a repository-relative TSV line. [Output hashes](data/release-manifest.json) pin that table and its underlying JSON records. [Complete results](docs/RESULTS.md), [figures](data/gtdb-derived/figures), [PDF note](docs/TECHNICAL_NOTE.pdf), [static project page](docs/site/index.html) and [reconstruction details](docs/reproducibility.md) provide the rest of the package. The original [pre-registration](PREREGISTRATION.md) is unchanged; its chronology is in [CHANGELOG.md](CHANGELOG.md).
 
-Offline verification:
+This is a local release candidate. Public release remains pending scientific review and an authorised publication action.
+
+Offline fixture checks:
 
 ```sh
-uv run --frozen pytest --basetemp=work-tmp/pytest-benchmark
+uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures
 uv run --frozen ruff check scripts growth_horizon tests
 uv run --frozen mypy scripts growth_horizon tests
 ```
