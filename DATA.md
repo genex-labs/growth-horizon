@@ -1,40 +1,33 @@
 # Data provenance and permitted use
 
-## Resume 4: experimental-label provenance stop
+## Resume 5: accepted experimental-label provenance
 
-All four traits are stopped before pre-registration. The authorised asset was
-uploaded on 2026-03-16, after the predicted phenotypes described by Koblitz et
-al. (2025). Its verified table build date and BacDive snapshot date are unknown.
-The TSV has no per-value experimental/predicted flag, source reference or
-measurement provenance. Upstream use flags express filtering decisions and
-do not identify experimental measurements.
+GenomeSPOT's preparation notebook (last changed 2024-03-21, commit f994ef50450f3362a4d6f93ccd3260c80e8ca45c) names its output training_data_20231203.tsv, and its 15,596 rows and trait summaries match the release asset; the model-predicted BacDive values come from Koblitz et al. 2025 (doi 10.1038/s42003-025-08313-3) and are served only with the API parameter predictions=1, which GenomeSPOT's parser does not request. Decision: treat the table's labels as experimental records.
 
-The release's preparation notebook contains a commented historical filename,
-`training_data_20231203.tsv`, and its latest recorded change is 2024-03-21.
-Its 15,596-row count and several phenotype counts match the release table.
-This is evidence consistent with an older table, but no complete historical
-table checksum or raw BacDive snapshot ties that date to the 2026 asset.
-The commented date is not recorded as a verified build date.
+Residual risk: the release asset could in principle differ from the 2023 table in ways the matching checks did not cover.
 
-The Koblitz paper's data-availability section identifies predicted records via
-the API parameter `predictions=1`. The GenomeSPOT release parser does not request
-that parameter and extracts conventional phenotype sections. Its source recipe
-therefore suggests experimental inputs, but the asset omits the raw snapshot,
-retrieval receipt and per-value provenance needed to confirm that recipe for
-every value. No API account or replacement label source was used.
+The owner accepted this table-level chain on 2026-10-11 at 04:17 PDT. The
+historical filename suggests 2023-12-03; the independently verified facts are
+the notebook's last change and displayed row/trait summaries, not a checksum
+of the entire historical table or an authenticated BacDive snapshot. The
+release asset was created 2026-03-16T12:25:19Z, updated 12:25:50Z, and its
+release published 12:27:17Z. These are upload dates, not table-build dates.
+No per-value provenance is invented.
 
-`data/experimental-label-audit.json` records the source checksums and unresolved
-counts: temperature 4,783; oxygen 7,300; salinity 2,376; pH 3,549. Identified
-predicted exclusions and confirmed experimental counts are unknown, not zero.
-None of these labels is authorised for further fitting or scoring. Existing
-populations and inner-only fitted artefacts remain preserved as historical
-work, without experimental-only qualification. The rebuild, population loader
-and pre-registration generator now stop on this unresolved provenance.
+The per-trait audit accepts 4,783 temperature, 7,300 oxygen, 2,376 salinity
+and 3,549 pH nonmissing labels as experimental under this documented decision.
+No predicted record is identified or excluded under the accepted source
+recipe. Individually confirmed experimental and predicted counts remain
+unknown; accepted table-level counts are recorded separately. Mapping and
+feature exclusions remain separately counted. Only the exact authorised
+size/checksum and source chain bypass the snapshot-date requirement. The
+experimental-label guard stays in force for every other label source.
 
-To resume, the authorised asset needs evidence establishing its experimental
-snapshot and date, or per-value experimental provenance permitting predicted
-values to be excluded and counted. Any replacement input needs an owner
-decision. No pre-registration has been created or committed.
+`data/experimental-label-audit.json` freezes the chain, per-trait dispositions
+and source-evidence hashes. The superseded Resume 4 stop and historical
+artefacts are preserved in the preceding local commits and ignored work
+records. The decision permits inner-only development and pre-registration;
+no outer-fold prediction or metric is authorised.
 
 BacDive's [About page](https://bacdive.dsmz.de/about) asks commercial users to
 contact DSMZ. This request is recorded alongside the CC BY 4.0 licence basis;

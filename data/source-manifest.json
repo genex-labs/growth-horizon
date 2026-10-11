@@ -1,5 +1,5 @@
 {
-  "status": "phase1_blocked_experimental_label_provenance",
+  "status": "resume5_rebuild_pending",
   "recorded_at_pt": "2026-10-11 02:15:46 PDT",
   "source_commit": "f79f7d6fdece71b766ff47f4fb7114daae5287d7",
   "repository_licence": "MIT",
@@ -3946,7 +3946,8 @@
     "genomes_fully_agree": 0,
     "status": "complete"
   },
-  "resume4_label_gate": "All four traits stopped; previous populations and inner-only models are historical and lack experimental-only qualification.",
   "experimental_label_audit": "data/experimental-label-audit.json",
-  "historical_development_completed_at_pt": "2026-10-11 04:02:11 PDT"
+  "historical_development_completed_at_pt": "2026-10-11 04:02:11 PDT",
+  "historical_resume4_label_gate": "All four traits stopped; previous populations and inner-only models are historical and lack experimental-only qualification.",
+  "resume5_label_gate": "Exact authorised release accepted as experimental using the documented table-level provenance; other sources retain verified experimental provenance requirements."
 }

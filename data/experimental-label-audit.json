@@ -1,6 +1,6 @@
 {
-  "status": "blocked_experimental_label_provenance",
-  "checked_at_pt": "2026-10-11 04:11:10 PDT",
+  "status": "accepted_experimental_table_provenance",
+  "checked_at_pt": "2026-10-11 04:20:39 PDT",
   "label_sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc",
   "label_bytes": 64412996,
   "label_asset_created_at": "2026-03-16T12:25:19Z",
@@ -16,13 +16,12 @@
   "predicted_record_identification": "Koblitz 2025 data-availability section describes the API parameter predictions=1; the release parser requests client.retrieve without this parameter and reads ordinary phenotype sections. The raw snapshot and its retrieval receipt are absent, and provenance flags are not retained in the TSV.",
   "traits": {
     "temperature_optimum": {
-      "status": "experimental_predicted_unresolved",
+      "status": "experimental_by_table_provenance",
       "nonmissing_labels": 4783,
       "confirmed_experimental_labels": null,
       "identified_predicted_labels": null,
-      "excluded_identified_predicted_labels": null,
-      "unresolved_labels": 4783,
-      "authorised_for_new_fitting_or_scoring": 0,
+      "excluded_identified_predicted_labels": 0,
+      "unresolved_labels": 0,
       "evidence": [
         "data/raw/source-audit/releases.json",
         "data/raw/source-audit/resume4-tag.json",
@@ -32,16 +31,19 @@
         "data/raw/source-audit/resume4-prepare-training.ipynb",
         "data/raw/source-audit/resume4-notebook-history.json",
         "data/raw/source-audit/koblitz.html"
-      ]
+      ],
+      "accepted_experimental_labels": 4783,
+      "authorised_for_inner_fitting": true,
+      "authorised_for_outer_scoring": false,
+      "count_basis": "Accepted experimental at table level under Resume 5; no per-value provenance flag or independently identified predicted record."
     },
     "oxygen": {
-      "status": "experimental_predicted_unresolved",
+      "status": "experimental_by_table_provenance",
       "nonmissing_labels": 7300,
       "confirmed_experimental_labels": null,
       "identified_predicted_labels": null,
-      "excluded_identified_predicted_labels": null,
-      "unresolved_labels": 7300,
-      "authorised_for_new_fitting_or_scoring": 0,
+      "excluded_identified_predicted_labels": 0,
+      "unresolved_labels": 0,
       "evidence": [
         "data/raw/source-audit/releases.json",
         "data/raw/source-audit/resume4-tag.json",
@@ -51,16 +53,19 @@
         "data/raw/source-audit/resume4-prepare-training.ipynb",
         "data/raw/source-audit/resume4-notebook-history.json",
         "data/raw/source-audit/koblitz.html"
-      ]
+      ],
+      "accepted_experimental_labels": 7300,
+      "authorised_for_inner_fitting": true,
+      "authorised_for_outer_scoring": false,
+      "count_basis": "Accepted experimental at table level under Resume 5; no per-value provenance flag or independently identified predicted record."
     },
     "salinity_optimum": {
-      "status": "experimental_predicted_unresolved",
+      "status": "experimental_by_table_provenance",
       "nonmissing_labels": 2376,
       "confirmed_experimental_labels": null,
       "identified_predicted_labels": null,
-      "excluded_identified_predicted_labels": null,
-      "unresolved_labels": 2376,
-      "authorised_for_new_fitting_or_scoring": 0,
+      "excluded_identified_predicted_labels": 0,
+      "unresolved_labels": 0,
       "evidence": [
         "data/raw/source-audit/releases.json",
         "data/raw/source-audit/resume4-tag.json",
@@ -70,16 +75,19 @@
         "data/raw/source-audit/resume4-prepare-training.ipynb",
         "data/raw/source-audit/resume4-notebook-history.json",
         "data/raw/source-audit/koblitz.html"
-      ]
+      ],
+      "accepted_experimental_labels": 2376,
+      "authorised_for_inner_fitting": true,
+      "authorised_for_outer_scoring": false,
+      "count_basis": "Accepted experimental at table level under Resume 5; no per-value provenance flag or independently identified predicted record."
     },
     "ph_optimum": {
-      "status": "experimental_predicted_unresolved",
+      "status": "experimental_by_table_provenance",
       "nonmissing_labels": 3549,
       "confirmed_experimental_labels": null,
       "identified_predicted_labels": null,
-      "excluded_identified_predicted_labels": null,
-      "unresolved_labels": 3549,
-      "authorised_for_new_fitting_or_scoring": 0,
+      "excluded_identified_predicted_labels": 0,
+      "unresolved_labels": 0,
       "evidence": [
         "data/raw/source-audit/releases.json",
         "data/raw/source-audit/resume4-tag.json",
@@ -89,7 +97,11 @@
         "data/raw/source-audit/resume4-prepare-training.ipynb",
         "data/raw/source-audit/resume4-notebook-history.json",
         "data/raw/source-audit/koblitz.html"
-      ]
+      ],
+      "accepted_experimental_labels": 3549,
+      "authorised_for_inner_fitting": true,
+      "authorised_for_outer_scoring": false,
+      "count_basis": "Accepted experimental at table level under Resume 5; no per-value provenance flag or independently identified predicted record."
     }
   },
   "evidence": [
@@ -134,5 +146,12 @@
       "sha256": "e2401c0abedaa766d9964e09f81bb624fa5b4b21f70d236edb647565ca511b1f"
     }
   ],
-  "outer_fold_predictions_or_metrics_computed": false
+  "outer_fold_predictions_or_metrics_computed": false,
+  "label_source": "GenomeSPOT/v1.0.0/training_data.tsv",
+  "decision": "Resume 5, 2026-10-11 04:17 PDT",
+  "matching_row_count": 15596,
+  "matching_trait_summaries": true,
+  "prediction_api_parameter": "predictions=1",
+  "release_parser_requests_predictions": false,
+  "provenance_basis": "GenomeSPOT's preparation notebook (last changed 2024-03-21, commit f994ef50450f3362a4d6f93ccd3260c80e8ca45c) names its output training_data_20231203.tsv, and its 15,596 rows and trait summaries match the release asset; the model-predicted BacDive values come from Koblitz et al. 2025 (doi 10.1038/s42003-025-08313-3) and are served only with the API parameter predictions=1, which GenomeSPOT's parser does not request. Decision: treat the table's labels as experimental records.\n\nResidual risk: the release asset could in principle differ from the 2023 table in ways the matching checks did not cover."
 }

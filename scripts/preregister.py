@@ -3,7 +3,7 @@
 import json
 
 from scripts.acquire import ROOT, digest
-from growth_horizon.label_gate import require_experimental_labels
+from growth_horizon.label_gate import PROVENANCE_TEXT, require_experimental_labels
 
 TARGETS = '''1. Calibration: at family and order holdout, nominal 90% intervals cover within 3 points of 90% in every distance bin for all four traits, where the naive intervals of B1 and B2 under-cover by 10 points or more in the far bins.
 2. Accuracy: at order holdout, error at least 10% lower than B1 on at least two traits, with the paired bootstrap interval (by held-out taxon) excluding zero.
@@ -22,6 +22,7 @@ def main() -> None:
     files = ['data/source-manifest.json', 'data/gtdb-derived/population-summary.json',
              'data/gtdb-derived/development-summary.json', 'data/artifact-manifest.json',
              'data/feature-verification.json', 'data/verification-plan.json',
+             'data/experimental-label-audit.json',
              'data/gtdb-derived/optimisation-summary.json', 'uv.lock']
     hashes = '\n'.join(f'| `{f}` | `{digest(ROOT / f)}` |' for f in files)
     counts = '\n'.join(f"| {t} | {r['usable']} | {json.dumps(r['counts_by_reason'], sort_keys=True)} |"
@@ -50,6 +51,18 @@ GTDB R11-RS232 (232.0): the official species-cluster metadata and bacterial
 and archaeal reference trees from the same release. Every acquired input URL,
 size and SHA-256 is in the frozen source manifest. Source attribution and
 licence separation are in DATA.md. Python 3.13.15 and uv.lock pin the runtime.
+
+### Experimental-label provenance accepted under Resume 5
+
+{PROVENANCE_TEXT}
+
+The notebook's historical filename suggests 2023-12-03; it is not an
+independently authenticated snapshot or build date for the 2026-03-16 asset.
+The per-trait audit accepts temperature 4,783, oxygen 7,300, salinity 2,376
+and pH 3,549 nonmissing labels at table level. No predicted record is identified
+or excluded under that accepted recipe. This is a documented source decision,
+not a per-value provenance claim. Any other label source retains the verified
+experimental-label guard. The audit and source-evidence hashes are frozen.
 
 Every nonmissing labelled assembly with a valid current representative and
 finite published features is included for its trait. Upstream use flags are

@@ -3,10 +3,10 @@
 A draft open benchmark for growth-temperature, oxygen-tolerance, salinity and
 pH predictions from microbial genomes under nested taxonomic holdout.
 
-Phase 1 is stopped under Resume 4: experimental and predicted labels cannot
-be distinguished in the authorised release asset. All four traits require
-verified label provenance. No pre-registration exists. See the current
-[data finding](DATA.md) and `data/experimental-label-audit.json`.
+Resume 5 accepts the documented experimental-label provenance for the exact
+release table. Phase 1 rebuilds inner-only development artefacts and freezes
+[the pre-registration](PREREGISTRATION.md). See [data provenance](DATA.md) and
+`data/experimental-label-audit.json` for the decision and residual risk.
 
 Calibrated per-distance intervals for this matched growth-condition benchmark
 were not found in our literature check of 2026-10-11. Related work includes
@@ -28,10 +28,9 @@ the source manifest with:
 uv run --frozen python -m scripts.rebuild
 ```
 
-While the label gate is unresolved, the command stops before development or
-pre-registration. Once verified experimental provenance is supplied, the
-command verifies existing raw files or reacquires missing downloadable
-sources, recomputes the authorised 71-genome feature check without resampling,
+The command accepts only the documented release-table provenance or verified
+experimental provenance for another source. It verifies existing raw files
+or reacquires missing downloadable sources, recomputes the authorised 71-genome feature check without resampling,
 and rebuilds all local populations, folds, distances, fitted estimators,
 naive intervals and Mondrian calibration summaries. Source and derived
 checksums are in `data/source-manifest.json` and `data/artifact-manifest.json`.

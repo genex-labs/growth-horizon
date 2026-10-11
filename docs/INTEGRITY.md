@@ -1,11 +1,11 @@
 # Phase 1 scoring boundary
 
-Resume 4 stops further real-data development and pre-registration for every
-trait at unresolved experimental-label provenance. Existing inner-only
-artefacts are historical and preserved; this is a source-qualification stop,
-not an accidental outer-scoring incident. No quarantine is required. Coverage
-over all items, including abstentions, is the primary coverage quantity. Oxygen
-accepted accuracy is reported separately; accepted coverage is not guaranteed.
+Resume 5 accepts documented table-level experimental-label provenance for the
+exact release asset, superseding the Resume 4 source-qualification stop. The
+prior stop was not an accidental outer-scoring incident. No quarantine is
+required. Coverage over all items, including abstentions, is the primary
+coverage quantity. Oxygen accepted accuracy is reported separately; accepted
+coverage is not guaranteed.
 
 No outer-fold prediction or performance metric has been computed. The only
 permitted predictions are tuning and calibration queries wholly inside an

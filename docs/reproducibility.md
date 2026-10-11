@@ -1,10 +1,9 @@
 # Rebuilding phase 1
 
-Resume 4 adds an experimental-label gate before population construction,
-development and pre-registration. The current receipt is unresolved for every
-trait, so the rebuild intentionally stops. The earlier clean-checkout replay
-was interrupted during verification and is not a completed reproducibility
-check. Existing outputs remain historical until label provenance is verified.
+Resume 5 accepts table-level experimental provenance for the exact authorised
+release checksum and documented chain. Other label sources retain the verified
+experimental-label gate. The earlier interrupted clean-checkout replay remains
+historical evidence; it is not a successful reproducibility check.
 
 The entry point is `uv run --frozen python -m scripts.rebuild`. Source replay
 uses pinned labels, upstream feature code, sequences and GTDB files. It checks

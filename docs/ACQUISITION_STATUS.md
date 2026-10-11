@@ -1,12 +1,12 @@
 # Current phase-1 resume
 
-Resume 4 supersedes the completion language below. All four traits are stopped
-at the experimental-label provenance gate. No pre-registration exists and the
-clean rebuild remains incomplete. The 2026 release asset has no verified build
-or BacDive snapshot date and no retained per-label measurement/prediction
-provenance. The source audit, unresolved counts and guard are documented in
-DATA.md and `data/experimental-label-audit.json`. Prior inner-only artefacts
-are preserved and have not been promoted to experimental ground truth.
+Resume 5 supersedes the historical Resume 4 provenance stop. The exact release
+table is accepted as experimental under the documented notebook/parser chain,
+with residual risk retained in DATA.md and the per-trait audit. Inner-only
+rebuilding and pre-registration are authorised; outer scoring remains forbidden.
+All historical records below describe their earlier stops, not the current
+permission state. Final rebuild verification and freeze receipts are recorded
+in the phase-1 handoff.
 
 ## Historical Resume 3 development status
 
