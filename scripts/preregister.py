@@ -19,7 +19,8 @@ def main() -> None:
     assert development['no_outer_fold_scoring']
     files = ['data/source-manifest.json', 'data/gtdb-derived/population-summary.json',
              'data/gtdb-derived/development-summary.json', 'data/artifact-manifest.json',
-             'data/feature-verification.json', 'data/verification-plan.json', 'uv.lock']
+             'data/feature-verification.json', 'data/verification-plan.json',
+             'data/gtdb-derived/optimisation-summary.json', 'uv.lock']
     hashes = '\n'.join(f'| `{f}` | `{digest(ROOT / f)}` |' for f in files)
     counts = '\n'.join(f"| {t} | {r['usable']} | {json.dumps(r['counts_by_reason'], sort_keys=True)} |"
                        for t, r in population['traits'].items())
@@ -123,6 +124,14 @@ and all predictions in it abstain; no unsupported coverage claim is made.
 | Trait | Rank | Total taxa | Taxa in each outer fold | Supported merged bins |
 | --- | --- | ---: | --- | ---: |
 {chr(10).join(ranks)}
+
+Under the prescribed 100-taxon support rule and the nested five-fold inner
+holdout, family and order calibration have fewer than 100 taxa for every
+trait. They are explicitly unsupported, even after merging. The calibration
+breakthrough target at those ranks cannot be assessed with finite supported
+intervals under this frozen design. This is a pre-scoring limitation for review,
+not a result of outer performance. A future amended design would require a
+new reviewed pre-registration before any scoring.
 
 ## Estimators and calibration
 
