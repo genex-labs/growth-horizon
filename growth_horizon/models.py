@@ -21,14 +21,14 @@ def published(trait: str) -> tuple[Any, list[str]]:
     if trait == 'oxygen':
         return make_pipeline(StandardScaler(), SelectKBest(
             partial(mutual_info_regression, random_state=SEED), k=20),
-            LogisticRegression(C=1.0, class_weight='balanced', max_iter=10000,
+            LogisticRegression(C=1.0, class_weight='balanced', max_iter=100000,
                                random_state=0, solver='lbfgs')), ALL_AA
     alpha = 0.001 if trait == 'temperature_optimum' else 0.01
-    return make_pipeline(StandardScaler(), Lasso(alpha=alpha, max_iter=10000)), COMPARTMENT_AA
+    return make_pipeline(StandardScaler(), Lasso(alpha=alpha, max_iter=100000)), COMPARTMENT_AA
 
 
 def alternative(trait: str, alpha: float, whole: bool = False) -> tuple[Any, list[str]]:
-    estimator = (LogisticRegression(C=1.0 / alpha, class_weight='balanced', max_iter=10000,
+    estimator = (LogisticRegression(C=1.0 / alpha, class_weight='balanced', max_iter=100000,
                                    random_state=SEED) if trait == 'oxygen' else Ridge(alpha=alpha))
     return make_pipeline(StandardScaler(), estimator), ALL_AA if whole else COMPARTMENT_AA
 

@@ -5,13 +5,15 @@ Phase 1 only fits models and predicts inside each outer training side.
 
 B1 retrains GenomeSPOT's release v1.0.0 published specification. The three
 numeric traits use 60 compartment-specific amino-acid frequencies, standard
-scaling and Lasso with 10,000 maximum iterations. Temperature uses alpha
+scaling and Lasso with 100,000 maximum iterations. Temperature uses alpha
 0.001 (published pipeline index 16); pH and salinity use 0.01 (index 17).
 Oxygen uses the 20 whole-proteome amino-acid frequencies, standard scaling,
 SelectKBest with mutual-information regression and k=20, and balanced logistic
-regression with C=1, the lbfgs solver and 10,000 maximum iterations (index 2).
+regression with C=1, the lbfgs solver and 100,000 maximum iterations (index 2).
 The published feature and pipeline instructions are acquired as manifest
-sources. The mutual-information estimator is seeded for reproducibility;
+sources. The iteration budget is increased from the upstream 10,000 limit
+because inner-only fits issued convergence warnings. Features, penalty, solver
+and default tolerance remain unchanged; no outer result motivated the change. The mutual-information estimator is seeded for reproducibility;
 with k=20 of 20, it drops no features. The upstream taxonomic balancing and
 use flags are not adopted: the binding population rule includes every usable
 nonmissing label. This population change is explicit.

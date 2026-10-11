@@ -124,12 +124,14 @@ and all predictions in it abstain; no unsupported coverage claim is made.
 ## Estimators and calibration
 
 B1 uses GenomeSPOT's published estimator and feature specification, retrained
-within each fitting side; B2 is the nearest labelled tree relative; B3 is
+within each fitting side with a 100,000-iteration numerical budget; B2 is the nearest labelled tree relative; B3 is
 ridge or balanced logistic regression on whole-proteome amino-acid frequencies.
 B4 is not run for the licence and annotation/input conditions recorded in
 docs/baselines.md. The proposed predictor selects B1 or a ridge/logistic
 alternative on the published compartment features by proper-side tuning.
 Regularisation candidates are 0.1, 1, 10 and 100; logistic C is reciprocal.
+The numerical iteration cap was raised from 10,000 after inner-only convergence
+warnings; the published penalties, solver and tolerance were not changed.
 Ties favour B1, and tied regularisation scores favour the smaller value.
 All available methods share the same primary population and outer folds.
 
