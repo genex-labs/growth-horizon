@@ -30,9 +30,9 @@
     "sha256": "0079404eb6dba88e3e7878d6e4199a5196847648ad8d29ceeff8d3f4a09988a4"
   },
   {
-    "bytes": 2164,
+    "bytes": 2531,
     "path": "docs/INTEGRITY.md",
-    "sha256": "7420fae63632eaacb803f8393119c43b86befe1f10ef203d9e9190e961982ab2"
+    "sha256": "64ed2be6ba7bb14401b1ed8b7d79da52b3f8af8d07d6f9c22a0c0671498e2311"
   },
   {
     "bytes": 5097,
@@ -80,9 +80,9 @@
     "sha256": "9a3c1592cba14c04ebade25ec447e45f78bcf23d59fee5e4d34c0c171272b4ce"
   },
   {
-    "bytes": 2423,
+    "bytes": 2990,
     "path": "data/gtdb-derived/results/locked-run.json",
-    "sha256": "6ca680373ba81abd52578ac35efe026035a57ea52fc2affbd978650633eff581"
+    "sha256": "3b242c4e6defa20ac420a2e5eb10845aca72defce64eb76e40f8892ed14a1695"
   },
   {
     "bytes": 827282,
@@ -170,9 +170,9 @@
     "sha256": "281273076663009fb1e87b0c425b5b8cfe7ff2a63b9b7f17b3c86f3dc7751fcc"
   },
   {
-    "bytes": 399872,
+    "bytes": 398731,
     "path": "data/gtdb-derived/results/oxygen-phylum.json",
-    "sha256": "59ec87691f6749d68516fc448701481fb5a307d0a76b6a3d78b008e565d0601d"
+    "sha256": "e64b977a266b4c4709a3c6a66ab27b0b3c6907fce8f2bf24f4c49d8311d32053"
   },
   {
     "bytes": 993206,
@@ -200,9 +200,9 @@
     "sha256": "8335c542317d8525bfce67498eb50d93f0a6860d27b4d5fbe27e5cc97258b27b"
   },
   {
-    "bytes": 322313,
+    "bytes": 320968,
     "path": "data/gtdb-derived/results/ph_optimum-phylum.json",
-    "sha256": "ef9e97f29f4d3aa96bc078e349f04f7d7b0fec3ed36345a03a00c27fccc9efc5"
+    "sha256": "7973eec781596ab829f248160da4720172e11e62e54412cc880dea986ed9f978"
   },
   {
     "bytes": 852569,
@@ -210,14 +210,14 @@
     "sha256": "5494edc76528af6af616fc93a5261bb36e03e91b929857a6b04e1a0fd06eae78"
   },
   {
-    "bytes": 1606874,
+    "bytes": 1602434,
     "path": "data/gtdb-derived/results/public-results.tsv",
-    "sha256": "cc8d2ee3361dc55e772caad5e671da8fd920177c110f7d7f71dfb95c37e94f0c"
+    "sha256": "6a7a6abbc6b47b1c27647be1cf168be16128dd838ad3daca9a9a3576d191fac8"
   },
   {
-    "bytes": 307534,
+    "bytes": 306164,
     "path": "data/gtdb-derived/results/salinity_optimum-class.json",
-    "sha256": "04de123481889dd1981488e72c744e16503453baa1c06cec1335bc6e78d74313"
+    "sha256": "170e688a66d4e75a6b4cf571d463f72834320de32e7a4510ce8592269ff81f18"
   },
   {
     "bytes": 735191,
@@ -235,9 +235,9 @@
     "sha256": "13ae186a6ef41cdae8bd0dd2c066b22228a3ef08692581b5d2bd6880780d14ee"
   },
   {
-    "bytes": 303687,
+    "bytes": 302335,
     "path": "data/gtdb-derived/results/salinity_optimum-phylum.json",
-    "sha256": "fab77ed8f4f836229b10b0ea0e1e80120911d20c87602a4f1b138b71fe424764"
+    "sha256": "f15408b1dd4e82271d4182fa888c19e1ff134ab10d7b87463df350e1c34e2bba"
   },
   {
     "bytes": 818434,
@@ -270,9 +270,9 @@
     "sha256": "8024a7fcde00ca3c320009f87895a38e0a046ce9dbf5f315173b8fa738d20dc2"
   },
   {
-    "bytes": 334175,
+    "bytes": 332831,
     "path": "data/gtdb-derived/results/temperature_optimum-phylum.json",
-    "sha256": "333763481e84dc970be14e80dc010ac6387067972dd6aafa22ac5afaeca72868"
+    "sha256": "598ede64ee67ef82639358c613ed5b686a89a0d96bc8dd353b8c1c08bdfbb1ba"
   },
   {
     "bytes": 854224,

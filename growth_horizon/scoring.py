@@ -208,6 +208,7 @@ def score_fold(df: Any, trait: str, rank: str, fold: int, trees: Any,
             result['naive_abstain'] = result['naive_size'] > LIMITS[trait]
             result['naive_point'] = naive
         result['naive_supported'] = result['supported'].copy()
+        result['naive_abstain'] |= ~result['naive_supported']
         if sensitivity and m in ('B1', 'method'):
             payload = joblib.load(directory/f'{m}.joblib')
             dropped = [c for c in df.columns if c.endswith(('_mean_zc', '_mean_nh2o'))]

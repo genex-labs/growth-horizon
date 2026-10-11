@@ -66,3 +66,14 @@ def test_whole_order_budget_and_label_free_selection() -> None:
     assert choose_order(candidates, groups, scores, 2) == 'small'
     assert choose_order(candidates, groups, scores, 0) is None
     assert choose_order(candidates, groups, scores, 2, ['other', 'large', 'small']) == 'other'
+
+
+def test_naive_accepted_coverage_cannot_include_unsupported_items() -> None:
+    r = {'y': np.zeros(2), 'point': np.zeros(2), 'taxa': np.array(['a', 'b']),
+         'supported': np.zeros(2, bool), 'covered': np.ones(2, bool),
+         'size': np.ones(2), 'abstain': np.zeros(2, bool)}
+    s = summary(r, np.ones(2, bool), 'ph_optimum')
+    assert s['coverage']['value'] is None
+    assert s['coverage_accepted']['value'] is None
+    assert s['accepted_genomes'] == 0
+    assert s['abstention_rate'] == 1

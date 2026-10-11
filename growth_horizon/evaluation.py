@@ -84,7 +84,8 @@ def summary(rows: dict[str, Any], mask: Any, trait: str) -> dict[str, Any]:
     y, pred = rows['y'][selected], rows['point'][selected]
     oxygen = trait == 'oxygen'
     supported = selected & rows['supported']
-    accepted = selected & ~rows['abstain']
+    effective_abstain = rows['abstain'] | ~rows['supported']
+    accepted = selected & ~effective_abstain
     coverage = estimate(np.column_stack((rows['covered'][supported],
                                         np.ones(supported.sum()))), rows['taxa'][supported])
     coverage['abstention_rate'] = float(rows['abstain'][supported].mean()) if supported.any() else None
@@ -102,7 +103,7 @@ def summary(rows: dict[str, Any], mask: Any, trait: str) -> dict[str, Any]:
               'coverage': coverage, 'taxon_weighted_coverage': taxon_coverage,
               'mean_size': float(sizes.mean()) if len(sizes) else None,
               'nonfinite_size_count': int((~np.isfinite(sizes)).sum()),
-              'abstention_rate': float(rows['abstain'][selected].mean()) if selected.any() else None,
+              'abstention_rate': float(effective_abstain[selected].mean()) if selected.any() else None,
               'accepted_genomes': int(accepted.sum()),
               'coverage_accepted': estimate(np.column_stack((rows['covered'][accepted],
                   np.ones(accepted.sum()))), rows['taxa'][accepted]),

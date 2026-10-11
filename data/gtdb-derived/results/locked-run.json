@@ -19,9 +19,18 @@
     "random"
   ],
   "result_files": [
+    "data/gtdb-derived/results/figure-data.json",
     "data/gtdb-derived/results/locked-run.json",
+    "data/gtdb-derived/results/measure-next.json",
     "data/gtdb-derived/results/measure-oxygen-farthest.json",
+    "data/gtdb-derived/results/measure-oxygen-random.json",
     "data/gtdb-derived/results/measure-oxygen-widest.json",
+    "data/gtdb-derived/results/measure-ph_optimum-farthest.json",
+    "data/gtdb-derived/results/measure-ph_optimum-random.json",
+    "data/gtdb-derived/results/measure-ph_optimum-widest.json",
+    "data/gtdb-derived/results/measure-salinity_optimum-farthest.json",
+    "data/gtdb-derived/results/measure-salinity_optimum-random.json",
+    "data/gtdb-derived/results/measure-salinity_optimum-widest.json",
     "data/gtdb-derived/results/measure-temperature_optimum-farthest.json",
     "data/gtdb-derived/results/measure-temperature_optimum-random.json",
     "data/gtdb-derived/results/measure-temperature_optimum-widest.json",
