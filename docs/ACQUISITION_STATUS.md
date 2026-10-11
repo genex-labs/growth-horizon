@@ -1,6 +1,54 @@
 # Label-source acquisition gate
 
-Status: stopped before label-table acquisition, 2026-10-11 PT.
+Current status: resumed from the licence decision and stopped at the mandatory
+table-column source gate, 2026-10-11 PT. See the current inspection below.
+The earlier record is retained as historical evidence.
+
+## Current inspection after the Resume decision
+
+The original checkout was clean at `86f5d17`. The owner authorised the release
+`v1.0.0` training asset and supplied the licence basis now recorded word for word
+in [DATA.md](../DATA.md). The asset's required size and checksum are verified by
+`scripts/audit_labels.py`; actual verification results are in
+`data/label-audit.json` and the source manifest.
+
+The table has 267 fields including the accession: 230 sequence-derived feature
+columns, 29 BacDive trait and derived-flag columns, seven GTDB taxonomy columns,
+and the accession. The release README documents downloading GenBank genomic and
+protein FASTA files from NCBI, then measuring features. The release construction
+script confirms that these feature measurements are joined to the target table.
+Examples are `all_nt_length`, `all_total_protein_length` and `all_aa_A`.
+
+The Resume section says: "If any column comes from a source other than BacDive
+or GTDB, stop and report." The NCBI sequence-derived block reaches this gate.
+It was neither silently discarded nor substituted for the required recomputed
+features. No downstream benchmark work was undertaken after the gate.
+
+The incomplete clone mentioned in the earlier report was already absent at
+resume. `work-tmp/` contained only an empty `source-audit/` directory. No clone
+material existed to move to the Trash. Required construction sources were
+downloaded again through GitHub. A redundant source-archive download was stopped
+with its whole process tree; the receipt confirms no survivors. The partial
+archive is preserved as acquisition evidence in `data/raw/source-audit/`.
+
+The official GTDB release index was read and lists release 232 as its newest
+numbered release. It is preserved as source evidence; no reference tree or
+metadata file was selected or downloaded. No proteome size estimate or download
+was attempted, and no feature fallback was taken. GTDB-derived data tables have
+not been produced.
+
+The inspection counts observed label values and upstream inclusion flags only.
+Usable analysis populations and exclusions are not determined until the source
+gate is resolved and the data are mapped to the selected GTDB release. No folds,
+bins, baseline fitting, calibration or scoring have been performed. B4's code
+and licence have not been assessed. No pre-registration exists.
+
+Hub: no (the brief prohibits additional language-model calls). The root-session
+override was used; no workers or external planning/review calls were made.
+
+## Historical record before the Resume decision
+
+Status at the earlier stop: before label-table acquisition, 2026-10-11 PT.
 
 The binding design was read in full and its supplied SHA-256 matched:
 `a424481648082a52fd05a4471b1d5f23d4d000ec262de33774b16eb3ae9b3b33`.

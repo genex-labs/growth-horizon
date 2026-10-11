@@ -1,9 +1,9 @@
 {
-  "status": "stopped_label_data_licence_unclear",
-  "recorded_at_pt": "2026-10-11 01:53:41 PDT",
+  "status": "stopped_third_source_feature_columns",
+  "recorded_at_pt": "2026-10-11 02:02:18 PDT",
   "source_commit": "f79f7d6fdece71b766ff47f4fb7114daae5287d7",
   "repository_licence": "MIT",
-  "label_data_licence": "unclear",
+  "label_data_licence": "Owner-authorised BacDive CC BY 4.0 and GTDB CC BY-SA 4.0 basis; see DATA.md",
   "records": [
     {
       "path": "data/raw/source-audit/GenomeSPOT-LICENSE.txt",
@@ -53,38 +53,130 @@
       "bytes": 28211,
       "sha256": "4625d140aef9b138d8db9c0eb6d885d1359715be444561e528edfe668414c71a",
       "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/labels/training_data.tsv",
+      "url": "https://github.com/cultivarium/GenomeSPOT/releases/download/v1.0.0/training_data.tsv",
+      "bytes": 64412996,
+      "sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc",
+      "kind": "verified_release_asset"
+    },
+    {
+      "path": "data/raw/source-audit/make_training_dataset.py",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/model_training/make_training_dataset.py?ref=f79f7d6fdece71b766ff47f4fb7114daae5287d7",
+      "bytes": 11910,
+      "sha256": "35f59b05756e58ff49da570da2d2819b316d8770e44f364e34fb635cc0b1051b",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/download_trait_data.py",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/model_training/download_trait_data.py?ref=f79f7d6fdece71b766ff47f4fb7114daae5287d7",
+      "bytes": 25160,
+      "sha256": "704b4b578bc4bcdc2224841f45cd6691606431940a9ab6d9a5be758037b41840",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/genome.py",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/bioinformatics/genome.py?ref=f79f7d6fdece71b766ff47f4fb7114daae5287d7",
+      "bytes": 11565,
+      "sha256": "d7ef21d62a339b5b06864fe9776369ff59fa8221bee01c7b1f00a965513a352f",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/release-README.md",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/README.md?ref=v1.0.0",
+      "bytes": 15873,
+      "sha256": "e8da3de8db33d1bfe177c5688852824abb44e8c8ecb7ff681199c48a011e9463",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/release-make_training_dataset.py",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/model_training/make_training_dataset.py?ref=v1.0.0",
+      "bytes": 11910,
+      "sha256": "35f59b05756e58ff49da570da2d2819b316d8770e44f364e34fb635cc0b1051b",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/gtdb-index.html",
+      "url": "https://data.gtdb.ecogenomic.org/releases/",
+      "bytes": 5261,
+      "sha256": "27d103aed4d394349cd656bd349f6b2f309389a1fb39d809dc2e93ab6b93f2d2",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/GenomeSPOT-source.partial.tar.gz",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/tarball/f79f7d6fdece71b766ff47f4fb7114daae5287d7",
+      "bytes": 2682880,
+      "sha256": "5f39c29aedc9c8ebd3a775312b44a602ab6cf0f08ed42af28373d871e23b744c",
+      "kind": "incomplete_download_preserved_as_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/resume-process-stop.json",
+      "url": null,
+      "bytes": 147,
+      "sha256": "87b52e6e1de5cc76be189794aae12236876f63fa13ca22926a9d1913f0ed296c",
+      "kind": "local_process_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/Apache-LICENSE.txt",
+      "url": "https://api.github.com/repos/apache/commons-lang/contents/LICENSE.txt",
+      "bytes": 11359,
+      "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7",
+      "kind": "downloaded_licence_record"
     }
   ],
-  "undownloaded_label_asset": {
+  "gtdb_release": null,
+  "proteome_bytes": null,
+  "trait_counts": {
+    "temperature_optimum": {
+      "labelled_nonmissing_in_raw_table": 4783,
+      "missing_in_raw_table": 10813,
+      "upstream_use_true": 2420,
+      "analysis_usable": null,
+      "excluded": null,
+      "reason": "Analysis mapping and exclusions not assessed after mandatory column-source gate"
+    },
+    "oxygen": {
+      "labelled_nonmissing_in_raw_table": 7300,
+      "missing_in_raw_table": 8296,
+      "upstream_use_true": 7300,
+      "analysis_usable": null,
+      "excluded": null,
+      "reason": "Analysis mapping and exclusions not assessed after mandatory column-source gate"
+    },
+    "salinity_optimum": {
+      "labelled_nonmissing_in_raw_table": 2376,
+      "missing_in_raw_table": 13220,
+      "upstream_use_true": 846,
+      "analysis_usable": null,
+      "excluded": null,
+      "reason": "Analysis mapping and exclusions not assessed after mandatory column-source gate"
+    },
+    "ph_optimum": {
+      "labelled_nonmissing_in_raw_table": 3549,
+      "missing_in_raw_table": 12047,
+      "upstream_use_true": 1022,
+      "analysis_usable": null,
+      "excluded": null,
+      "reason": "Analysis mapping and exclusions not assessed after mandatory column-source gate"
+    }
+  },
+  "previous_status": {
+    "status": "stopped_label_data_licence_unclear",
+    "recorded_at_pt": "2026-10-11 01:53:41 PDT",
+    "commit": "86f5d17d2290429351a3ffce1d6c77094f1364ea"
+  },
+  "label_asset": {
     "url": "https://github.com/cultivarium/GenomeSPOT/releases/download/v1.0.0/training_data.tsv",
     "release": "v1.0.0",
     "published_at": "2026-03-16T12:27:17Z",
     "advertised_bytes": 64412996,
     "advertised_sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc",
-    "locally_verified": false
+    "locally_verified": true,
+    "path": "data/raw/labels/training_data.tsv",
+    "actual_bytes": 64412996,
+    "actual_sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc"
   },
-  "gtdb_release": null,
-  "proteome_bytes": null,
-  "trait_counts": {
-    "temperature_optimum": {
-      "labelled": null,
-      "excluded": null,
-      "reason": "not acquired: mandatory licence gate"
-    },
-    "oxygen": {
-      "labelled": null,
-      "excluded": null,
-      "reason": "not acquired: mandatory licence gate"
-    },
-    "salinity_optimum": {
-      "labelled": null,
-      "excluded": null,
-      "reason": "not acquired: mandatory licence gate"
-    },
-    "ph_optimum": {
-      "labelled": null,
-      "excluded": null,
-      "reason": "not acquired: mandatory licence gate"
-    }
-  }
+  "gtdb_newest_numbered_release_observed": "232",
+  "no_outer_fold_scoring": true
 }
