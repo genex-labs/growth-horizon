@@ -1,9 +1,25 @@
 # Current phase-1 resume
 
 Resume 3 resolves the unavailable-proteome stop and makes feature differences
-a reportable finding. Acquisition and development are in progress. The
+a reportable finding. Acquisition and inner development are complete. The
 following earlier status records are historical; they do not describe the
 current permission or build state. Current aggregate receipts supersede them.
+
+GTDB R11-RS232 maps the complete primary populations: temperature 4,715,
+oxygen 7,230, salinity 2,347 and pH 3,513. Missing labels and current-release
+mapping exclusions are recorded separately in the population summary.
+The 71 available sampled genome pairs total 135,825,146 compressed bytes.
+All were recomputed; agreement is 95.65% in each of five feature groups.
+The 29 unavailable accessions and all tolerances remain recorded without
+resampling. See DATA.md for the discrepancy finding.
+
+The runner builds 120 nested folds across four traits and six ranks/references.
+B1, B2 and B3 are fitted and calibrated only on inner queries. B4 is omitted
+for the documented licence and input limitations. The 100-calibration-taxon
+requirement leaves every family, order, class and phylum fold unsupported;
+this prevents assessment of the family/order calibration target under the
+prescribed design. No outer prediction or metric was computed. The frozen
+pre-registration and its receipt document the completed build and checks.
 
 # Resume 2: feature-verification source blocker
 

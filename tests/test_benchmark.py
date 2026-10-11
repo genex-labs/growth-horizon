@@ -201,6 +201,10 @@ def test_complete_synthetic_inner_run_never_queries_outer_test(tmp_path: object)
     assert set(result['methods']) == {'B1', 'B2', 'B3', 'method'}
     assert result['no_outer_fold_scoring']
     assert any(b['supported'] for b in result['methods']['B1']['mondrian']['bins'])
+    saved = np.load(base / 'data/gtdb-derived/local/analysis/temperature_optimum/genus/fold0/membership-distances.npz')
+    assert np.array_equal(saved['bin_training_rows'], saved['proper'])
+    assert not set(saved['bin_training_rows']) & set(saved['calibration'])
+    assert len(saved['training_side_distances']) == len(saved['proper'])
 
 
 def test_oxygen_with_one_positive_taxon_is_explicitly_unsupported(tmp_path: object) -> None:

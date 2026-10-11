@@ -107,8 +107,10 @@ matching its inner calibration fitting population. No query's own label enters
 its nearest-source set.
 
 For each trait/rank/outer fold, five initial quantile bins are fixed using
-training-side distances only: pool the distances of the five inner holdouts
-to their respective inner fitting sides. Cut points are the 20th, 40th, 60th
+proper-training-side distances only: pool the distances of the five proper-side
+tuning holdouts to their respective fitting sides, using base seed + 3.
+Calibration covariates and residuals do not determine cut points.
+Cut points are the 20th, 40th, 60th
 and 80th percentiles of finite distances. Equal cut points collapse and equal
 distances are never split arbitrarily. Right-side search assigns boundaries.
 Outer test distances and labels never set cut points. Initial cut points,

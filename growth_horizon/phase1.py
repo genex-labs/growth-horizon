@@ -101,12 +101,15 @@ def run_fold(df: Any, trait: str, rank: str, outer: IntArray, fold: int,
     seed = SEED + 1000 * RANKS.index(rank) + 10 * fold
     training, inner = nested_membership(groups, outer, fold, seed + 1)
     proper, calibration = training[inner != 0], training[inner == 0]
-    # Training-side pseudo-test distances alone define bins, before any residual is inspected.
-    bin_distances = np.full(len(training), math.inf)
-    for inner_fold in range(5):
-        fit, query = training[inner != inner_fold], training[inner == inner_fold]
-        d, _ = nearest_rows(df, fit, query, trees)
-        bin_distances[inner == inner_fold] = d
+    # Fix bins on proper training alone, independently of calibration covariates.
+    bin_distances = np.full(len(proper), math.inf)
+    if len({groups[i] for i in proper}) >= 5:
+        bin_partition = grouped_folds([groups[i] for i in proper], seed + 3)
+        for inner_fold in range(5):
+            fit, query = proper[bin_partition != inner_fold], proper[bin_partition == inner_fold]
+            boundary.check(fit, query)
+            d, _ = nearest_rows(df, fit, query, trees)
+            bin_distances[bin_partition == inner_fold] = d
     edges = distance_edges(bin_distances)
     cal_distances, cal_neighbours = nearest_rows(df, proper, calibration, trees)
     # These outer test quantities are phenotype-free distances and memberships only.
@@ -120,7 +123,7 @@ def run_fold(df: Any, trait: str, rank: str, outer: IntArray, fold: int,
     directory.mkdir(parents=True, exist_ok=True)
     np.savez(directory / 'membership-distances.npz', outer_test=outer_rows,
              outer_training=training, inner_assignment=inner, proper=proper,
-             calibration=calibration, training_side_distances=bin_distances,
+             calibration=calibration, bin_training_rows=proper, training_side_distances=bin_distances,
              calibration_distances=cal_distances, outer_distances=outer_distances,
              outer_training_distances=outer_training_distances,
              naive_fit=naive_fit, naive_calibration=naive_cal, distance_edges=edges)

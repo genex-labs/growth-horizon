@@ -92,6 +92,16 @@ group are recorded in `data/feature-verification.json`. A mismatch may reflect
 a changed sequence annotation or dependency implementation; it is an integrity
 finding, not proof of its cause. All methods use the same published table.
 
+The completed comparison contains 3,266 values in each of five feature groups;
+3,124 agree in each group (95.65%). The two disagreeing descriptors are
+`mean_zc` and `mean_nh2o` in every group for all 71 genomes. The other 220
+feature columns agree for every available sampled genome, including all amino-acid
+frequency columns used by B1, B3 and the proposed predictor. No genome agrees
+on all 230 columns. Maximum absolute differences by group are recorded in
+the aggregate receipt; individual comparisons stay untracked. These findings
+do not establish whether annotation, descriptor code or another provenance
+difference caused the discrepancies. No table feature was substituted.
+
 GTDB R11-RS232 (232.0) is the newest numbered release observed at the official
 release index on 2026-10-11. Its official `sp_clusters_r232.tsv` is the metadata
 mapping each clustered accession to its species representative and full
