@@ -1,5 +1,5 @@
 {
-  "status": "sources_accepted_feature_verification_pending",
+  "status": "primary_populations_established",
   "bytes": 64412996,
   "sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc",
   "rows": 15596,
@@ -40,8 +40,77 @@
     "0": 1696,
     "1": 5604
   },
-  "analysis_exclusions": null,
-  "analysis_exclusions_reason": "GTDB mapping pending verified feature sample",
+  "analysis_exclusions": {
+    "temperature_optimum": {
+      "usable": 4715,
+      "counts_by_reason": {
+        "missing_label": 10813,
+        "usable": 4715,
+        "absent_from_release232_metadata": 68
+      },
+      "taxa": {
+        "domain": 2,
+        "phylum": 34,
+        "class": 75,
+        "order": 194,
+        "family": 469,
+        "genus": 1766,
+        "species": 4599
+      }
+    },
+    "oxygen": {
+      "usable": 7230,
+      "counts_by_reason": {
+        "missing_label": 8296,
+        "usable": 7230,
+        "absent_from_release232_metadata": 70
+      },
+      "taxa": {
+        "domain": 2,
+        "phylum": 38,
+        "class": 100,
+        "order": 242,
+        "family": 583,
+        "genus": 2407,
+        "species": 6720
+      }
+    },
+    "salinity_optimum": {
+      "usable": 2347,
+      "counts_by_reason": {
+        "missing_label": 13220,
+        "usable": 2347,
+        "absent_from_release232_metadata": 29
+      },
+      "taxa": {
+        "domain": 2,
+        "phylum": 29,
+        "class": 54,
+        "order": 137,
+        "family": 325,
+        "genus": 1153,
+        "species": 2326
+      }
+    },
+    "ph_optimum": {
+      "usable": 3513,
+      "counts_by_reason": {
+        "missing_label": 12047,
+        "usable": 3513,
+        "absent_from_release232_metadata": 36
+      },
+      "taxa": {
+        "domain": 2,
+        "phylum": 32,
+        "class": 71,
+        "order": 184,
+        "family": 445,
+        "genus": 1591,
+        "species": 3473
+      }
+    }
+  },
+  "analysis_exclusions_reason": "Every disposition recorded in counts_by_reason",
   "column_count_including_accession": 267,
   "column_sources": {
     "accession_from_bacdive": [

@@ -1,0 +1,74 @@
+{
+  "raw_genomes": 15596,
+  "mapped_genomes": 15385,
+  "traits": {
+    "temperature_optimum": {
+      "usable": 4715,
+      "counts_by_reason": {
+        "missing_label": 10813,
+        "usable": 4715,
+        "absent_from_release232_metadata": 68
+      },
+      "taxa": {
+        "domain": 2,
+        "phylum": 34,
+        "class": 75,
+        "order": 194,
+        "family": 469,
+        "genus": 1766,
+        "species": 4599
+      }
+    },
+    "oxygen": {
+      "usable": 7230,
+      "counts_by_reason": {
+        "missing_label": 8296,
+        "usable": 7230,
+        "absent_from_release232_metadata": 70
+      },
+      "taxa": {
+        "domain": 2,
+        "phylum": 38,
+        "class": 100,
+        "order": 242,
+        "family": 583,
+        "genus": 2407,
+        "species": 6720
+      }
+    },
+    "salinity_optimum": {
+      "usable": 2347,
+      "counts_by_reason": {
+        "missing_label": 13220,
+        "usable": 2347,
+        "absent_from_release232_metadata": 29
+      },
+      "taxa": {
+        "domain": 2,
+        "phylum": 29,
+        "class": 54,
+        "order": 137,
+        "family": 325,
+        "genus": 1153,
+        "species": 2326
+      }
+    },
+    "ph_optimum": {
+      "usable": 3513,
+      "counts_by_reason": {
+        "missing_label": 12047,
+        "usable": 3513,
+        "absent_from_release232_metadata": 36
+      },
+      "taxa": {
+        "domain": 2,
+        "phylum": 32,
+        "class": 71,
+        "order": 184,
+        "family": 445,
+        "genus": 1591,
+        "species": 3473
+      }
+    }
+  }
+}

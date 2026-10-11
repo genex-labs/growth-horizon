@@ -1,10 +1,115 @@
 {
-  "status": "blocked_sample_proteomes_unavailable",
+  "status": "phase1_complete_outer_unscored",
   "recorded_at_pt": "2026-10-11 02:15:46 PDT",
   "source_commit": "f79f7d6fdece71b766ff47f4fb7114daae5287d7",
   "repository_licence": "MIT",
   "label_data_licence": "Owner-authorised BacDive CC BY 4.0 and GTDB CC BY-SA 4.0 basis; see DATA.md",
   "records": [
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/FILE_DESCRIPTIONS.txt",
+      "path": "data/raw/gtdb/FILE_DESCRIPTIONS.txt",
+      "bytes": 7434,
+      "sha256": "725fe559036a87d5d5636d9eb4fffb161421a586d683a957ddd1036051a26de6",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/MD5SUM.txt",
+      "path": "data/raw/gtdb/MD5SUM.txt",
+      "bytes": 5482,
+      "sha256": "a5c2cc52b7d319e70bb678bbe52acc6d4a697dde8f6e130b2ce39e706ba8939d",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/METHODS.txt",
+      "path": "data/raw/gtdb/METHODS.txt",
+      "bytes": 8492,
+      "sha256": "ecdd14633502b7ebe4e625316f226a64f2128214c9a4fc0d6852457e1b6872c8",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/RELEASE_NOTES.txt",
+      "path": "data/raw/gtdb/RELEASE_NOTES.txt",
+      "bytes": 1363,
+      "sha256": "c6fb891abcbbec1ac753d1f9d8bc920a8adb060ad0f51b41b99094daee62f2f7",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/VERSION.txt",
+      "path": "data/raw/gtdb/VERSION.txt",
+      "bytes": 29,
+      "sha256": "7aaa7dca8b101daaab5635cad0895051ff427223292b04913f8791ad8c53d591",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/ar53_r232.tree.gz",
+      "path": "data/raw/gtdb/ar53_r232.tree.gz",
+      "bytes": 156360,
+      "sha256": "fc879fdef7928e6f7ddb48e2e10893869bfd010da2828b72f9592b50b06ea397",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/metadata_field_desc.tsv",
+      "path": "data/raw/gtdb/auxillary_files/metadata_field_desc.tsv",
+      "bytes": 7060,
+      "sha256": "ddd59f444d6e51279944e4e5f1d62af2c8ac1196439863fa6fcdd394ddb5d684",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "path": "data/raw/gtdb/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 51465830,
+      "sha256": "96414cdc04addaac0280593f3d32a7c8c30cbc2aa498a9fee81886e478ec9fc9",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "path": "data/raw/gtdb/bac120_r232.tree.gz",
+      "bytes": 2462421,
+      "sha256": "8c51060f740da69ff7076ed0305250a881b23093413108450c90fc233fd54c19",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/",
+      "path": "data/raw/gtdb/index.html",
+      "bytes": 7554,
+      "sha256": "a2f7ad819b7af0fe23ded78f3c741c8e685cfaf8781799ba5e432efbabb78ce7",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://data.gtdb.ecogenomic.org/releases/",
+      "path": "data/raw/gtdb/releases.html",
+      "bytes": 5261,
+      "sha256": "27d103aed4d394349cd656bd349f6b2f309389a1fb39d809dc2e93ab6b93f2d2",
+      "kind": "verified_source"
+    },
+    {
+      "path": "data/raw/gtdb/size-preflight.json",
+      "url": null,
+      "bytes": 120,
+      "sha256": "27d92b3f32f35dd790c51694cc68acbafa1b21f349f01b05ab4e77914488e43e",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/labels/training_data.tsv",
+      "url": "https://github.com/cultivarium/GenomeSPOT/releases/download/v1.0.0/training_data.tsv",
+      "bytes": 64412996,
+      "sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc",
+      "kind": "verified_release_asset"
+    },
+    {
+      "path": "data/raw/source-audit/Apache-LICENSE.txt",
+      "url": "https://api.github.com/repos/apache/commons-lang/contents/LICENSE.txt",
+      "bytes": 11359,
+      "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7",
+      "kind": "downloaded_licence_record"
+    },
+    {
+      "path": "data/raw/source-audit/FILE_DESCRIPTIONS.txt",
+      "url": null,
+      "bytes": 7434,
+      "sha256": "725fe559036a87d5d5636d9eb4fffb161421a586d683a957ddd1036051a26de6",
+      "kind": "local_acquisition_receipt"
+    },
     {
       "path": "data/raw/source-audit/GenomeSPOT-LICENSE.txt",
       "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/license",
@@ -13,11 +118,151 @@
       "kind": "downloaded_source_record"
     },
     {
+      "path": "data/raw/source-audit/GenomeSPOT-source.partial.tar.gz",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/tarball/f79f7d6fdece71b766ff47f4fb7114daae5287d7",
+      "bytes": 2682880,
+      "sha256": "5f39c29aedc9c8ebd3a775312b44a602ab6cf0f08ed42af28373d871e23b744c",
+      "kind": "incomplete_download_preserved_as_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/MD5SUM.txt",
+      "url": null,
+      "bytes": 5482,
+      "sha256": "a5c2cc52b7d319e70bb678bbe52acc6d4a697dde8f6e130b2ce39e706ba8939d",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/RELEASE_NOTES.txt",
+      "url": null,
+      "bytes": 1363,
+      "sha256": "c6fb891abcbbec1ac753d1f9d8bc920a8adb060ad0f51b41b99094daee62f2f7",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/VERSION.txt",
+      "url": null,
+      "bytes": 29,
+      "sha256": "7aaa7dca8b101daaab5635cad0895051ff427223292b04913f8791ad8c53d591",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/b4-licence-check.json",
+      "url": null,
+      "bytes": 164,
+      "sha256": "bd4e290058eb3803ecd777d9f99685310bba02bf9b64ebd76f0bea86648dd8fb",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/b4-readme.json",
+      "url": "https://api.github.com/repos/LeibnizDSMZ/bacdive-AI/readme",
+      "bytes": 3914,
+      "sha256": "3aaf124a88a97a6c2e80b4f6da4bf0e380a613e758add85db55f54cdda9a065c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/b4-tree.json",
+      "url": "https://api.github.com/repos/LeibnizDSMZ/bacdive-AI/git/trees/main?recursive=1",
+      "bytes": 1761,
+      "sha256": "e23c570b14327b0cbe7d1fb9c2fa5af296c92a69794dc1bed50b276e5602884e",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/bac2feature-page-check.json",
+      "url": null,
+      "bytes": 349,
+      "sha256": "418f166fd954615e4edf119b9247a44cb848dc56e926035b73ab85d6a77c33f0",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/calpred.html",
+      "url": "https://www.nature.com/articles/s41588-024-01792-w",
+      "bytes": 403449,
+      "sha256": "105c7ef1780484854d24312d1cba5107efdc1d6b0877617677c577ef101ed9f4",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/carbon.html",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.06.743333v1",
+      "bytes": 135022,
+      "sha256": "86649f4ee7d3397fc142576db3faf31968509b453a6a972ac1e917d8922112cb",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/download_trait_data.py",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/model_training/download_trait_data.py?ref=f79f7d6fdece71b766ff47f4fb7114daae5287d7",
+      "bytes": 25160,
+      "sha256": "704b4b578bc4bcdc2224841f45cd6691606431940a9ab6d9a5be758037b41840",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/final-binding-checks.json",
+      "url": null,
+      "bytes": 229,
+      "sha256": "f98633fc2c0a2bd0ac8ce7982b4747983b62ac76aef3e5c1a814d848efa176e2",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/genome.py",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/bioinformatics/genome.py?ref=f79f7d6fdece71b766ff47f4fb7114daae5287d7",
+      "bytes": 11565,
+      "sha256": "d7ef21d62a339b5b06864fe9776369ff59fa8221bee01c7b1f00a965513a352f",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/genomespot-paper.html",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.03.22.586313v1",
+      "bytes": 106415,
+      "sha256": "d30544b997193ed859394e68c150f329b290c67229bff18fe9872eb05721a4f0",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/gtdb-index.html",
+      "url": "https://data.gtdb.ecogenomic.org/releases/",
+      "bytes": 5261,
+      "sha256": "27d103aed4d394349cd656bd349f6b2f309389a1fb39d809dc2e93ab6b93f2d2",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/gtdb232-index.html",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/",
+      "bytes": 7554,
+      "sha256": "a2f7ad819b7af0fe23ded78f3c741c8e685cfaf8781799ba5e432efbabb78ce7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/instructions.json",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/models/instructions.json",
+      "bytes": 5647,
+      "sha256": "c39448b504e09d1008f5f18d3751e1e0ad456b260cd1a64995d740e5f9d4df0d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/koblitz.html",
+      "url": "https://www.nature.com/articles/s42003-025-08313-3",
+      "bytes": 440126,
+      "sha256": "e2401c0abedaa766d9964e09f81bb624fa5b4b21f70d236edb647565ca511b1f",
+      "kind": "source_audit_evidence"
+    },
+    {
       "path": "data/raw/source-audit/licence.json",
       "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/license",
       "bytes": 2388,
       "sha256": "10cb25046de486519ce13d9529c004cd892f9b8a6147f4adfcde9bfc52e1a589",
       "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/make_training_dataset.py",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/model_training/make_training_dataset.py?ref=f79f7d6fdece71b766ff47f4fb7114daae5287d7",
+      "bytes": 11910,
+      "sha256": "35f59b05756e58ff49da570da2d2819b316d8770e44f364e34fb635cc0b1051b",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/plos.html",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011705",
+      "bytes": 357798,
+      "sha256": "a358edc53dc1a8bf0280fc722bf24963e122c8c60210881de5791e27eca61142",
+      "kind": "source_audit_evidence"
     },
     {
       "path": "data/raw/source-audit/process-stop.json",
@@ -34,59 +279,17 @@
       "kind": "downloaded_source_record"
     },
     {
-      "path": "data/raw/source-audit/release-licence.txt",
-      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/LICENSE?ref=v1.0.0",
-      "bytes": 1068,
-      "sha256": "3f6ae28036d1d671f0c97ee76cadab9c73a8379c1eaedb36b0c0a44872d16091",
-      "kind": "downloaded_source_record"
-    },
-    {
-      "path": "data/raw/source-audit/releases.json",
-      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/releases",
-      "bytes": 5724,
-      "sha256": "daff56a68de143653f17f65b6954a0d8187cf30d0532b4be252fe66ae98db078",
-      "kind": "downloaded_source_record"
-    },
-    {
-      "path": "data/raw/source-audit/tree.json",
-      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/git/trees/main?recursive=1",
-      "bytes": 28211,
-      "sha256": "4625d140aef9b138d8db9c0eb6d885d1359715be444561e528edfe668414c71a",
-      "kind": "downloaded_source_record"
-    },
-    {
-      "path": "data/raw/labels/training_data.tsv",
-      "url": "https://github.com/cultivarium/GenomeSPOT/releases/download/v1.0.0/training_data.tsv",
-      "bytes": 64412996,
-      "sha256": "19a9f888f06655e17e95c7110ab4ff5ace38ece121e6cb1ac3bcb7d3c087abcc",
-      "kind": "verified_release_asset"
-    },
-    {
-      "path": "data/raw/source-audit/make_training_dataset.py",
-      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/model_training/make_training_dataset.py?ref=f79f7d6fdece71b766ff47f4fb7114daae5287d7",
-      "bytes": 11910,
-      "sha256": "35f59b05756e58ff49da570da2d2819b316d8770e44f364e34fb635cc0b1051b",
-      "kind": "downloaded_source_record"
-    },
-    {
-      "path": "data/raw/source-audit/download_trait_data.py",
-      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/model_training/download_trait_data.py?ref=f79f7d6fdece71b766ff47f4fb7114daae5287d7",
-      "bytes": 25160,
-      "sha256": "704b4b578bc4bcdc2224841f45cd6691606431940a9ab6d9a5be758037b41840",
-      "kind": "downloaded_source_record"
-    },
-    {
-      "path": "data/raw/source-audit/genome.py",
-      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/genome_spot/bioinformatics/genome.py?ref=f79f7d6fdece71b766ff47f4fb7114daae5287d7",
-      "bytes": 11565,
-      "sha256": "d7ef21d62a339b5b06864fe9776369ff59fa8221bee01c7b1f00a965513a352f",
-      "kind": "downloaded_source_record"
-    },
-    {
       "path": "data/raw/source-audit/release-README.md",
       "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/README.md?ref=v1.0.0",
       "bytes": 15873,
       "sha256": "e8da3de8db33d1bfe177c5688852824abb44e8c8ecb7ff681199c48a011e9463",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/source-audit/release-licence.txt",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/contents/LICENSE?ref=v1.0.0",
+      "bytes": 1068,
+      "sha256": "3f6ae28036d1d671f0c97ee76cadab9c73a8379c1eaedb36b0c0a44872d16091",
       "kind": "downloaded_source_record"
     },
     {
@@ -97,18 +300,11 @@
       "kind": "downloaded_source_record"
     },
     {
-      "path": "data/raw/source-audit/gtdb-index.html",
-      "url": "https://data.gtdb.ecogenomic.org/releases/",
-      "bytes": 5261,
-      "sha256": "27d103aed4d394349cd656bd349f6b2f309389a1fb39d809dc2e93ab6b93f2d2",
+      "path": "data/raw/source-audit/releases.json",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/releases",
+      "bytes": 5724,
+      "sha256": "daff56a68de143653f17f65b6954a0d8187cf30d0532b4be252fe66ae98db078",
       "kind": "downloaded_source_record"
-    },
-    {
-      "path": "data/raw/source-audit/GenomeSPOT-source.partial.tar.gz",
-      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/tarball/f79f7d6fdece71b766ff47f4fb7114daae5287d7",
-      "bytes": 2682880,
-      "sha256": "5f39c29aedc9c8ebd3a775312b44a602ab6cf0f08ed42af28373d871e23b744c",
-      "kind": "incomplete_download_preserved_as_evidence"
     },
     {
       "path": "data/raw/source-audit/resume-process-stop.json",
@@ -118,11 +314,1523 @@
       "kind": "local_process_receipt"
     },
     {
-      "path": "data/raw/source-audit/Apache-LICENSE.txt",
-      "url": "https://api.github.com/repos/apache/commons-lang/contents/LICENSE.txt",
-      "bytes": 11359,
-      "sha256": "b1d2870f1a00e4d7f56576e5f0870cba109e041f8af66866cf5b499478e654e7",
-      "kind": "downloaded_licence_record"
+      "path": "data/raw/source-audit/resume3-ar-metadata.partial.tsv.gz",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/ar53_metadata_r232.tsv.gz",
+      "bytes": 5242880,
+      "sha256": "9d7c318b8073b058645cae4e4dce3803842cf3d1be5c98c31f362b1ac96af8d5",
+      "kind": "incomplete_download_preserved_as_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/resume3-development-process-stop.json",
+      "url": null,
+      "bytes": 228,
+      "sha256": "c5dda485f13240008d83d8e10ebbec7bb8a968cfcb72d613c8c751b68c6922de",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/resume3-process-stop.json",
+      "url": null,
+      "bytes": 156,
+      "sha256": "f590d36cbb4225dff3470590567418e59eb41337ea47be33aafc720befad5721",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/resume3-sequence-process-stop.json",
+      "url": null,
+      "bytes": 604,
+      "sha256": "4bc93fe580be8ea6ed6b2e8472caaa223117ce5483c29966d287a340125a8454",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/source-audit/run_model_selection.py",
+      "url": "https://raw.githubusercontent.com/cultivarium/GenomeSPOT/v1.0.0/genome_spot/model_training/run_model_selection.py",
+      "bytes": 15960,
+      "sha256": "92e66ca06a231c22d6e68d1b8dc529d2e23f2fea16fe6be9552a8940aa419da3",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/source-audit/tree.json",
+      "url": "https://api.github.com/repos/cultivarium/GenomeSPOT/git/trees/main?recursive=1",
+      "bytes": 28211,
+      "sha256": "4625d140aef9b138d8db9c0eb6d885d1359715be444561e528edfe668414c71a",
+      "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/transfer-parts/ar53_r232.tree.gz/0-156359.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/ar53_r232.tree.gz",
+      "bytes": 156360,
+      "sha256": "fc879fdef7928e6f7ddb48e2e10893869bfd010da2828b72f9592b50b06ea397",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/ar53_r232.tree.gz/receipt.json",
+      "url": null,
+      "bytes": 130,
+      "sha256": "007a2ed47b98763272fe7a9b684de3ae5756034f2740b1d0f6f45206dd237d12",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/0-262143.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 262144,
+      "sha256": "35b319815859b0a13bd259a2ee51ee158e6cde06c7d969ae1a4634145f7b334d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/1048576-1310719.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 262144,
+      "sha256": "e3e070f922b3e291c392d06050b72e3b9de8b1650b5f691da506c99e4c995fab",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/1310720-1572863.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 262144,
+      "sha256": "be007fe03d3512a988bae416f026e774596d84c2f7ae2c6f3b91bd320daa5a6f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/1572864-1835007.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 262144,
+      "sha256": "1cd908b7ad0fc5f8e87aa394f99c3bf4724cd4279b217912a2cfafd05b14f57c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/1835008-2097151.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 262144,
+      "sha256": "79449e688fb7f693a44e580dea36e1ba1013c32c8f274870aeb6e3112bbfbbb5",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/2097152-2359295.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 262144,
+      "sha256": "365fcfd836bcac43b96c3d499e373e095a8c59daeac2f860b6da58c6c5a070c4",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/2359296-2462420.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 103125,
+      "sha256": "be9aafbda553de548a0a3b9c448a66de103e5237ca71083ad21610fd9cdc02a3",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/262144-524287.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 262144,
+      "sha256": "ba4ec8c19a14fb283a84fe7c7f4c8ccaf8a0e30d04149fd1be828269e51f4350",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/524288-786431.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 262144,
+      "sha256": "bef4b3d6f89e54e90dfa6d323c697655e22fe6c4314d8b6d57cdf4aa23757589",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/786432-1048575.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/bac120_r232.tree.gz",
+      "bytes": 262144,
+      "sha256": "fdb377d078046b960099308d3b734520318a6473d8f12def76a0653d2d73ef1c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/bac120_r232.tree.gz/receipt.json",
+      "url": null,
+      "bytes": 1324,
+      "sha256": "a5e5b14e77e7bb4cab906186cc51bc6de6241e3bdee374b1b6efebf694551499",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/0-262143.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "28748981ac43a0d50586c82af11df0a18f15b78904869060d28dd3f3f376fd1d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/10223616-10485759.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ca5ce33fd907d0059e109c69813958a64d1e99af8cc6458f378b0e5ebbf4a4b2",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/1048576-1310719.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "40df7cf72c36a938c0d0473768ebd036241d9218e45e6bd01e5f23335e6f9e2a",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/10485760-10747903.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "066be7e2307b78a27c805b069f454168d8dad59cb9f3ace514717148e18fc3a7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/10747904-11010047.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "22ce51ba66fc1a39f0f4a15ae9f7355a75ca892eed2fb8762a038f46ac977273",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/11010048-11272191.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "48d98a63ce3d9146cab7fd6fe90227f737a8e56b74026f89e96b0ca53604de5e",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/11272192-11534335.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "1be8d781805a750d4cec973d84c11f403c73bad6c7f4feeadfaf52edec13b471",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/11534336-11796479.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "a0c4e1b323ae9fab6f9b80ead9d31030d5be5908c1837746b728d147fd9640f1",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/11796480-12058623.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "cf58a40874acc45ee70a8d01f57a127dfa89522b9267e044b94ad5914d8b4691",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/12058624-12320767.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "fb3d9d228b75dd7a72fbfaa1b8f33842932762bec3f8be1b39028318cc58194b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/12320768-12582911.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "0ca729a41caedc6e89230b094906c77d5f7ba97f61042d28cd060359d98c4e9d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/12582912-12845055.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f0dd89077847312423d1d6a578662fa0f06d7c2ca0e1be1b38dd468005aebe29",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/12845056-13107199.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "58558780bd2f0ea803f4448c02ae566ae02536bcf55a803f157c94961d220a4c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/1310720-1572863.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "226c2f81a6352d7c2d37e60e361cc20e1b7bf18047c8917026da08a847cc92d6",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/13107200-13369343.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "4487a0164411039bdef17d4aed896a6932ea41597fcf653206366ac10692d63d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/13369344-13631487.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b22c57be7cb83844108ec87defe5478f84f23f9618dd1794d7e1f93110757e05",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/13631488-13893631.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "04eec312a009d790ca39600d58ec37069a71e12b5d488b0dd9e825c3defdf3c5",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/13893632-14155775.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "4e199a2ab27a38f753288ee0fdcbd21f269b341fdee8bb4cf53b5cc0970c16d8",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/14155776-14417919.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "649c5d03bd050d2591bbded7ff23e9572a2264f0c3ffe90e275bccfc668cbb84",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/14417920-14680063.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f27b4bdbabcfb61af46f1f6bf3cbb95b32700cac512f78d9b8ec21467b99a9ad",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/14680064-14942207.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "33332a8e67925b297ba032d8e0c9be6a39bfa295b11804d23c714f59ed5e0479",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/14942208-15204351.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "613aa222467b9a1f8d4e0c6f3e544cb96ebafebaa5401bf85ddde2eaeb046803",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/15204352-15466495.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "5ff20414e3ca928f94d105b239cf137c85cf03acf58507baf202e593341b2eb1",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/15466496-15728639.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "7b1d2ebe6c639df0b5395db0091a3890be34b7164e5f1f4f749c99976108e8e7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/1572864-1835007.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "5f62e6916ba080da80c20fe8eb863ec02d6a5b726f992317900d480f1838976d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/15728640-15990783.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "c686bc77db32fa70221812e107daffdd711436d563ffe238e5b256f7b1cf2445",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/15990784-16252927.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "9096d21bfa7a58379450c562b9afccaf01b8db93a33c373c5f3d4911dbc49b84",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/16252928-16515071.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "870e475a69f64689e6fdd077e86160cab797c611742c963c3526aeccaba048d1",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/16515072-16777215.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "29b9716107edb175d655c81a82f0fe4534a7296b8cf95f715ae2a29df003818c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/16777216-17039359.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "fe6320ede211488d1b99ea5f3232d228b66e2567615a114fa5f0fc0195e6663a",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/17039360-17301503.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ba57f8c1e0516d163eb59efa0f97ade6413ad3e2f4b9ef69714b1791e383701f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/17301504-17563647.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "fd6a16bf184b985ee5447de5bbf74caf5aefe27a1a7e6ebf756a7445b58f923c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/17563648-17825791.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "a6d58695b95a115fd68309d160ce648ba132fe5bf16b0ec0e240ef14488c0fb4",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/17825792-18087935.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "469eba320120ff1e3fa79d2f58efb1f34fa18c65477972e9dd79ca93f1661cd0",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/18087936-18350079.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e098acbfa18e486e5ed5b8127fb540fde872737a1b8bf1240865b2f3cf443d45",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/1835008-2097151.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "3ac58802d5f3326eda47821755370b37789d4dfaa3fdf06fa120257c6a7926b2",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/18350080-18612223.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ddefe7353d33065e0e17817823211eb0b3b1ea6b07792b3aa19a70d5e065b227",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/18612224-18874367.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "54ac1fd82bb338b1323c3c3d55f3c7a7dbc60c6dd0330f8e8e303ce4da6a27ac",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/18874368-19136511.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "cbc1747a6da896fd34e6512ef7d2a68da65dfd2e520f839fbd7ed0f99e213db7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/19136512-19398655.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "3e1b854b92d6cb535d04c4ff8f76d9157a2615e7058340a1c163e51609fc6a0c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/19398656-19660799.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "0bd0539914fa55d3c5d11f6e5d3d56e5037edc120592566412dde738d9b23142",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/19660800-19922943.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "47fba986727ad4cee13ecc45aae0a49569882bebe503c4f592858e5ad341b9bb",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/19922944-20185087.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "4d69d39528012e753d7b4d58ee5c6a045b0339a2e5931a2c70dfea6d3bb3f7ee",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/20185088-20447231.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "47a566275566de09713bdc17559223c42e4e5798d8b0caac30bcb40eaee202fa",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/20447232-20709375.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "138bdb7e21f50a897a0fee199427726ea0b014df8034d9ba961c727a08e279b9",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/20709376-20971519.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b350832508867b65a7875eadf0747df2096c40c30a6a47dff90d38d171a9b32b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/2097152-2359295.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "455da2c14d52852765eb6005b5b2a24c38e65d6a6d6d430f7774018ab28f1ab1",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/20971520-21233663.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f050003f2c0af892f9e2878b3ee2a7904c57a3ef8e6c3e74b5589b9996e76ca0",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/21233664-21495807.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "82ea39c498de289d5d15522e8b01b4056c9cc55f9391de13e6ce2681d978c835",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/21495808-21757951.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "45d09856f789198225b83db094235e6a07888a33745b915efbba1814dda78eeb",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/21757952-22020095.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "0b473d7d21b2a6c0d9b4f591fb8ef605224e3ae263eb1d6c927a49aa3109c7af",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/22020096-22282239.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "7e4045c4108f3a6cd7eff1cf24b82bb2639026c5c1aa11e3205f1fb8de747463",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/22282240-22544383.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "15485b62e03372fbc3e641a1fa5ba46b4db40aac381a93555bd18451f3e9d191",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/22544384-22806527.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "124c760c79144bac593c7a26a7c58cee47d415fe109af416cdf3709d86bdd5df",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/22806528-23068671.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "20345cf66f8614f0b4c683497c1a1efa07b954d88070c49386948ea3a740b693",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/23068672-23330815.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "8a2e9d00a6db1ed6a2d3107f82421922e753c3eb6f083980830414d48d37c1fd",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/23330816-23592959.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "458cd6412ba3eb82cce8db0d02446993e0eec8c59babf92117d1517a97c91801",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/2359296-2621439.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "6e9be6fc1ac9be1ea34fe9c3f16b82d6862d6282f355786c47b1557bf7d5b034",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/23592960-23855103.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "a91d3b5fbd9acc98fb7fdd43392451fe44c2cea5b7441f74d53c5e4f17bc41ec",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/23855104-24117247.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "86a93176fec04315ee06fe8f5fde1e1377246e88e4b4604240671be2a0c5e1da",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/24117248-24379391.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b3d281fd79faccbbaa007cca71e8bd14c6bb43afd44dd3208717806003e224a4",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/24379392-24641535.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "85f9ff45d9461242aec01fbc5deb27da31b6ab5f5a932ce411e51fd9fc81c6e8",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/24641536-24903679.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "3a30b11e3d6f1d77cd8d8c042744626a76b2b5c034a63b01f9edf9887cda596f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/24903680-25165823.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b803270ac1608baf4bd384891b5b8e4bc3034dbb7f639a7a233ac4ec3145aec9",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/25165824-25427967.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "9f74b31e527a09458e2d38a36ffe9a03d2c52711fb2c6c1d108cb0672f08f104",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/25427968-25690111.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "26375fc0a37c00540a28d0c0959b1d143d13ef49bb1c5a60ae7465bc595d07dd",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/25690112-25952255.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e9c3a4e5717e6e91c5cfa5cb76f1149b6a54ab9b4d37b8ce160d7afba691f68b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/25952256-26214399.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "cb18403c474bd3da56a6bf22d89dca5d773c0c1fa6f5619355c358985183c2a8",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/262144-524287.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "5519acd203cb94a8ba1991017d96856107c4557c94354eed73baf4bd1dd97821",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/2621440-2883583.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "39fc6b21f13246a58f4b15887407ffb82474dd6095686b82fb2536b0b1ca48be",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/26214400-26476543.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "6c641aca61a2acf2a0892045455e763a2bfcd96e2adb0064e4817a72928982ef",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/26476544-26738687.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "547d8a3a004a647a35c128594e7372a27c7328b2636235f80479261cbdbbd8c8",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/26738688-27000831.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "03ef1892fd615f9486f5fd2ca51fcad08407b12987d9f39deec7ac9427ade7a0",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/27000832-27262975.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e1c2259486aa545532f3f7686619fd3e02d3f8b0dd8c9958c2aa73c1640d61ee",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/27262976-27525119.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "8fe9775cd99f37b8032055e082aaabbe21cdd42f039c10ef37866cc2a02b4299",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/27525120-27787263.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "9302da0e62157a03c1eb85f7fae6c1260c88acabca8c5cac1c8f6dc900553537",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/27787264-28049407.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "c61de5e5d3b9e27dc6e3996f5f0efc1123665542e06a50e21e1fd62448c7d700",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/28049408-28311551.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "a35a1b0a8110493dee8b618b1b0996af4bcbad64108f59ea52483c4cbdbd2550",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/28311552-28573695.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ea96b2fb7fbf64b083594d63cf2c6d48249f2a342681a684b2a500a0838797e7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/28573696-28835839.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "020bf7106f93339cf4eef3151201e4fe4f633a5ad33bf1228f431072f0c48747",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/2883584-3145727.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f07030e9c90064d8fa37397a0745e4acfa8e19d211e0e17d50e235e8d568001d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/28835840-29097983.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "6d0b19318a95edae149156647e8278723f8cda40cadce650c4c399f4753ef54b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/29097984-29360127.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "16ed456342edf43abe01be5d34b6c24295cb08066d5a1129904f3e83246a679b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/29360128-29622271.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ec2189e845ef5388f396d5bf4dfe9d2652bbc4fc3aacd4e7cb996278e791c5ff",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/29622272-29884415.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "0f52418d2be4ee5b73f18531f26b9cd300f2e4f73a2cc8ca450ff51bf4033506",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/29884416-30146559.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "2e94ead1605bde080a191ff53d73911f703f782c1805c104b6dadc26a1bf103c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/30146560-30408703.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "7dff4c1ff4c25f1d2819425beedc5bf6571ac04266ea82e07d378881ffe70dd9",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/30408704-30670847.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e79faeb1ea2f2eb80e00bb8f4f1d2599f6f94edefcbc684cf952534db8987aae",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/30670848-30932991.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "348a03562f7f8425b43515df904093a133f267a7b9631a92b511e78075daaa97",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/30932992-31195135.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "92cb1ce81efd48e4990047116fee572189ba800f0197f7280369b9b871da941d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/31195136-31457279.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b81ef8ab3855f366c1bf82d9a8cb6bebbf9356ac448846870f75a06ff76319bb",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/3145728-3407871.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "0f90c4774776c3d7ced8f3e0f2674249f257cb45219c49a65f477f6fe1f8acc0",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/31457280-31719423.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "9a4247a37b5cd04fcf07f49e0345d682acd7efb66badebc5b9e678ddc819d316",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/31719424-31981567.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "76bf30435d97c33b2af5adb4c16d000ac030a7db412bdbb62515e49a590bf746",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/31981568-32243711.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e3987b8e2455d172547bf2c667ccc29951c99972c1ecf673a8cfc09b3ca692f7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/32243712-32505855.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "2d00e630c3a9bd9fa496a7f7ae4ec3938e05dde59ddf2723b8ec4fc8d55cb429",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/32505856-32767999.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ac2e52e0622352cf427847785f78e9d44552f6563deff962c62b9de5ce6213db",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/32768000-33030143.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "aaa7a6fc52efa54e7faaa114b84cda104ddae2cc97e42bfdaa1a95851d9bcf29",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/33030144-33292287.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b4a009185ba893ff593f3e9b692ecd0b70925dc259f69f31d8da1464d5bcaf7c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/33292288-33554431.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "428eb344e283e9536a1c10653f5b92dc83ae4331e75135ee0c493628116b0ec2",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/33554432-33816575.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "c42b0bbfd153d4b405cf7631577c2f9f4a72b4d57ed1fc3522c4d529cdbb704d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/33816576-34078719.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "3423ecd09a29d7f7839a19d1a43ebf9e202f9f985d4aac371fddad6ee1c6540c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/3407872-3670015.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "cb83b0b28b4816827a02f5d84a6a58f760247791a535c353d1b64896f234b0a0",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/34078720-34340863.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "868bf850fa60c5f7ab09b2f605f6f29c11abf9c0ddef7a65bcb05f33fd2ca2fd",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/34340864-34603007.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "0ad4a20f072ede12e8931f935745e643f28fb4c86bb56c875989e59f5f2a8002",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/34603008-34865151.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f5f2ec4b9b690ecde6697408f216c1e5acba2cd88b201359b742247058ee5c8f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/34865152-35127295.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "45f338ea977fa52f361d603ae08b5325c82742abe2151c1cf5b22699dfbd1358",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/35127296-35389439.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "2a997798ae9bf688ab117b410a4812009f15f7e97525a5c7fa3bb0f8de7d525a",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/35389440-35651583.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "7fb3cf4e1485152c694ff717a1618d6afa937f3c1d9b85074cd71ff7bed66ce7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/35651584-35913727.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "96613111fb729829a78c3c65886aeeb7763ac817f7cd7498c593539c6a3d182a",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/35913728-36175871.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "454755439f4f715082d3c68f3bb4e8fdf5b20da10bb37643f8c8354fcc1649be",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/36175872-36438015.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "830493b71c2b4728d4c405cb586be92672a02fafc5bd9cb621d395d6a5887c69",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/36438016-36700159.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "de2e99200d9633a3ead5f67559901dc0480ef241c1057d1439650c8c6f32d156",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/3670016-3932159.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "4b2aa149a2bf4dbf9e949b5e3b779eca15a6375a7f51f8c6e191e795709b05e7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/36700160-36962303.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "add9027c1a8ab17086db2593157b391e5697bf5fcec7f647e7ea425db296a1b3",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/36962304-37224447.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "780c1533629a08329744f9755f45ee269fae2ca39d37cd349d5fdd76b3c95801",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/37224448-37486591.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "184724fad4b547e82363fa5903f381a669edb89a495ede413f2f8a2e76af1007",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/37486592-37748735.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "063d1db47c421cc893b4480cd7d57e753a9acb2299b965cdde0b644300b077a0",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/37748736-38010879.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "6212692af495ea552f7726700ab65e1eb241ca4c18edfbfb4c3cd3d4ff326efe",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/38010880-38273023.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "4dfd003420fcdbc4c689d50b9bc2480b847f8bff81d48abbfca6b71c4eefa0bf",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/38273024-38535167.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "50d02aa671b0189e5c2ab4be04241cf688b55aefdaceea65cebb453536f675b4",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/38535168-38797311.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "9fa71e2a8cbd1b757a96af2795f18f7b216a287fd07aaf6d541a6933e5542e49",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/38797312-39059455.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "17a5d55480777bb99bcdab3af96c686dac655de9e8e510ae9fa4631e15cf406f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/39059456-39321599.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "3157ee55677627d21bb196b6765f0dcce32a28641718a2d6abf3309caef6becb",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/3932160-4194303.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "0646a17248228652f4679c46fd6562ced6eb3024e78dae7089cf5c4574bc408e",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/39321600-39583743.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "7d301c03c32d22b6eb0ea323d39081ff5c3c803d44ed3966e19e5ba4706ae242",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/39583744-39845887.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "78445751a91f8241d4ec1333167cd3d3e05df506e0fe95368ee3d18885c1e924",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/39845888-40108031.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "bf6c14a6b8907eec18cc9a6f1e318c3862f2238c412597e6a74bdb0617408b3e",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/40108032-40370175.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f3a836b38dc64b1038551fba59cbac3bcbf0b2b158eaf0debbb636b0f28d0bb8",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/40370176-40632319.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "cf99cf45d81ad72e339a72d25aa43515e082833d122e1c07284006fe01b431e0",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/40632320-40894463.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "c00f0a619ebe4bc17d952d72a52de6163b7642b81a2e7ad21539fef3da8f7e9d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/40894464-41156607.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "bd74ea7613423bfd01aece816215fc0536067a57ca23f179caa37eebcbdaa65b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/41156608-41418751.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "3a657cf50dbba4fa4378efd1330a4c095b5e4b894565643f9a52efd97fbbcf46",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/41418752-41680895.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "fed6c9fe4e158f8e6236f0ad1115897dd366480604edc8e21aa5acf3176c7880",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/41680896-41943039.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "fa6e486a756dc15fe288469e8945cb3d75913f271f8f7305bde252e0175e797a",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/4194304-4456447.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "345e0c78a14d185b0a0dacd9f9dabb63de8b2768f8f19deadec274a906d1f6ef",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/41943040-42205183.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "5e757d411c2ee7dcce39e857002a55fcd258b195b3d06db151e5f258189d7f5b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/42205184-42467327.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "65c9f85faea7534350ab8838bea21c9b409e99d4d94318fde2694401dcf4783e",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/42467328-42729471.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e914cb9be1218a58bf83f0b66c26fbfb4fcba0f39640432e1cadc7f210017f37",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/42729472-42991615.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "507fbd7e738c7d63d588b4e6bda2fb5ec2c2d39c0b2b2997868272b3665190d7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/42991616-43253759.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "6f55499e6e49bfcf686523d72e6048ab64a8765e39a7995dd2da647a3c37e9e7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/43253760-43515903.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "7c9eb02ff7873d7ecc81db05c22f74d03134ea43f0ab01c019c058e87264e576",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/43515904-43778047.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "9c7713c2269b268f01a4dbe60d3204e149207b48dff4e85755f6158e8a537e8b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/43778048-44040191.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "4e090facf625e8151148ea62e23083b25ea2ea51d4937b73e7386c6513780375",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/44040192-44302335.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f527bd0260353d71c974537bc157d29c131270191a2fac7f07aef1fecef874f2",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/44302336-44564479.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "fca483a4e1d6e8c7221b87436c106f07cfa16f0a02fd405bd9b98e3ffd84947b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/4456448-4718591.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "af0319b53c5cf3230cb8c8e69eee258785f04fb52f9e6760778827a9fcdc9b7f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/44564480-44826623.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "2cc176ba9fc4874faee8bbd3393dd8de50fdb72b3b9a026735c0143e2deab8cd",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/44826624-45088767.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "5966b37f15f9dcd2834c63d0f596892822c7ace4482c84a81e90be232138e668",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/45088768-45350911.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "bfb51117e2a5a8d67a078bc9a0092675bc2a721bd70deec602fd9e84ac74acf8",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/45350912-45613055.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "5e3b08a7c30bd05ac6c8b239eaf435e2351e62a366a8ada5c137f2fb0ad71440",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/45613056-45875199.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "44f1fe9d599126d4b91852f94880d12cb94b85638a3841c5da1fd58d07cffcb5",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/45875200-46137343.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b1620c9b888479c9cb273c6afcc87b98827a898cc00b86f3c3fbf437117f13eb",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/46137344-46399487.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "80d7a06c46b0dd39f289f00ca2fcd67c77eeb111604997fc03531b54623af94e",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/46399488-46661631.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "d5e9a6ca51b6e27b1a5bd3653035d492b4c9c45f21d630411b261b49dcb201d1",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/46661632-46923775.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "bd382b181db2bc18143b43ab1e263280a99372819b2e3afa64b849af81ad8653",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/46923776-47185919.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "48cfdccefbf859b14d95a5e4248c27e2f2a3fb0fd389749aaa3ed436a9eaa2a6",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/4718592-4980735.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b9ba90c7cd0bf7ea6e1f44bb2a316cc643c15d00f1efd22749809fccd21db702",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/47185920-47448063.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e87e830b95591c6645c08ad4db21137dc63bfd8cf9738c764c30ad4eed94e1ac",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/47448064-47710207.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ae283682d7727e21eb1c70e1d2aee4a2116e61088975b98acb2c841aa71ee42f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/47710208-47972351.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "364c16edc4c1f73120830854b8e8cae8defd62a0191a8d32487d6b89511fd81a",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/47972352-48234495.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "2905c27620aa21c535e6c90e876fef05649fb4c52365174f45ff1c1c8d4be447",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/48234496-48496639.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e33d8a2af69566d02255af77bad9763560277ff8bcb099ba265e9a87d12a371c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/48496640-48758783.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ca15feadcae20010e357e660d7cc99d6f3c319912ef9efd9939b221fc484818f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/48758784-49020927.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ac18f39eddd25f388a2594e24105b83190e2e170bc10da83426f0f2b932175b0",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/49020928-49283071.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "05647ab198af148c90b37c0e2a43edf48fb665f558dc20daad5cde42ac94b32f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/49283072-49545215.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "1ede9ff7d4e5993e35471d7176f886e958f0bae43e88cfabf65fa2dfcff0b1f6",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/49545216-49807359.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "ac1032e21f27ead893b66a1ac936d3361121ae04207b5c6ac4dcadecfeb0a92c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/4980736-5242879.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f7a12a79a8411051a9af5571a03324a1f9d0349ba942731b10926c3fc9fac24d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/49807360-50069503.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "4f3e91cbb7b8ac31a292e7d3582d5b9f5a1942641aa5959dbd6e8419e53e35b4",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/50069504-50331647.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "9686a9b51c474e3f6ba8a5e908c062822203e2c512f981e7d7607ae046416c88",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/50331648-50593791.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "a38f60422cca9dc4d72c588a7bbdd41ceb7aac85c75d1262ff82bceaee2675d2",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/50593792-50855935.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e28a5701818c3d4c8d094944a4f5fbea47fdcc41126f4a4351aba54b4f66043e",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/50855936-51118079.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "82cba09d04591659f6c7a33871c9d7d1c799373c78c6503c21ec328676f0b858",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/51118080-51380223.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "01685b4216afb500410c7712d60962dea057beb0e83d81a390ec86abedd0f25b",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/51380224-51465829.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 85606,
+      "sha256": "2a31eef9bf7df612b5784e46971bdd4e65a065a6a33499d8e444186a25759674",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/524288-786431.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b2fd4ea8ed5cac381187aa8c9b88e70b9c2a8e38b7650ba5cf8f90946e2c7de6",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/5242880-5505023.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "a2a95ca0e8988770c9aad61591e9b1eb7584882ebcdd1bf64775aaa0226be927",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/5505024-5767167.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "cca2bc0db6c388f8bebfcebe1ddbbbfa64ef412f7fab6066f639613ea93acef3",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/5767168-6029311.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "cc94f81a7b991d66c6a423a048ab431cafde3e42669909c14e6a0192e9ec1df7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/6029312-6291455.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "e04698b35af8dcb72858c6bca759102dcb0a5903f1a202c1d8e54224273a68c9",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/6291456-6553599.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "931d85a7671d994c033cb15b6218eb5a39435444f84d160fa93371745cd7863d",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/6553600-6815743.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "769fcbacf14de3316910224a62d98df71f1d68482d598f6847de9cb372013fc7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/6815744-7077887.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "13a80190f766c94f6de941b009aa1731144b257f82d2345bd8b2b691d0ad5fac",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/7077888-7340031.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "91d5945cb52e5fd507633229cb9ab52336629523ba5e786aa18850f88c3fb25f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/7340032-7602175.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "508e64afcb9b1ab1bce5fcee80cc9e1fdf74d319915315e363f90b58e517c885",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/7602176-7864319.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "96b57f3c33620549928ec347481f76fdb3f3f343712e130916add9c7b5380956",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/786432-1048575.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f7056f2aa197a6330200fe5751e80dd8a0a4d2743a97c36b4fde869a952de521",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/7864320-8126463.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "67ac420e6a992d7460614d8be51068d9863254db52795d1bb1d70494dc310cd7",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/8126464-8388607.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "22bea78ef26dc0e5e62c1e014c46fa4646a5c83b9413acde888cd986fe7bac5c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/8388608-8650751.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "0dcaa246fc389a584e105244c10e12b2aacea367c9ea6e13d21b3b3597a0e34c",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/8650752-8912895.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "6ec42c5bf3e8136f656940d70d0650e3ce11a3a2ac09e6f611275e034e842ae4",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/8912896-9175039.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "81591fa8550cf68ae47420bc869a7d785d954c2e040e569d929f84f79d57fe87",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/9175040-9437183.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "19cc7243bad6f583eee9f401468954eef6e10e1a530dccec5491cbca78dcf1fb",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/9437184-9699327.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "f819128524d87c93fe4af6f90577627c700398abc86c7874bf06879c7170861f",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/9699328-9961471.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "b273003e18f4bf304aec899809af3b3305fc99aafac51eb68c815f7d5157e4b5",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/9961472-10223615.bin",
+      "url": "https://data.gtdb.ecogenomic.org/releases/release232/232.0/auxillary_files/sp_clusters_r232.tsv",
+      "bytes": 262144,
+      "sha256": "9c8da1d98ba05b96ddf3fc0b7b60aa41470e2ceacd1c72bf1e9fcd3c553be11e",
+      "kind": "source_audit_evidence"
+    },
+    {
+      "path": "data/raw/transfer-parts/sp_clusters_r232.tsv/receipt.json",
+      "url": null,
+      "bytes": 26352,
+      "sha256": "a407cf25f0be31d72926406ac9f7dbec18d9762f0fb98878c11b9f4fe1df4223",
+      "kind": "local_acquisition_receipt"
     },
     {
       "path": "data/raw/verification/GCA_001552635-download-summary.json",
@@ -151,6 +1859,13 @@
       "bytes": 400681,
       "sha256": "5fc0067c31287841aa09886a96fcfad6539fa54b2e2b7f36882302b4dd8f8ecc",
       "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/comparison-details.json",
+      "url": null,
+      "bytes": 28829,
+      "sha256": "1b709cde4a1093f6e2c923c32cb743a8ac6b29ecdded7e3e998819ab3a6f0170",
+      "kind": "local_acquisition_receipt"
     },
     {
       "path": "data/raw/verification/directories/GCA_000194155.1_ASM19415v1.html",
@@ -377,6 +2092,13 @@
       "kind": "downloaded_source_record"
     },
     {
+      "path": "data/raw/verification/interrupted/GCA_002441825.1_ASM244182v1_genomic.fna.gz.partial.download",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/441/825/GCA_002441825.1_ASM244182v1/GCA_002441825.1_ASM244182v1_genomic.fna.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "incomplete_download_preserved_as_evidence"
+    },
+    {
       "path": "data/raw/verification/label-recheck.log",
       "url": null,
       "bytes": 1284,
@@ -426,11 +2148,515 @@
       "kind": "local_acquisition_receipt"
     },
     {
+      "path": "data/raw/verification/recomputed/GCA_000012545.json",
+      "url": null,
+      "bytes": 7528,
+      "sha256": "fe5eabf5eecc2da983728d1f1e805c399384f114d64fa3c76885810cd8322823",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000021925.json",
+      "url": null,
+      "bytes": 7553,
+      "sha256": "f5a8c2ced5e8d6537d79bcaf5fff237a030f94ed201768f9102dcaea0d542b27",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000023065.json",
+      "url": null,
+      "bytes": 7599,
+      "sha256": "b01695dc44498e4069825f0f2fe66644281087d290abd735fd650094a0a43ecc",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000143845.json",
+      "url": null,
+      "bytes": 7524,
+      "sha256": "35d16aba962edfc57257edd5a28d4236cde4983c88d71ec9adf8a135c0fe40d8",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000156015.json",
+      "url": null,
+      "bytes": 7560,
+      "sha256": "da1da99ef7865520804b857606b4a124bd0d1f8bddea4e576afd52bda54eb353",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000166275.json",
+      "url": null,
+      "bytes": 7533,
+      "sha256": "77e52b58f85b7e66a0f37745555102cf46d131efa1b1b3d0934db78b2611bb00",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000173915.json",
+      "url": null,
+      "bytes": 7555,
+      "sha256": "9c0f309eee58d7807c706f15a7734f1c7f720364182d3764801d3642ca41a5d9",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000218875.json",
+      "url": null,
+      "bytes": 7551,
+      "sha256": "5b05ebf6bd90f63c9051011c9294919a51b24205427e01405bfe7fbdc47dc6d3",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000473865.json",
+      "url": null,
+      "bytes": 7525,
+      "sha256": "6430dca9d208cdd742195b49a9d7fbaa769bec870d52d9c40405b4e704395b44",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000565015.json",
+      "url": null,
+      "bytes": 7587,
+      "sha256": "2ad575b4cf4d9b994b82e885de200b5e29f2a8a5f89c1c29379ed983a9575c27",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000970145.json",
+      "url": null,
+      "bytes": 7587,
+      "sha256": "f2c1d3de36dfe2bb9e09a35e31c9137ac15d9bcfaa6749d9e5785d76205a39df",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_000980815.json",
+      "url": null,
+      "bytes": 7588,
+      "sha256": "9cf22edf297bdf5881620c87f52481992b88dac3bab054382aecba322ce800af",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_001053095.json",
+      "url": null,
+      "bytes": 7608,
+      "sha256": "28ca121a627e6534659eca20f821dfbee420293aeaefed1015c09b5b6aa27a7c",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_001435375.json",
+      "url": null,
+      "bytes": 7536,
+      "sha256": "1c78a3c0d38c60f5ab50b085166ea7132eb4ed023ec3cfd7ffab2e6cd8750155",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_001439735.json",
+      "url": null,
+      "bytes": 7605,
+      "sha256": "8360c5ec3aaf3e9f2f5e77d1a02a3ecd56b5263d56c3c7930d3caed51bcb9f87",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_001598055.json",
+      "url": null,
+      "bytes": 7594,
+      "sha256": "52e583590a10213cbb27d6d2dfff175767c48fb63a7f4bbec8e72a7fe9cad880",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_001643015.json",
+      "url": null,
+      "bytes": 7568,
+      "sha256": "b26c3e0ea2c4e95a498e5c28413e22359efcfa823f82412cb21304850dc6c718",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_001866055.json",
+      "url": null,
+      "bytes": 7503,
+      "sha256": "e8f53f9ece673bb5ad23460f105427f345166e6fefd5efe4735082679ef8815a",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_001885905.json",
+      "url": null,
+      "bytes": 7543,
+      "sha256": "a32aa3fb2312663c8239ea8ca9d7bd6440911866dff5d04f5421d96b95f2ca2b",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_002006205.json",
+      "url": null,
+      "bytes": 7539,
+      "sha256": "2714cbdddd89eb003c498b3a23093b20bb52b59ee2799df69072674999978496",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_002026305.json",
+      "url": null,
+      "bytes": 7507,
+      "sha256": "c7f0ede6c7bf3d4c76e906ab637f7f88e1206200c8cf6aeb6b13b2aa5840f370",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_002119805.json",
+      "url": null,
+      "bytes": 7532,
+      "sha256": "33d7876bbb708ebdd55d50e7e1e94a448e8478120693b7cded001fc3781801f1",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_002201795.json",
+      "url": null,
+      "bytes": 7537,
+      "sha256": "a32237955b71c0b01e4af4a625d307a3518f12fdc6c183cd17e2b57932c79ab0",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_002214365.json",
+      "url": null,
+      "bytes": 7555,
+      "sha256": "a651e573ea25be1b619d860d1be10e8c69e42e939d49e0bf6122c06264ce9b96",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_002441825.json",
+      "url": null,
+      "bytes": 7377,
+      "sha256": "6d12beb214c57f9ef57af498e7ee6f3451c6c5b45b79d7a720865b365298894b",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003001905.json",
+      "url": null,
+      "bytes": 7437,
+      "sha256": "be9b3afdb78bc28cd293f22b4595347221273f70016239a9bff3426af79fc33b",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003096335.json",
+      "url": null,
+      "bytes": 7571,
+      "sha256": "bccb3704a5e2e7302834f58281a85fb66fd46e0c4663ec21339b4fe6c1d02aa9",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003369815.json",
+      "url": null,
+      "bytes": 7541,
+      "sha256": "4a3ae788b0eaba06bcaa5e86297942f3f774f123c4ad7fdba7b1ea1b83b10c69",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003391395.json",
+      "url": null,
+      "bytes": 7604,
+      "sha256": "349518bc1837ef2632223e2ee374bea9048c09d7c1601c1394f9bc3ea049aee4",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003583925.json",
+      "url": null,
+      "bytes": 7581,
+      "sha256": "fd2c29535d7297a0b0c9b16ce7b7c35cd31f2caf64eb5f806fb190839edc333a",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003635025.json",
+      "url": null,
+      "bytes": 7603,
+      "sha256": "75118e35f8107b8f3281c2e5630468bf97ac25122b16c0f0c5293f54de53be70",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003663885.json",
+      "url": null,
+      "bytes": 7603,
+      "sha256": "963cdc5a9983a50e574b3a3864c506c5ede336587db734d53e33690145f489f2",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003726035.json",
+      "url": null,
+      "bytes": 7579,
+      "sha256": "f606dc745e96a753ce4d268d921b94e3d05a73094d44cda2b6c33ee28ab0085d",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003966145.json",
+      "url": null,
+      "bytes": 7452,
+      "sha256": "b9f8ab46dffd5a37b3191d23a6963a22f7483b0a426393362c197ecc1736086e",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_003987555.json",
+      "url": null,
+      "bytes": 7302,
+      "sha256": "a9890b83c817f41c4fc2e25289fba745aee53f62aaa10790d0c4ca1f16149db3",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_004028235.json",
+      "url": null,
+      "bytes": 7585,
+      "sha256": "41342d29c7f722d9d4b8ac250bba3c93a5be585d0defa9da389aa9ba93fef9f4",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_004347715.json",
+      "url": null,
+      "bytes": 7594,
+      "sha256": "02de417cb821d46926b9ee30ca5d7e1f8ff2ae3ccd1d5cec67a0291634c99900",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_009709575.json",
+      "url": null,
+      "bytes": 7601,
+      "sha256": "6a1a63ab0d88fb0a4897a7410e6eda56b919def1b2542ba6b20d46104d5ae9c8",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_011927725.json",
+      "url": null,
+      "bytes": 7594,
+      "sha256": "77d4cb723b0c43ae06fa554df76d88d99b2ac08cb7dc8ab1dd61ee69e5c552e3",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_013416335.json",
+      "url": null,
+      "bytes": 7588,
+      "sha256": "a45ea9312fc13d3bcb113c74809b9c14729c238d32b0ec2db076447ce4b7ec39",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_014197035.json",
+      "url": null,
+      "bytes": 7606,
+      "sha256": "a855f82b803af2b2a93c258c48d3a5d118cd55d5a057259e48a97dcfe9d5dd15",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_014270035.json",
+      "url": null,
+      "bytes": 7528,
+      "sha256": "703fd2c14504f0adf30f553ca5ccf4892ee58d135503858fabf51c2cb2facb21",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_014397255.json",
+      "url": null,
+      "bytes": 7525,
+      "sha256": "b64163ea3e24ea6703e77ddbf159f68f986b35a17795cb036f41ced7aff693ed",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_014490445.json",
+      "url": null,
+      "bytes": 7605,
+      "sha256": "4754b65e2a55501abe8b4dce10c55a07892bdf538626f3ab7b136b37cfbfa882",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_014635785.json",
+      "url": null,
+      "bytes": 7542,
+      "sha256": "78e81850d3a10af4d1b36134fac9a256d700d8fd2e640cd164f2780fa1c17d30",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_014644955.json",
+      "url": null,
+      "bytes": 7604,
+      "sha256": "05524f02dcc66ef318e40bff50a6f4d91d4465c889c151094ff4bbce8ac4f66e",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_014646975.json",
+      "url": null,
+      "bytes": 7598,
+      "sha256": "39ed0bd3ab44741baef17428ac5f84af27beb17ff67db0bf05f15e02fc8af49d",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_014650295.json",
+      "url": null,
+      "bytes": 7602,
+      "sha256": "a7ac16422a280bc78efa93836cf76e33825b4f9299a2dd128368de0e5398a38d",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_014655195.json",
+      "url": null,
+      "bytes": 7598,
+      "sha256": "a6245fd951f3ef6b574e0fa6d8bd416625c5256e569e805ea3b9c2276bb7d06c",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_016907615.json",
+      "url": null,
+      "bytes": 7580,
+      "sha256": "45531ce6cf17a9edf02625fab81c66d29082a9dccc08f6e1f9d550bc249d65e7",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_017873185.json",
+      "url": null,
+      "bytes": 7527,
+      "sha256": "71903f2608b2d56636575d986f187ca80ff2e6d4c3e84cc5aa8e7a6c53689c4b",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_021134395.json",
+      "url": null,
+      "bytes": 7556,
+      "sha256": "c0f725608ce3f9fbc45d12d7bdfa00bd82818c128bc4c6d244873709e1f9fa11",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_022568795.json",
+      "url": null,
+      "bytes": 7588,
+      "sha256": "5540be96f3ccac34c24a19bf55e4436a97979b3a9eed7d5e03b26a3449520708",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_023284005.json",
+      "url": null,
+      "bytes": 7554,
+      "sha256": "07ab16eef606af5f458c14058b3ad2b1cbc38b497488280326aed8576ac14f88",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900095795.json",
+      "url": null,
+      "bytes": 7521,
+      "sha256": "819e2e5ab767697eeb20b5bbf14e55854bd9c180d326ffde5be260e0604d4891",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900101825.json",
+      "url": null,
+      "bytes": 7592,
+      "sha256": "c6ea3797d99a72502750f4728866328afccdd5df1ca76caf5f1f31ce4dd1efbc",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900101845.json",
+      "url": null,
+      "bytes": 7566,
+      "sha256": "cf722df9120e035b2f1b575875aa38fcf34969a2dbdc6dd8740ed80da8bca46e",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900103275.json",
+      "url": null,
+      "bytes": 7605,
+      "sha256": "d95616d63c2bf4f5828cb95b98e23c4689b417a5e7b75c5c26d8f2bc356fc617",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900104475.json",
+      "url": null,
+      "bytes": 7602,
+      "sha256": "9739bf0bb3daa82c84d85614185a9ed88e593e6b624607ba02a1d4a522329e4d",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900105965.json",
+      "url": null,
+      "bytes": 7600,
+      "sha256": "3637e116f3b116887b8e7da38d208a1ed4acd3f829c6fc2e05b8c8421c1e357f",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900110585.json",
+      "url": null,
+      "bytes": 7554,
+      "sha256": "e1a15d09df330749858145cb48439a3ddaa7c9948c5c01a4dc2977fd207a6639",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900112235.json",
+      "url": null,
+      "bytes": 7584,
+      "sha256": "023fd8f839d86b09cc9ca0bb2e8afa2f21c75ec88d00d955aa489ae9fa14cabc",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900115955.json",
+      "url": null,
+      "bytes": 7612,
+      "sha256": "c521c9ce18173f6fcee1c378d61d5e37910633c13d82d7644f04f5a2e459dc8d",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900172235.json",
+      "url": null,
+      "bytes": 7606,
+      "sha256": "da0edc646cf1d1b6024f8a5e3e32f82073964182c95bbd5e13aa8849ece1ec83",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900186925.json",
+      "url": null,
+      "bytes": 7549,
+      "sha256": "c91d12f322bf14d69dada0f9fabfdfb6fa1b39ec9dc8d78189b42001c1ce240b",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900186995.json",
+      "url": null,
+      "bytes": 7564,
+      "sha256": "220809a0aac59dc3c6cec50fb48713ab7a88ba815edda1eefd0ceb54f6bfe2d6",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900475735.json",
+      "url": null,
+      "bytes": 7588,
+      "sha256": "455dffd8c721b5936cdaa58fc0bc1993e65d3bd26f92f2839f23d0e18afcc152",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_900706855.json",
+      "url": null,
+      "bytes": 7584,
+      "sha256": "4dfe957ecc051944218b426f3e6687f15865b1272ba786d1ab66a1ca842f9fbc",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_901472485.json",
+      "url": null,
+      "bytes": 7426,
+      "sha256": "cc6527995a7e6b23b230f4e544c44a4839fe36969b644f96fa14db6e22501877",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_901543985.json",
+      "url": null,
+      "bytes": 7519,
+      "sha256": "866c7bc402ee839eb8d4153d140ed3c2c1dc17758283c0df65ab2c60998a3cf1",
+      "kind": "local_acquisition_receipt"
+    },
+    {
+      "path": "data/raw/verification/recomputed/GCA_902141845.json",
+      "url": null,
+      "bytes": 7592,
+      "sha256": "7bf4d972b88c89fc656c387d82c076194a22397a4029f7d9716044e5e6e95a7a",
+      "kind": "local_acquisition_receipt"
+    },
+    {
       "path": "data/raw/verification/report-probe.json",
       "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCA_003946545/dataset_report",
       "bytes": 3342,
       "sha256": "77b7d275e633385ed48f915e6e6f06e89df04350c10be1ba14ae93dc031eed55",
       "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/resume3-size-gate.json",
+      "url": null,
+      "bytes": 776,
+      "sha256": "e8d62fb291f3ed1294b91d00cf136a8192567c04666597ba2f3702de8dedfe10",
+      "kind": "local_acquisition_receipt"
     },
     {
       "path": "data/raw/verification/sample.json",
@@ -454,11 +2680,1012 @@
       "kind": "local_acquisition_receipt"
     },
     {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/012/545/GCA_000012545.1_ASM1254v1/GCA_000012545.1_ASM1254v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000012545.1_ASM1254v1_genomic.fna.gz",
+      "bytes": 495766,
+      "sha256": "0351f7a2876cd20e30d1ac87320fb7d2f4616b92f43824c5317084d738fd295f",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/012/545/GCA_000012545.1_ASM1254v1/GCA_000012545.1_ASM1254v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000012545.1_ASM1254v1_protein.faa.gz",
+      "bytes": 314452,
+      "sha256": "4f0523f864f98e0b9192799a214e8b4e1bc71b6f8d7f32192d5ee72de67716f2",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/021/925/GCA_000021925.1_ASM2192v1/GCA_000021925.1_ASM2192v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000021925.1_ASM2192v1_genomic.fna.gz",
+      "bytes": 1571697,
+      "sha256": "d801ab09afb2c513304f33694d3c38826af3910a10f9fe42195cf490b7f7ea53",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/021/925/GCA_000021925.1_ASM2192v1/GCA_000021925.1_ASM2192v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000021925.1_ASM2192v1_protein.faa.gz",
+      "bytes": 1000848,
+      "sha256": "3a75875287133ceb220b11d24d3c7c58752ea9d65c034e0f505b385a2b795a05",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/023/065/GCA_000023065.1_ASM2306v1/GCA_000023065.1_ASM2306v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000023065.1_ASM2306v1_genomic.fna.gz",
+      "bytes": 1030484,
+      "sha256": "9ee71da9c0826a5399b44d69b8ac2df282f6714ffe677edd8038b9a4270042c9",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/023/065/GCA_000023065.1_ASM2306v1/GCA_000023065.1_ASM2306v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000023065.1_ASM2306v1_protein.faa.gz",
+      "bytes": 680326,
+      "sha256": "5834b7bd83f31fc81813f548a44571399393e54186ce5d790e3edab7d6cb8512",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/143/845/GCA_000143845.1_ASM14384v1/GCA_000143845.1_ASM14384v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000143845.1_ASM14384v1_genomic.fna.gz",
+      "bytes": 596834,
+      "sha256": "fef982457b6f0a21286ebe9570d25d71959f452a31d62bcae5f9159c74646f05",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/143/845/GCA_000143845.1_ASM14384v1/GCA_000143845.1_ASM14384v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000143845.1_ASM14384v1_protein.faa.gz",
+      "bytes": 387557,
+      "sha256": "38c05faa912e4da11754e3386c7c58fb08afbb532a01d16f5475179f3dec0af3",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/156/015/GCA_000156015.1_ASM15601v1/GCA_000156015.1_ASM15601v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000156015.1_ASM15601v1_genomic.fna.gz",
+      "bytes": 727963,
+      "sha256": "1a3b64d1f935e8b732d183b53cd379abbd89dc2a8e26ed6ec4c44c78e770b2d9",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/156/015/GCA_000156015.1_ASM15601v1/GCA_000156015.1_ASM15601v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000156015.1_ASM15601v1_protein.faa.gz",
+      "bytes": 505795,
+      "sha256": "d1865466856b62b80184c2075ce101d0001a766d4a9b87beffd96e1a354c72da",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/166/275/GCA_000166275.1_ASM16627v1/GCA_000166275.1_ASM16627v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000166275.1_ASM16627v1_genomic.fna.gz",
+      "bytes": 1412869,
+      "sha256": "e42956a0945c802fe28758d9f913a5ec1d2711b6532d68253ba9c54502706865",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/166/275/GCA_000166275.1_ASM16627v1/GCA_000166275.1_ASM16627v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000166275.1_ASM16627v1_protein.faa.gz",
+      "bytes": 939375,
+      "sha256": "92f74ac4a52537cf4ecba21d442bdd3fb3bfb9da5b699dafbd7dccdf587a24f4",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/173/915/GCA_000173915.1_ASM17391v1/GCA_000173915.1_ASM17391v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000173915.1_ASM17391v1_genomic.fna.gz",
+      "bytes": 552246,
+      "sha256": "79b21b76f45a67bc301a00fd23bcf22a86fe2a76f9e954148a83c2cf0cf43867",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/173/915/GCA_000173915.1_ASM17391v1/GCA_000173915.1_ASM17391v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000173915.1_ASM17391v1_protein.faa.gz",
+      "bytes": 353934,
+      "sha256": "7b6c5f6d060bdc15611fa633ad880ba0fdc9d3e5548250fbdace1f643612a75e",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/218/875/GCA_000218875.1_ASM21887v1/GCA_000218875.1_ASM21887v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000218875.1_ASM21887v1_genomic.fna.gz",
+      "bytes": 610222,
+      "sha256": "a76e35243b5178d648b063bab9217c331d87289ce11b064cf4087cfa0c5a54ca",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/218/875/GCA_000218875.1_ASM21887v1/GCA_000218875.1_ASM21887v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000218875.1_ASM21887v1_protein.faa.gz",
+      "bytes": 385463,
+      "sha256": "ad6070060a7b48d506d9948b884e85a4f1e80d5d23988a104aeb3889e04ae003",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/473/865/GCA_000473865.1_TyKB-1/GCA_000473865.1_TyKB-1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000473865.1_TyKB-1_genomic.fna.gz",
+      "bytes": 797435,
+      "sha256": "8148809b2fa907e43a2cbe20d115484c22d1dd9b366818b0092bda61f1130e9d",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/473/865/GCA_000473865.1_TyKB-1/GCA_000473865.1_TyKB-1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000473865.1_TyKB-1_protein.faa.gz",
+      "bytes": 492871,
+      "sha256": "9f0bc31d723aa6f9897533803c5530e45471754ce40a88db4ace026f5e1283ed",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/565/015/GCA_000565015.1_PcatATCC51270v1.0/GCA_000565015.1_PcatATCC51270v1.0_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000565015.1_PcatATCC51270v1.0_genomic.fna.gz",
+      "bytes": 611643,
+      "sha256": "69ca091f9108b9a50474044c49108488be75643c40a156cc6aa00e1a727dd7af",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/565/015/GCA_000565015.1_PcatATCC51270v1.0/GCA_000565015.1_PcatATCC51270v1.0_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000565015.1_PcatATCC51270v1.0_protein.faa.gz",
+      "bytes": 383709,
+      "sha256": "a67120229e1e4917e665f0cdedc18af3e4639fc57aab80b4139b510aec86f21c",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/970/145/GCA_000970145.1_ASM97014v1/GCA_000970145.1_ASM97014v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000970145.1_ASM97014v1_genomic.fna.gz",
+      "bytes": 1600110,
+      "sha256": "9f8d0991f497c873e66c23c6b19a1fb87b4017438fcbe1f0cb78e3b315c11293",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/970/145/GCA_000970145.1_ASM97014v1/GCA_000970145.1_ASM97014v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000970145.1_ASM97014v1_protein.faa.gz",
+      "bytes": 869773,
+      "sha256": "edc62188a7a3adedc56630eff30f84ce4e7cd83682e1f3bd3bfd0fbdb19d68d6",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/980/815/GCA_000980815.1_ASM98081v1/GCA_000980815.1_ASM98081v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000980815.1_ASM98081v1_genomic.fna.gz",
+      "bytes": 726663,
+      "sha256": "f36df1b7891186ff01efb8bb27832e669763744e0c116eb0dffdfdb96b646d9c",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/980/815/GCA_000980815.1_ASM98081v1/GCA_000980815.1_ASM98081v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000980815.1_ASM98081v1_protein.faa.gz",
+      "bytes": 489144,
+      "sha256": "9a2009eedd4f1fb7968be1e5fa8913c98efd650b84f3611b9e0533ce492e7d44",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/053/095/GCA_001053095.1_5139_1_3/GCA_001053095.1_5139_1_3_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001053095.1_5139_1_3_genomic.fna.gz",
+      "bytes": 1459359,
+      "sha256": "9c80c71db195c5e4a067eadcb330e4a0dd3f104af502612162bd176b45e36a29",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/053/095/GCA_001053095.1_5139_1_3/GCA_001053095.1_5139_1_3_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001053095.1_5139_1_3_protein.faa.gz",
+      "bytes": 889231,
+      "sha256": "21a2ed70fa2fbace45d5f96c8441072e9bebf0536655c6853f7052a315a6a46a",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/435/375/GCA_001435375.1_ASM143537v1/GCA_001435375.1_ASM143537v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001435375.1_ASM143537v1_genomic.fna.gz",
+      "bytes": 435708,
+      "sha256": "d06018c7656eb718e830838974cf46add9e266e6bf5960d1edd056b1a78fc559",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/435/375/GCA_001435375.1_ASM143537v1/GCA_001435375.1_ASM143537v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001435375.1_ASM143537v1_protein.faa.gz",
+      "bytes": 285662,
+      "sha256": "e37ab341b3cf6358fe2942009de7dc59db3d101694d85f03313a7c0fab033548",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/439/735/GCA_001439735.1_mG273/GCA_001439735.1_mG273_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001439735.1_mG273_genomic.fna.gz",
+      "bytes": 1769942,
+      "sha256": "bfd169edd7171af4f1123add1aa0bf3c57978a7c9c952c3f1fe90c07a62ab2ff",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/439/735/GCA_001439735.1_mG273/GCA_001439735.1_mG273_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001439735.1_mG273_protein.faa.gz",
+      "bytes": 1108333,
+      "sha256": "cb1b7e1593439d4cb64c7aa92dbe10adcbf4a6defb064d7e268310e6cdd9e83a",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/598/055/GCA_001598055.1_ASM159805v1/GCA_001598055.1_ASM159805v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001598055.1_ASM159805v1_genomic.fna.gz",
+      "bytes": 2039207,
+      "sha256": "c56e42ea5dba4927d7b329a7e573b6a5ee859c1b57d62c2bce777e1d1461b544",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/598/055/GCA_001598055.1_ASM159805v1/GCA_001598055.1_ASM159805v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001598055.1_ASM159805v1_protein.faa.gz",
+      "bytes": 1304378,
+      "sha256": "3e9898e773ddd629a0be6c7cdda49914d74d573430be68478d43911eecaa8740",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/643/015/GCA_001643015.1_ASM164301v1/GCA_001643015.1_ASM164301v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001643015.1_ASM164301v1_genomic.fna.gz",
+      "bytes": 958305,
+      "sha256": "adff39a34bb18f4412969206dcf9908be2de1b318641ada71cd87ba43d8ef652",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/643/015/GCA_001643015.1_ASM164301v1/GCA_001643015.1_ASM164301v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001643015.1_ASM164301v1_protein.faa.gz",
+      "bytes": 596911,
+      "sha256": "f59ad228916ad43b236b70d9cd0537f541b20fc02925aa681cafb3b002b2cf29",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/866/055/GCA_001866055.1_ASM186605v1/GCA_001866055.1_ASM186605v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001866055.1_ASM186605v1_genomic.fna.gz",
+      "bytes": 1354830,
+      "sha256": "0baca788bc1713ff90744759228d0323443c27aad04db58a8063567b2cec8452",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/866/055/GCA_001866055.1_ASM186605v1/GCA_001866055.1_ASM186605v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001866055.1_ASM186605v1_protein.faa.gz",
+      "bytes": 779862,
+      "sha256": "66580d015b98a10c7fc069d805ddb43475c4d60cd345c597d908e2e4f0b83d05",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/885/905/GCA_001885905.1_ASM188590v1/GCA_001885905.1_ASM188590v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001885905.1_ASM188590v1_genomic.fna.gz",
+      "bytes": 988512,
+      "sha256": "c3d1d2efe288918b17413266e16769845068db2353899b2ca166d509d39a3c2a",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/885/905/GCA_001885905.1_ASM188590v1/GCA_001885905.1_ASM188590v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001885905.1_ASM188590v1_protein.faa.gz",
+      "bytes": 621125,
+      "sha256": "b8f66492430c83ae96cd9aa8a60728a70f0a226a9489d05cffd00280f8551827",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/006/205/GCA_002006205.1_ASM200620v1/GCA_002006205.1_ASM200620v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002006205.1_ASM200620v1_genomic.fna.gz",
+      "bytes": 1670825,
+      "sha256": "e028d1c812a701044d2fe6df051f94ade7208bc4d31ab72385d3773fec38e9e5",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/006/205/GCA_002006205.1_ASM200620v1/GCA_002006205.1_ASM200620v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002006205.1_ASM200620v1_protein.faa.gz",
+      "bytes": 1019668,
+      "sha256": "7256413476b03fac950e0dfb4f8e7bbc6f8c941530f14266d1750c0ac61be385",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/026/305/GCA_002026305.1_ASM202630v1/GCA_002026305.1_ASM202630v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002026305.1_ASM202630v1_genomic.fna.gz",
+      "bytes": 729893,
+      "sha256": "063f1bce9625eed7b300ce4d113be0b5b58eb73f8a765558501971ae9a0b64fa",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/026/305/GCA_002026305.1_ASM202630v1/GCA_002026305.1_ASM202630v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002026305.1_ASM202630v1_protein.faa.gz",
+      "bytes": 465498,
+      "sha256": "acf107c95248a637d0e85bd5bb97737b2cddfced2d35ef8bea327ab49da9ec4a",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/119/805/GCA_002119805.1_ASM211980v1/GCA_002119805.1_ASM211980v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002119805.1_ASM211980v1_genomic.fna.gz",
+      "bytes": 692897,
+      "sha256": "a6abcd99c54ac9c75045011c09a104ee41113dad528587276fb73467f09acea3",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/119/805/GCA_002119805.1_ASM211980v1/GCA_002119805.1_ASM211980v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002119805.1_ASM211980v1_protein.faa.gz",
+      "bytes": 465305,
+      "sha256": "f0444681ca763f4e33b19d450c090c84f6d0723060fec82d80e355b7cd429e4e",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/201/795/GCA_002201795.1_ASM220179v1/GCA_002201795.1_ASM220179v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002201795.1_ASM220179v1_genomic.fna.gz",
+      "bytes": 1398081,
+      "sha256": "3a93b7e6617bea9c80a0230ae9ecd533e430dee7744dce8879807e84809462d0",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/201/795/GCA_002201795.1_ASM220179v1/GCA_002201795.1_ASM220179v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002201795.1_ASM220179v1_protein.faa.gz",
+      "bytes": 864064,
+      "sha256": "203a1f0e0261a5d82195ed9d3f40ef669a71dc3267d8c44d9352347b2763ba96",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/214/365/GCA_002214365.1_ASM221436v1/GCA_002214365.1_ASM221436v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002214365.1_ASM221436v1_genomic.fna.gz",
+      "bytes": 552023,
+      "sha256": "c1b95c6db7a6acec8c39d31058ea904dc5606169a592edaeaf08a68296bfd15f",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/214/365/GCA_002214365.1_ASM221436v1/GCA_002214365.1_ASM221436v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002214365.1_ASM221436v1_protein.faa.gz",
+      "bytes": 357880,
+      "sha256": "1420059333f741ec56e18a188a25b52facb059dbc908ec76c42668e77fc8e0c5",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/441/825/GCA_002441825.1_ASM244182v1/GCA_002441825.1_ASM244182v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002441825.1_ASM244182v1_genomic.fna.gz",
+      "bytes": 768525,
+      "sha256": "72412f0a83f299e297a50b924116e56aa0454ec8493be2cb63616136cd45751a",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/441/825/GCA_002441825.1_ASM244182v1/GCA_002441825.1_ASM244182v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002441825.1_ASM244182v1_protein.faa.gz",
+      "bytes": 488135,
+      "sha256": "952667d3e03686bbb506ecb39fc1fb649f20eb4f7988614e194565ae0a03ef97",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/001/905/GCA_003001905.1_ASM300190v1/GCA_003001905.1_ASM300190v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003001905.1_ASM300190v1_genomic.fna.gz",
+      "bytes": 1059669,
+      "sha256": "71dc3e608944a15d165828a0f2e9e7e4104c26bba11038d3767c7d6fc9d0f728",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/001/905/GCA_003001905.1_ASM300190v1/GCA_003001905.1_ASM300190v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003001905.1_ASM300190v1_protein.faa.gz",
+      "bytes": 683021,
+      "sha256": "f8efc395745d0bc5a63345198d9fcfd172372b1c765266f02e5cab0a7b02493f",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/096/335/GCA_003096335.1_ASM309633v1/GCA_003096335.1_ASM309633v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003096335.1_ASM309633v1_genomic.fna.gz",
+      "bytes": 945540,
+      "sha256": "2ef877b1824d8ce3bbd30930ac843bf34f92998abcca65fdb513d7924cd7e820",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/096/335/GCA_003096335.1_ASM309633v1/GCA_003096335.1_ASM309633v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003096335.1_ASM309633v1_protein.faa.gz",
+      "bytes": 625070,
+      "sha256": "6543130b171e98708ed3db7ab358ee5f0f60cfb22050b4405bfb3db8933491e9",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/369/815/GCA_003369815.1_ASM336981v1/GCA_003369815.1_ASM336981v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003369815.1_ASM336981v1_genomic.fna.gz",
+      "bytes": 373313,
+      "sha256": "dfd621daa7f33a389bb1d6912bf1234d35b3348f7ca96aa3e84d39cbc969d69c",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/369/815/GCA_003369815.1_ASM336981v1/GCA_003369815.1_ASM336981v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003369815.1_ASM336981v1_protein.faa.gz",
+      "bytes": 241542,
+      "sha256": "1552a8118ef6eb101f0a43855f479767aa314636240ae0199ee44237637df7b3",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/391/395/GCA_003391395.1_ASM339139v1/GCA_003391395.1_ASM339139v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003391395.1_ASM339139v1_genomic.fna.gz",
+      "bytes": 1836447,
+      "sha256": "f53ae5fdf10bbd81ca7710b8b7b90afc092ead7d5542fa448a1ae9915832b933",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/391/395/GCA_003391395.1_ASM339139v1/GCA_003391395.1_ASM339139v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003391395.1_ASM339139v1_protein.faa.gz",
+      "bytes": 1207099,
+      "sha256": "2746de9df45857c07691442f9a9c1e126c729c3a378b64dfd1001b4743e626b5",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/583/925/GCA_003583925.1_ASM358392v1/GCA_003583925.1_ASM358392v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003583925.1_ASM358392v1_genomic.fna.gz",
+      "bytes": 1499921,
+      "sha256": "94fb53c84e0ce06f8159f741b4a0c8f8d924e972cfec539d030d30daf46d6832",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/583/925/GCA_003583925.1_ASM358392v1/GCA_003583925.1_ASM358392v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003583925.1_ASM358392v1_protein.faa.gz",
+      "bytes": 916454,
+      "sha256": "f82843566850e98d46430ee40ef34fdb41eb3a35cd7dbe3f440bee7a8f2eae43",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/635/025/GCA_003635025.1_ASM363502v1/GCA_003635025.1_ASM363502v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003635025.1_ASM363502v1_genomic.fna.gz",
+      "bytes": 2315726,
+      "sha256": "e5434440a3d869b9bd6d2227da0e2b992ff5008921f38671f374e42d581ab13f",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/635/025/GCA_003635025.1_ASM363502v1/GCA_003635025.1_ASM363502v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003635025.1_ASM363502v1_protein.faa.gz",
+      "bytes": 1557770,
+      "sha256": "7150a2e9b484dc1c6b88ac5e3bf57f219121247a13c60e04f2ef4e4fd44418da",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/663/885/GCA_003663885.1_ASM366388v1/GCA_003663885.1_ASM366388v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003663885.1_ASM366388v1_genomic.fna.gz",
+      "bytes": 1176407,
+      "sha256": "44d88995141aa1afe4e7298623186cdf89f341bf97411307b32b58e0e65a5a28",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/663/885/GCA_003663885.1_ASM366388v1/GCA_003663885.1_ASM366388v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003663885.1_ASM366388v1_protein.faa.gz",
+      "bytes": 803545,
+      "sha256": "0c4cbcab24074b73321225997f5421591aa8f1abf18b84013797d10f87b7b684",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/726/035/GCA_003726035.1_ASM372603v1/GCA_003726035.1_ASM372603v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003726035.1_ASM372603v1_genomic.fna.gz",
+      "bytes": 827407,
+      "sha256": "63a0ce672abbfe54bad1f8374056d27c098808b4ba711d3eb86cf5ac9e4ce18d",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/726/035/GCA_003726035.1_ASM372603v1/GCA_003726035.1_ASM372603v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003726035.1_ASM372603v1_protein.faa.gz",
+      "bytes": 526181,
+      "sha256": "9a7b26270cd08581ad7e95c04b6587ea16e1ec72c12c9ba66b6864b4e2ce1a66",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/966/145/GCA_003966145.1_ASM396614v1/GCA_003966145.1_ASM396614v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003966145.1_ASM396614v1_genomic.fna.gz",
+      "bytes": 1291483,
+      "sha256": "d81af83c07dcc0e4ec8b64868a9d08339cf79a33c160fc6763d3ccc4787901c6",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/966/145/GCA_003966145.1_ASM396614v1/GCA_003966145.1_ASM396614v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003966145.1_ASM396614v1_protein.faa.gz",
+      "bytes": 780272,
+      "sha256": "80e9ae712c3ffc6ceca966b6641eb9d62a4f14d44a5184e4cc10bae4b372344b",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/987/555/GCA_003987555.1_ASM398755v1/GCA_003987555.1_ASM398755v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003987555.1_ASM398755v1_genomic.fna.gz",
+      "bytes": 592109,
+      "sha256": "d135fbd855bc9ea21d6c7bcaeab46e402916491247733549e3facb1b70a92948",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/987/555/GCA_003987555.1_ASM398755v1/GCA_003987555.1_ASM398755v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003987555.1_ASM398755v1_protein.faa.gz",
+      "bytes": 394425,
+      "sha256": "fa260e417b168c882325d1800645577fb2e5f68ddeb48c5aa6cdd61a97abc3a4",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/028/235/GCA_004028235.1_ASM402823v1/GCA_004028235.1_ASM402823v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_004028235.1_ASM402823v1_genomic.fna.gz",
+      "bytes": 892978,
+      "sha256": "dbc4d267ea0482c91498381528a79dae0b6d944ab9b270f32d325113f62ebcea",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/028/235/GCA_004028235.1_ASM402823v1/GCA_004028235.1_ASM402823v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_004028235.1_ASM402823v1_protein.faa.gz",
+      "bytes": 567864,
+      "sha256": "fdf6a3c8caf8e016952877432a10827b20bd9fe00c2ceb11800cd1c09e249489",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/347/715/GCA_004347715.1_ASM434771v1/GCA_004347715.1_ASM434771v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_004347715.1_ASM434771v1_genomic.fna.gz",
+      "bytes": 1097962,
+      "sha256": "307a2ae481894b301b099f6242c32dc4dcecf06700a6697a88df8815a5b76c64",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/347/715/GCA_004347715.1_ASM434771v1/GCA_004347715.1_ASM434771v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_004347715.1_ASM434771v1_protein.faa.gz",
+      "bytes": 710200,
+      "sha256": "b721545b4aa9de4e151ca918ca9db733a329ab52607c1c3cdf9dc44afd5bd5bc",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/709/575/GCA_009709575.1_ASM970957v1/GCA_009709575.1_ASM970957v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_009709575.1_ASM970957v1_genomic.fna.gz",
+      "bytes": 1708750,
+      "sha256": "7f78e56bb3e2a9535b8234645f44a21a8579e10719dac44430757deb90f588f9",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/709/575/GCA_009709575.1_ASM970957v1/GCA_009709575.1_ASM970957v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_009709575.1_ASM970957v1_protein.faa.gz",
+      "bytes": 1076481,
+      "sha256": "17fc63c7a3a698c2d272a55517db8f41a7b39ccffa2de467f565aabab6287944",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/011/927/725/GCA_011927725.1_ASM1192772v1/GCA_011927725.1_ASM1192772v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_011927725.1_ASM1192772v1_genomic.fna.gz",
+      "bytes": 815412,
+      "sha256": "f320656399756e0809d13ba31318b829561a9b07f76f048d72f6ada267cc10d6",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/011/927/725/GCA_011927725.1_ASM1192772v1/GCA_011927725.1_ASM1192772v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_011927725.1_ASM1192772v1_protein.faa.gz",
+      "bytes": 582079,
+      "sha256": "dbf8377030bef080aaee72b44aca434d7feb301db9c91ba9630378a9ed0f1d42",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/416/335/GCA_013416335.1_ASM1341633v1/GCA_013416335.1_ASM1341633v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_013416335.1_ASM1341633v1_genomic.fna.gz",
+      "bytes": 1233902,
+      "sha256": "c1d42f67d950efc75b12740fdd635d5fbcd7e369f3a265ed6556840682abd7a3",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/416/335/GCA_013416335.1_ASM1341633v1/GCA_013416335.1_ASM1341633v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_013416335.1_ASM1341633v1_protein.faa.gz",
+      "bytes": 823456,
+      "sha256": "5397418f54f2f837c3d31d29f2e60fa7c53844fad484b87e1f19a4ac65c0fa4f",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/197/035/GCA_014197035.1_ASM1419703v1/GCA_014197035.1_ASM1419703v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014197035.1_ASM1419703v1_genomic.fna.gz",
+      "bytes": 1724588,
+      "sha256": "199e1d0e524a50414b12686c53cf55d5329914812ec7a68cd42fa427f2abdab7",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/197/035/GCA_014197035.1_ASM1419703v1/GCA_014197035.1_ASM1419703v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014197035.1_ASM1419703v1_protein.faa.gz",
+      "bytes": 1178585,
+      "sha256": "10e3f94153531b6d43ee07a754e5bf88dfc360634ef105eabfea44fa6dcb2e85",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/270/035/GCA_014270035.1_ASM1427003v1/GCA_014270035.1_ASM1427003v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014270035.1_ASM1427003v1_genomic.fna.gz",
+      "bytes": 1236836,
+      "sha256": "d841e2aea841a038bbb0647b3463ca3d53060f562a7fad8c3bbbd50a404dbdc5",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/270/035/GCA_014270035.1_ASM1427003v1/GCA_014270035.1_ASM1427003v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014270035.1_ASM1427003v1_protein.faa.gz",
+      "bytes": 821310,
+      "sha256": "300ceb105f58ce6865f3c70cfebe1e50fd020e7d6689525264af8aa2ef3ad017",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/397/255/GCA_014397255.1_ASM1439725v1/GCA_014397255.1_ASM1439725v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014397255.1_ASM1439725v1_genomic.fna.gz",
+      "bytes": 489771,
+      "sha256": "33ead98f4dd844c7a66f14ba05cebd1b8a622593396144b2e477543b737986c2",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/397/255/GCA_014397255.1_ASM1439725v1/GCA_014397255.1_ASM1439725v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014397255.1_ASM1439725v1_protein.faa.gz",
+      "bytes": 300890,
+      "sha256": "b2fcf9debd343bda8d57940acde8528b22c8abdd2502b97e0688b4cde45c684c",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/490/445/GCA_014490445.1_ASM1449044v1/GCA_014490445.1_ASM1449044v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014490445.1_ASM1449044v1_genomic.fna.gz",
+      "bytes": 1530849,
+      "sha256": "1913142b5470d1b1eec30b8051c61f3f93547c0de1e828ccad94e8f8e18b1530",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/490/445/GCA_014490445.1_ASM1449044v1/GCA_014490445.1_ASM1449044v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014490445.1_ASM1449044v1_protein.faa.gz",
+      "bytes": 1023209,
+      "sha256": "552ef80ed0bdf8627e72ee75be52ef89ca5e36279ab86ac90b85b329430dbc41",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/635/785/GCA_014635785.1_ASM1463578v1/GCA_014635785.1_ASM1463578v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014635785.1_ASM1463578v1_genomic.fna.gz",
+      "bytes": 702116,
+      "sha256": "a5afe6cffbcd9822ab1e4f5895b88f6f0d5465b04b9b0a518267936311e7f791",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/635/785/GCA_014635785.1_ASM1463578v1/GCA_014635785.1_ASM1463578v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014635785.1_ASM1463578v1_protein.faa.gz",
+      "bytes": 465095,
+      "sha256": "a2a08e054c22e6c7cacc130ed211c77fb6c764eacb14522842038319f45130f6",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/644/955/GCA_014644955.1_ASM1464495v1/GCA_014644955.1_ASM1464495v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014644955.1_ASM1464495v1_genomic.fna.gz",
+      "bytes": 1062481,
+      "sha256": "e8c07d1d1a90e83461af44cbf3727b1a7fd01ed583bdaccbfdc82c2ea30d0228",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/644/955/GCA_014644955.1_ASM1464495v1/GCA_014644955.1_ASM1464495v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014644955.1_ASM1464495v1_protein.faa.gz",
+      "bytes": 747374,
+      "sha256": "7e43ba32b17aadfe94ec15149b6cbee65606c1adda220f8badcd1109e1cb536e",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/646/975/GCA_014646975.1_ASM1464697v1/GCA_014646975.1_ASM1464697v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014646975.1_ASM1464697v1_genomic.fna.gz",
+      "bytes": 1391861,
+      "sha256": "12134ec4da80fc6d6e4b524e58105274f5386c40e6ca0d9cda334bf955e5d067",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/646/975/GCA_014646975.1_ASM1464697v1/GCA_014646975.1_ASM1464697v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014646975.1_ASM1464697v1_protein.faa.gz",
+      "bytes": 883126,
+      "sha256": "278bf9c9d014d21da132cd6502dcb0591936da0c078cf7b1e11f2f1fc4bd3c37",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/650/295/GCA_014650295.1_ASM1465029v1/GCA_014650295.1_ASM1465029v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014650295.1_ASM1465029v1_genomic.fna.gz",
+      "bytes": 2520108,
+      "sha256": "bcece07e73170dea2a8cfa6e0c46015c283f65848cce12bef951e47ba3240641",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/650/295/GCA_014650295.1_ASM1465029v1/GCA_014650295.1_ASM1465029v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014650295.1_ASM1465029v1_protein.faa.gz",
+      "bytes": 1646441,
+      "sha256": "0f4db900b38fb04ef5c1821619138671bb8b304340d89e81db469e72138aecad",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/655/195/GCA_014655195.1_ASM1465519v1/GCA_014655195.1_ASM1465519v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014655195.1_ASM1465519v1_genomic.fna.gz",
+      "bytes": 2215706,
+      "sha256": "e31e5841290167ac378243f3143bc42a742a8503a7fea81e43b15cf79e158e55",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/655/195/GCA_014655195.1_ASM1465519v1/GCA_014655195.1_ASM1465519v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014655195.1_ASM1465519v1_protein.faa.gz",
+      "bytes": 1459308,
+      "sha256": "f5fbad8e97baacee1aba31c58a31bb6870bf33086a19b8b593164285190ce38c",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/016/907/615/GCA_016907615.1_ASM1690761v1/GCA_016907615.1_ASM1690761v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_016907615.1_ASM1690761v1_genomic.fna.gz",
+      "bytes": 991240,
+      "sha256": "bfa9bde58e56e7a8a7b44db4d5eda36dee6db1b8ca2b6a033d34bd315fd53770",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/016/907/615/GCA_016907615.1_ASM1690761v1/GCA_016907615.1_ASM1690761v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_016907615.1_ASM1690761v1_protein.faa.gz",
+      "bytes": 653353,
+      "sha256": "7eee0a77b2223e94f94b955af62c0a768883fa87c46494561c1849a7cf34aec0",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/017/873/185/GCA_017873185.1_ASM1787318v1/GCA_017873185.1_ASM1787318v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_017873185.1_ASM1787318v1_genomic.fna.gz",
+      "bytes": 858336,
+      "sha256": "f4b839d448bc1b1d64a9c1c1e21827c5ea9b850b1395b4a846d8d951698fae19",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/017/873/185/GCA_017873185.1_ASM1787318v1/GCA_017873185.1_ASM1787318v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_017873185.1_ASM1787318v1_protein.faa.gz",
+      "bytes": 549971,
+      "sha256": "34f1f2d33c4c025e8f281a4235f6f2e607db1e7693a6d21f36651d3e1a6e5f63",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/021/134/395/GCA_021134395.1_ASM2113439v1/GCA_021134395.1_ASM2113439v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_021134395.1_ASM2113439v1_genomic.fna.gz",
+      "bytes": 559473,
+      "sha256": "00aab492608acbe58c9d8b952ffabe5c737b8d42b999be3270953a7ba68b38ea",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/021/134/395/GCA_021134395.1_ASM2113439v1/GCA_021134395.1_ASM2113439v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_021134395.1_ASM2113439v1_protein.faa.gz",
+      "bytes": 348993,
+      "sha256": "4adcb80e58e45b824a29ba0e621af50b48034b1194380abcd958f41f16a6c562",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/022/568/795/GCA_022568795.1_ASM2256879v1/GCA_022568795.1_ASM2256879v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_022568795.1_ASM2256879v1_genomic.fna.gz",
+      "bytes": 970754,
+      "sha256": "e2e1996e33291179878ae36a3f0248398af51003a25bd69efe6be4418b58b90d",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/022/568/795/GCA_022568795.1_ASM2256879v1/GCA_022568795.1_ASM2256879v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_022568795.1_ASM2256879v1_protein.faa.gz",
+      "bytes": 630489,
+      "sha256": "80c9ece7f9fe54864cf49a9cf0f5a78a679f5a156a8b92aeec0ce8ae9a5500f3",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/284/005/GCA_023284005.1_ASM2328400v1/GCA_023284005.1_ASM2328400v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_023284005.1_ASM2328400v1_genomic.fna.gz",
+      "bytes": 1822534,
+      "sha256": "78a44f48b2a0b46cd00fd4cd98c1e2d5ed8d2e43ff3564a99ddc86eec38d3854",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/284/005/GCA_023284005.1_ASM2328400v1/GCA_023284005.1_ASM2328400v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_023284005.1_ASM2328400v1_protein.faa.gz",
+      "bytes": 1061441,
+      "sha256": "d5ff7ad3f279b0097e0cc68b9312eb39dafcf2a9271b71710eb509db0efd99da",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/095/795/GCA_900095795.1_E5A/GCA_900095795.1_E5A_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900095795.1_E5A_genomic.fna.gz",
+      "bytes": 1105131,
+      "sha256": "de1628158aa886ec501b49d48df795f1feab99e896cf137768dadd44ad0ec230",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/095/795/GCA_900095795.1_E5A/GCA_900095795.1_E5A_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900095795.1_E5A_protein.faa.gz",
+      "bytes": 739495,
+      "sha256": "ebba178947f7179199bacc2c56c1319127d2db35128d7ba495e2c03eab5e6b21",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/101/825/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly_genomic.fna.gz",
+      "bytes": 1260462,
+      "sha256": "3598bdf6277e0faa8376e82caa7400c98aa52386f52f6192a652baf5267ee86a",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/101/825/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly_protein.faa.gz",
+      "bytes": 845719,
+      "sha256": "ccf12df4206100aaaeec1251bfc3fd2b74e3b5f6bc7f04635e824ad87829a79b",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/101/845/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly_genomic.fna.gz",
+      "bytes": 1797771,
+      "sha256": "440f8c0045e3741dac4c2f71715a5f0c9b1db1864764df9b90eb3f05e7d31448",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/101/845/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly_protein.faa.gz",
+      "bytes": 1158836,
+      "sha256": "dd021988e7ebc8bf9a90a0ccc955a2c87b1aaf934828783782cba051d8812610",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/103/275/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly_genomic.fna.gz",
+      "bytes": 893918,
+      "sha256": "b870adab109c0c82c86b979ddd093ea184557c98a8db22167f6cec42aa6ba2d0",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/103/275/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly_protein.faa.gz",
+      "bytes": 645642,
+      "sha256": "1b6b06ad1461c243285229d29973fe39f4511f0f93e1f6af6dd455ba36f9e2b6",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/104/475/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly_genomic.fna.gz",
+      "bytes": 1443197,
+      "sha256": "12659b8dcd13112949ab047dfd794264d20fd3c09c8ceb168374fb3de702126e",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/104/475/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly_protein.faa.gz",
+      "bytes": 914309,
+      "sha256": "cf00c3fa983a0aac2d9ee6eb37c0ed91181175c296380949a16b8656074c385f",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/105/965/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly_genomic.fna.gz",
+      "bytes": 1364522,
+      "sha256": "a750348a2687945272ee0387938dbadf31e09be1dc2e3c5eac2c250fe6ef54e6",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/105/965/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly_protein.faa.gz",
+      "bytes": 874800,
+      "sha256": "e2f2a48f5fd313a6bdfb8add13e0e52d10f7451ea3515086f970654963e6fe17",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/110/585/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly_genomic.fna.gz",
+      "bytes": 1171456,
+      "sha256": "d6590a02dc5c8a673776890a3b6b0e4dc401ea1fe15f4458e804632b7e7f3239",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/110/585/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly_protein.faa.gz",
+      "bytes": 813758,
+      "sha256": "59e627ffeb5ee7a7bba21e14976e9e301da2c2f2fe8eff22a48dce9149523a86",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/112/235/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly_genomic.fna.gz",
+      "bytes": 918359,
+      "sha256": "16ee370338c32f34e0bf67c74dfb2935875c82919501c3b67b1041c676e0f4df",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/112/235/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly_protein.faa.gz",
+      "bytes": 634034,
+      "sha256": "07c2edd44ed6d5a190217a4ff4fddfbcfe54319f6b6f25d0373eab7bccb5b294",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/115/955/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly_genomic.fna.gz",
+      "bytes": 2872226,
+      "sha256": "2f699076c5bff098625fff7577275a0382a60def1b638cdff24f0adb85b84441",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/115/955/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly_protein.faa.gz",
+      "bytes": 2017986,
+      "sha256": "1f8bbc125783f1871b15c4a580ec4b53f06eb688d8ebf1b3049fb25fed32ded8",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/172/235/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka_genomic.fna.gz",
+      "bytes": 1061084,
+      "sha256": "505096ebd39db2fd3e7f8ccea8441f4a950bbb89f211fe77ae0b789979f0c5e7",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/172/235/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka_protein.faa.gz",
+      "bytes": 739329,
+      "sha256": "82416494cbab6dcbc86b4df397f0bf7be10ffd6a4d76f66fa64690a16198b3e4",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/186/925/GCA_900186925.1_48450_B02/GCA_900186925.1_48450_B02_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900186925.1_48450_B02_genomic.fna.gz",
+      "bytes": 1038847,
+      "sha256": "3e58266d0eac48b756cfc1a164208a3f003135bb6ed8f4e39de3a222992e3b3b",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/186/925/GCA_900186925.1_48450_B02/GCA_900186925.1_48450_B02_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900186925.1_48450_B02_protein.faa.gz",
+      "bytes": 681403,
+      "sha256": "2a17cae7bc54b7f78b49b2a3e96c780377b45a4a703cfd61fe89d8831df48cf4",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/186/995/GCA_900186995.1_50465_A02/GCA_900186995.1_50465_A02_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900186995.1_50465_A02_genomic.fna.gz",
+      "bytes": 646726,
+      "sha256": "52542576f020b6ea6d0a70e82afe3b9367d7ab29aaa4f7c0fcd8d2ca07607824",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/186/995/GCA_900186995.1_50465_A02/GCA_900186995.1_50465_A02_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900186995.1_50465_A02_protein.faa.gz",
+      "bytes": 430286,
+      "sha256": "e49b7fe8611fc1ae6ee5d1d4b996de40de0483139ff338852eb51db6a71d4256",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/475/735/GCA_900475735.1_45813_H02/GCA_900475735.1_45813_H02_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900475735.1_45813_H02_genomic.fna.gz",
+      "bytes": 1004612,
+      "sha256": "c273bf05e4d52a0aee8f69bdcddd7ff20e41a6bf6e821376ef67de1aa9d27c5e",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/475/735/GCA_900475735.1_45813_H02/GCA_900475735.1_45813_H02_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900475735.1_45813_H02_protein.faa.gz",
+      "bytes": 659984,
+      "sha256": "cb1dc4c7d16a3052164908bbde923fa93ec30071521e29cf031cc13e457a8ef6",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/706/855/GCA_900706855.1_28863_D01/GCA_900706855.1_28863_D01_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900706855.1_28863_D01_genomic.fna.gz",
+      "bytes": 1650576,
+      "sha256": "5e7883aaa87bb4836647c58ecaf27bf344925d10eacc76a151f0804fc51e098b",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/706/855/GCA_900706855.1_28863_D01/GCA_900706855.1_28863_D01_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900706855.1_28863_D01_protein.faa.gz",
+      "bytes": 1068342,
+      "sha256": "86d0c3399c65c0ede87bdf66aaeb20b609b87ec581f05ef82ca79bfce17f44c3",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/901/472/485/GCA_901472485.1_35860_G01/GCA_901472485.1_35860_G01_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_901472485.1_35860_G01_genomic.fna.gz",
+      "bytes": 552587,
+      "sha256": "d288d66b858a64238d6284be9037249780a58655cc59b0add6875e5ec1d3698c",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/901/472/485/GCA_901472485.1_35860_G01/GCA_901472485.1_35860_G01_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_901472485.1_35860_G01_protein.faa.gz",
+      "bytes": 369520,
+      "sha256": "ec0de03578f63b29f1c55268deaaa62f4f89dddc2153a45cd188cf43fc17b724",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/901/543/985/GCA_901543985.1_42880_C01/GCA_901543985.1_42880_C01_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_901543985.1_42880_C01_genomic.fna.gz",
+      "bytes": 612501,
+      "sha256": "c17a48d60d5ccf3bef47ab624f76f62239f36470c5a2b156497383858d9748f9",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/901/543/985/GCA_901543985.1_42880_C01/GCA_901543985.1_42880_C01_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_901543985.1_42880_C01_protein.faa.gz",
+      "bytes": 394839,
+      "sha256": "d6243b526c043a613974ded9162454e171c1d761084788524ace691d3e1fc9ec",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/902/141/845/GCA_902141845.1_CECT_9862/GCA_902141845.1_CECT_9862_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_902141845.1_CECT_9862_genomic.fna.gz",
+      "bytes": 1734026,
+      "sha256": "0821aa406d271e9f7afbbcab72d32bcf3ed0ef810d7ce7bc9bc1bd42187f9513",
+      "kind": "verified_source"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/902/141/845/GCA_902141845.1_CECT_9862/GCA_902141845.1_CECT_9862_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_902141845.1_CECT_9862_protein.faa.gz",
+      "bytes": 1098802,
+      "sha256": "d22a4c7a827deaa16c295467fe92f416e711fe6396eb9709eb4c953c7fb9dd36",
+      "kind": "verified_source"
+    },
+    {
       "path": "data/raw/verification/special-name-parent.html",
       "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/053/095/",
       "bytes": 550,
       "sha256": "02ed09eff67047cd733038555565b5d27d6325dc63f3c934b702f3cf2860ca39",
       "kind": "downloaded_source_record"
+    },
+    {
+      "path": "data/raw/verification/upstream-source-manifest.json",
+      "url": null,
+      "bytes": 2723,
+      "sha256": "17371969ef7ef43af4b1ce9ea6d0ee85e6bc0f665297d80343324165c79c030c",
+      "kind": "local_acquisition_receipt"
     },
     {
       "path": "data/raw/verification/upstream/genome_spot/__init__.py",
@@ -522,49 +3749,62 @@
       "bytes": 2478,
       "sha256": "207bc913548a6418a9cddfe0facac95f8c27f56b003d85872522bdc9f4080aa0",
       "kind": "downloaded_source_record"
-    },
-    {
-      "path": "data/raw/verification/upstream-source-manifest.json",
-      "url": null,
-      "bytes": 2723,
-      "sha256": "17371969ef7ef43af4b1ce9ea6d0ee85e6bc0f665297d80343324165c79c030c",
-      "kind": "local_acquisition_receipt"
     }
   ],
-  "gtdb_release": null,
-  "proteome_bytes": null,
+  "gtdb_release": "R11-RS232 (232.0)",
+  "proteome_bytes": 135825146,
   "trait_counts": {
     "temperature_optimum": {
       "labelled_nonmissing_in_raw_table": 4783,
       "missing_in_raw_table": 10813,
       "upstream_use_true": 2420,
-      "analysis_usable": null,
-      "excluded": null,
-      "reason": "GTDB mapping and analysis exclusions pending required feature verification"
+      "analysis_usable": 4715,
+      "excluded": 68,
+      "reason": "See counts_by_reason for every analysis disposition",
+      "counts_by_reason": {
+        "missing_label": 10813,
+        "usable": 4715,
+        "absent_from_release232_metadata": 68
+      }
     },
     "oxygen": {
       "labelled_nonmissing_in_raw_table": 7300,
       "missing_in_raw_table": 8296,
       "upstream_use_true": 7300,
-      "analysis_usable": null,
-      "excluded": null,
-      "reason": "GTDB mapping and analysis exclusions pending required feature verification"
+      "analysis_usable": 7230,
+      "excluded": 70,
+      "reason": "See counts_by_reason for every analysis disposition",
+      "counts_by_reason": {
+        "missing_label": 8296,
+        "usable": 7230,
+        "absent_from_release232_metadata": 70
+      }
     },
     "salinity_optimum": {
       "labelled_nonmissing_in_raw_table": 2376,
       "missing_in_raw_table": 13220,
       "upstream_use_true": 846,
-      "analysis_usable": null,
-      "excluded": null,
-      "reason": "GTDB mapping and analysis exclusions pending required feature verification"
+      "analysis_usable": 2347,
+      "excluded": 29,
+      "reason": "See counts_by_reason for every analysis disposition",
+      "counts_by_reason": {
+        "missing_label": 13220,
+        "usable": 2347,
+        "absent_from_release232_metadata": 29
+      }
     },
     "ph_optimum": {
       "labelled_nonmissing_in_raw_table": 3549,
       "missing_in_raw_table": 12047,
       "upstream_use_true": 1022,
-      "analysis_usable": null,
-      "excluded": null,
-      "reason": "GTDB mapping and analysis exclusions pending required feature verification"
+      "analysis_usable": 3513,
+      "excluded": 36,
+      "reason": "See counts_by_reason for every analysis disposition",
+      "counts_by_reason": {
+        "missing_label": 12047,
+        "usable": 3513,
+        "absent_from_release232_metadata": 36
+      }
     }
   },
   "previous_status": {
@@ -591,21 +3831,71 @@
     "commit": "5e1c843"
   },
   "feature_verification": {
-    "status": "not_run_source_unavailable",
-    "sample_seed": 20261011,
-    "sample_size": 100,
-    "population_size": 8174,
-    "available_proteomes": 71,
-    "available_nucleotide_fastas": 100,
-    "missing_proteomes": 29,
-    "known_compressed_sequence_bytes": 170786627,
-    "total_sequence_bytes": null,
-    "size_gate_status": "size_unknown",
-    "sequence_bytes_downloaded": 0,
-    "agreement": null,
-    "relative_tolerance": 1e-07,
-    "absolute_tolerance": 1e-09,
-    "sample_path": "data/raw/verification/sample.json",
-    "preflight_path": "data/raw/verification/sequence-preflight.json"
-  }
+    "seed": 20261011,
+    "rtol": 1e-07,
+    "atol": 1e-09,
+    "download_bytes": 135825146,
+    "unavailable": [
+      "GCA_000194155",
+      "GCA_000285915",
+      "GCA_000382325",
+      "GCA_000420605",
+      "GCA_000425025",
+      "GCA_000429405",
+      "GCA_000710615",
+      "GCA_000745905",
+      "GCA_000771625",
+      "GCA_000966265",
+      "GCA_000969705",
+      "GCA_000975055",
+      "GCA_001311865",
+      "GCA_001313705",
+      "GCA_001552635",
+      "GCA_001571225",
+      "GCA_001591345",
+      "GCA_001653135",
+      "GCA_002019645",
+      "GCA_002087335",
+      "GCA_002091755",
+      "GCA_002155305",
+      "GCA_002269345",
+      "GCA_003946545",
+      "GCA_004368535",
+      "GCA_006519715",
+      "GCA_009299835",
+      "GCA_009870755",
+      "GCA_900624775"
+    ],
+    "recomputed": 71,
+    "groups": {
+      "all": {
+        "comparisons": 3266,
+        "agree": 3124,
+        "max_absolute_difference": 0.7811989698740474
+      },
+      "extracellular_soluble": {
+        "comparisons": 3266,
+        "agree": 3124,
+        "max_absolute_difference": 0.8082056045589913
+      },
+      "intracellular_soluble": {
+        "comparisons": 3266,
+        "agree": 3124,
+        "max_absolute_difference": 0.785673984955667
+      },
+      "membrane": {
+        "comparisons": 3266,
+        "agree": 3124,
+        "max_absolute_difference": 1.1557522721298088
+      },
+      "diff_extra_intra": {
+        "comparisons": 3266,
+        "agree": 3124,
+        "max_absolute_difference": 0.5080640710790388
+      }
+    },
+    "genomes_fully_agree": 0,
+    "status": "complete"
+  },
+  "phase1_completed_at_pt": "2026-10-11 04:02:11 PDT"
 }

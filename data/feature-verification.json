@@ -1,0 +1,67 @@
+{
+  "seed": 20261011,
+  "rtol": 1e-07,
+  "atol": 1e-09,
+  "download_bytes": 135825146,
+  "unavailable": [
+    "GCA_000194155",
+    "GCA_000285915",
+    "GCA_000382325",
+    "GCA_000420605",
+    "GCA_000425025",
+    "GCA_000429405",
+    "GCA_000710615",
+    "GCA_000745905",
+    "GCA_000771625",
+    "GCA_000966265",
+    "GCA_000969705",
+    "GCA_000975055",
+    "GCA_001311865",
+    "GCA_001313705",
+    "GCA_001552635",
+    "GCA_001571225",
+    "GCA_001591345",
+    "GCA_001653135",
+    "GCA_002019645",
+    "GCA_002087335",
+    "GCA_002091755",
+    "GCA_002155305",
+    "GCA_002269345",
+    "GCA_003946545",
+    "GCA_004368535",
+    "GCA_006519715",
+    "GCA_009299835",
+    "GCA_009870755",
+    "GCA_900624775"
+  ],
+  "recomputed": 71,
+  "groups": {
+    "all": {
+      "comparisons": 3266,
+      "agree": 3124,
+      "max_absolute_difference": 0.7811989698740474
+    },
+    "extracellular_soluble": {
+      "comparisons": 3266,
+      "agree": 3124,
+      "max_absolute_difference": 0.8082056045589913
+    },
+    "intracellular_soluble": {
+      "comparisons": 3266,
+      "agree": 3124,
+      "max_absolute_difference": 0.785673984955667
+    },
+    "membrane": {
+      "comparisons": 3266,
+      "agree": 3124,
+      "max_absolute_difference": 1.1557522721298088
+    },
+    "diff_extra_intra": {
+      "comparisons": 3266,
+      "agree": 3124,
+      "max_absolute_difference": 0.5080640710790388
+    }
+  },
+  "genomes_fully_agree": 0,
+  "status": "complete"
+}

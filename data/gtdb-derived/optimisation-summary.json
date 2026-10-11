@@ -1,0 +1,5099 @@
+{
+  "fitted_estimators_inspected": 720,
+  "estimators_at_iteration_limit": 0,
+  "diagnostics": [
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold0/B1-naive.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold0/B1.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold0/B3-naive.joblib",
+      "iterations": [
+        23
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold0/B3.joblib",
+      "iterations": [
+        22
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold0/method-naive.joblib",
+      "iterations": [
+        104
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold0/method.joblib",
+      "iterations": [
+        103
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold1/B1-naive.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold1/B1.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold1/B3-naive.joblib",
+      "iterations": [
+        29
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold1/B3.joblib",
+      "iterations": [
+        27
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold1/method-naive.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold1/method.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold2/B1-naive.joblib",
+      "iterations": [
+        37
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold2/B1.joblib",
+      "iterations": [
+        35
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold2/B3-naive.joblib",
+      "iterations": [
+        37
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold2/B3.joblib",
+      "iterations": [
+        35
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold2/method-naive.joblib",
+      "iterations": [
+        110
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold2/method.joblib",
+      "iterations": [
+        108
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold3/B1-naive.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold3/B1.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold3/B3-naive.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold3/B3.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold3/method-naive.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold3/method.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold4/B1-naive.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold4/B1.joblib",
+      "iterations": [
+        35
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold4/B3-naive.joblib",
+      "iterations": [
+        36
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold4/B3.joblib",
+      "iterations": [
+        37
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold4/method-naive.joblib",
+      "iterations": [
+        119
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/class/fold4/method.joblib",
+      "iterations": [
+        119
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold0/B1-naive.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold0/B1.joblib",
+      "iterations": [
+        35
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold0/B3-naive.joblib",
+      "iterations": [
+        26
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold0/B3.joblib",
+      "iterations": [
+        26
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold0/method-naive.joblib",
+      "iterations": [
+        88
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold0/method.joblib",
+      "iterations": [
+        93
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold1/B1-naive.joblib",
+      "iterations": [
+        29
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold1/B1.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold1/B3-naive.joblib",
+      "iterations": [
+        17
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold1/B3.joblib",
+      "iterations": [
+        16
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold1/method-naive.joblib",
+      "iterations": [
+        46
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold1/method.joblib",
+      "iterations": [
+        41
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold2/B1-naive.joblib",
+      "iterations": [
+        35
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold2/B1.joblib",
+      "iterations": [
+        35
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold2/B3-naive.joblib",
+      "iterations": [
+        26
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold2/B3.joblib",
+      "iterations": [
+        26
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold2/method-naive.joblib",
+      "iterations": [
+        45
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold2/method.joblib",
+      "iterations": [
+        53
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold3/B1-naive.joblib",
+      "iterations": [
+        33
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold3/B1.joblib",
+      "iterations": [
+        29
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold3/B3-naive.joblib",
+      "iterations": [
+        26
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold3/B3.joblib",
+      "iterations": [
+        25
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold3/method-naive.joblib",
+      "iterations": [
+        51
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold3/method.joblib",
+      "iterations": [
+        46
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold4/B1-naive.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold4/B1.joblib",
+      "iterations": [
+        35
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold4/B3-naive.joblib",
+      "iterations": [
+        25
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold4/B3.joblib",
+      "iterations": [
+        26
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold4/method-naive.joblib",
+      "iterations": [
+        121
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/family/fold4/method.joblib",
+      "iterations": [
+        104
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold0/B1-naive.joblib",
+      "iterations": [
+        40
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold0/B1.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold0/B3-naive.joblib",
+      "iterations": [
+        40
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold0/B3.joblib",
+      "iterations": [
+        33
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold0/method-naive.joblib",
+      "iterations": [
+        103
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold0/method.joblib",
+      "iterations": [
+        85
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold1/B1-naive.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold1/B1.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold1/B3-naive.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold1/B3.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold1/method-naive.joblib",
+      "iterations": [
+        81
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold1/method.joblib",
+      "iterations": [
+        91
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold2/B1-naive.joblib",
+      "iterations": [
+        38
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold2/B1.joblib",
+      "iterations": [
+        35
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold2/B3-naive.joblib",
+      "iterations": [
+        37
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold2/B3.joblib",
+      "iterations": [
+        38
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold2/method-naive.joblib",
+      "iterations": [
+        111
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold2/method.joblib",
+      "iterations": [
+        122
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold3/B1-naive.joblib",
+      "iterations": [
+        28
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold3/B1.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold3/B3-naive.joblib",
+      "iterations": [
+        28
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold3/B3.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold3/method-naive.joblib",
+      "iterations": [
+        79
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold3/method.joblib",
+      "iterations": [
+        86
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold4/B1-naive.joblib",
+      "iterations": [
+        33
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold4/B1.joblib",
+      "iterations": [
+        36
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold4/B3-naive.joblib",
+      "iterations": [
+        33
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold4/B3.joblib",
+      "iterations": [
+        36
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold4/method-naive.joblib",
+      "iterations": [
+        75
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/genus/fold4/method.joblib",
+      "iterations": [
+        95
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold0/B1-naive.joblib",
+      "iterations": [
+        33
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold0/B1.joblib",
+      "iterations": [
+        33
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold0/B3-naive.joblib",
+      "iterations": [
+        23
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold0/B3.joblib",
+      "iterations": [
+        24
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold0/method-naive.joblib",
+      "iterations": [
+        123
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold0/method.joblib",
+      "iterations": [
+        111
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold1/B1-naive.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold1/B1.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold1/B3-naive.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold1/B3.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold1/method-naive.joblib",
+      "iterations": [
+        84
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold1/method.joblib",
+      "iterations": [
+        74
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold2/B1-naive.joblib",
+      "iterations": [
+        36
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold2/B1.joblib",
+      "iterations": [
+        36
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold2/B3-naive.joblib",
+      "iterations": [
+        40
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold2/B3.joblib",
+      "iterations": [
+        40
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold2/method-naive.joblib",
+      "iterations": [
+        118
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold2/method.joblib",
+      "iterations": [
+        105
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold3/B1-naive.joblib",
+      "iterations": [
+        33
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold3/B1.joblib",
+      "iterations": [
+        35
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold3/B3-naive.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold3/B3.joblib",
+      "iterations": [
+        38
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold3/method-naive.joblib",
+      "iterations": [
+        85
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold3/method.joblib",
+      "iterations": [
+        81
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold4/B1-naive.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold4/B1.joblib",
+      "iterations": [
+        42
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold4/B3-naive.joblib",
+      "iterations": [
+        17
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold4/B3.joblib",
+      "iterations": [
+        17
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold4/method-naive.joblib",
+      "iterations": [
+        50
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/order/fold4/method.joblib",
+      "iterations": [
+        49
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold0/B1-naive.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold0/B1.joblib",
+      "iterations": [
+        41
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold0/B3-naive.joblib",
+      "iterations": [
+        33
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold0/B3.joblib",
+      "iterations": [
+        42
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold0/method-naive.joblib",
+      "iterations": [
+        102
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold0/method.joblib",
+      "iterations": [
+        96
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold1/B1-naive.joblib",
+      "iterations": [
+        36
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold1/B1.joblib",
+      "iterations": [
+        44
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold1/B3-naive.joblib",
+      "iterations": [
+        36
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold1/B3.joblib",
+      "iterations": [
+        44
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold1/method-naive.joblib",
+      "iterations": [
+        111
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold1/method.joblib",
+      "iterations": [
+        92
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold2/B1-naive.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold2/B1.joblib",
+      "iterations": [
+        24
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold2/B3-naive.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold2/B3.joblib",
+      "iterations": [
+        28
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold2/method-naive.joblib",
+      "iterations": [
+        89
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold2/method.joblib",
+      "iterations": [
+        57
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold3/B1-naive.joblib",
+      "iterations": [
+        40
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold3/B1.joblib",
+      "iterations": [
+        32
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold3/B3-naive.joblib",
+      "iterations": [
+        40
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold3/B3.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold3/method-naive.joblib",
+      "iterations": [
+        114
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold3/method.joblib",
+      "iterations": [
+        112
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold4/B1-naive.joblib",
+      "iterations": [
+        38
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold4/B1.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold4/B3-naive.joblib",
+      "iterations": [
+        38
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold4/B3.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold4/method-naive.joblib",
+      "iterations": [
+        125
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/phylum/fold4/method.joblib",
+      "iterations": [
+        100
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold0/B1-naive.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold0/B1.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold0/B3-naive.joblib",
+      "iterations": [
+        28
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold0/B3.joblib",
+      "iterations": [
+        26
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold0/method-naive.joblib",
+      "iterations": [
+        87
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold0/method.joblib",
+      "iterations": [
+        81
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold1/B1-naive.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold1/B1.joblib",
+      "iterations": [
+        37
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold1/B3-naive.joblib",
+      "iterations": [
+        34
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold1/B3.joblib",
+      "iterations": [
+        37
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold1/method-naive.joblib",
+      "iterations": [
+        85
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold1/method.joblib",
+      "iterations": [
+        93
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold2/B1-naive.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold2/B1.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold2/B3-naive.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold2/B3.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold2/method-naive.joblib",
+      "iterations": [
+        48
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold2/method.joblib",
+      "iterations": [
+        44
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold3/B1-naive.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold3/B1.joblib",
+      "iterations": [
+        31
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold3/B3-naive.joblib",
+      "iterations": [
+        28
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold3/B3.joblib",
+      "iterations": [
+        28
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold3/method-naive.joblib",
+      "iterations": [
+        80
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold3/method.joblib",
+      "iterations": [
+        72
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold4/B1-naive.joblib",
+      "iterations": [
+        30
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold4/B1.joblib",
+      "iterations": [
+        33
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold4/B3-naive.joblib",
+      "iterations": [
+        27
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold4/B3.joblib",
+      "iterations": [
+        28
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold4/method-naive.joblib",
+      "iterations": [
+        112
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/oxygen/random/fold4/method.joblib",
+      "iterations": [
+        123
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold0/B1-naive.joblib",
+      "iterations": [
+        388
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold0/B1.joblib",
+      "iterations": [
+        275
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold1/B1-naive.joblib",
+      "iterations": [
+        274
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold1/B1.joblib",
+      "iterations": [
+        304
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold2/B1-naive.joblib",
+      "iterations": [
+        249
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold2/B1.joblib",
+      "iterations": [
+        262
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold3/B1-naive.joblib",
+      "iterations": [
+        235
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold3/B1.joblib",
+      "iterations": [
+        327
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold4/B1-naive.joblib",
+      "iterations": [
+        181
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold4/B1.joblib",
+      "iterations": [
+        117
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold4/method-naive.joblib",
+      "iterations": [
+        181
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/class/fold4/method.joblib",
+      "iterations": [
+        117
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold0/B1-naive.joblib",
+      "iterations": [
+        187
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold0/B1.joblib",
+      "iterations": [
+        290
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold1/B1-naive.joblib",
+      "iterations": [
+        277
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold1/B1.joblib",
+      "iterations": [
+        346
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold2/B1-naive.joblib",
+      "iterations": [
+        198
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold2/B1.joblib",
+      "iterations": [
+        207
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold3/B1-naive.joblib",
+      "iterations": [
+        210
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold3/B1.joblib",
+      "iterations": [
+        325
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold4/B1-naive.joblib",
+      "iterations": [
+        319
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold4/B1.joblib",
+      "iterations": [
+        268
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/family/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold0/B1-naive.joblib",
+      "iterations": [
+        270
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold0/B1.joblib",
+      "iterations": [
+        246
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold1/B1-naive.joblib",
+      "iterations": [
+        210
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold1/B1.joblib",
+      "iterations": [
+        201
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold2/B1-naive.joblib",
+      "iterations": [
+        261
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold2/B1.joblib",
+      "iterations": [
+        322
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold3/B1-naive.joblib",
+      "iterations": [
+        262
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold3/B1.joblib",
+      "iterations": [
+        224
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold4/B1-naive.joblib",
+      "iterations": [
+        295
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold4/B1.joblib",
+      "iterations": [
+        337
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/genus/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold0/B1-naive.joblib",
+      "iterations": [
+        269
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold0/B1.joblib",
+      "iterations": [
+        251
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold1/B1-naive.joblib",
+      "iterations": [
+        544
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold1/B1.joblib",
+      "iterations": [
+        214
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold2/B1-naive.joblib",
+      "iterations": [
+        234
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold2/B1.joblib",
+      "iterations": [
+        333
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold3/B1-naive.joblib",
+      "iterations": [
+        231
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold3/B1.joblib",
+      "iterations": [
+        187
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold4/B1-naive.joblib",
+      "iterations": [
+        188
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold4/B1.joblib",
+      "iterations": [
+        346
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/order/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold0/B1-naive.joblib",
+      "iterations": [
+        229
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold0/B1.joblib",
+      "iterations": [
+        224
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold0/method-naive.joblib",
+      "iterations": [
+        229
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold0/method.joblib",
+      "iterations": [
+        224
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold1/B1-naive.joblib",
+      "iterations": [
+        245
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold1/B1.joblib",
+      "iterations": [
+        149
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold2/B1-naive.joblib",
+      "iterations": [
+        219
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold2/B1.joblib",
+      "iterations": [
+        310
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold3/B1-naive.joblib",
+      "iterations": [
+        237
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold3/B1.joblib",
+      "iterations": [
+        393
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold4/B1-naive.joblib",
+      "iterations": [
+        278
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold4/B1.joblib",
+      "iterations": [
+        287
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold4/method-naive.joblib",
+      "iterations": [
+        278
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/phylum/fold4/method.joblib",
+      "iterations": [
+        287
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold0/B1-naive.joblib",
+      "iterations": [
+        267
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold0/B1.joblib",
+      "iterations": [
+        249
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold1/B1-naive.joblib",
+      "iterations": [
+        364
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold1/B1.joblib",
+      "iterations": [
+        373
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold2/B1-naive.joblib",
+      "iterations": [
+        261
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold2/B1.joblib",
+      "iterations": [
+        259
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold3/B1-naive.joblib",
+      "iterations": [
+        219
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold3/B1.joblib",
+      "iterations": [
+        242
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold4/B1-naive.joblib",
+      "iterations": [
+        318
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold4/B1.joblib",
+      "iterations": [
+        245
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/ph_optimum/random/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold0/B1-naive.joblib",
+      "iterations": [
+        1986
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold0/B1.joblib",
+      "iterations": [
+        1904
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold1/B1-naive.joblib",
+      "iterations": [
+        1202
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold1/B1.joblib",
+      "iterations": [
+        2253
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold2/B1-naive.joblib",
+      "iterations": [
+        1636
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold2/B1.joblib",
+      "iterations": [
+        2024
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold3/B1-naive.joblib",
+      "iterations": [
+        781
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold3/B1.joblib",
+      "iterations": [
+        1362
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold4/B1-naive.joblib",
+      "iterations": [
+        1349
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold4/B1.joblib",
+      "iterations": [
+        1570
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/class/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold0/B1-naive.joblib",
+      "iterations": [
+        1250
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold0/B1.joblib",
+      "iterations": [
+        1059
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold1/B1-naive.joblib",
+      "iterations": [
+        1663
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold1/B1.joblib",
+      "iterations": [
+        1393
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold1/method-naive.joblib",
+      "iterations": [
+        1663
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold1/method.joblib",
+      "iterations": [
+        1393
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold2/B1-naive.joblib",
+      "iterations": [
+        1165
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold2/B1.joblib",
+      "iterations": [
+        1788
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold2/method-naive.joblib",
+      "iterations": [
+        1165
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold2/method.joblib",
+      "iterations": [
+        1788
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold3/B1-naive.joblib",
+      "iterations": [
+        2089
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold3/B1.joblib",
+      "iterations": [
+        1638
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold3/method-naive.joblib",
+      "iterations": [
+        2089
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold3/method.joblib",
+      "iterations": [
+        1638
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold4/B1-naive.joblib",
+      "iterations": [
+        1691
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold4/B1.joblib",
+      "iterations": [
+        1325
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/family/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold0/B1-naive.joblib",
+      "iterations": [
+        2949
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold0/B1.joblib",
+      "iterations": [
+        1695
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold0/method-naive.joblib",
+      "iterations": [
+        2949
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold0/method.joblib",
+      "iterations": [
+        1695
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold1/B1-naive.joblib",
+      "iterations": [
+        1872
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold1/B1.joblib",
+      "iterations": [
+        1965
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold1/method-naive.joblib",
+      "iterations": [
+        1872
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold1/method.joblib",
+      "iterations": [
+        1965
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold2/B1-naive.joblib",
+      "iterations": [
+        1527
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold2/B1.joblib",
+      "iterations": [
+        1013
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold2/method-naive.joblib",
+      "iterations": [
+        1527
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold2/method.joblib",
+      "iterations": [
+        1013
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold3/B1-naive.joblib",
+      "iterations": [
+        2545
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold3/B1.joblib",
+      "iterations": [
+        1927
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold3/method-naive.joblib",
+      "iterations": [
+        2545
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold3/method.joblib",
+      "iterations": [
+        1927
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold4/B1-naive.joblib",
+      "iterations": [
+        2001
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold4/B1.joblib",
+      "iterations": [
+        1602
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold4/method-naive.joblib",
+      "iterations": [
+        2001
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/genus/fold4/method.joblib",
+      "iterations": [
+        1602
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold0/B1-naive.joblib",
+      "iterations": [
+        2069
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold0/B1.joblib",
+      "iterations": [
+        606
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold1/B1-naive.joblib",
+      "iterations": [
+        1954
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold1/B1.joblib",
+      "iterations": [
+        449
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold2/B1-naive.joblib",
+      "iterations": [
+        1429
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold2/B1.joblib",
+      "iterations": [
+        1054
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold3/B1-naive.joblib",
+      "iterations": [
+        1539
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold3/B1.joblib",
+      "iterations": [
+        1575
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold4/B1-naive.joblib",
+      "iterations": [
+        1555
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold4/B1.joblib",
+      "iterations": [
+        1266
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/order/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold0/B1-naive.joblib",
+      "iterations": [
+        2160
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold0/B1.joblib",
+      "iterations": [
+        1474
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold1/B1-naive.joblib",
+      "iterations": [
+        2045
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold1/B1.joblib",
+      "iterations": [
+        1496
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold2/B1-naive.joblib",
+      "iterations": [
+        1816
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold2/B1.joblib",
+      "iterations": [
+        756
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold3/B1-naive.joblib",
+      "iterations": [
+        1282
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold3/B1.joblib",
+      "iterations": [
+        2495
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold4/B1-naive.joblib",
+      "iterations": [
+        1117
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold4/B1.joblib",
+      "iterations": [
+        1738
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/phylum/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold0/B1-naive.joblib",
+      "iterations": [
+        1568
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold0/B1.joblib",
+      "iterations": [
+        1584
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold0/method-naive.joblib",
+      "iterations": [
+        1568
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold0/method.joblib",
+      "iterations": [
+        1584
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold1/B1-naive.joblib",
+      "iterations": [
+        1737
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold1/B1.joblib",
+      "iterations": [
+        1204
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold2/B1-naive.joblib",
+      "iterations": [
+        1321
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold2/B1.joblib",
+      "iterations": [
+        1632
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold3/B1-naive.joblib",
+      "iterations": [
+        2035
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold3/B1.joblib",
+      "iterations": [
+        2140
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold4/B1-naive.joblib",
+      "iterations": [
+        1330
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold4/B1.joblib",
+      "iterations": [
+        995
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/salinity_optimum/random/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold0/B1-naive.joblib",
+      "iterations": [
+        5985
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold0/B1.joblib",
+      "iterations": [
+        13221
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold1/B1-naive.joblib",
+      "iterations": [
+        20928
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold1/B1.joblib",
+      "iterations": [
+        11521
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold2/B1-naive.joblib",
+      "iterations": [
+        10593
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold2/B1.joblib",
+      "iterations": [
+        6757
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold3/B1-naive.joblib",
+      "iterations": [
+        10393
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold3/B1.joblib",
+      "iterations": [
+        4902
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold4/B1-naive.joblib",
+      "iterations": [
+        10351
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold4/B1.joblib",
+      "iterations": [
+        7276
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/class/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold0/B1-naive.joblib",
+      "iterations": [
+        9052
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold0/B1.joblib",
+      "iterations": [
+        8081
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold1/B1-naive.joblib",
+      "iterations": [
+        7057
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold1/B1.joblib",
+      "iterations": [
+        7932
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold2/B1-naive.joblib",
+      "iterations": [
+        12439
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold2/B1.joblib",
+      "iterations": [
+        14378
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold3/B1-naive.joblib",
+      "iterations": [
+        6945
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold3/B1.joblib",
+      "iterations": [
+        8051
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold4/B1-naive.joblib",
+      "iterations": [
+        8551
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold4/B1.joblib",
+      "iterations": [
+        10516
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/family/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold0/B1-naive.joblib",
+      "iterations": [
+        7294
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold0/B1.joblib",
+      "iterations": [
+        8265
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold1/B1-naive.joblib",
+      "iterations": [
+        8134
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold1/B1.joblib",
+      "iterations": [
+        8406
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold2/B1-naive.joblib",
+      "iterations": [
+        8154
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold2/B1.joblib",
+      "iterations": [
+        8485
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold3/B1-naive.joblib",
+      "iterations": [
+        7688
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold3/B1.joblib",
+      "iterations": [
+        7952
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold4/B1-naive.joblib",
+      "iterations": [
+        7842
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold4/B1.joblib",
+      "iterations": [
+        8733
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/genus/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold0/B1-naive.joblib",
+      "iterations": [
+        9545
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold0/B1.joblib",
+      "iterations": [
+        13838
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold1/B1-naive.joblib",
+      "iterations": [
+        8751
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold1/B1.joblib",
+      "iterations": [
+        12146
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold1/method-naive.joblib",
+      "iterations": [
+        8751
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold1/method.joblib",
+      "iterations": [
+        12146
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold2/B1-naive.joblib",
+      "iterations": [
+        8203
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold2/B1.joblib",
+      "iterations": [
+        9899
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold3/B1-naive.joblib",
+      "iterations": [
+        5735
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold3/B1.joblib",
+      "iterations": [
+        5133
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold4/B1-naive.joblib",
+      "iterations": [
+        10559
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold4/B1.joblib",
+      "iterations": [
+        17872
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/order/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold0/B1-naive.joblib",
+      "iterations": [
+        20166
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold0/B1.joblib",
+      "iterations": [
+        12242
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold1/B1-naive.joblib",
+      "iterations": [
+        6838
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold1/B1.joblib",
+      "iterations": [
+        10983
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold2/B1-naive.joblib",
+      "iterations": [
+        8699
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold2/B1.joblib",
+      "iterations": [
+        16962
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold3/B1-naive.joblib",
+      "iterations": [
+        7830
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold3/B1.joblib",
+      "iterations": [
+        24063
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold4/B1-naive.joblib",
+      "iterations": [
+        11123
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold4/B1.joblib",
+      "iterations": [
+        49472
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/phylum/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold0/B1-naive.joblib",
+      "iterations": [
+        12643
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold0/B1.joblib",
+      "iterations": [
+        8686
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold0/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold0/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold0/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold0/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold1/B1-naive.joblib",
+      "iterations": [
+        8521
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold1/B1.joblib",
+      "iterations": [
+        9879
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold1/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold1/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold1/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold1/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold2/B1-naive.joblib",
+      "iterations": [
+        7755
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold2/B1.joblib",
+      "iterations": [
+        7821
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold2/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold2/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold2/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold2/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold3/B1-naive.joblib",
+      "iterations": [
+        9503
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold3/B1.joblib",
+      "iterations": [
+        10663
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold3/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold3/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold3/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold3/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold4/B1-naive.joblib",
+      "iterations": [
+        7820
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold4/B1.joblib",
+      "iterations": [
+        7564
+      ],
+      "iteration_cap": 100000,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold4/B3-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold4/B3.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold4/method-naive.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    },
+    {
+      "path": "data/gtdb-derived/local/analysis/temperature_optimum/random/fold4/method.joblib",
+      "iterations": [],
+      "iteration_cap": null,
+      "reached_iteration_limit": false
+    }
+  ],
+  "no_prediction_calls": true
+}
