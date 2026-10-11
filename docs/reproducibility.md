@@ -2,8 +2,16 @@
 
 Resume 5 accepts table-level experimental provenance for the exact authorised
 release checksum and documented chain. Other label sources retain the verified
-experimental-label gate. The earlier interrupted clean-checkout replay remains
-historical evidence; it is not a successful reproducibility check.
+experimental-label gate. The earlier interrupted replay remains historical evidence. The completed
+Resume 5 reconstruction used a fresh export of the pre-registration commit
+and checksum-verified raw inputs. Individual derived tables, fitted estimators
+and the recomputed-feature cache were absent before rebuilding. All 71 feature
+measurements were recomputed from sequences, all 120 inner-only folds were
+rebuilt, and all 542 source records, 1,113 scientific artefacts, aggregate
+records and the pre-registration matched byte for byte. The main environment
+used Python 3.13.15; the fresh export selected Python 3.13.12 with the same
+pinned dependency lock. This verifies reconstruction from the source cache;
+a from-empty-network download was not repeated.
 
 The entry point is `uv run --frozen python -m scripts.rebuild`. Source replay
 uses pinned labels, upstream feature code, sequences and GTDB files. It checks

@@ -5,8 +5,12 @@ table is accepted as experimental under the documented notebook/parser chain,
 with residual risk retained in DATA.md and the per-trait audit. Inner-only
 rebuilding and pre-registration are authorised; outer scoring remains forbidden.
 All historical records below describe their earlier stops, not the current
-permission state. Final rebuild verification and freeze receipts are recorded
-in the phase-1 handoff.
+permission state. Phase 1 is complete: the pre-registration is locally committed, all 120
+inner-only folds are built, and the fresh reconstruction matches all frozen
+inputs and outputs. No outer prediction or metric was computed. The phase-1
+handoff records commit, time, checksum and verification receipts. Family and
+order calibration remain unsupported under the prescribed 100-taxon rule;
+this limitation is frozen for review rather than relaxed.
 
 ## Historical Resume 3 development status
 

@@ -4,8 +4,12 @@ A draft open benchmark for growth-temperature, oxygen-tolerance, salinity and
 pH predictions from microbial genomes under nested taxonomic holdout.
 
 Resume 5 accepts the documented experimental-label provenance for the exact
-release table. Phase 1 rebuilds inner-only development artefacts and freezes
-[the pre-registration](PREREGISTRATION.md). See [data provenance](DATA.md) and
+release table. Phase 1 is complete, with inner-only development artefacts and
+[a locally committed pre-registration](PREREGISTRATION.md). A fresh
+reconstruction reproduced all frozen scientific artefacts and the record
+byte for byte. Family and order calibration remain unsupported under the
+prescribed 100-calibration-taxon rule; the limitation is frozen for review.
+See [data provenance](DATA.md) and
 `data/experimental-label-audit.json` for the decision and residual risk.
 
 Calibrated per-distance intervals for this matched growth-condition benchmark
