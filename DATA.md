@@ -20,8 +20,8 @@ curl --fail --location --retry 3 --output data/raw/labels/training_data.tsv http
 python3.12 scripts/audit_labels.py
 ```
 
-This command rebuilds the label inspection only. The benchmark rebuild command
-has not been implemented because the mandatory source-column gate was reached.
+This command rebuilds the historical label inspection only. The complete
+phase-1 rebuild is `uv run --frozen python -m scripts.rebuild`.
 The raw table is never redistributed in the repository. Aggregate inspection
 counts contain no individual label records.
 
@@ -60,7 +60,7 @@ Feature columns were computed by GenomeSPOT from public NCBI sequence data. NCBI
 
 This decision supersedes the additional-source stop above. B1 and the proposed
 calibration method may use the precomputed features after the prescribed
-100-genome verification. The sample uses seed `20261011`, sampled without
+fixed-sample verification as amended in Resume 3. The sample uses seed `20261011`, sampled without
 replacement from the sorted 8,174 accessions with at least one nonmissing target
 label. No accession is substituted if its files are unavailable.
 
@@ -73,9 +73,44 @@ Sample, source and acquisition receipts remain untracked under
 parameters are used unchanged. Verification compares all 230 flattened feature
 columns, filling absent compartment statistics with zero as the upstream table
 construction does, at relative tolerance `1e-7` and absolute tolerance `1e-9`.
-Any discrepancy beyond these tolerances requires stopping and reporting.
+Resume 3 supersedes the former discrepancy stop: differences are recorded
+as findings and do not block the build.
 
 The table includes `all_aa_A` through `all_aa_Y` for the 20 standard amino acids.
 These are protein-length-weighted whole-proteome frequencies in the upstream
 implementation, after its signal-peptide handling. B3 needs no further proteome
-download if feature verification passes.
+download; feature differences do not block its use under Resume 3.
+
+
+## Resume 3: fixed-sample check and current GTDB mapping
+
+The fixed sample remains 100 accessions. Only the 71 with both GenBank FASTA
+files are downloaded and recomputed, without replacements. The 29 unavailable
+protein accessions, the pre-comparison tolerances and agreement by feature
+group are recorded in `data/feature-verification.json`. A mismatch may reflect
+a changed sequence annotation or dependency implementation; it is an integrity
+finding, not proof of its cause. All methods use the same published table.
+
+GTDB R11-RS232 (232.0) is the newest numbered release observed at the official
+release index on 2026-10-11. Its official `sp_clusters_r232.tsv` is the metadata
+mapping each clustered accession to its species representative and full
+lineage. This satisfies the mapping requirement without downloading all-genome
+metadata or any GTDB genomes. The bacterial and archaeal reference trees come
+from the same release. Published MD5 checksums and independently calculated
+SHA-256 values are checked and recorded. The supplied file-descriptions notice
+still names release 220; the release path, VERSION, release notes and checksum
+list establish the selected version 232.
+
+Assembly identifiers drop the version suffix and GTDB prefix. RefSeq `GCF_`
+identifiers are normalised to the corresponding `GCA_` numeric identifier,
+following the release's own taxonomy helper. Original cluster and representative
+identifiers are preserved in the local mapping table. Genomes absent from these
+cluster records, or whose representative is absent from its reference tree,
+are counted as exclusions. No fallback to old taxonomy or tree is made.
+
+Individual tables containing labels or sequences are never published. Local
+GTDB-derived mapping and folds are under `data/gtdb-derived/local/`, ignored
+by version control; their aggregate summaries and notices are in the parent
+folder with CC BY-SA 4.0 attribution. Features, local fitted estimators and
+calibration artefacts are also ignored. Counts and checksum manifests are
+published. BacDive and GenomeSPOT attribution above applies to the labels.

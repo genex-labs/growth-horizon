@@ -1,14 +1,18 @@
 # Phase 1 scoring boundary
 
-No outer-fold prediction or metric has been computed. No inner-fold fitting
-or scoring has been performed. Resume 2 accepts the sequence-derived features,
-but the required 100-genome verification is pending source availability.
+No outer-fold prediction or performance metric has been computed. The only
+permitted predictions are tuning and calibration queries wholly inside an
+outer training side. The development runner checks that boundary before every
+such query. Outer memberships and phenotype-free branch distances are permitted
+build artefacts and do not constitute prediction performance.
 
-The work reads table headers, verifies the release checksum, counts labels,
-samples accessions and inspects public source-file availability and sizes.
-It performs no benchmark prediction or evaluation. No integrity incident
-occurred and no quarantine was required.
+Resume 3 permits the fixed 71-genome sequence check and requires reporting
+feature differences without treating them as a build blocker. It does not
+relax the outer-scoring boundary. No integrity incident or quarantine has
+occurred. Outer scoring remains prohibited in this phase, including after the
+local pre-registration commit. The separate phase-2 brief and reviewed record
+are required before any locked test is scored.
 
-No pre-registration exists. Outer-fold scoring remains prohibited until a
-complete pre-registration is committed and reviewed under the separate phase 2
-brief. This acquisition record is not a pre-registration.
+If an accidental outer prediction or metric occurs, stop, record its shell
+clock time and file checksums here, and move all affected files to a named
+quarantine outside this repository. Evidence must never go to the Trash.

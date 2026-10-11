@@ -1,0 +1,1370 @@
+{
+  "status": "resume3_available_subset",
+  "records": [
+    {
+      "accession": "GCA_003966145",
+      "resolved_accession": "GCA_003966145.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/966/145/GCA_003966145.1_ASM396614v1/GCA_003966145.1_ASM396614v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003966145.1_ASM396614v1_protein.faa.gz",
+      "bytes": 780272,
+      "last_modified": "Mon, 24 Dec 2018 09:22:33 GMT"
+    },
+    {
+      "accession": "GCA_003966145",
+      "resolved_accession": "GCA_003966145.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/966/145/GCA_003966145.1_ASM396614v1/GCA_003966145.1_ASM396614v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003966145.1_ASM396614v1_genomic.fna.gz",
+      "bytes": 1291483,
+      "last_modified": "Mon, 24 Dec 2018 09:22:33 GMT"
+    },
+    {
+      "accession": "GCA_002006205",
+      "resolved_accession": "GCA_002006205.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/006/205/GCA_002006205.1_ASM200620v1/GCA_002006205.1_ASM200620v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002006205.1_ASM200620v1_protein.faa.gz",
+      "bytes": 1019668,
+      "last_modified": "Fri, 24 Feb 2017 01:07:46 GMT"
+    },
+    {
+      "accession": "GCA_002006205",
+      "resolved_accession": "GCA_002006205.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/006/205/GCA_002006205.1_ASM200620v1/GCA_002006205.1_ASM200620v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002006205.1_ASM200620v1_genomic.fna.gz",
+      "bytes": 1670825,
+      "last_modified": "Fri, 24 Feb 2017 01:07:46 GMT"
+    },
+    {
+      "accession": "GCA_000218875",
+      "resolved_accession": "GCA_000218875.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/218/875/GCA_000218875.1_ASM21887v1/GCA_000218875.1_ASM21887v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000218875.1_ASM21887v1_protein.faa.gz",
+      "bytes": 385463,
+      "last_modified": "Fri, 27 May 2016 14:23:18 GMT"
+    },
+    {
+      "accession": "GCA_000218875",
+      "resolved_accession": "GCA_000218875.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/218/875/GCA_000218875.1_ASM21887v1/GCA_000218875.1_ASM21887v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000218875.1_ASM21887v1_genomic.fna.gz",
+      "bytes": 610222,
+      "last_modified": "Fri, 27 May 2016 14:23:18 GMT"
+    },
+    {
+      "accession": "GCA_000173915",
+      "resolved_accession": "GCA_000173915.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/173/915/GCA_000173915.1_ASM17391v1/GCA_000173915.1_ASM17391v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000173915.1_ASM17391v1_protein.faa.gz",
+      "bytes": 353934,
+      "last_modified": "Mon, 04 Aug 2014 21:43:12 GMT"
+    },
+    {
+      "accession": "GCA_000173915",
+      "resolved_accession": "GCA_000173915.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/173/915/GCA_000173915.1_ASM17391v1/GCA_000173915.1_ASM17391v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000173915.1_ASM17391v1_genomic.fna.gz",
+      "bytes": 552246,
+      "last_modified": "Tue, 31 May 2016 18:53:14 GMT"
+    },
+    {
+      "accession": "GCA_002214365",
+      "resolved_accession": "GCA_002214365.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/214/365/GCA_002214365.1_ASM221436v1/GCA_002214365.1_ASM221436v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002214365.1_ASM221436v1_protein.faa.gz",
+      "bytes": 357880,
+      "last_modified": "Sat, 07 Mar 2020 02:16:05 GMT"
+    },
+    {
+      "accession": "GCA_002214365",
+      "resolved_accession": "GCA_002214365.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/214/365/GCA_002214365.1_ASM221436v1/GCA_002214365.1_ASM221436v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002214365.1_ASM221436v1_genomic.fna.gz",
+      "bytes": 552023,
+      "last_modified": "Sat, 26 Oct 2024 16:08:30 GMT"
+    },
+    {
+      "accession": "GCA_003726035",
+      "resolved_accession": "GCA_003726035.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/726/035/GCA_003726035.1_ASM372603v1/GCA_003726035.1_ASM372603v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003726035.1_ASM372603v1_protein.faa.gz",
+      "bytes": 526181,
+      "last_modified": "Wed, 14 Nov 2018 09:19:30 GMT"
+    },
+    {
+      "accession": "GCA_003726035",
+      "resolved_accession": "GCA_003726035.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/726/035/GCA_003726035.1_ASM372603v1/GCA_003726035.1_ASM372603v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003726035.1_ASM372603v1_genomic.fna.gz",
+      "bytes": 827407,
+      "last_modified": "Wed, 14 Nov 2018 09:19:30 GMT"
+    },
+    {
+      "accession": "GCA_000166275",
+      "resolved_accession": "GCA_000166275.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/166/275/GCA_000166275.1_ASM16627v1/GCA_000166275.1_ASM16627v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000166275.1_ASM16627v1_protein.faa.gz",
+      "bytes": 939375,
+      "last_modified": "Thu, 19 May 2016 15:36:43 GMT"
+    },
+    {
+      "accession": "GCA_000166275",
+      "resolved_accession": "GCA_000166275.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/166/275/GCA_000166275.1_ASM16627v1/GCA_000166275.1_ASM16627v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000166275.1_ASM16627v1_genomic.fna.gz",
+      "bytes": 1412869,
+      "last_modified": "Thu, 19 May 2016 15:36:43 GMT"
+    },
+    {
+      "accession": "GCA_014490445",
+      "resolved_accession": "GCA_014490445.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/490/445/GCA_014490445.1_ASM1449044v1/GCA_014490445.1_ASM1449044v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014490445.1_ASM1449044v1_protein.faa.gz",
+      "bytes": 1023209,
+      "last_modified": "Tue, 08 Sep 2020 06:08:54 GMT"
+    },
+    {
+      "accession": "GCA_014490445",
+      "resolved_accession": "GCA_014490445.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/490/445/GCA_014490445.1_ASM1449044v1/GCA_014490445.1_ASM1449044v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014490445.1_ASM1449044v1_genomic.fna.gz",
+      "bytes": 1530849,
+      "last_modified": "Mon, 04 Sep 2023 13:50:57 GMT"
+    },
+    {
+      "accession": "GCA_000021925",
+      "resolved_accession": "GCA_000021925.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/021/925/GCA_000021925.1_ASM2192v1/GCA_000021925.1_ASM2192v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000021925.1_ASM2192v1_protein.faa.gz",
+      "bytes": 1000848,
+      "last_modified": "Wed, 18 May 2016 04:31:29 GMT"
+    },
+    {
+      "accession": "GCA_000021925",
+      "resolved_accession": "GCA_000021925.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/021/925/GCA_000021925.1_ASM2192v1/GCA_000021925.1_ASM2192v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000021925.1_ASM2192v1_genomic.fna.gz",
+      "bytes": 1571697,
+      "last_modified": "Wed, 18 May 2016 04:31:29 GMT"
+    },
+    {
+      "accession": "GCA_014644955",
+      "resolved_accession": "GCA_014644955.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/644/955/GCA_014644955.1_ASM1464495v1/GCA_014644955.1_ASM1464495v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014644955.1_ASM1464495v1_protein.faa.gz",
+      "bytes": 747374,
+      "last_modified": "Sat, 19 Sep 2020 10:16:24 GMT"
+    },
+    {
+      "accession": "GCA_014644955",
+      "resolved_accession": "GCA_014644955.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/644/955/GCA_014644955.1_ASM1464495v1/GCA_014644955.1_ASM1464495v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014644955.1_ASM1464495v1_genomic.fna.gz",
+      "bytes": 1062481,
+      "last_modified": "Sat, 19 Sep 2020 10:16:24 GMT"
+    },
+    {
+      "accession": "GCA_900103275",
+      "resolved_accession": "GCA_900103275.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/103/275/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly_protein.faa.gz",
+      "bytes": 645642,
+      "last_modified": "Fri, 28 Oct 2016 00:08:48 GMT"
+    },
+    {
+      "accession": "GCA_900103275",
+      "resolved_accession": "GCA_900103275.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/103/275/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900103275.1_IMG-taxon_2617270936_annotated_assembly_genomic.fna.gz",
+      "bytes": 893918,
+      "last_modified": "Fri, 28 Oct 2016 00:08:48 GMT"
+    },
+    {
+      "accession": "GCA_016907615",
+      "resolved_accession": "GCA_016907615.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/016/907/615/GCA_016907615.1_ASM1690761v1/GCA_016907615.1_ASM1690761v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_016907615.1_ASM1690761v1_protein.faa.gz",
+      "bytes": 653353,
+      "last_modified": "Fri, 19 Feb 2021 23:09:23 GMT"
+    },
+    {
+      "accession": "GCA_016907615",
+      "resolved_accession": "GCA_016907615.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/016/907/615/GCA_016907615.1_ASM1690761v1/GCA_016907615.1_ASM1690761v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_016907615.1_ASM1690761v1_genomic.fna.gz",
+      "bytes": 991240,
+      "last_modified": "Fri, 19 Feb 2021 23:09:23 GMT"
+    },
+    {
+      "accession": "GCA_014197035",
+      "resolved_accession": "GCA_014197035.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/197/035/GCA_014197035.1_ASM1419703v1/GCA_014197035.1_ASM1419703v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014197035.1_ASM1419703v1_protein.faa.gz",
+      "bytes": 1178585,
+      "last_modified": "Sat, 15 Aug 2020 07:17:45 GMT"
+    },
+    {
+      "accession": "GCA_014197035",
+      "resolved_accession": "GCA_014197035.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/197/035/GCA_014197035.1_ASM1419703v1/GCA_014197035.1_ASM1419703v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014197035.1_ASM1419703v1_genomic.fna.gz",
+      "bytes": 1724588,
+      "last_modified": "Sat, 15 Aug 2020 07:17:45 GMT"
+    },
+    {
+      "accession": "GCA_900186925",
+      "resolved_accession": "GCA_900186925.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/186/925/GCA_900186925.1_48450_B02/GCA_900186925.1_48450_B02_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900186925.1_48450_B02_protein.faa.gz",
+      "bytes": 681403,
+      "last_modified": "Sat, 26 Aug 2017 13:06:47 GMT"
+    },
+    {
+      "accession": "GCA_900186925",
+      "resolved_accession": "GCA_900186925.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/186/925/GCA_900186925.1_48450_B02/GCA_900186925.1_48450_B02_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900186925.1_48450_B02_genomic.fna.gz",
+      "bytes": 1038847,
+      "last_modified": "Sat, 26 Aug 2017 13:06:47 GMT"
+    },
+    {
+      "accession": "GCA_013416335",
+      "resolved_accession": "GCA_013416335.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/416/335/GCA_013416335.1_ASM1341633v1/GCA_013416335.1_ASM1341633v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_013416335.1_ASM1341633v1_protein.faa.gz",
+      "bytes": 823456,
+      "last_modified": "Thu, 16 Jul 2020 08:42:15 GMT"
+    },
+    {
+      "accession": "GCA_013416335",
+      "resolved_accession": "GCA_013416335.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/416/335/GCA_013416335.1_ASM1341633v1/GCA_013416335.1_ASM1341633v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_013416335.1_ASM1341633v1_genomic.fna.gz",
+      "bytes": 1233902,
+      "last_modified": "Sun, 22 Oct 2023 14:48:55 GMT"
+    },
+    {
+      "accession": "GCA_004347715",
+      "resolved_accession": "GCA_004347715.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/347/715/GCA_004347715.1_ASM434771v1/GCA_004347715.1_ASM434771v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_004347715.1_ASM434771v1_protein.faa.gz",
+      "bytes": 710200,
+      "last_modified": "Sat, 24 Jun 2023 10:41:37 GMT"
+    },
+    {
+      "accession": "GCA_004347715",
+      "resolved_accession": "GCA_004347715.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/347/715/GCA_004347715.1_ASM434771v1/GCA_004347715.1_ASM434771v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_004347715.1_ASM434771v1_genomic.fna.gz",
+      "bytes": 1097962,
+      "last_modified": "Sat, 24 Jun 2023 10:41:37 GMT"
+    },
+    {
+      "accession": "GCA_900101845",
+      "resolved_accession": "GCA_900101845.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/101/845/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly_protein.faa.gz",
+      "bytes": 1158836,
+      "last_modified": "Fri, 28 Oct 2016 00:09:12 GMT"
+    },
+    {
+      "accession": "GCA_900101845",
+      "resolved_accession": "GCA_900101845.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/101/845/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900101845.1_IMG-taxon_2622736588_annotated_assembly_genomic.fna.gz",
+      "bytes": 1797771,
+      "last_modified": "Fri, 28 Oct 2016 00:09:12 GMT"
+    },
+    {
+      "accession": "GCA_003635025",
+      "resolved_accession": "GCA_003635025.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/635/025/GCA_003635025.1_ASM363502v1/GCA_003635025.1_ASM363502v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003635025.1_ASM363502v1_protein.faa.gz",
+      "bytes": 1557770,
+      "last_modified": "Thu, 11 Oct 2018 20:23:39 GMT"
+    },
+    {
+      "accession": "GCA_003635025",
+      "resolved_accession": "GCA_003635025.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/635/025/GCA_003635025.1_ASM363502v1/GCA_003635025.1_ASM363502v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003635025.1_ASM363502v1_genomic.fna.gz",
+      "bytes": 2315726,
+      "last_modified": "Thu, 11 Oct 2018 20:23:39 GMT"
+    },
+    {
+      "accession": "GCA_900115955",
+      "resolved_accession": "GCA_900115955.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/115/955/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly_protein.faa.gz",
+      "bytes": 2017986,
+      "last_modified": "Tue, 08 Nov 2016 03:15:28 GMT"
+    },
+    {
+      "accession": "GCA_900115955",
+      "resolved_accession": "GCA_900115955.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/115/955/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900115955.1_IMG-taxon_2634166311_annotated_assembly_genomic.fna.gz",
+      "bytes": 2872226,
+      "last_modified": "Tue, 08 Nov 2016 03:15:28 GMT"
+    },
+    {
+      "accession": "GCA_000143845",
+      "resolved_accession": "GCA_000143845.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/143/845/GCA_000143845.1_ASM14384v1/GCA_000143845.1_ASM14384v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000143845.1_ASM14384v1_protein.faa.gz",
+      "bytes": 387557,
+      "last_modified": "Fri, 27 May 2016 16:33:53 GMT"
+    },
+    {
+      "accession": "GCA_000143845",
+      "resolved_accession": "GCA_000143845.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/143/845/GCA_000143845.1_ASM14384v1/GCA_000143845.1_ASM14384v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000143845.1_ASM14384v1_genomic.fna.gz",
+      "bytes": 596834,
+      "last_modified": "Fri, 27 May 2016 16:33:53 GMT"
+    },
+    {
+      "accession": "GCA_000012545",
+      "resolved_accession": "GCA_000012545.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/012/545/GCA_000012545.1_ASM1254v1/GCA_000012545.1_ASM1254v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000012545.1_ASM1254v1_protein.faa.gz",
+      "bytes": 314452,
+      "last_modified": "Tue, 31 May 2016 21:25:08 GMT"
+    },
+    {
+      "accession": "GCA_000012545",
+      "resolved_accession": "GCA_000012545.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/012/545/GCA_000012545.1_ASM1254v1/GCA_000012545.1_ASM1254v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000012545.1_ASM1254v1_genomic.fna.gz",
+      "bytes": 495766,
+      "last_modified": "Mon, 04 Aug 2014 19:35:26 GMT"
+    },
+    {
+      "accession": "GCA_900475735",
+      "resolved_accession": "GCA_900475735.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/475/735/GCA_900475735.1_45813_H02/GCA_900475735.1_45813_H02_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900475735.1_45813_H02_protein.faa.gz",
+      "bytes": 659984,
+      "last_modified": "Sat, 23 Jun 2018 01:08:35 GMT"
+    },
+    {
+      "accession": "GCA_900475735",
+      "resolved_accession": "GCA_900475735.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/475/735/GCA_900475735.1_45813_H02/GCA_900475735.1_45813_H02_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900475735.1_45813_H02_genomic.fna.gz",
+      "bytes": 1004612,
+      "last_modified": "Sat, 23 Jun 2018 01:08:35 GMT"
+    },
+    {
+      "accession": "GCA_900110585",
+      "resolved_accession": "GCA_900110585.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/110/585/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly_protein.faa.gz",
+      "bytes": 813758,
+      "last_modified": "Mon, 07 Nov 2016 21:10:41 GMT"
+    },
+    {
+      "accession": "GCA_900110585",
+      "resolved_accession": "GCA_900110585.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/110/585/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900110585.1_IMG-taxon_2617270766_annotated_assembly_genomic.fna.gz",
+      "bytes": 1171456,
+      "last_modified": "Mon, 07 Nov 2016 21:10:41 GMT"
+    },
+    {
+      "accession": "GCA_901543985",
+      "resolved_accession": "GCA_901543985.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/901/543/985/GCA_901543985.1_42880_C01/GCA_901543985.1_42880_C01_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_901543985.1_42880_C01_protein.faa.gz",
+      "bytes": 394839,
+      "last_modified": "Wed, 19 Jun 2019 13:41:50 GMT"
+    },
+    {
+      "accession": "GCA_901543985",
+      "resolved_accession": "GCA_901543985.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/901/543/985/GCA_901543985.1_42880_C01/GCA_901543985.1_42880_C01_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_901543985.1_42880_C01_genomic.fna.gz",
+      "bytes": 612501,
+      "last_modified": "Wed, 19 Jun 2019 13:41:50 GMT"
+    },
+    {
+      "accession": "GCA_000473865",
+      "resolved_accession": "GCA_000473865.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/473/865/GCA_000473865.1_TyKB-1/GCA_000473865.1_TyKB-1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000473865.1_TyKB-1_protein.faa.gz",
+      "bytes": 492871,
+      "last_modified": "Wed, 25 May 2016 23:32:58 GMT"
+    },
+    {
+      "accession": "GCA_000473865",
+      "resolved_accession": "GCA_000473865.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/473/865/GCA_000473865.1_TyKB-1/GCA_000473865.1_TyKB-1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000473865.1_TyKB-1_genomic.fna.gz",
+      "bytes": 797435,
+      "last_modified": "Tue, 05 Aug 2014 19:47:49 GMT"
+    },
+    {
+      "accession": "GCA_002441825",
+      "resolved_accession": "GCA_002441825.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/441/825/GCA_002441825.1_ASM244182v1/GCA_002441825.1_ASM244182v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002441825.1_ASM244182v1_protein.faa.gz",
+      "bytes": 488135,
+      "last_modified": "Tue, 09 Mar 2021 06:29:11 GMT"
+    },
+    {
+      "accession": "GCA_002441825",
+      "resolved_accession": "GCA_002441825.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/441/825/GCA_002441825.1_ASM244182v1/GCA_002441825.1_ASM244182v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002441825.1_ASM244182v1_genomic.fna.gz",
+      "bytes": 768525,
+      "last_modified": "Tue, 09 Mar 2021 06:29:11 GMT"
+    },
+    {
+      "accession": "GCA_900112235",
+      "resolved_accession": "GCA_900112235.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/112/235/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly_protein.faa.gz",
+      "bytes": 634034,
+      "last_modified": "Tue, 08 Nov 2016 02:09:55 GMT"
+    },
+    {
+      "accession": "GCA_900112235",
+      "resolved_accession": "GCA_900112235.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/112/235/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900112235.1_IMG-taxon_2600254929_annotated_assembly_genomic.fna.gz",
+      "bytes": 918359,
+      "last_modified": "Tue, 08 Nov 2016 02:09:55 GMT"
+    },
+    {
+      "accession": "GCA_023284005",
+      "resolved_accession": "GCA_023284005.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/284/005/GCA_023284005.1_ASM2328400v1/GCA_023284005.1_ASM2328400v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_023284005.1_ASM2328400v1_protein.faa.gz",
+      "bytes": 1061441,
+      "last_modified": "Tue, 10 May 2022 02:11:09 GMT"
+    },
+    {
+      "accession": "GCA_023284005",
+      "resolved_accession": "GCA_023284005.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/284/005/GCA_023284005.1_ASM2328400v1/GCA_023284005.1_ASM2328400v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_023284005.1_ASM2328400v1_genomic.fna.gz",
+      "bytes": 1822534,
+      "last_modified": "Tue, 10 May 2022 02:11:09 GMT"
+    },
+    {
+      "accession": "GCA_014646975",
+      "resolved_accession": "GCA_014646975.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/646/975/GCA_014646975.1_ASM1464697v1/GCA_014646975.1_ASM1464697v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014646975.1_ASM1464697v1_protein.faa.gz",
+      "bytes": 883126,
+      "last_modified": "Sat, 19 Sep 2020 11:11:03 GMT"
+    },
+    {
+      "accession": "GCA_014646975",
+      "resolved_accession": "GCA_014646975.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/646/975/GCA_014646975.1_ASM1464697v1/GCA_014646975.1_ASM1464697v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014646975.1_ASM1464697v1_genomic.fna.gz",
+      "bytes": 1391861,
+      "last_modified": "Sat, 19 Sep 2020 11:11:03 GMT"
+    },
+    {
+      "accession": "GCA_003391395",
+      "resolved_accession": "GCA_003391395.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/391/395/GCA_003391395.1_ASM339139v1/GCA_003391395.1_ASM339139v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003391395.1_ASM339139v1_protein.faa.gz",
+      "bytes": 1207099,
+      "last_modified": "Wed, 15 Aug 2018 19:13:53 GMT"
+    },
+    {
+      "accession": "GCA_003391395",
+      "resolved_accession": "GCA_003391395.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/391/395/GCA_003391395.1_ASM339139v1/GCA_003391395.1_ASM339139v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003391395.1_ASM339139v1_genomic.fna.gz",
+      "bytes": 1836447,
+      "last_modified": "Wed, 15 Aug 2018 19:13:53 GMT"
+    },
+    {
+      "accession": "GCA_009709575",
+      "resolved_accession": "GCA_009709575.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/709/575/GCA_009709575.1_ASM970957v1/GCA_009709575.1_ASM970957v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_009709575.1_ASM970957v1_protein.faa.gz",
+      "bytes": 1076481,
+      "last_modified": "Tue, 26 Nov 2019 22:53:54 GMT"
+    },
+    {
+      "accession": "GCA_009709575",
+      "resolved_accession": "GCA_009709575.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/709/575/GCA_009709575.1_ASM970957v1/GCA_009709575.1_ASM970957v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_009709575.1_ASM970957v1_genomic.fna.gz",
+      "bytes": 1708750,
+      "last_modified": "Sun, 07 Feb 2021 17:59:04 GMT"
+    },
+    {
+      "accession": "GCA_001598055",
+      "resolved_accession": "GCA_001598055.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/598/055/GCA_001598055.1_ASM159805v1/GCA_001598055.1_ASM159805v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001598055.1_ASM159805v1_protein.faa.gz",
+      "bytes": 1304378,
+      "last_modified": "Fri, 13 May 2016 17:35:19 GMT"
+    },
+    {
+      "accession": "GCA_001598055",
+      "resolved_accession": "GCA_001598055.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/598/055/GCA_001598055.1_ASM159805v1/GCA_001598055.1_ASM159805v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001598055.1_ASM159805v1_genomic.fna.gz",
+      "bytes": 2039207,
+      "last_modified": "Fri, 20 Jun 2025 05:24:15 GMT"
+    },
+    {
+      "accession": "GCA_000023065",
+      "resolved_accession": "GCA_000023065.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/023/065/GCA_000023065.1_ASM2306v1/GCA_000023065.1_ASM2306v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000023065.1_ASM2306v1_protein.faa.gz",
+      "bytes": 680326,
+      "last_modified": "Mon, 04 Aug 2014 20:13:21 GMT"
+    },
+    {
+      "accession": "GCA_000023065",
+      "resolved_accession": "GCA_000023065.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/023/065/GCA_000023065.1_ASM2306v1/GCA_000023065.1_ASM2306v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000023065.1_ASM2306v1_genomic.fna.gz",
+      "bytes": 1030484,
+      "last_modified": "Mon, 04 Aug 2014 20:13:14 GMT"
+    },
+    {
+      "accession": "GCA_001435375",
+      "resolved_accession": "GCA_001435375.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/435/375/GCA_001435375.1_ASM143537v1/GCA_001435375.1_ASM143537v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001435375.1_ASM143537v1_protein.faa.gz",
+      "bytes": 285662,
+      "last_modified": "Mon, 12 Dec 2022 06:30:07 GMT"
+    },
+    {
+      "accession": "GCA_001435375",
+      "resolved_accession": "GCA_001435375.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/435/375/GCA_001435375.1_ASM143537v1/GCA_001435375.1_ASM143537v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001435375.1_ASM143537v1_genomic.fna.gz",
+      "bytes": 435708,
+      "last_modified": "Mon, 12 Dec 2022 06:30:07 GMT"
+    },
+    {
+      "accession": "GCA_901472485",
+      "resolved_accession": "GCA_901472485.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/901/472/485/GCA_901472485.1_35860_G01/GCA_901472485.1_35860_G01_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_901472485.1_35860_G01_protein.faa.gz",
+      "bytes": 369520,
+      "last_modified": "Sat, 25 May 2019 03:07:15 GMT"
+    },
+    {
+      "accession": "GCA_901472485",
+      "resolved_accession": "GCA_901472485.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/901/472/485/GCA_901472485.1_35860_G01/GCA_901472485.1_35860_G01_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_901472485.1_35860_G01_genomic.fna.gz",
+      "bytes": 552587,
+      "last_modified": "Sat, 25 May 2019 03:07:15 GMT"
+    },
+    {
+      "accession": "GCA_003096335",
+      "resolved_accession": "GCA_003096335.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/096/335/GCA_003096335.1_ASM309633v1/GCA_003096335.1_ASM309633v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003096335.1_ASM309633v1_protein.faa.gz",
+      "bytes": 625070,
+      "last_modified": "Fri, 18 May 2018 02:01:02 GMT"
+    },
+    {
+      "accession": "GCA_003096335",
+      "resolved_accession": "GCA_003096335.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/096/335/GCA_003096335.1_ASM309633v1/GCA_003096335.1_ASM309633v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003096335.1_ASM309633v1_genomic.fna.gz",
+      "bytes": 945540,
+      "last_modified": "Fri, 18 May 2018 02:01:02 GMT"
+    },
+    {
+      "accession": "GCA_014635785",
+      "resolved_accession": "GCA_014635785.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/635/785/GCA_014635785.1_ASM1463578v1/GCA_014635785.1_ASM1463578v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014635785.1_ASM1463578v1_protein.faa.gz",
+      "bytes": 465095,
+      "last_modified": "Sun, 07 Feb 2021 09:22:25 GMT"
+    },
+    {
+      "accession": "GCA_014635785",
+      "resolved_accession": "GCA_014635785.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/635/785/GCA_014635785.1_ASM1463578v1/GCA_014635785.1_ASM1463578v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014635785.1_ASM1463578v1_genomic.fna.gz",
+      "bytes": 702116,
+      "last_modified": "Mon, 28 Aug 2023 14:43:23 GMT"
+    },
+    {
+      "accession": "GCA_002119805",
+      "resolved_accession": "GCA_002119805.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/119/805/GCA_002119805.1_ASM211980v1/GCA_002119805.1_ASM211980v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002119805.1_ASM211980v1_protein.faa.gz",
+      "bytes": 465305,
+      "last_modified": "Thu, 29 Feb 2024 23:15:20 GMT"
+    },
+    {
+      "accession": "GCA_002119805",
+      "resolved_accession": "GCA_002119805.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/119/805/GCA_002119805.1_ASM211980v1/GCA_002119805.1_ASM211980v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002119805.1_ASM211980v1_genomic.fna.gz",
+      "bytes": 692897,
+      "last_modified": "Thu, 29 Feb 2024 23:15:20 GMT"
+    },
+    {
+      "accession": "GCA_017873185",
+      "resolved_accession": "GCA_017873185.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/017/873/185/GCA_017873185.1_ASM1787318v1/GCA_017873185.1_ASM1787318v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_017873185.1_ASM1787318v1_protein.faa.gz",
+      "bytes": 549971,
+      "last_modified": "Thu, 08 Apr 2021 23:18:48 GMT"
+    },
+    {
+      "accession": "GCA_017873185",
+      "resolved_accession": "GCA_017873185.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/017/873/185/GCA_017873185.1_ASM1787318v1/GCA_017873185.1_ASM1787318v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_017873185.1_ASM1787318v1_genomic.fna.gz",
+      "bytes": 858336,
+      "last_modified": "Sat, 02 Mar 2024 11:01:36 GMT"
+    },
+    {
+      "accession": "GCA_014655195",
+      "resolved_accession": "GCA_014655195.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/655/195/GCA_014655195.1_ASM1465519v1/GCA_014655195.1_ASM1465519v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014655195.1_ASM1465519v1_protein.faa.gz",
+      "bytes": 1459308,
+      "last_modified": "Sat, 19 Sep 2020 16:07:34 GMT"
+    },
+    {
+      "accession": "GCA_014655195",
+      "resolved_accession": "GCA_014655195.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/655/195/GCA_014655195.1_ASM1465519v1/GCA_014655195.1_ASM1465519v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014655195.1_ASM1465519v1_genomic.fna.gz",
+      "bytes": 2215706,
+      "last_modified": "Sat, 19 Sep 2020 16:07:34 GMT"
+    },
+    {
+      "accession": "GCA_000980815",
+      "resolved_accession": "GCA_000980815.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/980/815/GCA_000980815.1_ASM98081v1/GCA_000980815.1_ASM98081v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000980815.1_ASM98081v1_protein.faa.gz",
+      "bytes": 489144,
+      "last_modified": "Fri, 24 Apr 2015 19:11:52 GMT"
+    },
+    {
+      "accession": "GCA_000980815",
+      "resolved_accession": "GCA_000980815.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/980/815/GCA_000980815.1_ASM98081v1/GCA_000980815.1_ASM98081v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000980815.1_ASM98081v1_genomic.fna.gz",
+      "bytes": 726663,
+      "last_modified": "Thu, 26 May 2016 07:24:01 GMT"
+    },
+    {
+      "accession": "GCA_900095795",
+      "resolved_accession": "GCA_900095795.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/095/795/GCA_900095795.1_E5A/GCA_900095795.1_E5A_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900095795.1_E5A_protein.faa.gz",
+      "bytes": 739495,
+      "last_modified": "Fri, 28 Oct 2016 07:10:29 GMT"
+    },
+    {
+      "accession": "GCA_900095795",
+      "resolved_accession": "GCA_900095795.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/095/795/GCA_900095795.1_E5A/GCA_900095795.1_E5A_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900095795.1_E5A_genomic.fna.gz",
+      "bytes": 1105131,
+      "last_modified": "Fri, 28 Oct 2016 07:10:29 GMT"
+    },
+    {
+      "accession": "GCA_002201795",
+      "resolved_accession": "GCA_002201795.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/201/795/GCA_002201795.1_ASM220179v1/GCA_002201795.1_ASM220179v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002201795.1_ASM220179v1_protein.faa.gz",
+      "bytes": 864064,
+      "last_modified": "Tue, 20 Jun 2017 21:07:25 GMT"
+    },
+    {
+      "accession": "GCA_002201795",
+      "resolved_accession": "GCA_002201795.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/201/795/GCA_002201795.1_ASM220179v1/GCA_002201795.1_ASM220179v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002201795.1_ASM220179v1_genomic.fna.gz",
+      "bytes": 1398081,
+      "last_modified": "Tue, 26 Dec 2017 11:43:57 GMT"
+    },
+    {
+      "accession": "GCA_004028235",
+      "resolved_accession": "GCA_004028235.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/028/235/GCA_004028235.1_ASM402823v1/GCA_004028235.1_ASM402823v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_004028235.1_ASM402823v1_protein.faa.gz",
+      "bytes": 567864,
+      "last_modified": "Tue, 22 Dec 2020 05:13:07 GMT"
+    },
+    {
+      "accession": "GCA_004028235",
+      "resolved_accession": "GCA_004028235.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/028/235/GCA_004028235.1_ASM402823v1/GCA_004028235.1_ASM402823v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_004028235.1_ASM402823v1_genomic.fna.gz",
+      "bytes": 892978,
+      "last_modified": "Tue, 22 Dec 2020 05:13:07 GMT"
+    },
+    {
+      "accession": "GCA_014270035",
+      "resolved_accession": "GCA_014270035.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/270/035/GCA_014270035.1_ASM1427003v1/GCA_014270035.1_ASM1427003v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014270035.1_ASM1427003v1_protein.faa.gz",
+      "bytes": 821310,
+      "last_modified": "Mon, 24 Aug 2020 07:14:50 GMT"
+    },
+    {
+      "accession": "GCA_014270035",
+      "resolved_accession": "GCA_014270035.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/270/035/GCA_014270035.1_ASM1427003v1/GCA_014270035.1_ASM1427003v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014270035.1_ASM1427003v1_genomic.fna.gz",
+      "bytes": 1236836,
+      "last_modified": "Mon, 24 Aug 2020 07:14:50 GMT"
+    },
+    {
+      "accession": "GCA_000565015",
+      "resolved_accession": "GCA_000565015.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/565/015/GCA_000565015.1_PcatATCC51270v1.0/GCA_000565015.1_PcatATCC51270v1.0_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000565015.1_PcatATCC51270v1.0_protein.faa.gz",
+      "bytes": 383709,
+      "last_modified": "Wed, 06 Aug 2014 01:25:35 GMT"
+    },
+    {
+      "accession": "GCA_000565015",
+      "resolved_accession": "GCA_000565015.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/565/015/GCA_000565015.1_PcatATCC51270v1.0/GCA_000565015.1_PcatATCC51270v1.0_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000565015.1_PcatATCC51270v1.0_genomic.fna.gz",
+      "bytes": 611643,
+      "last_modified": "Fri, 27 May 2016 18:42:25 GMT"
+    },
+    {
+      "accession": "GCA_014397255",
+      "resolved_accession": "GCA_014397255.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/397/255/GCA_014397255.1_ASM1439725v1/GCA_014397255.1_ASM1439725v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014397255.1_ASM1439725v1_protein.faa.gz",
+      "bytes": 300890,
+      "last_modified": "Wed, 02 Sep 2020 16:25:32 GMT"
+    },
+    {
+      "accession": "GCA_014397255",
+      "resolved_accession": "GCA_014397255.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/397/255/GCA_014397255.1_ASM1439725v1/GCA_014397255.1_ASM1439725v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014397255.1_ASM1439725v1_genomic.fna.gz",
+      "bytes": 489771,
+      "last_modified": "Wed, 02 Sep 2020 16:25:32 GMT"
+    },
+    {
+      "accession": "GCA_003369815",
+      "resolved_accession": "GCA_003369815.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/369/815/GCA_003369815.1_ASM336981v1/GCA_003369815.1_ASM336981v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003369815.1_ASM336981v1_protein.faa.gz",
+      "bytes": 241542,
+      "last_modified": "Fri, 29 Jan 2021 00:23:23 GMT"
+    },
+    {
+      "accession": "GCA_003369815",
+      "resolved_accession": "GCA_003369815.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/369/815/GCA_003369815.1_ASM336981v1/GCA_003369815.1_ASM336981v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003369815.1_ASM336981v1_genomic.fna.gz",
+      "bytes": 373313,
+      "last_modified": "Fri, 29 Jan 2021 00:23:22 GMT"
+    },
+    {
+      "accession": "GCA_900706855",
+      "resolved_accession": "GCA_900706855.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/706/855/GCA_900706855.1_28863_D01/GCA_900706855.1_28863_D01_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900706855.1_28863_D01_protein.faa.gz",
+      "bytes": 1068342,
+      "last_modified": "Fri, 02 Oct 2026 09:48:01 GMT"
+    },
+    {
+      "accession": "GCA_900706855",
+      "resolved_accession": "GCA_900706855.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/706/855/GCA_900706855.1_28863_D01/GCA_900706855.1_28863_D01_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900706855.1_28863_D01_genomic.fna.gz",
+      "bytes": 1650576,
+      "last_modified": "Thu, 28 Mar 2019 03:07:19 GMT"
+    },
+    {
+      "accession": "GCA_900104475",
+      "resolved_accession": "GCA_900104475.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/104/475/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly_protein.faa.gz",
+      "bytes": 914309,
+      "last_modified": "Thu, 27 Oct 2016 22:09:34 GMT"
+    },
+    {
+      "accession": "GCA_900104475",
+      "resolved_accession": "GCA_900104475.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/104/475/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900104475.1_IMG-taxon_2619619031_annotated_assembly_genomic.fna.gz",
+      "bytes": 1443197,
+      "last_modified": "Thu, 27 Oct 2016 22:09:34 GMT"
+    },
+    {
+      "accession": "GCA_003663885",
+      "resolved_accession": "GCA_003663885.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/663/885/GCA_003663885.1_ASM366388v1/GCA_003663885.1_ASM366388v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003663885.1_ASM366388v1_protein.faa.gz",
+      "bytes": 803545,
+      "last_modified": "Thu, 18 Oct 2018 12:50:35 GMT"
+    },
+    {
+      "accession": "GCA_003663885",
+      "resolved_accession": "GCA_003663885.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/663/885/GCA_003663885.1_ASM366388v1/GCA_003663885.1_ASM366388v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003663885.1_ASM366388v1_genomic.fna.gz",
+      "bytes": 1176407,
+      "last_modified": "Thu, 18 Oct 2018 12:50:35 GMT"
+    },
+    {
+      "accession": "GCA_002026305",
+      "resolved_accession": "GCA_002026305.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/026/305/GCA_002026305.1_ASM202630v1/GCA_002026305.1_ASM202630v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_002026305.1_ASM202630v1_protein.faa.gz",
+      "bytes": 465498,
+      "last_modified": "Tue, 05 Sep 2017 04:10:15 GMT"
+    },
+    {
+      "accession": "GCA_002026305",
+      "resolved_accession": "GCA_002026305.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/026/305/GCA_002026305.1_ASM202630v1/GCA_002026305.1_ASM202630v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_002026305.1_ASM202630v1_genomic.fna.gz",
+      "bytes": 729893,
+      "last_modified": "Tue, 05 Sep 2017 04:10:15 GMT"
+    },
+    {
+      "accession": "GCA_001866055",
+      "resolved_accession": "GCA_001866055.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/866/055/GCA_001866055.1_ASM186605v1/GCA_001866055.1_ASM186605v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001866055.1_ASM186605v1_protein.faa.gz",
+      "bytes": 779862,
+      "last_modified": "Mon, 07 Nov 2016 05:08:13 GMT"
+    },
+    {
+      "accession": "GCA_001866055",
+      "resolved_accession": "GCA_001866055.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/866/055/GCA_001866055.1_ASM186605v1/GCA_001866055.1_ASM186605v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001866055.1_ASM186605v1_genomic.fna.gz",
+      "bytes": 1354830,
+      "last_modified": "Thu, 03 Nov 2016 22:07:54 GMT"
+    },
+    {
+      "accession": "GCA_003583925",
+      "resolved_accession": "GCA_003583925.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/583/925/GCA_003583925.1_ASM358392v1/GCA_003583925.1_ASM358392v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003583925.1_ASM358392v1_protein.faa.gz",
+      "bytes": 916454,
+      "last_modified": "Thu, 20 Sep 2018 18:16:07 GMT"
+    },
+    {
+      "accession": "GCA_003583925",
+      "resolved_accession": "GCA_003583925.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/583/925/GCA_003583925.1_ASM358392v1/GCA_003583925.1_ASM358392v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003583925.1_ASM358392v1_genomic.fna.gz",
+      "bytes": 1499921,
+      "last_modified": "Thu, 20 Sep 2018 18:16:07 GMT"
+    },
+    {
+      "accession": "GCA_900105965",
+      "resolved_accession": "GCA_900105965.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/105/965/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly_protein.faa.gz",
+      "bytes": 874800,
+      "last_modified": "Fri, 28 Oct 2016 05:13:12 GMT"
+    },
+    {
+      "accession": "GCA_900105965",
+      "resolved_accession": "GCA_900105965.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/105/965/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900105965.1_IMG-taxon_2634166197_annotated_assembly_genomic.fna.gz",
+      "bytes": 1364522,
+      "last_modified": "Fri, 28 Oct 2016 05:13:12 GMT"
+    },
+    {
+      "accession": "GCA_022568795",
+      "resolved_accession": "GCA_022568795.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/022/568/795/GCA_022568795.1_ASM2256879v1/GCA_022568795.1_ASM2256879v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_022568795.1_ASM2256879v1_protein.faa.gz",
+      "bytes": 630489,
+      "last_modified": "Tue, 15 Mar 2022 07:27:33 GMT"
+    },
+    {
+      "accession": "GCA_022568795",
+      "resolved_accession": "GCA_022568795.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/022/568/795/GCA_022568795.1_ASM2256879v1/GCA_022568795.1_ASM2256879v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_022568795.1_ASM2256879v1_genomic.fna.gz",
+      "bytes": 970754,
+      "last_modified": "Tue, 15 Mar 2022 07:27:33 GMT"
+    },
+    {
+      "accession": "GCA_014650295",
+      "resolved_accession": "GCA_014650295.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/650/295/GCA_014650295.1_ASM1465029v1/GCA_014650295.1_ASM1465029v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_014650295.1_ASM1465029v1_protein.faa.gz",
+      "bytes": 1646441,
+      "last_modified": "Sat, 19 Sep 2020 13:13:55 GMT"
+    },
+    {
+      "accession": "GCA_014650295",
+      "resolved_accession": "GCA_014650295.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/650/295/GCA_014650295.1_ASM1465029v1/GCA_014650295.1_ASM1465029v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_014650295.1_ASM1465029v1_genomic.fna.gz",
+      "bytes": 2520108,
+      "last_modified": "Sat, 19 Sep 2020 13:13:55 GMT"
+    },
+    {
+      "accession": "GCA_000970145",
+      "resolved_accession": "GCA_000970145.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/970/145/GCA_000970145.1_ASM97014v1/GCA_000970145.1_ASM97014v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000970145.1_ASM97014v1_protein.faa.gz",
+      "bytes": 869773,
+      "last_modified": "Wed, 18 May 2016 01:18:06 GMT"
+    },
+    {
+      "accession": "GCA_000970145",
+      "resolved_accession": "GCA_000970145.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/970/145/GCA_000970145.1_ASM97014v1/GCA_000970145.1_ASM97014v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000970145.1_ASM97014v1_genomic.fna.gz",
+      "bytes": 1600110,
+      "last_modified": "Wed, 18 May 2016 01:18:06 GMT"
+    },
+    {
+      "accession": "GCA_000156015",
+      "resolved_accession": "GCA_000156015.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/156/015/GCA_000156015.1_ASM15601v1/GCA_000156015.1_ASM15601v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_000156015.1_ASM15601v1_protein.faa.gz",
+      "bytes": 505795,
+      "last_modified": "Sun, 08 Sep 2024 21:14:14 GMT"
+    },
+    {
+      "accession": "GCA_000156015",
+      "resolved_accession": "GCA_000156015.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/156/015/GCA_000156015.1_ASM15601v1/GCA_000156015.1_ASM15601v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_000156015.1_ASM15601v1_genomic.fna.gz",
+      "bytes": 727963,
+      "last_modified": "Thu, 26 May 2016 05:42:42 GMT"
+    },
+    {
+      "accession": "GCA_003987555",
+      "resolved_accession": "GCA_003987555.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/987/555/GCA_003987555.1_ASM398755v1/GCA_003987555.1_ASM398755v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003987555.1_ASM398755v1_protein.faa.gz",
+      "bytes": 394425,
+      "last_modified": "Mon, 31 Dec 2018 21:35:48 GMT"
+    },
+    {
+      "accession": "GCA_003987555",
+      "resolved_accession": "GCA_003987555.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/987/555/GCA_003987555.1_ASM398755v1/GCA_003987555.1_ASM398755v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003987555.1_ASM398755v1_genomic.fna.gz",
+      "bytes": 592109,
+      "last_modified": "Wed, 06 Jan 2021 04:09:04 GMT"
+    },
+    {
+      "accession": "GCA_003001905",
+      "resolved_accession": "GCA_003001905.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/001/905/GCA_003001905.1_ASM300190v1/GCA_003001905.1_ASM300190v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_003001905.1_ASM300190v1_protein.faa.gz",
+      "bytes": 683021,
+      "last_modified": "Thu, 15 Mar 2018 21:45:08 GMT"
+    },
+    {
+      "accession": "GCA_003001905",
+      "resolved_accession": "GCA_003001905.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/001/905/GCA_003001905.1_ASM300190v1/GCA_003001905.1_ASM300190v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_003001905.1_ASM300190v1_genomic.fna.gz",
+      "bytes": 1059669,
+      "last_modified": "Thu, 15 Mar 2018 21:45:08 GMT"
+    },
+    {
+      "accession": "GCA_900186995",
+      "resolved_accession": "GCA_900186995.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/186/995/GCA_900186995.1_50465_A02/GCA_900186995.1_50465_A02_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900186995.1_50465_A02_protein.faa.gz",
+      "bytes": 430286,
+      "last_modified": "Thu, 23 Aug 2018 04:07:54 GMT"
+    },
+    {
+      "accession": "GCA_900186995",
+      "resolved_accession": "GCA_900186995.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/186/995/GCA_900186995.1_50465_A02/GCA_900186995.1_50465_A02_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900186995.1_50465_A02_genomic.fna.gz",
+      "bytes": 646726,
+      "last_modified": "Sat, 26 Aug 2017 11:09:00 GMT"
+    },
+    {
+      "accession": "GCA_900101825",
+      "resolved_accession": "GCA_900101825.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/101/825/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly_protein.faa.gz",
+      "bytes": 845719,
+      "last_modified": "Thu, 27 Oct 2016 22:08:27 GMT"
+    },
+    {
+      "accession": "GCA_900101825",
+      "resolved_accession": "GCA_900101825.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/101/825/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900101825.1_IMG-taxon_2622736515_annotated_assembly_genomic.fna.gz",
+      "bytes": 1260462,
+      "last_modified": "Thu, 27 Oct 2016 22:08:27 GMT"
+    },
+    {
+      "accession": "GCA_900172235",
+      "resolved_accession": "GCA_900172235.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/172/235/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka_protein.faa.gz",
+      "bytes": 739329,
+      "last_modified": "Sun, 21 May 2017 01:15:26 GMT"
+    },
+    {
+      "accession": "GCA_900172235",
+      "resolved_accession": "GCA_900172235.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/900/172/235/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_900172235.1_Ps.aquimaris_CECT7680_Spades_Prokka_genomic.fna.gz",
+      "bytes": 1061084,
+      "last_modified": "Sun, 21 May 2017 01:15:26 GMT"
+    },
+    {
+      "accession": "GCA_001643015",
+      "resolved_accession": "GCA_001643015.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/643/015/GCA_001643015.1_ASM164301v1/GCA_001643015.1_ASM164301v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001643015.1_ASM164301v1_protein.faa.gz",
+      "bytes": 596911,
+      "last_modified": "Tue, 20 Dec 2016 06:06:42 GMT"
+    },
+    {
+      "accession": "GCA_001643015",
+      "resolved_accession": "GCA_001643015.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/643/015/GCA_001643015.1_ASM164301v1/GCA_001643015.1_ASM164301v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001643015.1_ASM164301v1_genomic.fna.gz",
+      "bytes": 958305,
+      "last_modified": "Sun, 22 Oct 2017 07:49:06 GMT"
+    },
+    {
+      "accession": "GCA_001439735",
+      "resolved_accession": "GCA_001439735.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/439/735/GCA_001439735.1_mG273/GCA_001439735.1_mG273_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001439735.1_mG273_protein.faa.gz",
+      "bytes": 1108333,
+      "last_modified": "Thu, 07 Dec 2017 03:47:45 GMT"
+    },
+    {
+      "accession": "GCA_001439735",
+      "resolved_accession": "GCA_001439735.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/439/735/GCA_001439735.1_mG273/GCA_001439735.1_mG273_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001439735.1_mG273_genomic.fna.gz",
+      "bytes": 1769942,
+      "last_modified": "Thu, 07 Dec 2017 03:47:45 GMT"
+    },
+    {
+      "accession": "GCA_001885905",
+      "resolved_accession": "GCA_001885905.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/885/905/GCA_001885905.1_ASM188590v1/GCA_001885905.1_ASM188590v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001885905.1_ASM188590v1_protein.faa.gz",
+      "bytes": 621125,
+      "last_modified": "Fri, 25 Nov 2016 20:07:40 GMT"
+    },
+    {
+      "accession": "GCA_001885905",
+      "resolved_accession": "GCA_001885905.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/885/905/GCA_001885905.1_ASM188590v1/GCA_001885905.1_ASM188590v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001885905.1_ASM188590v1_genomic.fna.gz",
+      "bytes": 988512,
+      "last_modified": "Fri, 25 Nov 2016 20:07:40 GMT"
+    },
+    {
+      "accession": "GCA_021134395",
+      "resolved_accession": "GCA_021134395.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/021/134/395/GCA_021134395.1_ASM2113439v1/GCA_021134395.1_ASM2113439v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_021134395.1_ASM2113439v1_protein.faa.gz",
+      "bytes": 348993,
+      "last_modified": "Thu, 09 Dec 2021 22:10:54 GMT"
+    },
+    {
+      "accession": "GCA_021134395",
+      "resolved_accession": "GCA_021134395.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/021/134/395/GCA_021134395.1_ASM2113439v1/GCA_021134395.1_ASM2113439v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_021134395.1_ASM2113439v1_genomic.fna.gz",
+      "bytes": 559473,
+      "last_modified": "Thu, 09 Dec 2021 22:10:54 GMT"
+    },
+    {
+      "accession": "GCA_902141845",
+      "resolved_accession": "GCA_902141845.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/902/141/845/GCA_902141845.1_CECT_9862/GCA_902141845.1_CECT_9862_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_902141845.1_CECT_9862_protein.faa.gz",
+      "bytes": 1098802,
+      "last_modified": "Tue, 15 Dec 2020 20:55:55 GMT"
+    },
+    {
+      "accession": "GCA_902141845",
+      "resolved_accession": "GCA_902141845.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/902/141/845/GCA_902141845.1_CECT_9862/GCA_902141845.1_CECT_9862_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_902141845.1_CECT_9862_genomic.fna.gz",
+      "bytes": 1734026,
+      "last_modified": "Thu, 18 Jul 2019 19:26:35 GMT"
+    },
+    {
+      "accession": "GCA_011927725",
+      "resolved_accession": "GCA_011927725.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/011/927/725/GCA_011927725.1_ASM1192772v1/GCA_011927725.1_ASM1192772v1_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_011927725.1_ASM1192772v1_protein.faa.gz",
+      "bytes": 582079,
+      "last_modified": "Fri, 03 Apr 2020 09:45:03 GMT"
+    },
+    {
+      "accession": "GCA_011927725",
+      "resolved_accession": "GCA_011927725.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/011/927/725/GCA_011927725.1_ASM1192772v1/GCA_011927725.1_ASM1192772v1_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_011927725.1_ASM1192772v1_genomic.fna.gz",
+      "bytes": 815412,
+      "last_modified": "Fri, 03 Apr 2020 09:45:03 GMT"
+    },
+    {
+      "accession": "GCA_001053095",
+      "resolved_accession": "GCA_001053095.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/053/095/GCA_001053095.1_5139_1_3/GCA_001053095.1_5139_1_3_protein.faa.gz",
+      "path": "data/raw/verification/sequences/GCA_001053095.1_5139_1_3_protein.faa.gz",
+      "bytes": 889231,
+      "last_modified": "Thu, 19 May 2016 09:05:21 GMT"
+    },
+    {
+      "accession": "GCA_001053095",
+      "resolved_accession": "GCA_001053095.1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/053/095/GCA_001053095.1_5139_1_3/GCA_001053095.1_5139_1_3_genomic.fna.gz",
+      "path": "data/raw/verification/sequences/GCA_001053095.1_5139_1_3_genomic.fna.gz",
+      "bytes": 1459359,
+      "last_modified": "Thu, 19 May 2016 09:05:21 GMT"
+    }
+  ],
+  "errors": [
+    {
+      "accession": "GCA_000194155",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000285915",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000382325",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000420605",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000425025",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000429405",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000710615",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000745905",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000771625",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000966265",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000969705",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_000975055",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_001311865",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_001313705",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_001552635",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_001571225",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_001591345",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_001653135",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_002019645",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_002087335",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_002091755",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_002155305",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_002269345",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_003946545",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_004368535",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_006519715",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_009299835",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_009870755",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    },
+    {
+      "accession": "GCA_900624775",
+      "reason": "No GenBank protein FASTA at fixed-sample preflight"
+    }
+  ],
+  "total_sequence_bytes": 170786627,
+  "limit_bytes": 8000000000,
+  "request_spacing_seconds": 1.0,
+  "sample": {
+    "seed": 20261011,
+    "algorithm": "Python random.Random.sample on sorted accession list",
+    "population": "at least one nonmissing target label",
+    "population_size": 8174,
+    "accessions": [
+      "GCA_003946545",
+      "GCA_002091755",
+      "GCA_003966145",
+      "GCA_002006205",
+      "GCA_001552635",
+      "GCA_000218875",
+      "GCA_000173915",
+      "GCA_002214365",
+      "GCA_003726035",
+      "GCA_000166275",
+      "GCA_014490445",
+      "GCA_000021925",
+      "GCA_014644955",
+      "GCA_900103275",
+      "GCA_016907615",
+      "GCA_014197035",
+      "GCA_002087335",
+      "GCA_000969705",
+      "GCA_900186925",
+      "GCA_013416335",
+      "GCA_009299835",
+      "GCA_004347715",
+      "GCA_900101845",
+      "GCA_000425025",
+      "GCA_003635025",
+      "GCA_900115955",
+      "GCA_000143845",
+      "GCA_000012545",
+      "GCA_001053095",
+      "GCA_900475735",
+      "GCA_900110585",
+      "GCA_901543985",
+      "GCA_001311865",
+      "GCA_000473865",
+      "GCA_000745905",
+      "GCA_002441825",
+      "GCA_900112235",
+      "GCA_023284005",
+      "GCA_014646975",
+      "GCA_003391395",
+      "GCA_009709575",
+      "GCA_001598055",
+      "GCA_000023065",
+      "GCA_000429405",
+      "GCA_001435375",
+      "GCA_901472485",
+      "GCA_003096335",
+      "GCA_014635785",
+      "GCA_002119805",
+      "GCA_017873185",
+      "GCA_014655195",
+      "GCA_000771625",
+      "GCA_001653135",
+      "GCA_000980815",
+      "GCA_900095795",
+      "GCA_002201795",
+      "GCA_004028235",
+      "GCA_000382325",
+      "GCA_014270035",
+      "GCA_000565015",
+      "GCA_014397255",
+      "GCA_003369815",
+      "GCA_000285915",
+      "GCA_900706855",
+      "GCA_900104475",
+      "GCA_003663885",
+      "GCA_002026305",
+      "GCA_002019645",
+      "GCA_002269345",
+      "GCA_001591345",
+      "GCA_001866055",
+      "GCA_003583925",
+      "GCA_900105965",
+      "GCA_000975055",
+      "GCA_022568795",
+      "GCA_014650295",
+      "GCA_000970145",
+      "GCA_000194155",
+      "GCA_000420605",
+      "GCA_004368535",
+      "GCA_000156015",
+      "GCA_009870755",
+      "GCA_003987555",
+      "GCA_001313705",
+      "GCA_003001905",
+      "GCA_900186995",
+      "GCA_000710615",
+      "GCA_002155305",
+      "GCA_900101825",
+      "GCA_900172235",
+      "GCA_001643015",
+      "GCA_900624775",
+      "GCA_001571225",
+      "GCA_001439735",
+      "GCA_006519715",
+      "GCA_001885905",
+      "GCA_021134395",
+      "GCA_902141845",
+      "GCA_000966265",
+      "GCA_011927725"
+    ]
+  }
+}

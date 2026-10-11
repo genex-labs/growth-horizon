@@ -1,3 +1,10 @@
+# Current phase-1 resume
+
+Resume 3 resolves the unavailable-proteome stop and makes feature differences
+a reportable finding. Acquisition and development are in progress. The
+following earlier status records are historical; they do not describe the
+current permission or build state. Current aggregate receipts supersede them.
+
 # Resume 2: feature-verification source blocker
 
 Current status: blocked on unavailable sampled GenBank proteomes, 2026-10-11 PT.
