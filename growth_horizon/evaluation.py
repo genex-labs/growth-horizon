@@ -92,12 +92,12 @@ def summary(rows: dict[str, Any], mask: Any, trait: str) -> dict[str, Any]:
     coverage['excluded_unsupported'] = int((selected & ~rows['supported']).sum())
     valid_taxa, inv = np.unique(rows['taxa'][supported], return_inverse=True)
     counts = np.bincount(inv)
-    taxon_means = np.bincount(inv, weights=rows['covered'][supported])/counts if len(counts) else []
+    taxon_means: Any = np.bincount(inv, weights=rows['covered'][supported])/counts if len(counts) else []
     taxon_coverage = estimate(np.column_stack((taxon_means, np.ones(len(valid_taxa)))), valid_taxa)
     taxon_coverage['abstention_rate'] = (float(np.mean(np.bincount(inv,
         weights=rows['abstain'][supported])/counts)) if len(counts) else None)
     sizes = rows['size'][supported]
-    result = {'genomes': int(selected.sum()), 'taxa': len(set(taxa)),
+    result: dict[str, Any] = {'genomes': int(selected.sum()), 'taxa': len(set(taxa)),
               'error': estimate(error_values(y, pred, oxygen), taxa, oxygen),
               'coverage': coverage, 'taxon_weighted_coverage': taxon_coverage,
               'mean_size': float(sizes.mean()) if len(sizes) else None,

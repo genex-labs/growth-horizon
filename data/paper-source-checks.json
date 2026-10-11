@@ -1,0 +1,387 @@
+[
+  {
+    "name": "Boger",
+    "doi": "10.1038/s41467-024-55676-y",
+    "url": "https://www.nature.com/articles/s41467-024-55676-y",
+    "read_at_pt": "2026-10-11 09:02:02 PT",
+    "html": {
+      "status": 200,
+      "path": "data/raw/release-sources/boger.html",
+      "sha256": "b28d51c18c42b283cc7f1bf7af3535a7e0adf7b84ca8422062498c157daa79cc"
+    },
+    "json": {
+      "status": 200,
+      "path": "data/raw/release-sources/boger.json",
+      "sha256": "5e50c4593e492903d3612c76deb4c24a280700d1db025ffe424990722065935b"
+    },
+    "reference": {
+      "title": "Functional protein mining with conformal guarantees",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-4467-271X",
+          "authenticated-orcid": false,
+          "given": "Ron S.",
+          "family": "Boger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3671-9135",
+          "authenticated-orcid": false,
+          "given": "Seyone",
+          "family": "Chithrananda",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9787-0579",
+          "authenticated-orcid": false,
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Peter H.",
+          "family": "Yoon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8935-817X",
+          "authenticated-orcid": false,
+          "given": "Michael I.",
+          "family": "Jordan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9161-999X",
+          "authenticated-orcid": false,
+          "given": "Jennifer A.",
+          "family": "Doudna",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": "Nature Communications",
+      "volume": "16",
+      "issue": "1",
+      "page": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            2
+          ]
+        ]
+      },
+      "DOI": "10.1038/s41467-024-55676-y"
+    }
+  },
+  {
+    "name": "Fannjiang",
+    "doi": "10.1073/pnas.2204569119",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.2204569119",
+    "read_at_pt": "2026-10-11 09:02:04 PT",
+    "html": {
+      "status": "unavailable",
+      "reason": "HTTPError"
+    },
+    "json": {
+      "status": 200,
+      "path": "data/raw/release-sources/fannjiang.json",
+      "sha256": "57320184e013ce16e4d3bda07912cc4899cdb6e9019fff74d6daaad68a6be0fe"
+    },
+    "reference": {
+      "title": "Conformal prediction under feedback covariate shift for biomolecular design",
+      "author": [
+        {
+          "given": "Clara",
+          "family": "Fannjiang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Bates",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Anastasios N.",
+          "family": "Angelopoulos",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jennifer",
+          "family": "Listgarten",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            },
+            {
+              "name": "Center for Computational Biology, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8935-817X",
+          "authenticated-orcid": false,
+          "given": "Michael I.",
+          "family": "Jordan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720"
+            },
+            {
+              "name": "Department of Statistics, University of California, Berkeley, CA 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": "Proceedings of the National Academy of Sciences",
+      "volume": "119",
+      "issue": "43",
+      "page": null,
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            18
+          ]
+        ]
+      },
+      "DOI": "10.1073/pnas.2204569119"
+    }
+  },
+  {
+    "name": "Barber",
+    "doi": "10.1214/23-AOS2276",
+    "url": "https://projecteuclid.org/journals/annals-of-statistics/volume-51/issue-2/Conformal-prediction-beyond-exchangeability/10.1214/23-AOS2276.full",
+    "read_at_pt": "2026-10-11 09:02:05 PT",
+    "html": {
+      "status": 200,
+      "path": "data/raw/release-sources/barber.html",
+      "sha256": "66f358735b63889b98e582bdb2a9a32e4ab1f4c9f1ba2dc7edb46e06eba013db"
+    },
+    "json": {
+      "status": 200,
+      "path": "data/raw/release-sources/barber.json",
+      "sha256": "815a9ba9d30dd37845bc6339e44fed732fcd0836b9710dd268eb6addf3113e58"
+    },
+    "reference": {
+      "title": "Conformal prediction beyond exchangeability",
+      "author": [
+        {
+          "given": "Rina Foygel",
+          "family": "Barber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, University of Chicago"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Emmanuel J.",
+          "family": "Cand\u00e8s",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Departments of Statistics and Mathematics, Stanford University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aaditya",
+          "family": "Ramdas",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Departments of Statistics and Machine Learning, Carnegie Mellon University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ryan J.",
+          "family": "Tibshirani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Departments of Statistics and Machine Learning, Carnegie Mellon University"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": "The Annals of Statistics",
+      "volume": "51",
+      "issue": "2",
+      "page": "816-845",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1214/23-aos2276"
+    }
+  },
+  {
+    "name": "Vovk",
+    "doi": "10.1007/s10994-013-5355-6",
+    "url": "https://link.springer.com/article/10.1007/s10994-013-5355-6",
+    "read_at_pt": "2026-10-11 09:02:06 PT",
+    "html": {
+      "status": 200,
+      "path": "data/raw/release-sources/vovk.html",
+      "sha256": "82bfc5cba93a578e963e909188c4112fc21d4bbe7eb1901cc07d2b75739e9fcd"
+    },
+    "json": {
+      "status": 200,
+      "path": "data/raw/release-sources/vovk.json",
+      "sha256": "a97ac14a981fa33ef7b08c1fb83a63fe3b72d0fd747334e0edfd4408d85c7e75"
+    },
+    "reference": {
+      "title": "Conditional validity of inductive conformal predictors",
+      "author": [
+        {
+          "given": "Vladimir",
+          "family": "Vovk",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": "Machine Learning",
+      "volume": "92",
+      "issue": "2-3",
+      "page": "349-376",
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            5,
+            8
+          ]
+        ]
+      },
+      "DOI": "10.1007/s10994-013-5355-6"
+    }
+  }
+]

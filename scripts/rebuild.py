@@ -15,7 +15,7 @@ from growth_horizon.label_gate import require_experimental_labels
 
 def main() -> None:
     check_space()
-    (ROOT / 'work-tmp').mkdir(exist_ok=True)
+    (ROOT / 'work-tmp.noindex').mkdir(exist_ok=True)
     (ROOT / 'data/gtdb-derived/local/analysis').mkdir(parents=True, exist_ok=True)
     (ROOT / 'data/gtdb-derived').mkdir(exist_ok=True)
     replay()

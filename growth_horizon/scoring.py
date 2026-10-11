@@ -142,7 +142,10 @@ def score_fold(df: Any, trait: str, rank: str, fold: int, trees: Any,
     taxa = df['species' if rank == 'random' else rank].to_numpy()[query]
     rng = np.random.default_rng(record['seed']+5)
     uniforms, ties = rng.uniform(size=len(query)), rng.integers(0, 2, size=len(query))
-    inner_distances, inner_predictions, b0_scores, b0_assign = [], {m: [] for m in METHODS}, [], []
+    inner_distances: list[Any] = []
+    inner_predictions: dict[str, list[Any]] = {m: [] for m in METHODS}
+    b0_scores: list[Any] = []
+    b0_assign: list[Any] = []
     for k in range(5):
         md = np.load(cdir/f'inner{k}/membership-distances.npz')
         proper, cal = md['proper'], md['calibration']
@@ -236,7 +239,11 @@ def horizon(rows: Any, b0: Any, b2: Any, edges: Any, trait: str) -> dict[str, An
     draws = np.random.default_rng(SEED).integers(len(unique), size=(REPETITIONS, len(unique)))
     weights = np.zeros((REPETITIONS, len(unique)), dtype=int)
     np.add.at(weights, (np.repeat(np.arange(REPETITIONS), len(unique)), draws.ravel()), 1)
-    entries, replicate_gains, replicate_abstentions, replicate_counts, supported_counts = [], [], [], [], []
+    entries: list[dict[str, Any]] = []
+    replicate_gains: list[Any] = []
+    replicate_abstentions: list[Any] = []
+    replicate_counts: list[Any] = []
+    supported_counts: list[Any] = []
     for bin_id in range(nbin):
         sel = bins == bin_id
         report = summary(rows, sel, trait)
@@ -289,7 +296,7 @@ def aggregate(trait: str, rank: str, rows: Any, edges: Any) -> dict[str, Any]:
     output: dict[str, Any] = {'trait': trait, 'rank': rank, 'methods': {}, 'horizons': {}}
     for m, r in rows.items():
         all_mask = np.ones(len(r['y']), dtype=bool)
-        record = {'overall': summary(r, all_mask, trait), 'naive': summary(variant(r, 'naive'), all_mask, trait),
+        record: dict[str, Any] = {'overall': summary(r, all_mask, trait), 'naive': summary(variant(r, 'naive'), all_mask, trait),
                   'mean_fit_distance': summary(variant(r, 'secondary'), all_mask, trait), 'fold_bins': [],
                   'secondary_fold_bins': [], 'phylum': {}}
         for fold in range(5):
@@ -302,9 +309,10 @@ def aggregate(trait: str, rank: str, rows: Any, edges: Any) -> dict[str, Any]:
                 record['secondary_fold_bins'].append({'fold': fold, 'bin': int(b), 'metrics': summary(sr, sel, trait)})
         far = np.zeros(len(r['y']), dtype=bool)
         for fold in range(5):
-            supported_bins = r['bin'][(r['fold'] == fold) & r['supported']]
-            if len(supported_bins):
-                far |= (r['fold'] == fold) & (r['bin'] == supported_bins.max()) & r['supported']
+            calibration = json.loads((ROOT/f'data/gtdb-derived/local/crossfit/{trait}/{rank}/fold{fold}/calibration.json').read_text())
+            supported_bins = [i for i, b in enumerate(calibration['methods']['method']['bins']) if b['supported']]
+            if supported_bins:
+                far |= (r['fold'] == fold) & (r['bin'] == max(supported_bins)) & r['supported']
         record['naive_far'] = summary(variant(r, 'naive'), far, trait)
         for phylum in sorted(set(r['phylum'])):
             record['phylum'][str(phylum)] = summary(r, r['phylum'] == phylum, trait)

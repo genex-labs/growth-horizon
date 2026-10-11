@@ -43,7 +43,7 @@ def acquire(url: str, path: str, expected_bytes: int | None = None,
         raise ValueError(f'Source checksum mismatch: {path}')
     record = {'url': url, 'path': path, 'bytes': size, 'sha256': sha,
               'kind': 'verified_source'}
-    with (ROOT / 'work-tmp/manifest.lock').open('w') as lock:
+    with (ROOT / 'work-tmp.noindex/manifest.lock').open('w') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         manifest = json.loads(MANIFEST.read_text())
         manifest['records'] = [r for r in manifest['records'] if r['path'] != path] + [record]
