@@ -25,7 +25,7 @@ def main() -> None:
                    'data/raw/transfer-parts'):
         for file in sorted((ROOT / folder).rglob('*')):
             relative = str(file.relative_to(ROOT))
-            if not file.is_file() or relative in indexed:
+            if not file.is_file() or relative in indexed or '__pycache__' in relative:
                 continue
             url = page_urls.get(file.name)
             if 'transfer-parts' in relative and file.suffix == '.bin':

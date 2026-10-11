@@ -1,0 +1,33 @@
+[
+  {
+    "source": "Bac2Feature",
+    "doi": "10.1093/bioadv/vbaf136",
+    "title": "Bac2Feature: an easy-to-use interface to predict prokaryotic traits from 16S rRNA gene sequences",
+    "date": "2026-10-11",
+    "url": "https://academic.oup.com/bioinformaticsadvances/advance-article/doi/10.1093/bioadv/vbaf136/8162692"
+  },
+  {
+    "source": "carbon",
+    "doi": "10.64898/2026.08.06.743333",
+    "title": "Data coherence over data volume drives generalisable genome-based prediction of microbial carbon utilisation",
+    "date": "2026-10-11"
+  },
+  {
+    "source": "plos",
+    "doi": "10.1371/journal.pcbi.1011705",
+    "title": "Statistical prediction of microbial metabolic traits from genomes",
+    "date": "2026-10-11"
+  },
+  {
+    "source": "calpred",
+    "doi": "10.1038/s41588-024-01792-w",
+    "title": "Calibrated prediction intervals for polygenic scores across diverse contexts",
+    "date": "2026-10-11"
+  },
+  {
+    "source": "koblitz",
+    "doi": "10.1038/s42003-025-08313-3",
+    "title": "Predicting bacterial phenotypic traits through improved machine learning using high-quality, curated datasets",
+    "date": "2026-10-11"
+  }
+]
