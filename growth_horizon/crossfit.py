@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-import joblib  # type: ignore[import-untyped]
+from joblib.numpy_pickle import NumpyPickler  # type: ignore[import-untyped]
 import numpy as np
 import pandas as pd  # type: ignore[import-untyped]
 from threadpoolctl import threadpool_limits  # type: ignore[import-untyped]
@@ -52,7 +52,12 @@ def save_calibration_fit(payload: dict[str, Any], path: Path) -> None:
             vars(value).clear()
             vars(value).update(attributes)
         return value
-    joblib.dump(canonical(payload), path)
+    # Suppress pickle identity memoisation as well as ordering differences.
+    # These fitted payloads are acyclic; no array or scalar value is changed.
+    with path.open('wb') as stream:
+        pickler = NumpyPickler(stream, protocol=4)
+        pickler.fast = True
+        pickler.dump(canonical(payload))
 
 
 def inverse_quantile_scores(probabilities: Any, uniforms: Any, tie_first: Any) -> Any:
