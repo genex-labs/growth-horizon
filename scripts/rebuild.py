@@ -14,7 +14,7 @@ from scripts.preregister import main as preregister
 def main() -> None:
     check_space()
     (ROOT / 'work-tmp').mkdir(exist_ok=True)
-    (ROOT / 'data/gtdb-derived/local/analysis').mkdir(exist_ok=True)
+    (ROOT / 'data/gtdb-derived/local/analysis').mkdir(parents=True, exist_ok=True)
     (ROOT / 'data/gtdb-derived').mkdir(exist_ok=True)
     replay()
     audit_labels()
