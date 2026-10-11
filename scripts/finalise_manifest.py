@@ -1,6 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 """Summarise acquired inputs once all phase-1 operations have completed."""
 import json
+import subprocess
 
 from scripts.acquire import ROOT, digest
 
@@ -46,6 +47,9 @@ def main() -> None:
     audit['analysis_exclusions_reason'] = 'Every disposition recorded in counts_by_reason'
     audit_path.write_text(json.dumps(audit, indent=2) + '\n')
     manifest['status'] = 'phase1_complete_outer_unscored'
+    if 'phase1_completed_at_pt' not in manifest:
+        manifest['phase1_completed_at_pt'] = subprocess.check_output(
+            ['date', '+%Y-%m-%d %H:%M:%S %Z'], text=True).strip()
     manifest['gtdb_release'] = 'R11-RS232 (232.0)'
     manifest['proteome_bytes'] = verification['download_bytes']
     manifest['feature_verification'] = verification
