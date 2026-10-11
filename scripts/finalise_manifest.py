@@ -39,6 +39,12 @@ def main() -> None:
             indexed.add(relative)
     population = json.loads((ROOT / 'data/population-summary.json').read_text())
     verification = json.loads((ROOT / 'data/feature-verification.json').read_text())
+    audit_path = ROOT / 'data/label-audit.json'
+    audit = json.loads(audit_path.read_text())
+    audit['status'] = 'primary_populations_established'
+    audit['analysis_exclusions'] = population['traits']
+    audit['analysis_exclusions_reason'] = 'Every disposition recorded in counts_by_reason'
+    audit_path.write_text(json.dumps(audit, indent=2) + '\n')
     manifest['status'] = 'phase1_complete_outer_unscored'
     manifest['gtdb_release'] = 'R11-RS232 (232.0)'
     manifest['proteome_bytes'] = verification['download_bytes']

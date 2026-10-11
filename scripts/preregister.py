@@ -207,7 +207,10 @@ figures, measure-next experiment, technical note and release package are
 separate. Publication requires the Director's release check and the authorised
 release action.
 '''
-    (ROOT / 'PREREGISTRATION.md').write_text(text)
+    target = ROOT / 'PREREGISTRATION.md'
+    if target.exists() and target.read_text() != text:
+        raise ValueError('Rebuilt inputs differ from the frozen pre-registration')
+    target.write_text(text)
 
 
 if __name__ == '__main__':

@@ -6,6 +6,8 @@ from scripts.audit_labels import main as audit_labels
 from scripts.preflight_sample import check_space
 from scripts.verify_features import main as verify_features
 from growth_horizon.phase1 import main as develop
+from scripts.finalise_manifest import main as finalise
+from scripts.preregister import main as preregister
 
 
 def main() -> None:
@@ -18,6 +20,8 @@ def main() -> None:
     acquire_gtdb()
     verify_features()
     develop()
+    finalise()
+    preregister()
 
 
 if __name__ == '__main__':
