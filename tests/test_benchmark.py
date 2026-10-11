@@ -196,3 +196,29 @@ def test_complete_synthetic_inner_run_never_queries_outer_test(tmp_path: object)
     assert set(result['methods']) == {'B1', 'B2', 'B3', 'method'}
     assert result['no_outer_fold_scoring']
     assert any(b['supported'] for b in result['methods']['B1']['mondrian']['bins'])
+
+
+def test_oxygen_with_one_positive_taxon_is_explicitly_unsupported(tmp_path: object) -> None:
+    from pathlib import Path
+    from unittest.mock import patch
+
+    import pandas as pd
+
+    from growth_horizon import phase1
+
+    n = 100
+    df = pd.DataFrame({'genus': [f'g{i}' for i in range(n)],
+                       'leaf': [f'l{i}' for i in range(n)], 'oxygen': np.zeros(n)})
+    outer = grouped_folds(df['genus'].tolist())
+    training, inner = nested_membership(df['genus'].tolist(), outer, 0, 20261012)
+    positive = training[inner != 0][0]
+    df.loc[positive, 'oxygen'] = 1
+    tree = TreeIndex([list(range(1, n + 1))] + [[] for _ in range(n)],
+                     [0.] + [1.] * n, {f'l{i}': i + 1 for i in range(n)})
+    base = Path(str(tmp_path))
+    (base / 'data/derived').mkdir(parents=True)
+    with patch.object(phase1, 'ROOT', base):
+        result = phase1.run_fold(df, 'oxygen', 'genus', outer, 0, [tree])
+    assert result['status'] == 'insufficient_oxygen_classes_in_inner_fitting_side'
+    assert not result['methods']
+    assert result['no_outer_fold_scoring']
