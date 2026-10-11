@@ -12,7 +12,7 @@ from typing import Any
 
 import numpy as np
 
-from scripts.acquire import ROOT, acquire
+from scripts.acquire import ROOT, acquire, digest
 from scripts.preflight_sample import LIMIT, check_space
 
 
@@ -61,11 +61,16 @@ def main() -> None:
         groups[name] = {'comparisons': 0, 'agree': 0, 'max_absolute_difference': 0.0}
     output = raw / 'recomputed'
     output.mkdir(exist_ok=True)
+    cached_hashes = {r['path']: r['sha256'] for r in
+                     json.loads((ROOT / 'data/source-manifest.json').read_text())['records']}
     genome_results = []
     for i, (acc, pair) in enumerate(sorted(paths.items())):
         check_space()
         target = output / (acc + '.json')
         if target.exists():
+            expected_hash = cached_hashes.get(str(target.relative_to(ROOT)))
+            if expected_hash is not None and digest(target) != expected_hash:
+                raise ValueError('Cached feature recomputation checksum mismatch')
             computed = json.loads(target.read_text())
         else:
             computed = measure_genome_features(faa_path=pair['faa'], fna_path=pair['fna'])
