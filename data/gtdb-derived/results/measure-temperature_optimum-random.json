@@ -1,0 +1,1776 @@
+[
+  {
+    "error_auc": 5.5645574022389,
+    "fold": 0,
+    "points": [
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 0,
+        "acquired_organisms": 0,
+        "budget": 0,
+        "error": 5.788854115359138,
+        "mean_width": 23.11602570852156,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7194633215416123,
+              0.9715485503911643
+            ],
+            "status": "estimated",
+            "supported_genomes": 197,
+            "taxa": 15,
+            "valid_replicates": 2000,
+            "value": 0.8883248730964467
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              3.388640855328484,
+              8.523438026612702
+            ],
+            "status": "estimated",
+            "taxa": 15,
+            "valid_replicates": 2000,
+            "value": 5.788854115359138
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 197,
+          "mean_size": 23.11602570852156,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 15,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.6546370967741936,
+              0.9444444444444444
+            ],
+            "status": "estimated",
+            "taxa": 15,
+            "valid_replicates": 2000,
+            "value": 0.8129928315412187
+          }
+        },
+        "remaining_far_orders": 15,
+        "remaining_far_organisms": 197,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.9322916666666666,
+        "acquired_orders": 8,
+        "acquired_organisms": 25,
+        "budget": 25,
+        "error": 5.722898328715419,
+        "mean_width": 22.920162055173435,
+        "metrics": {
+          "abstention_rate": 0.9322916666666666,
+          "accepted_genomes": 13,
+          "coverage": {
+            "abstention_rate": 0.9322916666666666,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.6987148801002148,
+              0.9673502571760412
+            ],
+            "status": "estimated",
+            "supported_genomes": 192,
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.8802083333333334
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 0.9230769230769231
+          },
+          "error": {
+            "interval": [
+              3.1886829765581775,
+              8.592979365657733
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 5.722898328715419
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 2.773549430387267
+          },
+          "genomes": 192,
+          "mean_size": 22.920162055173435,
+          "mean_size_accepted": 17.466215139247034,
+          "nonfinite_size_count": 0,
+          "taxa": 13,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9787234042553192,
+            "interval": [
+              0.6100832299421008,
+              0.9508209703817116
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.7970089136441231
+          }
+        },
+        "remaining_far_orders": 13,
+        "remaining_far_organisms": 192,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.9947916666666666,
+        "acquired_orders": 14,
+        "acquired_organisms": 50,
+        "budget": 50,
+        "error": 5.556536098509473,
+        "mean_width": 22.761407962206345,
+        "metrics": {
+          "abstention_rate": 0.9947916666666666,
+          "accepted_genomes": 1,
+          "coverage": {
+            "abstention_rate": 0.9947916666666666,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7164791901012373,
+              0.967741935483871
+            ],
+            "status": "estimated",
+            "supported_genomes": 192,
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.890625
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 1.0
+          },
+          "error": {
+            "interval": [
+              3.134434455472015,
+              8.222950303768537
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 5.556536098509473
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 0.4275972364652638
+          },
+          "genomes": 192,
+          "mean_size": 22.761407962206345,
+          "mean_size_accepted": 17.43849733809665,
+          "nonfinite_size_count": 0,
+          "taxa": 13,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9983633387888707,
+            "interval": [
+              0.6200525095471905,
+              0.9536983263819228
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.8030573007408972
+          }
+        },
+        "remaining_far_orders": 13,
+        "remaining_far_organisms": 192,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.9719101123595506,
+        "acquired_orders": 24,
+        "acquired_organisms": 75,
+        "budget": 75,
+        "error": 5.692735225875779,
+        "mean_width": 23.384924401897607,
+        "metrics": {
+          "abstention_rate": 0.9719101123595506,
+          "accepted_genomes": 5,
+          "coverage": {
+            "abstention_rate": 0.9719101123595506,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.6751035196687372,
+              0.9895860180412371
+            ],
+            "status": "estimated",
+            "supported_genomes": 178,
+            "taxa": 8,
+            "valid_replicates": 2000,
+            "value": 0.8932584269662921
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 0.6
+          },
+          "error": {
+            "interval": [
+              2.5277010288373836,
+              9.675910829393068
+            ],
+            "status": "estimated",
+            "taxa": 8,
+            "valid_replicates": 2000,
+            "value": 5.692735225875779
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 4.005623238399029
+          },
+          "genomes": 178,
+          "mean_size": 23.384924401897607,
+          "mean_size_accepted": 17.863147178661144,
+          "nonfinite_size_count": 0,
+          "taxa": 8,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9867021276595744,
+            "interval": [
+              0.6985887096774194,
+              0.9946808510638299
+            ],
+            "status": "estimated",
+            "taxa": 8,
+            "valid_replicates": 2000,
+            "value": 0.8908502059025394
+          }
+        },
+        "remaining_far_orders": 8,
+        "remaining_far_organisms": 178,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 27,
+        "acquired_organisms": 100,
+        "budget": 100,
+        "error": 4.783265796350709,
+        "mean_width": 24.928268080304083,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.9454545454545454,
+              1.0
+            ],
+            "status": "estimated",
+            "supported_genomes": 162,
+            "taxa": 7,
+            "valid_replicates": 2000,
+            "value": 0.9753086419753086
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              2.3050596878589094,
+              7.156725823228801
+            ],
+            "status": "estimated",
+            "taxa": 7,
+            "valid_replicates": 2000,
+            "value": 4.783265796350709
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 162,
+          "mean_size": 24.928268080304083,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 7,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.9723502304147466,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 7,
+            "valid_replicates": 2000,
+            "value": 0.9907834101382489
+          }
+        },
+        "remaining_far_orders": 7,
+        "remaining_far_organisms": 162,
+        "unused_budget": 0
+      }
+    ],
+    "width_auc": 23.27216032842255
+  },
+  {
+    "error_auc": 7.2934210504924,
+    "fold": 1,
+    "points": [
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 0,
+        "acquired_organisms": 0,
+        "budget": 0,
+        "error": 7.427356545616021,
+        "mean_width": 25.89472445220978,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.8727899132669451,
+              0.9777777777777777
+            ],
+            "status": "estimated",
+            "supported_genomes": 219,
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 0.9178082191780822
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              4.599468570074779,
+              10.597821832918001
+            ],
+            "status": "estimated",
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 7.427356545616021
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 219,
+          "mean_size": 25.89472445220978,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 14,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.8087755994005994,
+              0.9881725417439703
+            ],
+            "status": "estimated",
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 0.9112494648208934
+          }
+        },
+        "remaining_far_orders": 14,
+        "remaining_far_organisms": 219,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 7,
+        "acquired_organisms": 25,
+        "budget": 25,
+        "error": 7.237773891235028,
+        "mean_width": 25.86433328366763,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.8909064785788924,
+              0.9842668814125507
+            ],
+            "status": "estimated",
+            "supported_genomes": 219,
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 0.9269406392694064
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              4.6708931592600695,
+              9.97522798188352
+            ],
+            "status": "estimated",
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 7.237773891235028
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 219,
+          "mean_size": 25.86433328366763,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 14,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.924632510346796,
+              0.9967532467532466
+            ],
+            "status": "estimated",
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 0.9658413015555872
+          }
+        },
+        "remaining_far_orders": 14,
+        "remaining_far_organisms": 219,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 11,
+        "acquired_organisms": 50,
+        "budget": 50,
+        "error": 7.360747979224654,
+        "mean_width": 24.792607388397883,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.8673073685391998,
+              0.9527040327729305
+            ],
+            "status": "estimated",
+            "supported_genomes": 219,
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 0.9041095890410958
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              4.725766602585579,
+              10.607881400034538
+            ],
+            "status": "estimated",
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 7.360747979224654
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 219,
+          "mean_size": 24.792607388397883,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 14,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.8365393535036393,
+              0.9769892161410019
+            ],
+            "status": "estimated",
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 0.9174557585271871
+          }
+        },
+        "remaining_far_orders": 14,
+        "remaining_far_organisms": 219,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.9807692307692307,
+        "acquired_orders": 19,
+        "acquired_organisms": 75,
+        "budget": 75,
+        "error": 7.236839961463284,
+        "mean_width": 24.216913979410943,
+        "metrics": {
+          "abstention_rate": 0.9807692307692307,
+          "accepted_genomes": 4,
+          "coverage": {
+            "abstention_rate": 0.9807692307692307,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.8367346938775511,
+              0.9397590361445783
+            ],
+            "status": "estimated",
+            "supported_genomes": 208,
+            "taxa": 11,
+            "valid_replicates": 2000,
+            "value": 0.8846153846153846
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 0.75
+          },
+          "error": {
+            "interval": [
+              4.6717780808993945,
+              10.227168826894573
+            ],
+            "status": "estimated",
+            "taxa": 11,
+            "valid_replicates": 2000,
+            "value": 7.236839961463284
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 5.351248214263002
+          },
+          "genomes": 208,
+          "mean_size": 24.216913979410943,
+          "mean_size_accepted": 18.394488560593786,
+          "nonfinite_size_count": 0,
+          "taxa": 11,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9545454545454546,
+            "interval": [
+              0.7854781582054309,
+              0.9620262691853602
+            ],
+            "status": "estimated",
+            "taxa": 11,
+            "valid_replicates": 2000,
+            "value": 0.8808827536100264
+          }
+        },
+        "remaining_far_orders": 11,
+        "remaining_far_organisms": 208,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 25,
+        "acquired_organisms": 100,
+        "budget": 100,
+        "error": 7.249288194477245,
+        "mean_width": 24.956596350277042,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.8673715866016863,
+              0.9838709677419355
+            ],
+            "status": "estimated",
+            "supported_genomes": 188,
+            "taxa": 6,
+            "valid_replicates": 2000,
+            "value": 0.9042553191489362
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              4.370602789818279,
+              10.833538249288702
+            ],
+            "status": "estimated",
+            "taxa": 6,
+            "valid_replicates": 2000,
+            "value": 7.249288194477245
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 188,
+          "mean_size": 24.956596350277042,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 6,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.9068256743256742,
+              0.9962121212121212
+            ],
+            "status": "estimated",
+            "taxa": 6,
+            "valid_replicates": 2000,
+            "value": 0.9544538794538795
+          }
+        },
+        "remaining_far_orders": 6,
+        "remaining_far_organisms": 188,
+        "unused_budget": 0
+      }
+    ],
+    "width_auc": 25.074878763179967
+  },
+  {
+    "error_auc": 4.699777631556063,
+    "fold": 2,
+    "points": [
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 0,
+        "acquired_organisms": 0,
+        "budget": 0,
+        "error": 4.982422380048742,
+        "mean_width": 23.034853027168612,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7691964285714287,
+              0.9642857142857143
+            ],
+            "status": "estimated",
+            "supported_genomes": 65,
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.8923076923076924
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              3.8652887213138554,
+              7.098703877198933
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 4.982422380048742
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 65,
+          "mean_size": 23.034853027168612,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 13,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.6986263736263736,
+              0.9814102564102564
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.8646520146520147
+          }
+        },
+        "remaining_far_orders": 13,
+        "remaining_far_organisms": 65,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 8,
+        "acquired_organisms": 25,
+        "budget": 25,
+        "error": 4.809096587767857,
+        "mean_width": 23.240047955446894,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.75,
+              0.96
+            ],
+            "status": "estimated",
+            "supported_genomes": 63,
+            "taxa": 11,
+            "valid_replicates": 2000,
+            "value": 0.8888888888888888
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              3.7774001065041336,
+              6.786335669339046
+            ],
+            "status": "estimated",
+            "taxa": 11,
+            "valid_replicates": 2000,
+            "value": 4.809096587767857
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 63,
+          "mean_size": 23.240047955446894,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 11,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.658189935064935,
+              0.9704545454545456
+            ],
+            "status": "estimated",
+            "taxa": 11,
+            "valid_replicates": 2000,
+            "value": 0.84004329004329
+          }
+        },
+        "remaining_far_orders": 11,
+        "remaining_far_organisms": 63,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 17,
+        "acquired_organisms": 50,
+        "budget": 50,
+        "error": 5.033958765762272,
+        "mean_width": 23.17985295950267,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7142063492063492,
+              0.9674000701262271
+            ],
+            "status": "estimated",
+            "supported_genomes": 55,
+            "taxa": 8,
+            "valid_replicates": 2000,
+            "value": 0.8909090909090909
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              3.9199843385468713,
+              7.799287676932728
+            ],
+            "status": "estimated",
+            "taxa": 8,
+            "valid_replicates": 2000,
+            "value": 5.033958765762272
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 55,
+          "mean_size": 23.17985295950267,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 8,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.5550595238095238,
+              0.9821428571428571
+            ],
+            "status": "estimated",
+            "taxa": 8,
+            "valid_replicates": 2000,
+            "value": 0.8050595238095237
+          }
+        },
+        "remaining_far_orders": 8,
+        "remaining_far_organisms": 55,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 29,
+        "acquired_organisms": 75,
+        "budget": 75,
+        "error": 4.367746115909434,
+        "mean_width": 23.04491023229566,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7272727272727273,
+              0.9744565217391299
+            ],
+            "status": "estimated",
+            "supported_genomes": 43,
+            "taxa": 5,
+            "valid_replicates": 2000,
+            "value": 0.9302325581395349
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              3.5395274801851677,
+              8.318292008829088
+            ],
+            "status": "estimated",
+            "taxa": 5,
+            "valid_replicates": 2000,
+            "value": 4.367746115909434
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 43,
+          "mean_size": 23.04491023229566,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 5,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.37142857142857144,
+              0.9916666666666668
+            ],
+            "status": "estimated",
+            "taxa": 5,
+            "valid_replicates": 2000,
+            "value": 0.7630952380952382
+          }
+        },
+        "remaining_far_orders": 5,
+        "remaining_far_organisms": 43,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 31,
+        "acquired_organisms": 94,
+        "budget": 100,
+        "error": 4.194195733520623,
+        "mean_width": 23.57361369926395,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.8571428571428571,
+              1.0
+            ],
+            "status": "estimated",
+            "supported_genomes": 32,
+            "taxa": 3,
+            "valid_replicates": 2000,
+            "value": 0.9375
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              3.6264766192170583,
+              6.137551577310397
+            ],
+            "status": "estimated",
+            "taxa": 3,
+            "valid_replicates": 2000,
+            "value": 4.194195733520623
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 32,
+          "mean_size": 23.57361369926395,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 3,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.8571428571428571,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 3,
+            "valid_replicates": 2000,
+            "value": 0.9384920634920636
+          }
+        },
+        "remaining_far_orders": 3,
+        "remaining_far_organisms": 32,
+        "unused_budget": 6
+      }
+    ],
+    "width_auc": 23.192261127615378
+  },
+  {
+    "error_auc": 4.697713634847948,
+    "fold": 3,
+    "points": [
+      {
+        "abstention_rate": 1.0,
+        "acquired_orders": 0,
+        "acquired_organisms": 0,
+        "budget": 0,
+        "error": 4.772441700829434,
+        "mean_width": 22.262541001794204,
+        "metrics": {
+          "abstention_rate": 1.0,
+          "accepted_genomes": 0,
+          "coverage": {
+            "abstention_rate": 1.0,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7966023226616447,
+              0.9833401639344261
+            ],
+            "status": "estimated",
+            "supported_genomes": 80,
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.9
+          },
+          "coverage_accepted": {
+            "abstention_rate": null,
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "error": {
+            "interval": [
+              3.4300793355077253,
+              6.589530799609606
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 4.772441700829434
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "empty",
+            "taxa": 0,
+            "value": null
+          },
+          "genomes": 80,
+          "mean_size": 22.262541001794204,
+          "mean_size_accepted": null,
+          "nonfinite_size_count": 0,
+          "taxa": 13,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 1.0,
+            "interval": [
+              0.8269230769230769,
+              0.9973474801061007
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.9194122574340361
+          }
+        },
+        "remaining_far_orders": 13,
+        "remaining_far_organisms": 80,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.8875,
+        "acquired_orders": 6,
+        "acquired_organisms": 25,
+        "budget": 25,
+        "error": 4.875936382635481,
+        "mean_width": 23.094527076219954,
+        "metrics": {
+          "abstention_rate": 0.8875,
+          "accepted_genomes": 9,
+          "coverage": {
+            "abstention_rate": 0.8875,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7966023226616447,
+              0.9833401639344261
+            ],
+            "status": "estimated",
+            "supported_genomes": 80,
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.9
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": [
+              1.0,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 3,
+            "valid_replicates": 2000,
+            "value": 1.0
+          },
+          "error": {
+            "interval": [
+              3.4983149097048085,
+              6.75604090467312
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 4.875936382635481
+          },
+          "error_accepted": {
+            "interval": [
+              2.1565992009994943,
+              4.174932312628314
+            ],
+            "status": "estimated",
+            "taxa": 3,
+            "valid_replicates": 2000,
+            "value": 3.2609125812788076
+          },
+          "genomes": 80,
+          "mean_size": 23.094527076219954,
+          "mean_size_accepted": 17.13502755851849,
+          "nonfinite_size_count": 0,
+          "taxa": 13,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9124668435013263,
+            "interval": [
+              0.8269230769230769,
+              0.9973474801061007
+            ],
+            "status": "estimated",
+            "taxa": 13,
+            "valid_replicates": 2000,
+            "value": 0.9194122574340361
+          }
+        },
+        "remaining_far_orders": 13,
+        "remaining_far_organisms": 80,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.9358974358974359,
+        "acquired_orders": 11,
+        "acquired_organisms": 50,
+        "budget": 50,
+        "error": 4.843275330367575,
+        "mean_width": 21.810224427770134,
+        "metrics": {
+          "abstention_rate": 0.9358974358974359,
+          "accepted_genomes": 5,
+          "coverage": {
+            "abstention_rate": 0.9358974358974359,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7727272727272727,
+              0.965913906009245
+            ],
+            "status": "estimated",
+            "supported_genomes": 78,
+            "taxa": 12,
+            "valid_replicates": 2000,
+            "value": 0.8846153846153846
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": [
+              1.0,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 2,
+            "valid_replicates": 2000,
+            "value": 1.0
+          },
+          "error": {
+            "interval": [
+              3.4325459488367667,
+              6.76995950885838
+            ],
+            "status": "estimated",
+            "taxa": 12,
+            "valid_replicates": 2000,
+            "value": 4.843275330367575
+          },
+          "error_accepted": {
+            "interval": [
+              2.484822879124762,
+              3.11529852107774
+            ],
+            "status": "estimated",
+            "taxa": 2,
+            "valid_replicates": 2000,
+            "value": 2.7370131359059533
+          },
+          "genomes": 78,
+          "mean_size": 21.810224427770134,
+          "mean_size_accepted": 16.97730921329284,
+          "nonfinite_size_count": 0,
+          "taxa": 12,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9705459770114943,
+            "interval": [
+              0.75,
+              0.9723504612825165
+            ],
+            "status": "estimated",
+            "taxa": 12,
+            "valid_replicates": 2000,
+            "value": 0.8710299455535391
+          }
+        },
+        "remaining_far_orders": 12,
+        "remaining_far_organisms": 78,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.9855072463768116,
+        "acquired_orders": 22,
+        "acquired_organisms": 75,
+        "budget": 75,
+        "error": 4.51703202806049,
+        "mean_width": 22.80251922256596,
+        "metrics": {
+          "abstention_rate": 0.9855072463768116,
+          "accepted_genomes": 1,
+          "coverage": {
+            "abstention_rate": 0.9855072463768116,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.8,
+              1.0
+            ],
+            "status": "estimated",
+            "supported_genomes": 69,
+            "taxa": 9,
+            "valid_replicates": 2000,
+            "value": 0.9130434782608695
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 1.0
+          },
+          "error": {
+            "interval": [
+              3.173822174971829,
+              6.504555539800652
+            ],
+            "status": "estimated",
+            "taxa": 9,
+            "valid_replicates": 2000,
+            "value": 4.51703202806049
+          },
+          "error_accepted": {
+            "interval": null,
+            "status": "insufficient_taxa",
+            "taxa": 1,
+            "value": 0.3899765090754812
+          },
+          "genomes": 69,
+          "mean_size": 22.80251922256596,
+          "mean_size_accepted": 16.71594967695187,
+          "nonfinite_size_count": 0,
+          "taxa": 9,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9861111111111112,
+            "interval": [
+              0.9046178665053439,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 9,
+            "valid_replicates": 2000,
+            "value": 0.9669288162936076
+          }
+        },
+        "remaining_far_orders": 9,
+        "remaining_far_organisms": 69,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.953125,
+        "acquired_orders": 27,
+        "acquired_organisms": 100,
+        "budget": 100,
+        "error": 4.336779895827058,
+        "mean_width": 22.082185526769635,
+        "metrics": {
+          "abstention_rate": 0.953125,
+          "accepted_genomes": 3,
+          "coverage": {
+            "abstention_rate": 0.953125,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.782608695652174,
+              1.0
+            ],
+            "status": "estimated",
+            "supported_genomes": 64,
+            "taxa": 7,
+            "valid_replicates": 2000,
+            "value": 0.90625
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": [
+              1.0,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 2,
+            "valid_replicates": 2000,
+            "value": 1.0
+          },
+          "error": {
+            "interval": [
+              2.72443005798883,
+              6.332093587030132
+            ],
+            "status": "estimated",
+            "taxa": 7,
+            "valid_replicates": 2000,
+            "value": 4.336779895827058
+          },
+          "error_accepted": {
+            "interval": [
+              0.8674973100194201,
+              2.8703570994532708
+            ],
+            "status": "estimated",
+            "taxa": 2,
+            "valid_replicates": 2000,
+            "value": 2.202737169641987
+          },
+          "genomes": 64,
+          "mean_size": 22.082185526769635,
+          "mean_size_accepted": 16.99551459890948,
+          "nonfinite_size_count": 0,
+          "taxa": 7,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9722906403940887,
+            "interval": [
+              0.8822919367383977,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 7,
+            "valid_replicates": 2000,
+            "value": 0.9574799066632097
+          }
+        },
+        "remaining_far_orders": 7,
+        "remaining_far_organisms": 64,
+        "unused_budget": 0
+      }
+    ],
+    "width_auc": 22.469908497709493
+  },
+  {
+    "error_auc": 5.696388706038567,
+    "fold": 4,
+    "points": [
+      {
+        "abstention_rate": 0.9312977099236641,
+        "acquired_orders": 0,
+        "acquired_organisms": 0,
+        "budget": 0,
+        "error": 5.887258441002126,
+        "mean_width": 22.657742606492643,
+        "metrics": {
+          "abstention_rate": 0.9312977099236641,
+          "accepted_genomes": 9,
+          "coverage": {
+            "abstention_rate": 0.9312977099236641,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7457627118644068,
+              0.960788143382353
+            ],
+            "status": "estimated",
+            "supported_genomes": 131,
+            "taxa": 17,
+            "valid_replicates": 2000,
+            "value": 0.8473282442748091
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 3,
+            "valid_replicates": 2000,
+            "value": 0.5555555555555556
+          },
+          "error": {
+            "interval": [
+              4.685008861268783,
+              7.053710492334848
+            ],
+            "status": "estimated",
+            "taxa": 17,
+            "valid_replicates": 2000,
+            "value": 5.887258441002126
+          },
+          "error_accepted": {
+            "interval": [
+              2.3575963557671606,
+              11.124528910308948
+            ],
+            "status": "estimated",
+            "taxa": 3,
+            "valid_replicates": 2000,
+            "value": 7.055842173272726
+          },
+          "genomes": 131,
+          "mean_size": 22.657742606492643,
+          "mean_size_accepted": 16.187332782253215,
+          "nonfinite_size_count": 0,
+          "taxa": 17,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9132476520019772,
+            "interval": [
+              0.731276213187978,
+              0.9746638655462183
+            ],
+            "status": "estimated",
+            "taxa": 17,
+            "valid_replicates": 2000,
+            "value": 0.8667970491499903
+          }
+        },
+        "remaining_far_orders": 17,
+        "remaining_far_organisms": 131,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.9166666666666666,
+        "acquired_orders": 6,
+        "acquired_organisms": 25,
+        "budget": 25,
+        "error": 6.057174679266592,
+        "mean_width": 23.209459971868792,
+        "metrics": {
+          "abstention_rate": 0.9166666666666666,
+          "accepted_genomes": 10,
+          "coverage": {
+            "abstention_rate": 0.9166666666666666,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7359385327164574,
+              0.971044685990338
+            ],
+            "status": "estimated",
+            "supported_genomes": 120,
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 0.85
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": [
+              0.25,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 4,
+            "valid_replicates": 2000,
+            "value": 0.6
+          },
+          "error": {
+            "interval": [
+              4.604795627711637,
+              7.4268857046057
+            ],
+            "status": "estimated",
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 6.057174679266592
+          },
+          "error_accepted": {
+            "interval": [
+              3.4264329109076237,
+              9.459672588199533
+            ],
+            "status": "estimated",
+            "taxa": 4,
+            "valid_replicates": 2000,
+            "value": 6.777992651414708
+          },
+          "genomes": 120,
+          "mean_size": 23.209459971868792,
+          "mean_size_accepted": 16.472384680739886,
+          "nonfinite_size_count": 0,
+          "taxa": 14,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.8232292917166867,
+            "interval": [
+              0.6846924986210701,
+              0.9673717595146165
+            ],
+            "status": "estimated",
+            "taxa": 14,
+            "valid_replicates": 2000,
+            "value": 0.8428295642581357
+          }
+        },
+        "remaining_far_orders": 14,
+        "remaining_far_organisms": 120,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.9553571428571429,
+        "acquired_orders": 21,
+        "acquired_organisms": 50,
+        "budget": 50,
+        "error": 5.9448354096820655,
+        "mean_width": 22.0112751468369,
+        "metrics": {
+          "abstention_rate": 0.9553571428571429,
+          "accepted_genomes": 5,
+          "coverage": {
+            "abstention_rate": 0.9553571428571429,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7142367906066537,
+              0.9514602254932665
+            ],
+            "status": "estimated",
+            "supported_genomes": 112,
+            "taxa": 9,
+            "valid_replicates": 2000,
+            "value": 0.8303571428571429
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": [
+              0.0,
+              0.5
+            ],
+            "status": "estimated",
+            "taxa": 2,
+            "valid_replicates": 2000,
+            "value": 0.4
+          },
+          "error": {
+            "interval": [
+              4.65455811420652,
+              7.410124546792058
+            ],
+            "status": "estimated",
+            "taxa": 9,
+            "valid_replicates": 2000,
+            "value": 5.9448354096820655
+          },
+          "error_accepted": {
+            "interval": [
+              7.703149771335987,
+              14.113223044857921
+            ],
+            "status": "estimated",
+            "taxa": 2,
+            "valid_replicates": 2000,
+            "value": 8.985164426040374
+          },
+          "genomes": 112,
+          "mean_size": 22.0112751468369,
+          "mean_size_accepted": 16.163035265076058,
+          "nonfinite_size_count": 0,
+          "taxa": 9,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.9126984126984128,
+            "interval": [
+              0.6668876018876019,
+              0.9333333333333333
+            ],
+            "status": "estimated",
+            "taxa": 9,
+            "valid_replicates": 2000,
+            "value": 0.8039499817277596
+          }
+        },
+        "remaining_far_orders": 9,
+        "remaining_far_organisms": 112,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.8842105263157894,
+        "acquired_orders": 27,
+        "acquired_organisms": 75,
+        "budget": 75,
+        "error": 5.1946230122107275,
+        "mean_width": 23.298865456896046,
+        "metrics": {
+          "abstention_rate": 0.8842105263157894,
+          "accepted_genomes": 11,
+          "coverage": {
+            "abstention_rate": 0.8842105263157894,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.8555555555555555,
+              0.9901960784313726
+            ],
+            "status": "estimated",
+            "supported_genomes": 95,
+            "taxa": 6,
+            "valid_replicates": 2000,
+            "value": 0.9263157894736842
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 3,
+            "valid_replicates": 2000,
+            "value": 0.9090909090909091
+          },
+          "error": {
+            "interval": [
+              4.1515016215807865,
+              6.286292571870915
+            ],
+            "status": "estimated",
+            "taxa": 6,
+            "valid_replicates": 2000,
+            "value": 5.1946230122107275
+          },
+          "error_accepted": {
+            "interval": [
+              3.0005354876431705,
+              13.96146986554875
+            ],
+            "status": "estimated",
+            "taxa": 3,
+            "valid_replicates": 2000,
+            "value": 4.305225530575303
+          },
+          "genomes": 95,
+          "mean_size": 23.298865456896046,
+          "mean_size_accepted": 16.961297683351276,
+          "nonfinite_size_count": 0,
+          "taxa": 6,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.8222585330428468,
+            "interval": [
+              0.7274774774774775,
+              0.9833333333333334
+            ],
+            "status": "estimated",
+            "taxa": 6,
+            "valid_replicates": 2000,
+            "value": 0.8774774774774775
+          }
+        },
+        "remaining_far_orders": 6,
+        "remaining_far_organisms": 95,
+        "unused_budget": 0
+      },
+      {
+        "abstention_rate": 0.9342105263157895,
+        "acquired_orders": 30,
+        "acquired_organisms": 100,
+        "budget": 100,
+        "error": 5.290585004987644,
+        "mean_width": 23.75383578583487,
+        "metrics": {
+          "abstention_rate": 0.9342105263157895,
+          "accepted_genomes": 5,
+          "coverage": {
+            "abstention_rate": 0.9342105263157895,
+            "excluded_unsupported": 0,
+            "interval": [
+              0.7441860465116279,
+              0.9759036144578314
+            ],
+            "status": "estimated",
+            "supported_genomes": 76,
+            "taxa": 4,
+            "valid_replicates": 2000,
+            "value": 0.8947368421052632
+          },
+          "coverage_accepted": {
+            "abstention_rate": 0.0,
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "status": "estimated",
+            "taxa": 2,
+            "valid_replicates": 2000,
+            "value": 0.6
+          },
+          "error": {
+            "interval": [
+              3.995597807888728,
+              6.8395799691212105
+            ],
+            "status": "estimated",
+            "taxa": 4,
+            "valid_replicates": 2000,
+            "value": 5.290585004987644
+          },
+          "error_accepted": {
+            "interval": [
+              4.1579497955254405,
+              12.390322028339515
+            ],
+            "status": "estimated",
+            "taxa": 2,
+            "valid_replicates": 2000,
+            "value": 7.450898688651071
+          },
+          "genomes": 76,
+          "mean_size": 23.75383578583487,
+          "mean_size_accepted": 16.791543771553666,
+          "nonfinite_size_count": 0,
+          "taxa": 4,
+          "taxon_weighted_coverage": {
+            "abstention_rate": 0.7222222222222222,
+            "interval": [
+              0.225,
+              0.9662162162162162
+            ],
+            "status": "estimated",
+            "taxa": 4,
+            "valid_replicates": 2000,
+            "value": 0.6912162162162162
+          }
+        },
+        "remaining_far_orders": 4,
+        "remaining_far_organisms": 76,
+        "unused_budget": 0
+      }
+    ],
+    "width_auc": 22.931347442941373
+  }
+]

@@ -266,7 +266,9 @@ def main() -> None:
     artefacts = []
     for base in ('data/gtdb-derived/local',):
         for path in sorted((ROOT / base).rglob('*')):
-            if path.is_file() and '/evidence/' not in str(path):
+            if (path.is_file() and '/evidence/' not in str(path)
+                    and '/local/results/' not in str(path)
+                    and '/local/measure-next/' not in str(path)):
                 artefacts.append({'path': str(path.relative_to(ROOT)), 'bytes': path.stat().st_size,
                                   'sha256': digest(path)})
     (ROOT / 'data/artifact-manifest.json').write_text(json.dumps(artefacts, indent=2)+'\n')

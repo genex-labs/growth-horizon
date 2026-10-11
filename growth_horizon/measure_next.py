@@ -104,7 +104,7 @@ def main() -> None:
     with threadpool_limits(limits=1):
         for trait, df in populations.items():
             output['traits'][trait] = {}
-            locked = np.load(LOCAL/f'{trait}-order-method.npz')
+            locked = np.load(LOCAL/f'{trait}-order-method.npz', allow_pickle=True)
             for strategy in STRATEGIES:
                 fold_curves = []
                 for fold in range(5):

@@ -351,9 +351,10 @@ def targets(records: Any) -> dict[str, Any]:
         accuracy.append({'trait': t, 'passed': passed, **c})
     return {'target1': {'passed': bool(target1), 'cells': cells},
             'target2': {'passed': sum(c['passed'] for c in accuracy) >= 2, 'traits': accuracy},
-            'target3': {'passed': all(records[t]['order']['horizons']['method']['state'] != 'unidentified' for t in TRAITS),
+            'target3': {'passed': False,
+                        'estimates_complete': all(records[t]['order']['horizons']['method']['state'] != 'unidentified' for t in TRAITS),
                         'horizons': {t: records[t]['order']['horizons'] for t in TRAITS},
-                        'meaning': 'Full-population horizon estimates supplied; publication pending.'},
+                        'meaning': 'Full-population horizon estimates supplied. Literal published-horizon criterion is unmet while publication is pending.'},
             'target4': {'passed': True, 'B1_winning_traits': [c['trait'] for c in accuracy if c['value'] < 0],
                         'meaning': 'Report all B1 wins explicitly.'}}
 

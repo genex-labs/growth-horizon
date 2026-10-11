@@ -1,0 +1,62 @@
+{
+  "bootstrap_replicates": 2000,
+  "methods": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "method"
+  ],
+  "no_tuning": true,
+  "outer_folds": 120,
+  "preregistration_sha256": "cabc7ecffdd2e11246c8ab7b08b3103b09819f3fde1bcae87ab9cb649330a179",
+  "ranks": [
+    "genus",
+    "family",
+    "order",
+    "class",
+    "phylum",
+    "random"
+  ],
+  "result_files": [
+    "data/gtdb-derived/results/locked-run.json",
+    "data/gtdb-derived/results/measure-oxygen-farthest.json",
+    "data/gtdb-derived/results/measure-oxygen-widest.json",
+    "data/gtdb-derived/results/measure-temperature_optimum-farthest.json",
+    "data/gtdb-derived/results/measure-temperature_optimum-random.json",
+    "data/gtdb-derived/results/measure-temperature_optimum-widest.json",
+    "data/gtdb-derived/results/oxygen-class.json",
+    "data/gtdb-derived/results/oxygen-family.json",
+    "data/gtdb-derived/results/oxygen-genus.json",
+    "data/gtdb-derived/results/oxygen-order.json",
+    "data/gtdb-derived/results/oxygen-phylum.json",
+    "data/gtdb-derived/results/oxygen-random.json",
+    "data/gtdb-derived/results/ph_optimum-class.json",
+    "data/gtdb-derived/results/ph_optimum-family.json",
+    "data/gtdb-derived/results/ph_optimum-genus.json",
+    "data/gtdb-derived/results/ph_optimum-order.json",
+    "data/gtdb-derived/results/ph_optimum-phylum.json",
+    "data/gtdb-derived/results/ph_optimum-random.json",
+    "data/gtdb-derived/results/salinity_optimum-class.json",
+    "data/gtdb-derived/results/salinity_optimum-family.json",
+    "data/gtdb-derived/results/salinity_optimum-genus.json",
+    "data/gtdb-derived/results/salinity_optimum-order.json",
+    "data/gtdb-derived/results/salinity_optimum-phylum.json",
+    "data/gtdb-derived/results/salinity_optimum-random.json",
+    "data/gtdb-derived/results/targets.json",
+    "data/gtdb-derived/results/temperature_optimum-class.json",
+    "data/gtdb-derived/results/temperature_optimum-family.json",
+    "data/gtdb-derived/results/temperature_optimum-genus.json",
+    "data/gtdb-derived/results/temperature_optimum-order.json",
+    "data/gtdb-derived/results/temperature_optimum-phylum.json",
+    "data/gtdb-derived/results/temperature_optimum-random.json"
+  ],
+  "scoring_protocol_sha256": "d16a5168b63dbdb557bbef95435e8827c3448d99590fe73358454da4525ddbfc",
+  "seed": 20261011,
+  "traits": [
+    "temperature_optimum",
+    "oxygen",
+    "salinity_optimum",
+    "ph_optimum"
+  ]
+}
