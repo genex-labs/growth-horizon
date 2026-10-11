@@ -43,6 +43,6 @@ that related studies do not exist.
 Mondrian split conformal provides within-bin coverage only under appropriate
 exchangeability of calibration and test units in that bin. Taxonomic
 holdouts, a distance axis, or bin merging alone do not establish that
-assumption. Dependence among genomes is addressed here with one maximum
-nonconformity score per calibration taxon in each merged bin. Population
+assumption. The 100-taxon gate and taxon bootstrap do not themselves establish
+exchangeability of residuals among genomes. Correlated genomes, population
 shift and coverage among non-abstained predictions remain empirical questions.

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""Distance bins, cluster-level conformal quantiles, sets and abstention."""
+"""Distance bins, residual conformal quantiles, sets and abstention."""
 from __future__ import annotations
 
 import math
@@ -61,13 +61,12 @@ def mondrian(scores: FloatArray, distances: FloatArray, taxa: list[str],
     groups, history = merge_bins(valid_bins, valid_taxa, len(edges) + 1, minimum)
     output = []
     for group in groups:
-        maxima: dict[str, float] = {}
-        for i, taxon in enumerate(valid_taxa):
-            if int(valid_bins[i]) in group:
-                maxima[taxon] = max(maxima.get(taxon, 0.0), float(valid_scores[i]))
-        count = len(maxima)
-        q = conformal_quantile(np.array(list(maxima.values()))) if count >= minimum else math.inf
+        selected = np.isin(valid_bins, group)
+        count = len({valid_taxa[i] for i in np.flatnonzero(selected)})
+        bin_scores = valid_scores[selected]
+        q = conformal_quantile(bin_scores) if count >= minimum else math.inf
         output.append({'original_bins': group, 'calibration_taxa': count,
+                       'calibration_genomes': len(bin_scores),
                        'q90': q if math.isfinite(q) else None,
                        'supported': math.isfinite(q)})
     return {'bins': output, 'merges': history, 'minimum_taxa': minimum}

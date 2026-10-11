@@ -135,9 +135,10 @@ All available methods share the same primary population and outer folds.
 
 Nominal coverage is 90%, alpha 0.10. Numeric nonconformity is absolute residual;
 oxygen nonconformity is one minus the fitted probability of the observed class.
-Within each merged distance bin, use the maximum score per calibration taxon,
-then the ceil((n_taxa + 1) * 0.9)-th ordered taxon score. If that index exceeds
-n_taxa, use infinity. This avoids pretending genomes of a taxon are independent.
+Within each merged distance bin, take the ceil((n_genomes + 1) * 0.9)-th
+ordered calibration residual, exactly as the residual-based split-conformal
+method. If that index exceeds n_genomes, use infinity. The 100-distinct-taxon
+gate and taxon bootstrap do not establish genome-level exchangeability.
 The naive comparator instead uses the genome-level scores of its random inner
 calibration sample with the same finite-sample quantile rule and no distance
 conditioning. No calibration labels are used to refit a calibrated estimator.
@@ -152,9 +153,9 @@ abstention. Empty sets are also counted as coverage failures in unconditional
 coverage. Set cardinality replaces numeric width for oxygen.
 
 Coverage is conditional on appropriate exchangeability of calibration and
-test taxon scores within each fixed bin. That assumption is not established
+test genome residuals within each fixed bin. That assumption is not established
 by phylogenetic distance, and no conditional coverage guarantee among accepted
-predictions is asserted. Correlations across bins and unequal taxon sizes are
+predictions is asserted. Correlations within taxa, across bins and unequal taxon sizes are
 limitations. All nominal targets are evaluated empirically in phase 2.
 
 ## Metrics, bootstrap and horizon

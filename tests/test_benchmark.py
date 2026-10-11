@@ -110,12 +110,17 @@ def test_taxon_counts_union_and_insufficient_calibration_abstain() -> None:
     calibrated = mondrian(np.ones(50), bins.astype(float), taxa, np.array([0.5, 1.5, 2.5, 3.5]))
     assert calibrated['bins'][0]['q90'] is None
     assert not calibrated['bins'][0]['supported']
-    # A taxon with many genomes contributes its maximum, once per merged bin.
+    # Count a taxon once for support while retaining its genome residuals for the quantile.
     scores = np.r_[np.ones(99), [0.2, 8.0]]
     taxa = [f't{i}' for i in range(99)] + ['large', 'large']
     calibrated = mondrian(scores, np.ones(101), taxa, np.array([]))
     assert calibrated['bins'][0]['calibration_taxa'] == 100
     assert calibrated['bins'][0]['q90'] == 1.0
+    duplicated = mondrian(np.r_[np.zeros(99), np.ones(500)], np.ones(599),
+                           [f't{i}' for i in range(99)] + ['large'] * 500, np.array([]))
+    assert duplicated['bins'][0]['calibration_taxa'] == 100
+    assert duplicated['bins'][0]['calibration_genomes'] == 599
+    assert duplicated['bins'][0]['q90'] == 1.0
 
 
 def test_abstention_and_oxygen_sets() -> None:
