@@ -1,8 +1,8 @@
 [
   {
-    "bytes": 8299,
+    "bytes": 8679,
     "path": "DATA.md",
-    "sha256": "a921c6cd215e4b2ae66ad286b6a7b82b397fd63d128fa1ca138d9014cc3cef9e"
+    "sha256": "8c6a79cacccf89b400a78c50480c760e9a8b4d1040e99a199d214c95acc6ea83"
   },
   {
     "bytes": 11358,
@@ -17,17 +17,17 @@
   {
     "bytes": 417,
     "path": "CITATION.cff",
-    "sha256": "98865dc2dfa1fe5d69c2780cb376fe6fe17785de281caf8b090a5584a8dd024a"
+    "sha256": "ebbcf0013794c7410872c204f559b424d93998213dd6b73b11f5c3891ec1cfa5"
   },
   {
-    "bytes": 424,
+    "bytes": 1174,
     "path": "CHANGELOG.md",
-    "sha256": "691cbecf6fa021ee7bb2d6b7c4f99ae00b1c6731f5938578be4e7f82d0680036"
+    "sha256": "626aafc822f0cb942bf47934e0aafea6ec91e2c48c2fe72ba0d0b096da81c940"
   },
   {
-    "bytes": 5675,
+    "bytes": 7885,
     "path": "docs/reproducibility.md",
-    "sha256": "0079404eb6dba88e3e7878d6e4199a5196847648ad8d29ceeff8d3f4a09988a4"
+    "sha256": "946b46b53c715ac7ed439c85a29034d54117684f608eeac6895e834f2e59025c"
   },
   {
     "bytes": 3247,
@@ -35,9 +35,9 @@
     "sha256": "69e5aad6a23e2cfe9b4eab0175671162685d86b02367ef49b8580ffdf951c85c"
   },
   {
-    "bytes": 7642,
+    "bytes": 7664,
     "path": "docs/related-work.md",
-    "sha256": "19843ee8d446778b4cd15e64962c35ad6d9937802f35abf8134c2fdb5eca0a2e"
+    "sha256": "41bd992ad3b08613420356e92d439ea9d38b21de4a1a3b24a9227a1035b18376"
   },
   {
     "bytes": 11049,
@@ -50,29 +50,29 @@
     "sha256": "f552ced445c5daafb4a54abac5b03a4ca21f7bcd68696a4ea80f1f19f4794174"
   },
   {
-    "bytes": 18099,
+    "bytes": 20280,
     "path": "README.md",
-    "sha256": "55a27d2e7c4a76f078ab86488de6445e851c07688c01361c4dedc439a856a67b"
+    "sha256": "c183fc40c697d65c1cc4ac3fa9b7be35751e8ac3ad24c72f9315f76a2b171c30"
   },
   {
-    "bytes": 29906,
+    "bytes": 31698,
     "path": "docs/TECHNICAL_NOTE.md",
-    "sha256": "1d1b485089c2c7c0f3add27512f523d31417a6ce1b6c23190357350c0fc2cd25"
+    "sha256": "6f4f20b2d1692a93dcba76549f430291b937ebd83aee1a930341dfbac2bc4515"
   },
   {
-    "bytes": 152830,
+    "bytes": 153858,
     "path": "docs/TECHNICAL_NOTE.pdf",
-    "sha256": "16b3f9144c1338ac476962e414dbe23f29b41acf7b7eb49171e4105b0281d33d"
+    "sha256": "26fb657ef6362219d27e4b233354042d990bf7daef9341b8e2de28a20741e8bf"
   },
   {
-    "bytes": 34202,
+    "bytes": 34468,
     "path": "docs/RESULTS.md",
-    "sha256": "8a83d540ceda22804649a2eafd9e0747d7b56b958be383a93aa156b9b6081773"
+    "sha256": "aa1dc97f62d4d01d752b957a3e4d472f00069bba5971a24d7b7b570ee17b32ce"
   },
   {
-    "bytes": 19239,
+    "bytes": 20553,
     "path": "docs/site/index.html",
-    "sha256": "3fb74946bb26b825272100c93641ed881f55ff5373daf047707ee4b2d83b6875"
+    "sha256": "63ec23419b7bff59b82f6f0cdd85d03d373759e83bbe5ad1af55c5516d286c85"
   },
   {
     "bytes": 2140,
