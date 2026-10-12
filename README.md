@@ -88,11 +88,11 @@ Secondary figures report taxon-weighted coverage, the mean of the five fit-speci
 Offline checks read the committed aggregates. They do not download inputs, refit estimators or rescore folds:
 
 ```sh
-uv run --frozen python -m scripts.check_release
+uv run --project release --frozen python -m scripts.check_release
 uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures
 ```
 
-`scripts.check_release` compares each path in [data/release-manifest.json](data/release-manifest.json) with its recorded size and SHA-256, then writes `data/checks/release-scan.json`. The fixture command runs the offline tests.
+That scan uses the rendering project because it reads the PDF. It compares each path in [data/release-manifest.json](data/release-manifest.json) with its recorded size and SHA-256, then writes `data/checks/release-scan.json`. The fixture command runs the offline tests in the analysis environment.
 
 Full recomputation is a different command. With Python 3.13 and the pinned analysis and rendering dependencies, it acquires missing official inputs, verifies cached source hashes, reconstructs the frozen analysis, scores all outer folds, runs measurement selection and regenerates every public table, figure, note and page:
 

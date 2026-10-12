@@ -167,7 +167,7 @@ The references above were checked against publisher pages or DOI-deposited bibli
 
 ## Rebuild and inspect
 
-Offline verification reads the committed aggregates. `uv run --frozen python -m scripts.check_release` compares pinned sizes and SHA-256 values and does not download or rescore. The fixture command is `uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures`.
+Offline verification reads the committed aggregates. `uv run --project release --frozen python -m scripts.check_release` compares pinned sizes and SHA-256 values and does not download or rescore. It uses the rendering project because it reads the PDF. The fixture command is `uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures`.
 
 Full recomputation is separate. It reconstructs the frozen source and fitted analysis, scores every eligible outer fold, runs the retrospective acquisition experiment and generates all aggregate tables, figures, this note and the static HTML page:
 

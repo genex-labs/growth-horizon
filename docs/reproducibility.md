@@ -5,11 +5,11 @@
 These commands read files already in the checkout. They do not download inputs, refit estimators or rescore folds.
 
 ```sh
-uv run --frozen python -m scripts.check_release
+uv run --project release --frozen python -m scripts.check_release
 uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures
 ```
 
-`scripts.check_release` compares each path in `data/release-manifest.json` with its recorded size and SHA-256, then writes `data/checks/release-scan.json`. The fixture command runs the offline tests. `data/raw/` and `data/gtdb-derived/local/` are not required for this check, and they are not redistributed.
+The scan command uses the rendering project because it reads the PDF. It compares each path in `data/release-manifest.json` with its recorded size and SHA-256, then writes `data/checks/release-scan.json`. The fixture command runs the offline tests in the analysis environment. `data/raw/` and `data/gtdb-derived/local/` are not required for this check, and they are not redistributed.
 
 ## Full release (`scripts.release`)
 
