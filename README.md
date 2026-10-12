@@ -1,12 +1,12 @@
 # Growth Horizon
 
-GeneX Labs Inc. measures how growth-condition predictions behave as microbial genomes become more distant from labelled relatives. The benchmark combines taxonomic holdout, empirical interval and prediction-set coverage and abstention, so a laboratory can see both predictive error and how often uncertainty prevents a useful answer.
+GeneX Labs Inc. measures how growth-condition predictions behave as microbial genomes become more distant from labelled relatives. The benchmark combines taxonomic holdout, empirical interval and prediction-set coverage and abstention, so the record shows both predictive error and how often uncertainty prevents a useful answer.
 
-The locked calibration and accuracy targets failed. B1 has lower order-holdout error for temperature and salinity. The proposed predictor does not achieve the required accuracy improvement on any trait. These are descriptive results from the full usable labelled population; no estimator or target was changed after outer scoring.
+The locked calibration and accuracy targets failed. B1 has lower order-holdout error for temperature and salinity. The order-holdout accuracy target failed: it requires at least a 10% lower error than B1, with a paired interval that excludes zero, on at least two traits. Oxygen at phylum is a 12.9% reduction whose interval excludes zero, and oxygen on the random split is a 14.4% reduction whose interval excludes zero. Those splits are outside that target. These are descriptive results from the full usable labelled population; no estimator or target was changed after outer scoring.
 
 - Target 1: failed. [data/gtdb-derived/results/public-results.tsv:L602](data/gtdb-derived/results/public-results.tsv)
 - Target 2: failed. [data/gtdb-derived/results/public-results.tsv:L603](data/gtdb-derived/results/public-results.tsv)
-- Target 3: not met at this commit (publication pending). Horizon estimates for every trait are in the package. [data/gtdb-derived/results/public-results.tsv:L604](data/gtdb-derived/results/public-results.tsv)
+- Target 3 (publication): pending external publication; horizon estimates for every trait are complete in the package. [data/gtdb-derived/results/public-results.tsv:L604](data/gtdb-derived/results/public-results.tsv)
 - Target 4: passed. [data/gtdb-derived/results/public-results.tsv:L605](data/gtdb-derived/results/public-results.tsv)
 
 Target 1 failed on two of its three parts. Pooled coverage intervals reached 90% in all eight trait and rank cells. Two supported bins had intervals wholly below 87% (temperature/order fold 2 bin 0; salinity/family fold 3 bin 2). The naive far-bin condition held in 1 of 8 cells, temperature/order, for both B1 and B2. Elsewhere at least one naive comparator covered more than 80%, or had an upper limit of 90% or more, in the far bin. [data/gtdb-derived/results/public-results.tsv:L602](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L618](data/gtdb-derived/results/public-results.tsv)
@@ -41,16 +41,16 @@ Coverage includes supported abstentions exactly when the computed interval or se
 
 Accepted-item coverage has no nominal guarantee. Accepted items exclude abstentions and unsupported rows.
 
-## Horizons
+## Order-holdout horizons
 
-Horizon bins use the frozen common cuts. The first failure compares with a training-side constant and checks whether most predictions abstain. Zero-based bin ordinals and their exploratory bootstrap intervals are discrete summaries. A right-censored horizon extends beyond the observed bins; it is not an infinite or universal threshold.
+This table is the order rank only. Per-rank records are the JSON files under data/gtdb-derived/results/. At class, temperature already fails in the nearest bin for both predictors. At phylum, the horizons are unidentified. The B1 ordinal interval is shown beside the proposed interval because the two intervals are not the same for every trait. Horizon bins use the frozen common cuts. The first failure compares with a training-side constant and checks whether most predictions abstain. Zero-based bin ordinals and their exploratory bootstrap intervals are discrete summaries. A right-censored horizon extends beyond the observed bins; it is not an infinite or universal threshold.
 
-| Trait | Proposed horizon | B1 horizon | Proposed ordinal interval | Pinned source line |
-| --- | --- | --- | --- | --- |
-| Temperature | Bin 1 (0.3736 to 0.4558) | Bin 1 (0.3736 to 0.4558) | [1, 4] | [data/gtdb-derived/results/public-results.tsv:L75](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L74](data/gtdb-derived/results/public-results.tsv) |
-| Oxygen | Beyond observed range | Beyond observed range | [5, 5] | [data/gtdb-derived/results/public-results.tsv:L225](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L224](data/gtdb-derived/results/public-results.tsv) |
-| Salinity | Bin 2 (0.4492 to 0.5172) | Bin 2 (0.4492 to 0.5172) | [1, 3] | [data/gtdb-derived/results/public-results.tsv:L375](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L374](data/gtdb-derived/results/public-results.tsv) |
-| pH | Bin 2 (0.4577 to 0.5206) | Bin 1 (0.3674 to 0.4577) | [2, 5] | [data/gtdb-derived/results/public-results.tsv:L525](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L524](data/gtdb-derived/results/public-results.tsv) |
+| Trait | Proposed horizon | B1 horizon | Proposed ordinal interval | B1 ordinal interval | Pinned source line |
+| --- | --- | --- | --- | --- | --- |
+| Temperature | Bin 1 (0.3736 to 0.4558) | Bin 1 (0.3736 to 0.4558) | [1, 4] | [1, 4] | [data/gtdb-derived/results/public-results.tsv:L75](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L74](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen | Beyond observed range | Beyond observed range | [5, 5] | [0, 5] | [data/gtdb-derived/results/public-results.tsv:L225](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L224](data/gtdb-derived/results/public-results.tsv) |
+| Salinity | Bin 2 (0.4492 to 0.5172) | Bin 2 (0.4492 to 0.5172) | [1, 3] | [1, 5] | [data/gtdb-derived/results/public-results.tsv:L375](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L374](data/gtdb-derived/results/public-results.tsv) |
+| pH | Bin 2 (0.4577 to 0.5206) | Bin 1 (0.3674 to 0.4577) | [2, 5] | [1, 5] | [data/gtdb-derived/results/public-results.tsv:L525](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L524](data/gtdb-derived/results/public-results.tsv) |
 
 ## Exploratory measurement selection
 
@@ -85,17 +85,30 @@ Secondary figures report taxon-weighted coverage, the mean of the five fit-speci
 
 ## Rebuild and reuse
 
-With Python and the pinned analysis and rendering dependencies, one command acquires missing official inputs, verifies cached source hashes, reconstructs the frozen analysis, scores all outer folds, runs measurement selection and regenerates every public table, figure, note and page:
+Offline checks read the committed aggregates. They do not download inputs, refit estimators or rescore folds:
+
+```sh
+uv run --frozen python -m scripts.check_release
+uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures
+```
+
+`scripts.check_release` compares each path in [data/release-manifest.json](data/release-manifest.json) with its recorded size and SHA-256, then writes `data/checks/release-scan.json`. The fixture command runs the offline tests.
+
+Full recomputation is a different command. With Python 3.13 and the pinned analysis and rendering dependencies, it acquires missing official inputs, verifies cached source hashes, reconstructs the frozen analysis, scores all outer folds, runs measurement selection and regenerates every public table, figure, note and page:
 
 ```sh
 uv run --project release --frozen python -m scripts.release
 ```
 
+That command needs a network connection or a checksum-verified copy of the raw inputs. It is not an offline check. `data/raw/` and `data/gtdb-derived/local/` (fitted trees and individual predictions) are not redistributed. The pinned replay inputs under `data/raw/labels/`, `data/raw/verification/` and `data/raw/gtdb/` total 254,404,224 bytes in `data/source-manifest.json`. Acquisition stops if free space on `/` is below 25 GB. Phase 1 rebuild without outer scoring is `uv run --frozen python -m scripts.rebuild`. That command leaves outer intervals and oxygen sets uncomputed. Outer scoring runs only in `scripts.release`.
+
+`uv.lock` allows any Python 3.13. The frozen numbers were produced with Python 3.13.15. A fresh export used Python 3.13.12 with the same lock.
+
 Scratch is confined to ignored `work-tmp.noindex/`. Raw labels, sequences, fitted estimators and individual predictions remain untracked. Aggregate GTDB-derived analyses and figures are under CC BY-SA 4.0; BacDive labels are attributed under CC BY 4.0. Code is Apache-2.0, with GenomeSPOT's MIT notice retained. DATA.md records the commercial-contact condition and Cali Fund guidance.
 
-Every result shown above cites a repository-relative TSV line. [Output hashes](data/release-manifest.json) pin that table and its underlying JSON records. [Complete results](docs/RESULTS.md), [figures](data/gtdb-derived/figures), [PDF note](docs/TECHNICAL_NOTE.pdf), [static project page](docs/site/index.html) and [reconstruction details](docs/reproducibility.md) provide the rest of the package. The original [pre-registration](PREREGISTRATION.md) is unchanged; its chronology is in [CHANGELOG.md](CHANGELOG.md).
+Every result shown above cites a repository-relative TSV line. [Output hashes](data/release-manifest.json) pin that table and its underlying JSON records. [Complete results](docs/RESULTS.md), [figures](data/gtdb-derived/figures), [PDF note](docs/TECHNICAL_NOTE.pdf), [static project page](docs/site/index.html) and [reconstruction details](docs/reproducibility.md) provide the rest of the package. The original [pre-registration](PREREGISTRATION.md) is frozen; outcomes are in [RESULTS.md](docs/RESULTS.md) and [current scoring status](docs/PHASE2_STATUS.md). Freeze commits are in [CHANGELOG.md](CHANGELOG.md).
 
-This is a local release candidate. Public release remains pending scientific review and an authorised publication action.
+Research prototype on this labelled GTDB-mapped table; not tested on prospective cultures, on organisms outside the table, or for clinical or production use.
 
 Offline fixture checks:
 

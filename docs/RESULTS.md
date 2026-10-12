@@ -4,8 +4,10 @@ Every row covers the full usable outer population for its trait and rank. Unsupp
 
 - Target 1: failed. [data/gtdb-derived/results/public-results.tsv:L602](../data/gtdb-derived/results/public-results.tsv)
 - Target 2: failed. [data/gtdb-derived/results/public-results.tsv:L603](../data/gtdb-derived/results/public-results.tsv)
-- Target 3: not met at this commit (publication pending). Horizon estimates for every trait are in the package. [data/gtdb-derived/results/public-results.tsv:L604](../data/gtdb-derived/results/public-results.tsv)
+- Target 3 (publication): pending external publication; horizon estimates for every trait are complete in the package. [data/gtdb-derived/results/public-results.tsv:L604](../data/gtdb-derived/results/public-results.tsv)
 - Target 4: passed. [data/gtdb-derived/results/public-results.tsv:L605](../data/gtdb-derived/results/public-results.tsv)
+
+The order-holdout horizon table in the README is the order rank only. Per-rank records are the JSON files under data/gtdb-derived/results/. At class, temperature already fails in the nearest bin for both predictors. At phylum, the horizons are unidentified.
 
 Target 1 failed on two of its three parts. Pooled coverage intervals reached 90% in all eight trait and rank cells. Two supported bins had intervals wholly below 87% (temperature/order fold 2 bin 0; salinity/family fold 3 bin 2). The naive far-bin condition held in 1 of 8 cells, temperature/order, for both B1 and B2. Elsewhere at least one naive comparator covered more than 80%, or had an upper limit of 90% or more, in the far bin. [data/gtdb-derived/results/public-results.tsv:L602](../data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L618](../data/gtdb-derived/results/public-results.tsv)
 

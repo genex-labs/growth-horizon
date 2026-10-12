@@ -1,8 +1,37 @@
 # Reconstructing the release candidate
 
-The complete command is `uv run --project release --frozen python -m scripts.release`. It reconstructs all frozen inputs and fits, verifies the pre-registration, evaluates the locked outer folds, runs the separate measure-next experiment and generates the public package. Analysis and rendering locks are separate. Scratch is confined to `work-tmp.noindex/`, added to the local Git exclude list by the entry point; TMPDIR is set there.
+## Offline verification of the committed aggregates
 
-The final replay uses a fresh local clone with checksum-verified source-cache files only. No population, fitted estimator, fold, calibration score or individual prediction is copied. The complete command must run and every pinned scientific output must match. Output hashes are in `data/release-manifest.json`; process, fixture and scan receipts are in `data/checks`. The final exact-commit replay receipt is kept in the replay checkout and named in the completion record. This does not claim a new from-empty-network download.
+These commands read files already in the checkout. They do not download inputs, refit estimators or rescore folds.
+
+```sh
+uv run --frozen python -m scripts.check_release
+uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures
+```
+
+`scripts.check_release` compares each path in `data/release-manifest.json` with its recorded size and SHA-256, then writes `data/checks/release-scan.json`. The fixture command runs the offline tests. `data/raw/` and `data/gtdb-derived/local/` are not required for this check, and they are not redistributed.
+
+## Full release (`scripts.release`)
+
+```sh
+uv run --project release --frozen python -m scripts.release
+```
+
+This command acquires missing official inputs, verifies cached source hashes, reconstructs the frozen analysis, verifies the pre-registration, scores the locked outer folds, runs measurement selection and generates the public package. Analysis and rendering locks are separate. It needs a network connection or a checksum-verified copy of the raw inputs. It is not an offline check.
+
+`data/raw/` and `data/gtdb-derived/local/` (fitted trees and individual predictions) are not redistributed. The pinned replay inputs under `data/raw/labels/`, `data/raw/verification/` and `data/raw/gtdb/` total 254,404,224 bytes in `data/source-manifest.json`. Acquisition stops if free space on `/` is below 25 GB. Scratch is confined to `work-tmp.noindex/`, which is listed in `.gitignore`; the entry point also adds it to the local Git exclude list and sets TMPDIR there.
+
+The recorded final replay used a fresh local clone with checksum-verified source-cache files only. No population, fitted estimator, fold, calibration score or individual prediction was copied. That replay does not claim a new from-empty-network download. Output hashes are in `data/release-manifest.json`; process, fixture and scan receipts are in `data/checks`. Committed outer-fold results are already in `data/gtdb-derived/results/`. `scripts.release` is the command that scores those folds. A later run is expected to match the pinned scientific outputs.
+
+`uv.lock` allows any Python 3.13 (`requires-python = "==3.13.*"`). It does not pin 3.13.15 alone. The frozen numbers were produced with Python 3.13.15. A fresh export used Python 3.13.12 with the same lock.
+
+## Phase 1 rebuild (`scripts.rebuild`)
+
+```sh
+uv run --frozen python -m scripts.rebuild
+```
+
+This command replays pinned sources and rebuilds phase 1 fits. It does not score outer folds. Numeric intervals and oxygen sets on outer genomes remain uncomputed by this command. Rebuilding is distinct from publishing, and phase 2's locked scoring is absent from this command. Those limits describe `scripts.rebuild` only. They do not describe `scripts.release` or the committed outer-fold results.
 
 ## Earlier frozen reconstructions
 
@@ -11,8 +40,8 @@ Table-level experimental provenance is accepted for the exact authorised
 release checksum and documented chain. Other label sources retain the verified
 experimental-label gate. The earlier v1 reconstruction matched 542 source
 records, 1,113 scientific artefacts, aggregate records and the pre-registration
-byte for byte. [README](../README.md) lists the v1 and v2 freezes with their
-commits, times and checksums.
+byte for byte. [CHANGELOG.md](../CHANGELOG.md) lists the v1 and v2 freezes with their
+commits, times and the pre-registration checksum.
 
 The v2 reconstruction used a fresh export of commit
 `54d803cefa1414a8aaec960d746cdc2463e59f84`, seeded with 476 checksum-verified
@@ -31,9 +60,13 @@ All 548 source records, 7,257 scientific artefacts, aggregate records and the
 v2 pre-registration matched byte for byte. The original 1,113 v1 scientific
 artefacts remain unchanged. The main environment used Python 3.13.15; the
 fresh export selected Python 3.13.12 with the same pinned dependency lock.
-This verifies reconstruction from the source cache; a from-empty-network
-download was not repeated. No outer-fold prediction, interval or metric was
-computed during either reconstruction.
+The lock accepts any Python 3.13, as recorded above. This verifies
+reconstruction from the source cache; a from-empty-network download was not
+repeated. No outer-fold prediction, interval or metric was computed during
+either of those earlier reconstructions. The current tree does contain
+outer-fold results, produced later by `scripts.release`.
+
+## What the phase 1 rebuild uses
 
 The entry point is `uv run --frozen python -m scripts.rebuild`. Source replay
 uses pinned labels, upstream feature code, sequences and GTDB files. It checks
@@ -52,7 +85,8 @@ stores each of five calibration-side fitting memberships, nested tuning
 distances, out-of-fold scores and every adjacent-bin merge, with support at
 50 distinct taxa and strong support at 100. Common horizon cuts pool the
 phenotype-free tuning distances over all five outer folds per trait and rank.
-Numeric intervals and oxygen sets on outer genomes remain uncomputed.
+During this phase 1 rebuild, numeric intervals and oxygen sets on outer
+genomes remain uncomputed.
 
 Calibration fitted files use sorted metadata and omit identity memoisation
 when serialising their acyclic payloads. This prevents shared string and
@@ -71,8 +105,8 @@ The default verification entry point uses one connection. The sequence
 worker limit is an execution choice, not a change to inputs or analysis.
 
 Raw tables, sequences, individual features and local estimator files remain
-ignored. Aggregate records can be regenerated locally. Rebuilding is distinct
-from publishing, and phase 2's locked scoring is absent from this command.
+ignored. Aggregate records can be regenerated locally. Phase 2's locked
+scoring is absent from `scripts.rebuild` and is present in `scripts.release`.
 
 Historical failed transfers and superseded preflight receipts are preserved as
 evidence under data/raw and labelled accordingly in the source manifest.

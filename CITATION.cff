@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite this benchmark when using its code or results."
 title: "Growth Horizon: microbial growth predictions under taxonomic holdout"
 type: software
-version: 0.2.0
+version: 0.1.0
 license: Apache-2.0
 authors:
   - name: "GeneX Labs Inc."

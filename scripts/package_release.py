@@ -264,7 +264,7 @@ def main() -> None:
     build_figures(records, measure)
     order_rows = [['Trait', 'B1 error [95% interval]', 'Proposed error [95% interval]', 'Paired reduction [95% interval]']]
     coverage_rows = [['Trait / rank', 'Pooled coverage [95% interval]', 'Accepted coverage [95% interval]', 'Abstention', 'Mean width or cardinality', 'Accepted mean width or cardinality']]
-    horizon_rows = [['Trait', 'Proposed horizon', 'B1 horizon', 'Proposed ordinal interval']]
+    horizon_rows = [['Trait', 'Proposed horizon', 'B1 horizon', 'Proposed ordinal interval', 'B1 ordinal interval']]
     measure_rows = [['Trait / strategy', 'Mean error AUC', 'Mean width or cardinality AUC']]
     md_order, md_coverage, md_horizon, md_measure = [], [], [], []
     for t in TRAITS:
@@ -281,7 +281,8 @@ def main() -> None:
         hs = r['horizons']
         def htext(h: Any) -> str:
             return ('Beyond observed range' if h['state'] == 'right_censored' else 'Unidentified' if h['state'] == 'unidentified' else f"Bin {h['first_failing_bin']} ({h['distance_range'][0]:.4f} to "+(f"{h['distance_range'][1]:.4f})" if h['distance_range'][1] is not None else 'observed maximum)'))
-        cells = [LABELS[t], htext(hs['method']), htext(hs['B1']), str(hs['method']['ordinal_interval'])]
+        cells = [LABELS[t], htext(hs['method']), htext(hs['B1']),
+                 str(hs['method']['ordinal_interval']), str(hs['B1']['ordinal_interval'])]
         horizon_rows.append(cells)
         md_horizon.append('| '+' | '.join(cells)+' | '+table.cite(f'{t}/order/method/horizon')+'; '+table.cite(f'{t}/order/B1/horizon')+' |')
         for strategy in ('widest', 'farthest', 'random'):
@@ -297,7 +298,8 @@ def main() -> None:
     horizon_md = md_table(horizon_rows[0], md_horizon)
     measure_md = md_table(measure_rows[0], md_measure)
     literature_text = 'In our literature check of 2026-10-11, we did not find a report of calibrated prediction intervals for genome-based prediction of microbial growth conditions that gives coverage separately for bins of phylogenetic distance to the training set, under whole-family or whole-order hold-out. The closest work we found reports interval coverage across phylogenetic-distance cutoffs for a different microbial trait, 16S rRNA gene copy number (Gao and Wu, 2023), and false discovery control within sequence-identity groups for enzyme function prediction (Ding, Luo and Luo, 2024). This is a bounded search finding, not a claim that no such work exists.'
-    target3_text = 'Target 3: not met at this commit (publication pending). Horizon estimates for every trait are in the package.'
+    target3_text = ('Target 3 (publication): pending external publication; horizon estimates for every '
+                    'trait are complete in the package.')
     statuses = '\n'.join('- '+target3_text+' '+table.cite('target3') if i == 3 else
         f"- Target {i}: {'passed' if target['target'+str(i)]['passed'] else 'failed'}. {table.cite('target'+str(i))}" for i in range(1, 5))
     target1_text = ('Target 1 failed on two of its three parts. Pooled coverage intervals reached 90% '
@@ -332,9 +334,9 @@ def main() -> None:
             lambda m: '<a href="../../'+html.escape(m[2], quote=True)+'">'+html.escape(m[1])+'</a>', text)
     preface = f'''# Growth Horizon
 
-GeneX Labs Inc. measures how growth-condition predictions behave as microbial genomes become more distant from labelled relatives. The benchmark combines taxonomic holdout, empirical interval and prediction-set coverage and abstention, so a laboratory can see both predictive error and how often uncertainty prevents a useful answer.
+GeneX Labs Inc. measures how growth-condition predictions behave as microbial genomes become more distant from labelled relatives. The benchmark combines taxonomic holdout, empirical interval and prediction-set coverage and abstention, so the record shows both predictive error and how often uncertainty prevents a useful answer.
 
-The locked calibration and accuracy targets failed. B1 has lower order-holdout error for temperature and salinity. The proposed predictor does not achieve the required accuracy improvement on any trait. These are descriptive results from the full usable labelled population; no estimator or target was changed after outer scoring.
+The locked calibration and accuracy targets failed. B1 has lower order-holdout error for temperature and salinity. The order-holdout accuracy target failed: it requires at least a 10% lower error than B1, with a paired interval that excludes zero, on at least two traits. Oxygen at phylum is a 12.9% reduction whose interval excludes zero, and oxygen on the random split is a 14.4% reduction whose interval excludes zero. Those splits are outside that target. These are descriptive results from the full usable labelled population; no estimator or target was changed after outer scoring.
 
 {statuses}
 
@@ -356,9 +358,9 @@ Coverage includes supported abstentions exactly when the computed interval or se
 
 {accepted_text}
 
-## Horizons
+## Order-holdout horizons
 
-Horizon bins use the frozen common cuts. The first failure compares with a training-side constant and checks whether most predictions abstain. Zero-based bin ordinals and their exploratory bootstrap intervals are discrete summaries. A right-censored horizon extends beyond the observed bins; it is not an infinite or universal threshold.
+This table is the order rank only. Per-rank records are the JSON files under data/gtdb-derived/results/. At class, temperature already fails in the nearest bin for both predictors. At phylum, the horizons are unidentified. The B1 ordinal interval is shown beside the proposed interval because the two intervals are not the same for every trait. Horizon bins use the frozen common cuts. The first failure compares with a training-side constant and checks whether most predictions abstain. Zero-based bin ordinals and their exploratory bootstrap intervals are discrete summaries. A right-censored horizon extends beyond the observed bins; it is not an infinite or universal threshold.
 
 {horizon_md}
 
@@ -382,17 +384,30 @@ Secondary figures report taxon-weighted coverage, the mean of the five fit-speci
 
 ## Rebuild and reuse
 
-With Python and the pinned analysis and rendering dependencies, one command acquires missing official inputs, verifies cached source hashes, reconstructs the frozen analysis, scores all outer folds, runs measurement selection and regenerates every public table, figure, note and page:
+Offline checks read the committed aggregates. They do not download inputs, refit estimators or rescore folds:
+
+```sh
+uv run --frozen python -m scripts.check_release
+uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures
+```
+
+`scripts.check_release` compares each path in [data/release-manifest.json](data/release-manifest.json) with its recorded size and SHA-256, then writes `data/checks/release-scan.json`. The fixture command runs the offline tests.
+
+Full recomputation is a different command. With Python 3.13 and the pinned analysis and rendering dependencies, it acquires missing official inputs, verifies cached source hashes, reconstructs the frozen analysis, scores all outer folds, runs measurement selection and regenerates every public table, figure, note and page:
 
 ```sh
 uv run --project release --frozen python -m scripts.release
 ```
 
+That command needs a network connection or a checksum-verified copy of the raw inputs. It is not an offline check. `data/raw/` and `data/gtdb-derived/local/` (fitted trees and individual predictions) are not redistributed. The pinned replay inputs under `data/raw/labels/`, `data/raw/verification/` and `data/raw/gtdb/` total 254,404,224 bytes in `data/source-manifest.json`. Acquisition stops if free space on `/` is below 25 GB. Phase 1 rebuild without outer scoring is `uv run --frozen python -m scripts.rebuild`. That command leaves outer intervals and oxygen sets uncomputed. Outer scoring runs only in `scripts.release`.
+
+`uv.lock` allows any Python 3.13. The frozen numbers were produced with Python 3.13.15. A fresh export used Python 3.13.12 with the same lock.
+
 Scratch is confined to ignored `work-tmp.noindex/`. Raw labels, sequences, fitted estimators and individual predictions remain untracked. Aggregate GTDB-derived analyses and figures are under CC BY-SA 4.0; BacDive labels are attributed under CC BY 4.0. Code is Apache-2.0, with GenomeSPOT's MIT notice retained. DATA.md records the commercial-contact condition and Cali Fund guidance.
 
-Every result shown above cites a repository-relative TSV line. [Output hashes](data/release-manifest.json) pin that table and its underlying JSON records. [Complete results](docs/RESULTS.md), [figures](data/gtdb-derived/figures), [PDF note](docs/TECHNICAL_NOTE.pdf), [static project page](docs/site/index.html) and [reconstruction details](docs/reproducibility.md) provide the rest of the package. The original [pre-registration](PREREGISTRATION.md) is unchanged; its chronology is in [CHANGELOG.md](CHANGELOG.md).
+Every result shown above cites a repository-relative TSV line. [Output hashes](data/release-manifest.json) pin that table and its underlying JSON records. [Complete results](docs/RESULTS.md), [figures](data/gtdb-derived/figures), [PDF note](docs/TECHNICAL_NOTE.pdf), [static project page](docs/site/index.html) and [reconstruction details](docs/reproducibility.md) provide the rest of the package. The original [pre-registration](PREREGISTRATION.md) is frozen; outcomes are in [RESULTS.md](docs/RESULTS.md) and [current scoring status](docs/PHASE2_STATUS.md). Freeze commits are in [CHANGELOG.md](CHANGELOG.md).
 
-This is a local release candidate. Public release remains pending scientific review and an authorised publication action.
+Research prototype on this labelled GTDB-mapped table; not tested on prospective cultures, on organisms outside the table, or for clinical or production use.
 
 Offline fixture checks:
 
@@ -406,7 +421,7 @@ uv run --frozen mypy scripts growth_horizon tests
     chronology = 'The two earlier v2-era freezes were 839b22f (2026-10-11 05:54:49 PT, amendment C and v2) and 3b1f6d2 (2026-10-11 07:04:00 PT, re-freeze after normalising calibration artefacts); both preceded any outer-fold number. '+table.cite('freezes')
     pages = [f'''# Growth Horizon: methods and empirical evaluation
 
-GeneX Labs Inc. | Local release candidate
+GeneX Labs Inc. | Research prototype on this labelled GTDB-mapped table; not tested on prospective cultures, on organisms outside the table, or for clinical or production use.
 
 ## Question and evidence
 
@@ -456,7 +471,7 @@ Unsupported phylum calibration and the unsupported salinity class bins remain vi
 
 {target1_text}
 
-The accuracy target fails because the required relative error reduction with a positive paired interval is not reached on the required number of traits. {table.cite('target2')}
+The order-holdout accuracy target fails because the required relative error reduction with a positive paired interval is not reached on the required number of traits. Oxygen at phylum is a 12.9% reduction whose interval excludes zero, and oxygen on the random split is a 14.4% reduction whose interval excludes zero. Those splits are outside that target. {table.cite('target2')}
 
 {b1_scope}
 
@@ -465,9 +480,9 @@ The accuracy target fails because the required relative error reduction with a p
 ## Literature finding
 
 {literature_text}''',
-    f'''# Horizons and secondary checks
+    f'''# Order-holdout horizons and secondary checks
 
-The horizon rule compares with B0, using the frozen common distance cuts. It is the first bin where the lower confidence limit for the improvement reaches zero or most items abstain. For oxygen, improvement is balanced accuracy minus chance. Value over B2 is reported in every bin without imposing a first-failure rule. Empty or unsupported horizon bins produce an unidentified state.
+The table in this section is the order rank only. Per-rank records are the JSON files under data/gtdb-derived/results/. At class, temperature already fails in the nearest bin for both predictors. At phylum, the horizons are unidentified. The B1 ordinal interval is shown beside the proposed interval because the two intervals are not the same for every trait. The horizon rule compares with B0, using the frozen common distance cuts. It is the first bin where the lower confidence limit for the improvement reaches zero or most items abstain. For oxygen, improvement is balanced accuracy minus chance. Value over B2 is reported in every bin without imposing a first-failure rule. Empty or unsupported horizon bins produce an unidentified state.
 
 {{{{table:horizons}}}}
 
@@ -509,15 +524,19 @@ Boger and colleagues provide adjacent protein-retrieval risk control. Fannjiang 
 
 ## Rebuild and inspect
 
-One command reconstructs the frozen source and fitted analysis, scores every eligible outer fold, runs the retrospective acquisition experiment and generates all aggregate tables, figures, this note and the static HTML page:
+Offline verification reads the committed aggregates. `uv run --frozen python -m scripts.check_release` compares pinned sizes and SHA-256 values and does not download or rescore. The fixture command is `uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures`.
+
+Full recomputation is separate. It reconstructs the frozen source and fitted analysis, scores every eligible outer fold, runs the retrospective acquisition experiment and generates all aggregate tables, figures, this note and the static HTML page:
 
 `uv run --project release --frozen python -m scripts.release`
 
-Both dependency locks are pinned separately so rendering dependencies do not alter the frozen analysis lock. The scientific data live under data/gtdb-derived with their separate CC BY-SA terms. Code is Apache-2.0; GenomeSPOT's MIT notice is retained. DATA.md records BacDive CC BY attribution, the commercial-contact condition and Cali Fund guidance.
+That command needs a network connection or a checksum-verified raw cache. `data/raw/` and `data/gtdb-derived/local/` are not redistributed. The pinned replay inputs under labels, verification and GTDB total 254,404,224 bytes. Acquisition stops if free space on `/` is below 25 GB. `uv run --frozen python -m scripts.rebuild` is phase 1 only and leaves outer intervals and oxygen sets uncomputed.
+
+Both dependency locks are pinned separately so rendering dependencies do not alter the frozen analysis lock. `uv.lock` allows any Python 3.13. The frozen numbers used Python 3.13.15, and a fresh export used Python 3.13.12 with the same lock. The scientific data live under data/gtdb-derived with their separate CC BY-SA terms. Code is Apache-2.0; GenomeSPOT's MIT notice is retained. DATA.md records BacDive CC BY attribution, the commercial-contact condition and Cali Fund guidance.
 
 Every displayed empirical number is linked to a line in data/gtdb-derived/results/public-results.tsv. That table names its source JSON and locator. data/release-manifest.json pins the aggregate results, figures and generated documents by SHA-256. The source and original scientific manifests remain the immutable references for rebuilding the earlier fitted analysis. No individual labels, fitted estimators or prediction records are redistributed.
 
-Offline fixtures check complete-taxon resampling, disjoint fitting memberships, branch distances, conformal order statistics, strict oxygen-score comparisons, width abstention, supported-only coverage and whole-order acquisition budgets. A clean replay from the final local commit uses verified source cache files only, never copied fitted models or derived results. Its receipts and scan exit codes are in data/checks. Public release remains pending an authorised action.''']
+Offline fixtures check complete-taxon resampling, disjoint fitting memberships, branch distances, conformal order statistics, strict oxygen-score comparisons, width abstention, supported-only coverage and whole-order acquisition budgets. A clean replay from the final local commit uses verified source cache files only, never copied fitted models or derived results. Its receipts and scan exit codes are in data/checks. Research prototype on this labelled GTDB-mapped table; not tested on prospective cultures, on organisms outside the table, or for clinical or production use.''']
     note = '\n\n<!-- page -->\n\n'.join(pages)
     substitutions = {'{{table:accuracy}}': order_md, '{{table:coverage}}': coverage_md,
                      '{{table:horizons}}': horizon_md, '{{table:measure}}': measure_md,
@@ -536,7 +555,10 @@ Offline fixtures check complete-taxon resampling, disjoint fitting memberships, 
             for m, r in records[t][rank]['methods'].items():
                 o = r['overall']
                 all_rows.append('| '+' | '.join([LABELS[t], rank, m, interval(o['error']), interval(o['coverage'], True), interval(o['coverage_accepted'], True), number(o['abstention_rate'], True), number(o['mean_size']), number(o['mean_size_accepted']), table.cite(f'{t}/{rank}/{m}/overall', '../')])+' |')
-    all_rows[0] += '\n'+statuses+'\n\n'+target1_text+'\n\n'+b1_scope+'\n\n'+b0_limits+'\n\n'+accepted_text+'\n'
+    all_rows[0] += ('\n'+statuses+'\n\nThe order-holdout horizon table in the README is the order rank only. '
+        'Per-rank records are the JSON files under data/gtdb-derived/results/. At class, temperature '
+        'already fails in the nearest bin for both predictors. At phylum, the horizons are unidentified.\n\n'
+        +target1_text+'\n\n'+b1_scope+'\n\n'+b0_limits+'\n\n'+accepted_text+'\n')
     all_rows[0] = all_rows[0].replace(']('+PUBLIC+')', '](../'+PUBLIC+')')
     (ROOT/'docs/RESULTS.md').write_text('\n'.join(all_rows)+'\n')
     site = ROOT/'docs/site'
@@ -550,13 +572,14 @@ Offline fixtures check complete-taxon resampling, disjoint fitting memberships, 
         return '<div class="table-wrap"><table>'+head+'<tbody>'+''.join(body)+'</tbody></table></div>'
     page = f'''<!doctype html>
 <html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Growth Horizon | GeneX Labs</title><meta name="description" content="An empirical benchmark of microbial growth prediction, uncertainty and measurement selection."><link rel="stylesheet" href="style.css"></head>
-<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="#main">GeneX Labs <span>Research software</span></a><nav aria-label="Page navigation"><a href="#results">Results</a><a href="#horizons">Horizons</a><a href="#measure">Measure next</a><a href="#rebuild">Rebuild</a></nav></header>
-<main id="main"><section class="hero"><p class="eyebrow">Microbial growth / empirical benchmark</p><h1>How far can a growth prediction be trusted?</h1><p class="lead">Follow prediction error, coverage and abstention as genomes move away from labelled relatives.</p><p class="status">Local release candidate. Public release pending scientific review.</p></section>
-<section id="results"><p class="eyebrow">The locked result</p><h2>The calibration and accuracy targets failed.</h2><p>B1 has lower order-holdout error for temperature and salinity. The proposed predictor does not meet the required accuracy improvement. The full results retain failures, unsupported bins and uncertainty intervals.</p><p>{site_prose(target1_text)}</p><p>{site_prose(target3_text+" "+table.cite("target3"))}</p><p>{site_prose(b1_scope)}</p>{site_table(order_rows, [';'.join([t+'/order/B1/overall',t+'/order/method/overall',t+'/order/accuracy']) for t in TRAITS])}<h3>Coverage with abstentions</h3><p>Supported abstentions count as covered exactly when the computed interval or set contains the true label. Unsupported items are excluded from coverage and reported as abstentions.</p><p>{accepted_text}</p>{site_table(coverage_rows, [t+'/'+rank+'/method/overall' for t in TRAITS for rank in ('family','order')])}<figure><img src="../../data/gtdb-derived/figures/coverage-order.svg" alt="Every supported order-holdout cell has a coverage interval and an adjacent abstention bar, split by trait."><figcaption>Order holdout. Each fold and merged bin is shown separately. Underlying cells are pinned in <a href="../../data/gtdb-derived/results/figure-data.json">figure-data.json</a>.</figcaption></figure></section>
-<section id="horizons"><p class="eyebrow">Beyond the average</p><h2>A measured range, with limits.</h2><p>The horizon first fails against a training-side constant or when most predictions abstain. A right-censored estimate extends beyond the observed range. These discrete bootstrap summaries do not certify a universal distance threshold.</p>{site_table(horizon_rows, [';'.join([t+'/order/method/horizon',t+'/order/B1/horizon']) for t in TRAITS])}<figure><img src="../../data/gtdb-derived/figures/secondary-coverage.svg" alt="Genome-weighted, taxon-weighted and mean-fit-distance coverage intervals are shown above their abstention rates."><figcaption>Secondary coverage checks. Frozen feature lists exclude the disputed descriptors; explicit refits without them give identical predictions.</figcaption></figure></section>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="#main">GeneX Labs <span>Research software</span></a><nav aria-label="Page navigation"><a href="#results">Results</a><a href="#horizons">Order horizons</a><a href="#measure">Measure next</a><a href="#rebuild">Rebuild</a></nav></header>
+<main id="main"><section class="hero"><p class="eyebrow">Microbial growth / empirical benchmark</p><h1>How far can a growth prediction be trusted?</h1><p class="lead">Follow prediction error, coverage and abstention as genomes move away from labelled relatives.</p><p class="status">Research prototype on this labelled GTDB-mapped table; not tested on prospective cultures, on organisms outside the table, or for clinical or production use.</p></section>
+<section id="results"><p class="eyebrow">The locked result</p><h2>The calibration and accuracy targets failed.</h2><p>B1 has lower order-holdout error for temperature and salinity. The order-holdout accuracy target failed. Oxygen at phylum and oxygen on the random split meet the 10% bar against B1, and those splits are outside that target. The full results retain failures, unsupported bins and uncertainty intervals.</p><p>{site_prose(target1_text)}</p><p>{site_prose(target3_text+" "+table.cite("target3"))}</p><p>{site_prose(b1_scope)}</p>{site_table(order_rows, [';'.join([t+'/order/B1/overall',t+'/order/method/overall',t+'/order/accuracy']) for t in TRAITS])}<h3>Coverage with abstentions</h3><p>Supported abstentions count as covered exactly when the computed interval or set contains the true label. Unsupported items are excluded from coverage and reported as abstentions.</p><p>{accepted_text}</p>{site_table(coverage_rows, [t+'/'+rank+'/method/overall' for t in TRAITS for rank in ('family','order')])}<figure><img src="../../data/gtdb-derived/figures/coverage-order.svg" alt="Every supported order-holdout cell has a coverage interval and an adjacent abstention bar, split by trait."><figcaption>Order holdout. Each fold and merged bin is shown separately. Underlying cells are pinned in <a href="../../data/gtdb-derived/results/figure-data.json">figure-data.json</a>.</figcaption></figure></section>
+<section id="horizons"><p class="eyebrow">Beyond the average</p><h2>Order-holdout horizons</h2><p>This table is the order rank only. Per-rank records are the JSON files under data/gtdb-derived/results/. At class, temperature already fails in the nearest bin for both predictors. At phylum, the horizons are unidentified. The B1 ordinal interval is shown beside the proposed interval because the two intervals are not the same for every trait. The horizon first fails against a training-side constant or when most predictions abstain. A right-censored estimate extends beyond the observed range. These discrete bootstrap summaries do not certify a universal distance threshold.</p>{site_table(horizon_rows, [';'.join([t+'/order/method/horizon',t+'/order/B1/horizon']) for t in TRAITS])}<figure><img src="../../data/gtdb-derived/figures/secondary-coverage.svg" alt="Genome-weighted, taxon-weighted and mean-fit-distance coverage intervals are shown above their abstention rates."><figcaption>Secondary coverage checks. Frozen feature lists exclude the disputed descriptors; explicit refits without them give identical predictions.</figcaption></figure></section>
 <section id="measure"><p class="eyebrow">What to measure next</p><h2>Exploratory retrospective selection on the same pipeline.</h2><p>Widest uncertainty, farthest-first distance and random selection acquire whole orders, then refit and recalibrate. Lower error and mean width or cardinality areas under the budget curve are preferable. Remaining evaluation populations change by strategy, so this is exploratory evidence.</p>{site_table(measure_rows, [t+'/measure/'+strategy for t in TRAITS for strategy in ('widest','farthest','random')])}<p>{site_prose(width_text)}</p><figure><img src="../../data/gtdb-derived/figures/measure-next.svg" alt="Width, error and abstention curves compare the three acquisition strategies on the remaining far organisms."><figcaption>Fold means. No laboratory measurement or future-horizon gain is claimed.</figcaption></figure></section>
 <section class="limits"><h2>What this evidence supports</h2><p>{site_prose(b0_limits)}</p><p>{html.escape(literature_text)}</p><p>Oxygen is a class label with uncertainty represented by a prediction set.</p><p>Exchangeability is assumed, not established. Labels are table-level experimental records with residual per-value provenance uncertainty. Correlated genomes, unequal taxon size, unsupported ranks and annotation changes limit generalisation. Accepted-item coverage has no nominal guarantee.</p><p>Read the <a href="../TECHNICAL_NOTE.pdf">technical note (PDF)</a>, <a href="../TECHNICAL_NOTE.md">Markdown note</a>, <a href="../RESULTS.md">complete results</a>, <a href="../../PREREGISTRATION.md">pre-registration</a> and <a href="../../DATA.md">data terms and attribution</a>.</p></section>
-<section id="rebuild"><p class="eyebrow">Reproducible by design</p><h2>Rebuild the whole package.</h2><pre><code>uv run --project release --frozen python -m scripts.release</code></pre><p>Every empirical number links to a source-table line, and the <a href="../../data/release-manifest.json">release manifest</a> pins output hashes. Raw records and fitted estimators are not redistributed. Code is Apache-2.0; aggregate GTDB-derived analyses are CC BY-SA 4.0.</p></section></main><footer>GeneX Labs Inc. <a href="../../CITATION.cff">Cite this work</a> <a href="../../LICENSE">Code licence</a></footer></body></html>'''
+<section id="rebuild"><p class="eyebrow">Reproducible by design</p><h2>Check the committed aggregates, or recompute them.</h2><p>Offline verification compares pinned hashes and runs the fixture tests. It does not download or refit.</p><pre><code>uv run --frozen python -m scripts.check_release
+uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures</code></pre><p>Full recomputation acquires missing inputs, rebuilds local fitted trees, scores outer folds and regenerates the public package. It needs a network connection or a checksum-verified raw cache, and it stops if free space on / is below 25 GB. The pinned replay inputs total 254,404,224 bytes. data/raw and the local fitted trees are not redistributed.</p><pre><code>uv run --project release --frozen python -m scripts.release</code></pre><p>Phase 1 rebuild without outer scoring is <code>uv run --frozen python -m scripts.rebuild</code>. Every empirical number links to a source-table line, and the <a href="../../data/release-manifest.json">release manifest</a> pins output hashes. Code is Apache-2.0; aggregate GTDB-derived analyses are CC BY-SA 4.0.</p></section></main><footer>GeneX Labs Inc. <a href="../../CITATION.cff">Cite this work</a> <a href="../../LICENSE">Code licence</a></footer></body></html>'''
     (site/'index.html').write_text(page+'\n')
     (site/'style.css').write_text('''*{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;background:#f6f5ef;color:#18323c;font:17px/1.6 system-ui,sans-serif}a{color:#145e69;text-underline-offset:.2em}a:focus-visible{outline:3px solid #b34519;outline-offset:5px}.skip{position:absolute;left:1rem;top:-5rem;background:white;padding:1rem}.skip:focus{top:1rem}header,footer{max-width:1180px;margin:auto;padding:28px 32px;display:flex;justify-content:space-between;gap:24px}header{border-bottom:1px solid #cad7d6}.brand{font-size:20px;font-weight:750;text-decoration:none}.brand span{display:block;font-size:12px;font-weight:500;letter-spacing:.05em}nav{display:flex;align-items:center;gap:25px}nav a{font-size:14px}main{max-width:1116px;margin:auto;padding:0 32px}.hero{padding:80px 0 70px;max-width:850px}h1{font-size:clamp(42px,6vw,76px);line-height:1.08;letter-spacing:-.055em;margin:16px 0 25px}h2{font-size:clamp(28px,4vw,42px);line-height:1.2;letter-spacing:-.03em;max-width:850px}h3{font-size:24px}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:750;color:#176b75}.lead{font-size:24px;max-width:690px}.status{font-size:14px;border-left:3px solid #b34519;padding-left:12px}section{padding:44px 0;border-bottom:1px solid #cad7d6}section p{max-width:800px}.table-wrap{overflow:auto;margin:28px 0}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #cad7d6}thead{background:#e4eeee}th[scope=row]{font-weight:650}figure{margin:40px 0}img{max-width:100%;height:auto;background:white}figcaption{font-size:13px;color:#49616a;margin-top:12px}.limits{background:#e4eeee;padding:32px;margin:40px -20px;border:0}pre{padding:22px;background:#18323c;color:#fff;overflow:auto;font-size:14px}footer{font-size:13px;flex-wrap:wrap}footer a{margin-left:15px}@media(max-width:650px){header{padding:22px;flex-direction:column}nav{gap:15px;flex-wrap:wrap}main{padding:0 22px}.hero{padding:55px 0}.lead{font-size:20px}section{padding:30px 0}th,td{padding:10px 8px}.limits{margin:25px 0;padding:20px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 ''')

@@ -85,7 +85,8 @@ Adjacent conformal work also includes [Boger et al. (2025)](https://www.nature.c
   [doi 10.1093/sysbio/syac016](https://doi.org/10.1093/sysbio/syac016).
   Checked at abstract level only. How it differs: phylogenetic hidden-state
   prediction of genomic traits rather than growth conditions; whether coverage
-  is broken down by distance to observed taxa is [CONFIRM] (full text not read).
+  is broken down by distance to observed taxa remains unchecked, because the
+  full text was not read.
 - Ding, K., Luo, J. and Luo, Y. (2024), *Leveraging conformal prediction to
   annotate enzyme function space with limited false positives*, PLOS
   Computational Biology 20(5):e1012135,
