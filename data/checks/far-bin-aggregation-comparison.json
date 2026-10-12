@@ -1,0 +1,440 @@
+{
+  "first_aggregation_source": "c51852d:growth_horizon/scoring.py:aggregate",
+  "corrected_aggregation_source": "bc538758:growth_horizon/scoring.py:aggregate",
+  "retained_outputs": "data/gtdb-derived/local/results",
+  "changed_comparator_flags": [],
+  "changed_joint_cells": [],
+  "part_a_failing_cells": [
+    "temperature_optimum/order",
+    "salinity_optimum/family"
+  ],
+  "overall_target1_before": false,
+  "overall_target1_after": false,
+  "cells": [
+    {
+      "trait": "temperature_optimum",
+      "rank": "family",
+      "comparators": {
+        "B1": {
+          "source": "data/gtdb-derived/local/results/temperature_optimum-family-B1.npz",
+          "sha256": "db2bf56e1f84b8fca7ffd9e27be69a92d15fa14920450fa7fc8a6de06bac7f0a",
+          "first": {
+            "coverage": 0.8331332533013205,
+            "interval": [
+              0.7615812004057038,
+              0.8761014045906131
+            ],
+            "passed": false,
+            "genomes": 833
+          },
+          "corrected": {
+            "coverage": 0.8331332533013205,
+            "interval": [
+              0.7615812004057038,
+              0.8761014045906131
+            ],
+            "passed": false,
+            "genomes": 833
+          },
+          "flag_changed": false
+        },
+        "B2": {
+          "source": "data/gtdb-derived/local/results/temperature_optimum-family-B2.npz",
+          "sha256": "ac64e3e56e8874838bee8b8ed4b87f27558c7a6cf2b4e911d87e1a8bd707d5dc",
+          "first": {
+            "coverage": 0.8031212484993998,
+            "interval": [
+              0.6607830820102868,
+              0.868175683041298
+            ],
+            "passed": false,
+            "genomes": 833
+          },
+          "corrected": {
+            "coverage": 0.8031212484993998,
+            "interval": [
+              0.6607830820102868,
+              0.868175683041298
+            ],
+            "passed": false,
+            "genomes": 833
+          },
+          "flag_changed": false
+        }
+      },
+      "joint_flag_changed": false
+    },
+    {
+      "trait": "temperature_optimum",
+      "rank": "order",
+      "comparators": {
+        "B1": {
+          "source": "data/gtdb-derived/local/results/temperature_optimum-order-B1.npz",
+          "sha256": "f24c7e3b75e6391228cbb886049f7e36ac36ccfa2333de619eb5890316237cbd",
+          "first": {
+            "coverage": 0.7839262187088274,
+            "interval": [
+              0.7170917420083952,
+              0.8423934688284996
+            ],
+            "passed": true,
+            "genomes": 759
+          },
+          "corrected": {
+            "coverage": 0.7839262187088274,
+            "interval": [
+              0.7170917420083952,
+              0.8423934688284996
+            ],
+            "passed": true,
+            "genomes": 759
+          },
+          "flag_changed": false
+        },
+        "B2": {
+          "source": "data/gtdb-derived/local/results/temperature_optimum-order-B2.npz",
+          "sha256": "6adf0d2cd5b09f0630de59d7ed3337c524c2f0ebaa8f34e3574fa8a42e5c0fef",
+          "first": {
+            "coverage": 0.7088274044795784,
+            "interval": [
+              0.5398560959022604,
+              0.8155896070796032
+            ],
+            "passed": true,
+            "genomes": 759
+          },
+          "corrected": {
+            "coverage": 0.7088274044795784,
+            "interval": [
+              0.5398560959022604,
+              0.8155896070796032
+            ],
+            "passed": true,
+            "genomes": 759
+          },
+          "flag_changed": false
+        }
+      },
+      "joint_flag_changed": false
+    },
+    {
+      "trait": "oxygen",
+      "rank": "family",
+      "comparators": {
+        "B1": {
+          "source": "data/gtdb-derived/local/results/oxygen-family-B1.npz",
+          "sha256": "307600826eb309175233bd85240cdefdfb7ce7cf6b0cd004e72ee38e1e3c2f07",
+          "first": {
+            "coverage": 0.8773168578993822,
+            "interval": [
+              0.8066777055202277,
+              0.9207199028374765
+            ],
+            "passed": false,
+            "genomes": 1133
+          },
+          "corrected": {
+            "coverage": 0.8773168578993822,
+            "interval": [
+              0.8066777055202277,
+              0.9207199028374765
+            ],
+            "passed": false,
+            "genomes": 1133
+          },
+          "flag_changed": false
+        },
+        "B2": {
+          "source": "data/gtdb-derived/local/results/oxygen-family-B2.npz",
+          "sha256": "c52039614e04938fe88b8ecb9c96a93b14c0e360b26d881c0262b9d54baf3a5b",
+          "first": {
+            "coverage": 0.8773168578993822,
+            "interval": [
+              0.7870066568651474,
+              0.928451714065002
+            ],
+            "passed": false,
+            "genomes": 1133
+          },
+          "corrected": {
+            "coverage": 0.8773168578993822,
+            "interval": [
+              0.7870066568651474,
+              0.928451714065002
+            ],
+            "passed": false,
+            "genomes": 1133
+          },
+          "flag_changed": false
+        }
+      },
+      "joint_flag_changed": false
+    },
+    {
+      "trait": "oxygen",
+      "rank": "order",
+      "comparators": {
+        "B1": {
+          "source": "data/gtdb-derived/local/results/oxygen-order-B1.npz",
+          "sha256": "dd1c166814de47271e707d9a718f8ad9f5dba06604a64ae322ef43a0af249f26",
+          "first": {
+            "coverage": 0.8194353250164149,
+            "interval": [
+              0.7003315602097417,
+              0.9148780240286453
+            ],
+            "passed": false,
+            "genomes": 1523
+          },
+          "corrected": {
+            "coverage": 0.8194353250164149,
+            "interval": [
+              0.7003315602097417,
+              0.9148780240286453
+            ],
+            "passed": false,
+            "genomes": 1523
+          },
+          "flag_changed": false
+        },
+        "B2": {
+          "source": "data/gtdb-derived/local/results/oxygen-order-B2.npz",
+          "sha256": "731d2646a4a7b2342748bcf70be483ff09dc4c2b2916a1806dc171ea9b264e30",
+          "first": {
+            "coverage": 0.7045305318450427,
+            "interval": [
+              0.5397332426732888,
+              0.8513407288274153
+            ],
+            "passed": true,
+            "genomes": 1523
+          },
+          "corrected": {
+            "coverage": 0.7045305318450427,
+            "interval": [
+              0.5397332426732888,
+              0.8513407288274153
+            ],
+            "passed": true,
+            "genomes": 1523
+          },
+          "flag_changed": false
+        }
+      },
+      "joint_flag_changed": false
+    },
+    {
+      "trait": "salinity_optimum",
+      "rank": "family",
+      "comparators": {
+        "B1": {
+          "source": "data/gtdb-derived/local/results/salinity_optimum-family-B1.npz",
+          "sha256": "8e6b9c53b37807b86f70a83610841e4baaa2c4e57f6c2f12fea24cc2c2c28783",
+          "first": {
+            "coverage": 0.9246031746031746,
+            "interval": [
+              0.8691359876231372,
+              0.9518431886463565
+            ],
+            "passed": false,
+            "genomes": 756
+          },
+          "corrected": {
+            "coverage": 0.9246031746031746,
+            "interval": [
+              0.8691359876231372,
+              0.9518431886463565
+            ],
+            "passed": false,
+            "genomes": 756
+          },
+          "flag_changed": false
+        },
+        "B2": {
+          "source": "data/gtdb-derived/local/results/salinity_optimum-family-B2.npz",
+          "sha256": "817fd25f3952d271efddf51205eddffb21afc13d1f93d902a6edbb2475d73b77",
+          "first": {
+            "coverage": 0.9259259259259259,
+            "interval": [
+              0.8732736612702366,
+              0.9637246420072888
+            ],
+            "passed": false,
+            "genomes": 756
+          },
+          "corrected": {
+            "coverage": 0.9259259259259259,
+            "interval": [
+              0.8732736612702366,
+              0.9637246420072888
+            ],
+            "passed": false,
+            "genomes": 756
+          },
+          "flag_changed": false
+        }
+      },
+      "joint_flag_changed": false
+    },
+    {
+      "trait": "salinity_optimum",
+      "rank": "order",
+      "comparators": {
+        "B1": {
+          "source": "data/gtdb-derived/local/results/salinity_optimum-order-B1.npz",
+          "sha256": "71b38e29556e2a3f5738fe2145bf85c05eaaf033a48cfa75e2005ec1ae064de2",
+          "first": {
+            "coverage": 0.8628318584070797,
+            "interval": [
+              0.7451559486720892,
+              0.9401591016532722
+            ],
+            "passed": false,
+            "genomes": 1582
+          },
+          "corrected": {
+            "coverage": 0.8628318584070797,
+            "interval": [
+              0.7451559486720892,
+              0.9401591016532722
+            ],
+            "passed": false,
+            "genomes": 1582
+          },
+          "flag_changed": false
+        },
+        "B2": {
+          "source": "data/gtdb-derived/local/results/salinity_optimum-order-B2.npz",
+          "sha256": "847d7ba0bbc0aac6aa9757fbc0d1d65e298aa9d50ce65b63f0311b49365653ef",
+          "first": {
+            "coverage": 0.8780025284450064,
+            "interval": [
+              0.7643310413245759,
+              0.9521885049606569
+            ],
+            "passed": false,
+            "genomes": 1582
+          },
+          "corrected": {
+            "coverage": 0.8780025284450064,
+            "interval": [
+              0.7643310413245759,
+              0.9521885049606569
+            ],
+            "passed": false,
+            "genomes": 1582
+          },
+          "flag_changed": false
+        }
+      },
+      "joint_flag_changed": false
+    },
+    {
+      "trait": "ph_optimum",
+      "rank": "family",
+      "comparators": {
+        "B1": {
+          "source": "data/gtdb-derived/local/results/ph_optimum-family-B1.npz",
+          "sha256": "28927db9fe63dbd3f7bde9cc0c1a8b0da26732936bb75aaf71caecd052fb1a32",
+          "first": {
+            "coverage": 0.8797127468581688,
+            "interval": [
+              0.7680136405998476,
+              0.9181627292305684
+            ],
+            "passed": false,
+            "genomes": 557
+          },
+          "corrected": {
+            "coverage": 0.8797127468581688,
+            "interval": [
+              0.7680136405998476,
+              0.9181627292305684
+            ],
+            "passed": false,
+            "genomes": 557
+          },
+          "flag_changed": false
+        },
+        "B2": {
+          "source": "data/gtdb-derived/local/results/ph_optimum-family-B2.npz",
+          "sha256": "026764a2969ba99cf63d4e86f287c0f16686a804da48597e91f495a72784cff2",
+          "first": {
+            "coverage": 0.8833034111310593,
+            "interval": [
+              0.7628185907046477,
+              0.9250553146611464
+            ],
+            "passed": false,
+            "genomes": 557
+          },
+          "corrected": {
+            "coverage": 0.8833034111310593,
+            "interval": [
+              0.7628185907046477,
+              0.9250553146611464
+            ],
+            "passed": false,
+            "genomes": 557
+          },
+          "flag_changed": false
+        }
+      },
+      "joint_flag_changed": false
+    },
+    {
+      "trait": "ph_optimum",
+      "rank": "order",
+      "comparators": {
+        "B1": {
+          "source": "data/gtdb-derived/local/results/ph_optimum-order-B1.npz",
+          "sha256": "6566a6ad3b6f4dd5d452c2d18317a8e0c67268602f12851c0dca4e52a398ab53",
+          "first": {
+            "coverage": 0.8618968386023295,
+            "interval": [
+              0.8274497592631358,
+              0.8880070765229338
+            ],
+            "passed": false,
+            "genomes": 1202
+          },
+          "corrected": {
+            "coverage": 0.8618968386023295,
+            "interval": [
+              0.8274497592631358,
+              0.8880070765229338
+            ],
+            "passed": false,
+            "genomes": 1202
+          },
+          "flag_changed": false
+        },
+        "B2": {
+          "source": "data/gtdb-derived/local/results/ph_optimum-order-B2.npz",
+          "sha256": "f704164461d0089d60db86484fddaec80ca6a7da98b67e8217e5ad2f99a162d1",
+          "first": {
+            "coverage": 0.8194675540765392,
+            "interval": [
+              0.7251724653791524,
+              0.8877118892878726
+            ],
+            "passed": false,
+            "genomes": 1202
+          },
+          "corrected": {
+            "coverage": 0.8194675540765392,
+            "interval": [
+              0.7251724653791524,
+              0.8877118892878726
+            ],
+            "passed": false,
+            "genomes": 1202
+          },
+          "flag_changed": false
+        }
+      },
+      "joint_flag_changed": false
+    }
+  ],
+  "exit_code": 0
+}

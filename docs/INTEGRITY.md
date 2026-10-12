@@ -13,3 +13,7 @@ The retrospective measurement analysis refits in a separate local area, retainin
 Coverage uses supported items, including abstentions exactly when their computed interval or set contains the true label. Unsupported items are excluded from coverage and reported as abstentions. Results include failed targets; accepted coverage is not claimed nominal. Publication remains pending an authorised release. No account, key, public repository creation, push or publication occurred.
 
 A supported-only reporting correction also excludes unsupported rows from the naive comparator's accepted-item summaries and counts those rows as abstentions. A dedicated offline fixture covers this case. The pre-registered target records are unchanged, and no fitted value, point prediction or interval changed. The final replay uses this corrected reporting code.
+
+Target 1 fails on part (a), the supported-bin criterion, under either far-bin definition because the same temperature/order and salinity/family bins fail. The reporting repair therefore cannot change the overall failed verdict. [data/gtdb-derived/results/public-results.tsv:L602](../data/gtdb-derived/results/public-results.tsv)
+
+Recomputing the first and corrected aggregations from the retained prediction and interval outputs confirms that no cell's naive far-bin flag changed, either for an individual comparator or for the joint B1 and B2 condition. No fitted state was recomputed for this comparison. [data/checks/far-bin-aggregation-comparison.json:L5-L6](../data/checks/far-bin-aggregation-comparison.json)

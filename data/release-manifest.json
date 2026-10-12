@@ -30,9 +30,9 @@
     "sha256": "0079404eb6dba88e3e7878d6e4199a5196847648ad8d29ceeff8d3f4a09988a4"
   },
   {
-    "bytes": 2531,
+    "bytes": 3247,
     "path": "docs/INTEGRITY.md",
-    "sha256": "64ed2be6ba7bb14401b1ed8b7d79da52b3f8af8d07d6f9c22a0c0671498e2311"
+    "sha256": "69e5aad6a23e2cfe9b4eab0175671162685d86b02367ef49b8580ffdf951c85c"
   },
   {
     "bytes": 5097,
@@ -45,29 +45,34 @@
     "sha256": "af2cbd110e850d0200f852fe5f0ae6e67d56680760fb755b0436df3623c420bf"
   },
   {
-    "bytes": 11337,
+    "bytes": 13030,
+    "path": "data/checks/far-bin-aggregation-comparison.json",
+    "sha256": "f552ced445c5daafb4a54abac5b03a4ca21f7bcd68696a4ea80f1f19f4794174"
+  },
+  {
+    "bytes": 17355,
     "path": "README.md",
-    "sha256": "7de3b0bb8c54d0c341aa342356f758646a47f9ed19f73c41edc3b394efb7183d"
+    "sha256": "5b1d2c5aa7d157f479bda07cb889b92f2af263d5e1a671e044926e32c44e6d2f"
   },
   {
-    "bytes": 24179,
+    "bytes": 29155,
     "path": "docs/TECHNICAL_NOTE.md",
-    "sha256": "e917fb51df2da1aa383c086836bfa2847aea1b085f3cefa8abf464a985ceea20"
+    "sha256": "c323590baefb9ad53a9deeddc24d7d9f446c3a68ee754db9dd5d1c83164fce5b"
   },
   {
-    "bytes": 150203,
+    "bytes": 152336,
     "path": "docs/TECHNICAL_NOTE.pdf",
-    "sha256": "899673a93e2d7ad8b3a12c3dedcc20b6ed17c260469b3e04050d70099941b6e9"
+    "sha256": "c5b928c61ca58e5519bee1a22efc6f0e8ee4075fb3d7d60a1806c59782429465"
   },
   {
-    "bytes": 24832,
+    "bytes": 34202,
     "path": "docs/RESULTS.md",
-    "sha256": "7f6a972387bc6d64128523005eb04fbb8f5f7ec7db8d1f6f9c615440fcced85d"
+    "sha256": "8a83d540ceda22804649a2eafd9e0747d7b56b958be383a93aa156b9b6081773"
   },
   {
-    "bytes": 11193,
+    "bytes": 18507,
     "path": "docs/site/index.html",
-    "sha256": "daafdf546437c7a94253b002e92fdc0332e637e77d0c70f2ea6731a95196958f"
+    "sha256": "48f500f0997544cb813415112052066f2b4e62f3007b2711238ba44497df7b1a"
   },
   {
     "bytes": 2140,

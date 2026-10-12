@@ -263,9 +263,9 @@ def main() -> None:
     write_json(RESULTS/'figure-data.json', figure_rows)
     build_figures(records, measure)
     order_rows = [['Trait', 'B1 error [95% interval]', 'Proposed error [95% interval]', 'Paired reduction [95% interval]']]
-    coverage_rows = [['Trait / rank', 'Coverage [95% interval]', 'Abstention', 'Mean width or cardinality']]
+    coverage_rows = [['Trait / rank', 'Pooled coverage [95% interval]', 'Accepted coverage [95% interval]', 'Abstention', 'Mean width or cardinality', 'Accepted mean width or cardinality']]
     horizon_rows = [['Trait', 'Proposed horizon', 'B1 horizon', 'Proposed ordinal interval']]
-    measure_rows = [['Trait', 'Widest error AUC', 'Farthest error AUC', 'Random error AUC']]
+    measure_rows = [['Trait / strategy', 'Mean error AUC', 'Mean width or cardinality AUC']]
     md_order, md_coverage, md_horizon, md_measure = [], [], [], []
     for t in TRAITS:
         r = records[t]['order']
@@ -275,7 +275,7 @@ def main() -> None:
         md_order.append('| '+' | '.join(cells)+' | '+table.cite(f'{t}/order/B1/overall')+'; '+table.cite(f'{t}/order/method/overall')+'; '+table.cite(f'{t}/order/accuracy')+' |')
         for rank in ('family', 'order'):
             c = records[t][rank]['methods']['method']['overall']
-            cells = [LABELS[t]+' / '+rank, interval(c['coverage'], True), number(c['abstention_rate'], True), number(c['mean_size'])]
+            cells = [LABELS[t]+' / '+rank, interval(c['coverage'], True), interval(c['coverage_accepted'], True), number(c['abstention_rate'], True), number(c['mean_size']), number(c['mean_size_accepted'])]
             coverage_rows.append(cells)
             md_coverage.append('| '+' | '.join(cells)+' | '+table.cite(f'{t}/{rank}/method/overall')+' |')
         hs = r['horizons']
@@ -284,16 +284,51 @@ def main() -> None:
         cells = [LABELS[t], htext(hs['method']), htext(hs['B1']), str(hs['method']['ordinal_interval'])]
         horizon_rows.append(cells)
         md_horizon.append('| '+' | '.join(cells)+' | '+table.cite(f'{t}/order/method/horizon')+'; '+table.cite(f'{t}/order/B1/horizon')+' |')
-        cells = [LABELS[t]]+[number(measure['traits'][t][s]['mean_error_auc']) for s in ('widest', 'farthest', 'random')]
-        measure_rows.append(cells)
-        md_measure.append('| '+' | '.join(cells)+' | '+'; '.join(table.cite(f'{t}/measure/{s}') for s in ('widest', 'farthest', 'random'))+' |')
+        for strategy in ('widest', 'farthest', 'random'):
+            acquisition = measure['traits'][t][strategy]
+            cells = [LABELS[t]+' / '+strategy, number(acquisition['mean_error_auc']),
+                     number(acquisition['mean_width_auc'])]
+            measure_rows.append(cells)
+            md_measure.append('| '+' | '.join(cells)+' | '+table.cite(f'{t}/measure/{strategy}')+' |')
     def md_table(headers: list[str], rows: list[str]) -> str:
         return '| '+' | '.join(headers+['Pinned source line'])+' |\n| '+' | '.join(['---']*(len(headers)+1))+' |\n'+'\n'.join(rows)
     order_md = md_table(order_rows[0], md_order)
     coverage_md = md_table(coverage_rows[0], md_coverage)
     horizon_md = md_table(horizon_rows[0], md_horizon)
     measure_md = md_table(measure_rows[0], md_measure)
-    statuses = '\n'.join(f"- Target {i}: {'passed' if target['target'+str(i)]['passed'] else 'failed'}. {table.cite('target'+str(i))}" for i in range(1, 5))
+    target3_text = 'Target 3: not met at this commit (publication pending). Horizon estimates for every trait are in the package.'
+    statuses = '\n'.join('- '+target3_text+' '+table.cite('target3') if i == 3 else
+        f"- Target {i}: {'passed' if target['target'+str(i)]['passed'] else 'failed'}. {table.cite('target'+str(i))}" for i in range(1, 5))
+    target1_text = ('Target 1 failed on two of its three parts. Pooled coverage intervals reached 90% '
+        'in all eight trait and rank cells. Two supported bins had intervals wholly below 87% '
+        '(temperature/order fold 2 bin 0; salinity/family fold 3 bin 2). The naive far-bin condition '
+        'held in 1 of 8 cells, temperature/order, for both B1 and B2. Elsewhere at least one naive '
+        'comparator covered more than 80%, or had an upper limit of 90% or more, in the far bin. '
+        +table.cite('target1')+'; '+table.cite('protocol'))
+    b1_scope = ('Target 4 counts order rank only. B1 has lower point error than the proposed '
+        'predictor for order-holdout temperature and salinity; neither paired interval excludes zero. '
+        +table.cite('target4')+'; '+table.cite('temperature_optimum/order/accuracy')+'; '
+        +table.cite('salinity_optimum/order/accuracy')+' B1 also has lower point error for temperature '
+        'at genus, phylum and the random split, salinity at family, class and phylum, and pH at phylum; '
+        'none of those paired intervals excludes zero. Salinity at genus is identical. '
+        +'; '.join(table.cite(t+'/'+rank+'/accuracy') for t, rank in [
+            ('temperature_optimum', 'genus'), ('temperature_optimum', 'phylum'),
+            ('temperature_optimum', 'random'), ('salinity_optimum', 'family'),
+            ('salinity_optimum', 'class'), ('salinity_optimum', 'phylum'),
+            ('ph_optimum', 'phylum'), ('salinity_optimum', 'genus')]))
+    b0_limits = ('The training-mean baseline B0 has the lowest point error for temperature at '
+        'phylum and for pH at class and phylum, limiting the value of genome-based predictions '
+        'at these ranks. '+ '; '.join(table.cite(t+'/'+rank+'/'+m+'/overall') for t, rank in [
+            ('temperature_optimum', 'phylum'), ('ph_optimum', 'class'), ('ph_optimum', 'phylum')]
+            for m in ('B0', 'B1', 'B2', 'B3', 'method')))
+    width_text = ('Random selection has the lowest mean width AUC for temperature, salinity and pH. '
+        'Widest-first has the lowest mean set-cardinality AUC only for oxygen. '
+        +'; '.join(table.cite(t+'/measure/'+strategy) for t in TRAITS
+            for strategy in ('widest', 'farthest', 'random')))
+    accepted_text = 'Accepted-item coverage has no nominal guarantee. Accepted items exclude abstentions and unsupported rows.'
+    def site_prose(text: str) -> str:
+        return re.sub(r'\[([^]]+)\]\(([^)]+)\)',
+            lambda m: '<a href="../../'+html.escape(m[2], quote=True)+'">'+html.escape(m[1])+'</a>', text)
     preface = f'''# Growth Horizon
 
 GeneX Labs Inc. measures how growth-condition predictions behave as microbial genomes become more distant from labelled relatives. The benchmark combines taxonomic holdout, empirical interval coverage and abstention, so a laboratory can see both predictive error and how often uncertainty prevents a useful answer.
@@ -301,6 +336,10 @@ GeneX Labs Inc. measures how growth-condition predictions behave as microbial ge
 The locked calibration and accuracy targets failed. B1 has lower order-holdout error for temperature and salinity. The proposed predictor does not achieve the required accuracy improvement on any trait. These are descriptive results from the full usable labelled population; no estimator or target was changed after outer scoring.
 
 {statuses}
+
+{target1_text}
+
+{b1_scope}
 
 ## Order-holdout accuracy
 
@@ -314,17 +353,25 @@ Coverage includes supported abstentions exactly when the computed interval or se
 
 {coverage_md}
 
-## Horizons and measurement selection
+{accepted_text}
+
+## Horizons
 
 Horizon bins use the frozen common cuts. The first failure compares with a training-side constant and checks whether most predictions abstain. Zero-based bin ordinals and their exploratory bootstrap intervals are discrete summaries. A right-censored horizon extends beyond the observed bins; it is not an infinite or universal threshold.
 
 {horizon_md}
 
+## Exploratory measurement selection
+
 The retrospective measurement experiment acquires whole orders under the stated organism budget, refits and recalibrates, and measures error and width on the remaining far organisms. Evaluation populations change as orders are acquired. A smaller area under the budget curve is preferable; the estimates below average the fold curves and have no confirmatory target.
 
 {measure_md}
 
+{width_text}
+
 ## Limits and sources
+
+{b0_limits}
 
 Exchangeability within distance bins is assumed, not demonstrated. Grouped unequal-size folds and distance conditioning do not inherit a demonstrated finite-sample guarantee from unconditioned CV+ results. Labels are table-level experimental records exported through GenomeSPOT, with residual per-value provenance uncertainty. Correlated genomes, small distant taxa, changing annotations and unsupported ranks limit generalisation. Accepted-item coverage has no nominal guarantee.
 
@@ -399,9 +446,20 @@ Numeric error is mean absolute error. Oxygen error is one minus balanced accurac
 
 Pinned coverage sources: {table.cite('temperature_optimum/family/method/overall')} {table.cite('temperature_optimum/order/method/overall')} {table.cite('oxygen/family/method/overall')} {table.cite('oxygen/order/method/overall')} {table.cite('salinity_optimum/family/method/overall')} {table.cite('salinity_optimum/order/method/overall')} {table.cite('ph_optimum/family/method/overall')} {table.cite('ph_optimum/order/method/overall')}
 
-The calibrated target fails because supported cells can fail the lower-coverage criterion and the naive far-bin condition does not hold across all traits and ranks. The accuracy target fails because the required relative error reduction with positive paired interval is not reached on the required number of traits. B1 wins on order-holdout temperature and salinity. {table.cite('target1')}; {table.cite('target2')}; {table.cite('target4')}
+{accepted_text}
 
 Unsupported phylum calibration and the unsupported salinity class bins remain visible as abstentions in the complete results. Taxon-weighted coverage provides a separate view of unequal taxon size; it changes no primary target.''',
+    f'''# Target interpretation and baseline limits
+
+{statuses}
+
+{target1_text}
+
+The accuracy target fails because the required relative error reduction with a positive paired interval is not reached on the required number of traits. {table.cite('target2')}
+
+{b1_scope}
+
+{b0_limits}''',
     f'''# Horizons and secondary checks
 
 The horizon rule compares with B0, using the frozen common distance cuts. It is the first bin where the lower confidence limit for the improvement reaches zero or most items abstain. For oxygen, improvement is balanced accuracy minus chance. Value over B2 is reported in every bin without imposing a first-failure rule. Empty or unsupported horizon bins produce an unidentified state.
@@ -419,7 +477,7 @@ Bin ordinals are zero based. The bootstrap repeats paired taxon draws across the
 Taxon-weighted coverage counts each represented held-out taxon once, after unsupported rows are excluded. The mean-fit-distance secondary axis recomputes each query's assigned calibration bin from the mean of its five actual fitting-side distances, keeping frozen cuts and merges. Coverage and abstentions accompany both views.
 
 The ten-column sensitivity analysis explicitly removes mean_zc and mean_nh2o in all compartments, clones the frozen B1 and proposed point specifications, and refits on the same proper training rows. None of those columns is in the frozen amino-acid-frequency feature lists, so predictions remain identical. This is a result of the specified feature lists, not evidence that the descriptors are scientifically irrelevant. The feature-recomputation discrepancy remains a provenance limitation. {table.cite('protocol')}''',
-    f'''# Retrospective measurement selection and limits
+    f'''# Exploratory retrospective measurement selection and limits
 
 The supporting experiment asks which labelled orders would be useful to acquire next, starting from each order-holdout training side. It compares widest calibrated uncertainty, farthest-first mean branch distance and seeded random order selection. Candidate labels are not consulted by selection. Acquisition is by whole order under the organism budget; orders that would exceed the remaining budget are skipped. Counts and unused budgets are recorded after every batch. {table.cite('protocol')}
 
@@ -429,7 +487,7 @@ Far organisms are defined by their original distance beyond the last common orde
 
 {{{{table:measure}}}}
 
-Pinned measurement sources: {table.cite('temperature_optimum/measure/widest')} {table.cite('temperature_optimum/measure/farthest')} {table.cite('temperature_optimum/measure/random')} {table.cite('oxygen/measure/widest')} {table.cite('oxygen/measure/farthest')} {table.cite('oxygen/measure/random')} {table.cite('salinity_optimum/measure/widest')} {table.cite('salinity_optimum/measure/farthest')} {table.cite('salinity_optimum/measure/random')} {table.cite('ph_optimum/measure/widest')} {table.cite('ph_optimum/measure/farthest')} {table.cite('ph_optimum/measure/random')}
+{width_text}
 
 ## Limits that govern interpretation
 
@@ -437,7 +495,7 @@ Exchangeability within fixed distance bins is assumed, not established by shared
 
 Table-level experimental provenance has a residual risk: the later release asset could differ from the older export in ways the matching checks did not detect. The labels do not preserve independent experimental citations for every row. Annotation changes and descriptor discrepancies are not resolved by this benchmark. The reference tree is an approximation to evolutionary relatedness; trait transfer may fail despite short distance.
 
-Measurement selection is retrospective. It does not show that a laboratory can culture or assay the selected organisms, that records are exchangeable with a future collection, or that the strategy expands a future horizon. The horizon estimates are supplied in the package; publication is pending, so the literal published-horizon target remains unmet until an authorised release. {table.cite('target3')}
+Measurement selection is retrospective. It does not show that a laboratory can culture or assay the selected organisms, that records are exchangeable with a future collection, or that the strategy expands a future horizon. {target3_text} {table.cite('target3')}
 
 Boger and colleagues provide adjacent protein-retrieval risk control. Fannjiang and colleagues examine adaptive-design covariate shift. Barber and colleagues analyse nonexchangeability, and Vovk develops conditional validity for inductive predictors. These works motivate careful calibration and boundary language; they do not prove this grouped distance-conditioned procedure valid.''',
     f'''# References and reconstruction
@@ -466,13 +524,15 @@ Offline fixtures check complete-taxon resampling, disjoint fitting memberships, 
     (ROOT/'docs/TECHNICAL_NOTE.md').write_text(note+'\n')
     pdf_note(pages, {'accuracy': order_rows, 'coverage': coverage_rows, 'horizons': horizon_rows, 'measure': measure_rows})
     all_rows = ['# Complete aggregate results\n\nEvery row covers the full usable outer population for its trait and rank. Unsupported items are excluded from coverage and counted in abstention. Oxygen error is one minus balanced accuracy. All reported uncertainty intervals resample held-out taxa.\n',
-                '| Trait | Rank | Method | Error [95% interval] | Coverage [95% interval] | Abstention | Mean size | Pinned source line |',
-                '| --- | --- | --- | --- | --- | --- | --- | --- |']
+                '| Trait | Rank | Method | Error [95% interval] | Pooled coverage [95% interval] | Accepted coverage [95% interval] | Abstention | Mean size | Accepted mean size | Pinned source line |',
+                '| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |']
     for t in TRAITS:
         for rank in RANKS:
             for m, r in records[t][rank]['methods'].items():
                 o = r['overall']
-                all_rows.append('| '+' | '.join([LABELS[t], rank, m, interval(o['error']), interval(o['coverage'], True), number(o['abstention_rate'], True), number(o['mean_size']), table.cite(f'{t}/{rank}/{m}/overall', '../')])+' |')
+                all_rows.append('| '+' | '.join([LABELS[t], rank, m, interval(o['error']), interval(o['coverage'], True), interval(o['coverage_accepted'], True), number(o['abstention_rate'], True), number(o['mean_size']), number(o['mean_size_accepted']), table.cite(f'{t}/{rank}/{m}/overall', '../')])+' |')
+    all_rows[0] += '\n'+statuses+'\n\n'+target1_text+'\n\n'+b1_scope+'\n\n'+b0_limits+'\n\n'+accepted_text+'\n'
+    all_rows[0] = all_rows[0].replace(']('+PUBLIC+')', '](../'+PUBLIC+')')
     (ROOT/'docs/RESULTS.md').write_text('\n'.join(all_rows)+'\n')
     site = ROOT/'docs/site'
     site.mkdir(exist_ok=True)
@@ -487,17 +547,17 @@ Offline fixtures check complete-taxon resampling, disjoint fitting memberships, 
 <html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Growth Horizon | GeneX Labs</title><meta name="description" content="An empirical benchmark of microbial growth prediction, uncertainty and measurement selection."><link rel="stylesheet" href="style.css"></head>
 <body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="#main">GeneX Labs <span>Research software</span></a><nav aria-label="Page navigation"><a href="#results">Results</a><a href="#horizons">Horizons</a><a href="#measure">Measure next</a><a href="#rebuild">Rebuild</a></nav></header>
 <main id="main"><section class="hero"><p class="eyebrow">Microbial growth / empirical benchmark</p><h1>How far can a growth prediction be trusted?</h1><p class="lead">Follow prediction error, coverage and abstention as genomes move away from labelled relatives.</p><p class="status">Local release candidate. Public release pending scientific review.</p></section>
-<section id="results"><p class="eyebrow">The locked result</p><h2>The calibration and accuracy targets failed.</h2><p>B1 has lower order-holdout error for temperature and salinity. The proposed predictor does not meet the required accuracy improvement. The full results retain failures, unsupported bins and uncertainty intervals.</p>{site_table(order_rows, [';'.join([t+'/order/B1/overall',t+'/order/method/overall',t+'/order/accuracy']) for t in TRAITS])}<h3>Coverage with abstentions</h3><p>Supported abstentions count as covered exactly when the computed interval or set contains the true label. Unsupported items are excluded from coverage and reported as abstentions.</p>{site_table(coverage_rows, [t+'/'+rank+'/method/overall' for t in TRAITS for rank in ('family','order')])}<figure><img src="../../data/gtdb-derived/figures/coverage-order.svg" alt="Every supported order-holdout cell has a coverage interval and an adjacent abstention bar, split by trait."><figcaption>Order holdout. Each fold and merged bin is shown separately. Underlying cells are pinned in <a href="../../data/gtdb-derived/results/figure-data.json">figure-data.json</a>.</figcaption></figure></section>
+<section id="results"><p class="eyebrow">The locked result</p><h2>The calibration and accuracy targets failed.</h2><p>B1 has lower order-holdout error for temperature and salinity. The proposed predictor does not meet the required accuracy improvement. The full results retain failures, unsupported bins and uncertainty intervals.</p><p>{site_prose(target1_text)}</p><p>{site_prose(target3_text+" "+table.cite("target3"))}</p><p>{site_prose(b1_scope)}</p>{site_table(order_rows, [';'.join([t+'/order/B1/overall',t+'/order/method/overall',t+'/order/accuracy']) for t in TRAITS])}<h3>Coverage with abstentions</h3><p>Supported abstentions count as covered exactly when the computed interval or set contains the true label. Unsupported items are excluded from coverage and reported as abstentions.</p><p>{accepted_text}</p>{site_table(coverage_rows, [t+'/'+rank+'/method/overall' for t in TRAITS for rank in ('family','order')])}<figure><img src="../../data/gtdb-derived/figures/coverage-order.svg" alt="Every supported order-holdout cell has a coverage interval and an adjacent abstention bar, split by trait."><figcaption>Order holdout. Each fold and merged bin is shown separately. Underlying cells are pinned in <a href="../../data/gtdb-derived/results/figure-data.json">figure-data.json</a>.</figcaption></figure></section>
 <section id="horizons"><p class="eyebrow">Beyond the average</p><h2>A measured range, with limits.</h2><p>The horizon first fails against a training-side constant or when most predictions abstain. A right-censored estimate extends beyond the observed range. These discrete bootstrap summaries do not certify a universal distance threshold.</p>{site_table(horizon_rows, [';'.join([t+'/order/method/horizon',t+'/order/B1/horizon']) for t in TRAITS])}<figure><img src="../../data/gtdb-derived/figures/secondary-coverage.svg" alt="Genome-weighted, taxon-weighted and mean-fit-distance coverage intervals are shown above their abstention rates."><figcaption>Secondary coverage checks. Frozen feature lists exclude the disputed descriptors; explicit refits without them give identical predictions.</figcaption></figure></section>
-<section id="measure"><p class="eyebrow">What to measure next</p><h2>Retrospective selection on the same pipeline.</h2><p>Widest uncertainty, farthest-first distance and random selection acquire whole orders, then refit and recalibrate. Lower error area under the budget curve is preferable. Remaining evaluation populations change by strategy, so this is exploratory evidence.</p>{site_table(measure_rows, [';'.join([t+'/measure/'+s for s in ('widest','farthest','random')]) for t in TRAITS])}<figure><img src="../../data/gtdb-derived/figures/measure-next.svg" alt="Width, error and abstention curves compare the three acquisition strategies on the remaining far organisms."><figcaption>Fold means. No laboratory measurement or future-horizon gain is claimed.</figcaption></figure></section>
-<section class="limits"><h2>What this evidence supports</h2><p>Exchangeability is assumed, not established. Labels are table-level experimental records with residual per-value provenance uncertainty. Correlated genomes, unequal taxon size, unsupported ranks and annotation changes limit generalisation. Accepted-item coverage has no nominal guarantee.</p><p>Read the <a href="../TECHNICAL_NOTE.pdf">technical note (PDF)</a>, <a href="../TECHNICAL_NOTE.md">Markdown note</a>, <a href="../RESULTS.md">complete results</a>, <a href="../../PREREGISTRATION.md">pre-registration</a> and <a href="../../DATA.md">data terms and attribution</a>.</p></section>
+<section id="measure"><p class="eyebrow">What to measure next</p><h2>Exploratory retrospective selection on the same pipeline.</h2><p>Widest uncertainty, farthest-first distance and random selection acquire whole orders, then refit and recalibrate. Lower error and mean width or cardinality areas under the budget curve are preferable. Remaining evaluation populations change by strategy, so this is exploratory evidence.</p>{site_table(measure_rows, [t+'/measure/'+strategy for t in TRAITS for strategy in ('widest','farthest','random')])}<p>{site_prose(width_text)}</p><figure><img src="../../data/gtdb-derived/figures/measure-next.svg" alt="Width, error and abstention curves compare the three acquisition strategies on the remaining far organisms."><figcaption>Fold means. No laboratory measurement or future-horizon gain is claimed.</figcaption></figure></section>
+<section class="limits"><h2>What this evidence supports</h2><p>{site_prose(b0_limits)}</p><p>Exchangeability is assumed, not established. Labels are table-level experimental records with residual per-value provenance uncertainty. Correlated genomes, unequal taxon size, unsupported ranks and annotation changes limit generalisation. Accepted-item coverage has no nominal guarantee.</p><p>Read the <a href="../TECHNICAL_NOTE.pdf">technical note (PDF)</a>, <a href="../TECHNICAL_NOTE.md">Markdown note</a>, <a href="../RESULTS.md">complete results</a>, <a href="../../PREREGISTRATION.md">pre-registration</a> and <a href="../../DATA.md">data terms and attribution</a>.</p></section>
 <section id="rebuild"><p class="eyebrow">Reproducible by design</p><h2>Rebuild the whole package.</h2><pre><code>uv run --project release --frozen python -m scripts.release</code></pre><p>Every empirical number links to a source-table line, and the <a href="../../data/release-manifest.json">release manifest</a> pins output hashes. Raw records and fitted estimators are not redistributed. Code is Apache-2.0; aggregate GTDB-derived analyses are CC BY-SA 4.0.</p></section></main><footer>GeneX Labs Inc. <a href="../../CITATION.cff">Cite this work</a> <a href="../../LICENSE">Code licence</a></footer></body></html>'''
     (site/'index.html').write_text(page+'\n')
     (site/'style.css').write_text('''*{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;background:#f6f5ef;color:#18323c;font:17px/1.6 system-ui,sans-serif}a{color:#145e69;text-underline-offset:.2em}a:focus-visible{outline:3px solid #b34519;outline-offset:5px}.skip{position:absolute;left:1rem;top:-5rem;background:white;padding:1rem}.skip:focus{top:1rem}header,footer{max-width:1180px;margin:auto;padding:28px 32px;display:flex;justify-content:space-between;gap:24px}header{border-bottom:1px solid #cad7d6}.brand{font-size:20px;font-weight:750;text-decoration:none}.brand span{display:block;font-size:12px;font-weight:500;letter-spacing:.05em}nav{display:flex;align-items:center;gap:25px}nav a{font-size:14px}main{max-width:1116px;margin:auto;padding:0 32px}.hero{padding:80px 0 70px;max-width:850px}h1{font-size:clamp(42px,6vw,76px);line-height:1.08;letter-spacing:-.055em;margin:16px 0 25px}h2{font-size:clamp(28px,4vw,42px);line-height:1.2;letter-spacing:-.03em;max-width:850px}h3{font-size:24px}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:750;color:#176b75}.lead{font-size:24px;max-width:690px}.status{font-size:14px;border-left:3px solid #b34519;padding-left:12px}section{padding:44px 0;border-bottom:1px solid #cad7d6}section p{max-width:800px}.table-wrap{overflow:auto;margin:28px 0}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #cad7d6}thead{background:#e4eeee}th[scope=row]{font-weight:650}figure{margin:40px 0}img{max-width:100%;height:auto;background:white}figcaption{font-size:13px;color:#49616a;margin-top:12px}.limits{background:#e4eeee;padding:32px;margin:40px -20px;border:0}pre{padding:22px;background:#18323c;color:#fff;overflow:auto;font-size:14px}footer{font-size:13px;flex-wrap:wrap}footer a{margin-left:15px}@media(max-width:650px){header{padding:22px;flex-direction:column}nav{gap:15px;flex-wrap:wrap}main{padding:0 22px}.hero{padding:55px 0}.lead{font-size:20px}section{padding:30px 0}th,td{padding:10px 8px}.limits{margin:25px 0;padding:20px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 ''')
     files = [ROOT/'DATA.md', ROOT/'LICENSE', ROOT/'NOTICE', ROOT/'CITATION.cff', ROOT/'CHANGELOG.md',
              ROOT/'docs/reproducibility.md', ROOT/'docs/INTEGRITY.md', ROOT/'docs/related-work.md',
-             ROOT/'data/paper-source-checks.json', ROOT/'README.md', ROOT/'docs/TECHNICAL_NOTE.md', ROOT/'docs/TECHNICAL_NOTE.pdf', ROOT/'docs/RESULTS.md',
+             ROOT/'data/paper-source-checks.json', ROOT/'data/checks/far-bin-aggregation-comparison.json', ROOT/'README.md', ROOT/'docs/TECHNICAL_NOTE.md', ROOT/'docs/TECHNICAL_NOTE.pdf', ROOT/'docs/RESULTS.md',
              site/'index.html', site/'style.css', *sorted(RESULTS.glob('*')), *sorted(FIG.glob('*'))]
     write_json(ROOT/'data/release-manifest.json', [{'path': str(p.relative_to(ROOT)),
         'bytes': p.stat().st_size, 'sha256': digest(p)} for p in files if p.is_file()])

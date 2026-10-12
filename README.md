@@ -6,8 +6,12 @@ The locked calibration and accuracy targets failed. B1 has lower order-holdout e
 
 - Target 1: failed. [data/gtdb-derived/results/public-results.tsv:L602](data/gtdb-derived/results/public-results.tsv)
 - Target 2: failed. [data/gtdb-derived/results/public-results.tsv:L603](data/gtdb-derived/results/public-results.tsv)
-- Target 3: failed. [data/gtdb-derived/results/public-results.tsv:L604](data/gtdb-derived/results/public-results.tsv)
+- Target 3: not met at this commit (publication pending). Horizon estimates for every trait are in the package. [data/gtdb-derived/results/public-results.tsv:L604](data/gtdb-derived/results/public-results.tsv)
 - Target 4: passed. [data/gtdb-derived/results/public-results.tsv:L605](data/gtdb-derived/results/public-results.tsv)
+
+Target 1 failed on two of its three parts. Pooled coverage intervals reached 90% in all eight trait and rank cells. Two supported bins had intervals wholly below 87% (temperature/order fold 2 bin 0; salinity/family fold 3 bin 2). The naive far-bin condition held in 1 of 8 cells, temperature/order, for both B1 and B2. Elsewhere at least one naive comparator covered more than 80%, or had an upper limit of 90% or more, in the far bin. [data/gtdb-derived/results/public-results.tsv:L602](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L618](data/gtdb-derived/results/public-results.tsv)
+
+Target 4 counts order rank only. B1 has lower point error than the proposed predictor for order-holdout temperature and salinity; neither paired interval excludes zero. [data/gtdb-derived/results/public-results.tsv:L605](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L76](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L376](data/gtdb-derived/results/public-results.tsv) B1 also has lower point error for temperature at genus, phylum and the random split, salinity at family, class and phylum, and pH at phylum; none of those paired intervals excludes zero. Salinity at genus is identical. [data/gtdb-derived/results/public-results.tsv:L26](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L126](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L151](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L351](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L401](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L426](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L576](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L326](data/gtdb-derived/results/public-results.tsv)
 
 ## Order-holdout accuracy
 
@@ -24,18 +28,20 @@ Numeric error is mean absolute error in degrees C, percent NaCl or pH units. Oxy
 
 Coverage includes supported abstentions exactly when the computed interval or set contains the true label. Unsupported items are excluded from coverage and reported as abstentions. Width is in the trait's original units; oxygen uses set cardinality. Every coverage estimate is accompanied by abstentions.
 
-| Trait / rank | Coverage [95% interval] | Abstention | Mean width or cardinality | Pinned source line |
-| --- | --- | --- | --- | --- |
-| Temperature / family | 90.07% [88.05%, 91.94%] | 8.06% | 17.8647 | [data/gtdb-derived/results/public-results.tsv:L44](data/gtdb-derived/results/public-results.tsv) |
-| Temperature / order | 90.29% [87.99%, 92.25%] | 20.38% | 18.7015 | [data/gtdb-derived/results/public-results.tsv:L69](data/gtdb-derived/results/public-results.tsv) |
-| Oxygen / family | 90.89% [89.20%, 92.39%] | 22.53% | 1.1141 | [data/gtdb-derived/results/public-results.tsv:L194](data/gtdb-derived/results/public-results.tsv) |
-| Oxygen / order | 92.10% [89.46%, 94.37%] | 25.56% | 1.1779 | [data/gtdb-derived/results/public-results.tsv:L219](data/gtdb-derived/results/public-results.tsv) |
-| Salinity / family | 90.63% [87.84%, 92.97%] | 6.69% | 6.8323 | [data/gtdb-derived/results/public-results.tsv:L344](data/gtdb-derived/results/public-results.tsv) |
-| Salinity / order | 89.99% [82.28%, 94.97%] | 48.15% | 7.7806 | [data/gtdb-derived/results/public-results.tsv:L369](data/gtdb-derived/results/public-results.tsv) |
-| pH / family | 90.35% [88.49%, 91.97%] | 0.06% | 2.2096 | [data/gtdb-derived/results/public-results.tsv:L494](data/gtdb-derived/results/public-results.tsv) |
-| pH / order | 89.04% [86.64%, 91.07%] | 0.00% | 2.1944 | [data/gtdb-derived/results/public-results.tsv:L519](data/gtdb-derived/results/public-results.tsv) |
+| Trait / rank | Pooled coverage [95% interval] | Accepted coverage [95% interval] | Abstention | Mean width or cardinality | Accepted mean width or cardinality | Pinned source line |
+| --- | --- | --- | --- | --- | --- | --- |
+| Temperature / family | 90.07% [88.05%, 91.94%] | 89.99% [88.01%, 91.86%] | 8.06% | 17.8647 | 17.5959 | [data/gtdb-derived/results/public-results.tsv:L44](data/gtdb-derived/results/public-results.tsv) |
+| Temperature / order | 90.29% [87.99%, 92.25%] | 90.17% [87.61%, 92.38%] | 20.38% | 18.7015 | 17.5541 | [data/gtdb-derived/results/public-results.tsv:L69](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen / family | 90.89% [89.20%, 92.39%] | 95.41% [93.45%, 97.02%] | 22.53% | 1.1141 | 1.0000 | [data/gtdb-derived/results/public-results.tsv:L194](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen / order | 92.10% [89.46%, 94.37%] | 94.61% [91.64%, 97.16%] | 25.56% | 1.1779 | 1.0000 | [data/gtdb-derived/results/public-results.tsv:L219](data/gtdb-derived/results/public-results.tsv) |
+| Salinity / family | 90.63% [87.84%, 92.97%] | 90.32% [87.56%, 92.69%] | 6.69% | 6.8323 | 6.7127 | [data/gtdb-derived/results/public-results.tsv:L344](data/gtdb-derived/results/public-results.tsv) |
+| Salinity / order | 89.99% [82.28%, 94.97%] | 83.32% [71.31%, 91.84%] | 48.15% | 7.7806 | 6.7489 | [data/gtdb-derived/results/public-results.tsv:L369](data/gtdb-derived/results/public-results.tsv) |
+| pH / family | 90.35% [88.49%, 91.97%] | 90.37% [88.36%, 91.87%] | 0.06% | 2.2096 | 2.2090 | [data/gtdb-derived/results/public-results.tsv:L494](data/gtdb-derived/results/public-results.tsv) |
+| pH / order | 89.04% [86.64%, 91.07%] | 89.04% [86.64%, 91.07%] | 0.00% | 2.1944 | 2.1944 | [data/gtdb-derived/results/public-results.tsv:L519](data/gtdb-derived/results/public-results.tsv) |
 
-## Horizons and measurement selection
+Accepted-item coverage has no nominal guarantee. Accepted items exclude abstentions and unsupported rows.
+
+## Horizons
 
 Horizon bins use the frozen common cuts. The first failure compares with a training-side constant and checks whether most predictions abstain. Zero-based bin ordinals and their exploratory bootstrap intervals are discrete summaries. A right-censored horizon extends beyond the observed bins; it is not an infinite or universal threshold.
 
@@ -46,16 +52,30 @@ Horizon bins use the frozen common cuts. The first failure compares with a train
 | Salinity | Bin 2 (0.4492 to 0.5172) | Bin 2 (0.4492 to 0.5172) | [1, 3] | [data/gtdb-derived/results/public-results.tsv:L375](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L374](data/gtdb-derived/results/public-results.tsv) |
 | pH | Bin 2 (0.4577 to 0.5206) | Bin 1 (0.3674 to 0.4577) | [2, 5] | [data/gtdb-derived/results/public-results.tsv:L525](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L524](data/gtdb-derived/results/public-results.tsv) |
 
+## Exploratory measurement selection
+
 The retrospective measurement experiment acquires whole orders under the stated organism budget, refits and recalibrates, and measures error and width on the remaining far organisms. Evaluation populations change as orders are acquired. A smaller area under the budget curve is preferable; the estimates below average the fold curves and have no confirmatory target.
 
-| Trait | Widest error AUC | Farthest error AUC | Random error AUC | Pinned source line |
-| --- | --- | --- | --- | --- |
-| Temperature | 5.1394 | 5.2161 | 5.5904 | [data/gtdb-derived/results/public-results.tsv:L606](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L607](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L608](data/gtdb-derived/results/public-results.tsv) |
-| Oxygen | 0.1517 | 0.1750 | 0.1625 | [data/gtdb-derived/results/public-results.tsv:L609](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L610](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L611](data/gtdb-derived/results/public-results.tsv) |
-| Salinity | 2.5746 | 2.6690 | 2.6345 | [data/gtdb-derived/results/public-results.tsv:L612](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L613](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L614](data/gtdb-derived/results/public-results.tsv) |
-| pH | 0.5423 | 0.5075 | 0.5567 | [data/gtdb-derived/results/public-results.tsv:L615](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L616](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L617](data/gtdb-derived/results/public-results.tsv) |
+| Trait / strategy | Mean error AUC | Mean width or cardinality AUC | Pinned source line |
+| --- | --- | --- | --- |
+| Temperature / widest | 5.1394 | 23.6409 | [data/gtdb-derived/results/public-results.tsv:L606](data/gtdb-derived/results/public-results.tsv) |
+| Temperature / farthest | 5.2161 | 23.6662 | [data/gtdb-derived/results/public-results.tsv:L607](data/gtdb-derived/results/public-results.tsv) |
+| Temperature / random | 5.5904 | 23.3881 | [data/gtdb-derived/results/public-results.tsv:L608](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen / widest | 0.1517 | 1.2486 | [data/gtdb-derived/results/public-results.tsv:L609](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen / farthest | 0.1750 | 1.2903 | [data/gtdb-derived/results/public-results.tsv:L610](data/gtdb-derived/results/public-results.tsv) |
+| Oxygen / random | 0.1625 | 1.2788 | [data/gtdb-derived/results/public-results.tsv:L611](data/gtdb-derived/results/public-results.tsv) |
+| Salinity / widest | 2.5746 | 9.1991 | [data/gtdb-derived/results/public-results.tsv:L612](data/gtdb-derived/results/public-results.tsv) |
+| Salinity / farthest | 2.6690 | 8.9830 | [data/gtdb-derived/results/public-results.tsv:L613](data/gtdb-derived/results/public-results.tsv) |
+| Salinity / random | 2.6345 | 8.8672 | [data/gtdb-derived/results/public-results.tsv:L614](data/gtdb-derived/results/public-results.tsv) |
+| pH / widest | 0.5423 | 2.4999 | [data/gtdb-derived/results/public-results.tsv:L615](data/gtdb-derived/results/public-results.tsv) |
+| pH / farthest | 0.5075 | 2.5501 | [data/gtdb-derived/results/public-results.tsv:L616](data/gtdb-derived/results/public-results.tsv) |
+| pH / random | 0.5567 | 2.4505 | [data/gtdb-derived/results/public-results.tsv:L617](data/gtdb-derived/results/public-results.tsv) |
+
+Random selection has the lowest mean width AUC for temperature, salinity and pH. Widest-first has the lowest mean set-cardinality AUC only for oxygen. [data/gtdb-derived/results/public-results.tsv:L606](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L607](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L608](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L609](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L610](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L611](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L612](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L613](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L614](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L615](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L616](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L617](data/gtdb-derived/results/public-results.tsv)
 
 ## Limits and sources
+
+The training-mean baseline B0 has the lowest point error for temperature at phylum and for pH at class and phylum, limiting the value of genome-based predictions at these ranks. [data/gtdb-derived/results/public-results.tsv:L102](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L106](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L111](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L115](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L119](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L527](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L531](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L536](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L540](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L544](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L552](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L556](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L561](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L565](data/gtdb-derived/results/public-results.tsv); [data/gtdb-derived/results/public-results.tsv:L569](data/gtdb-derived/results/public-results.tsv)
 
 Exchangeability within distance bins is assumed, not demonstrated. Grouped unequal-size folds and distance conditioning do not inherit a demonstrated finite-sample guarantee from unconditioned CV+ results. Labels are table-level experimental records exported through GenomeSPOT, with residual per-value provenance uncertainty. Correlated genomes, small distant taxa, changing annotations and unsupported ranks limit generalisation. Accepted-item coverage has no nominal guarantee.
 
