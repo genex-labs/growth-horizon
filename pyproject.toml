@@ -26,9 +26,22 @@ python_version = "3.13"
 strict = true
 
 [tool.pytest.ini_options]
-addopts = "-q"
+addopts = "-q --confcutdir=tests"
 testpaths = ["tests"]
 pythonpath = ["."]
+norecursedirs = [
+  "*.egg",
+  ".*",
+  "_darcs",
+  "build",
+  "CVS",
+  "dist",
+  "node_modules",
+  "venv",
+  "{arch}",
+  "work-tmp",
+  "work-tmp*",
+]
 
 [[tool.mypy.overrides]]
 module = ["matplotlib.*", "reportlab.*", "pypdf.*"]

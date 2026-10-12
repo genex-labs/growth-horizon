@@ -19,7 +19,7 @@ jobs:
         run: |
           mkdir -p work-tmp.noindex
           export TMPDIR="$PWD/work-tmp.noindex"
-          uv run --frozen pytest --basetemp=work-tmp.noindex/pytest-fixtures
+          uv run --frozen pytest --confcutdir=tests --basetemp=work-tmp.noindex/pytest-fixtures
       - name: Lint and check types
         env:
           UV_OFFLINE: "1"

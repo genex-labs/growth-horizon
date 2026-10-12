@@ -1,5 +1,8 @@
 data/raw/
 work-tmp/
+work-tmp.noindex/
+work-tmp*.noindex/
+.cursor-logs/
 research/
 BRIEF.md
 AGENTS.md
