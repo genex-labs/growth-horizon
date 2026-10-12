@@ -6,7 +6,7 @@ import json
 import time
 import urllib.request
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from scripts.preflight_sample import check_space
 
@@ -41,11 +41,15 @@ def acquire(url: str, path: str, expected_bytes: int | None = None,
         raise ValueError(f'Source size mismatch: {path}')
     if expected_sha256 is not None and sha != expected_sha256:
         raise ValueError(f'Source checksum mismatch: {path}')
-    record = {'url': url, 'path': path, 'bytes': size, 'sha256': sha,
-              'kind': 'verified_source'}
     with (ROOT / 'work-tmp.noindex/manifest.lock').open('w') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         manifest = json.loads(MANIFEST.read_text())
+        for existing in manifest['records']:
+            if (existing.get('path') == path and existing.get('url') == url
+                    and existing.get('bytes') == size and existing.get('sha256') == sha):
+                return cast(dict[str, Any], existing)
+        record = {'url': url, 'path': path, 'bytes': size, 'sha256': sha,
+                  'kind': 'verified_source'}
         manifest['records'] = [r for r in manifest['records'] if r['path'] != path] + [record]
         MANIFEST.write_text(json.dumps(manifest, indent=2) + '\n')
     return record

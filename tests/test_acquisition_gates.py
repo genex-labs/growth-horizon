@@ -62,6 +62,63 @@ def test_manifest_replay_requires_pinned_download_inputs_only(tmp_path: object) 
             acquire.replay()
 
 
+def test_replay_of_a_matching_source_leaves_the_manifest_byte_identical(tmp_path: object) -> None:
+    import hashlib
+    import json
+    from pathlib import Path
+
+    from scripts import acquire
+
+    root = Path(str(tmp_path))
+    (root / 'work-tmp.noindex').mkdir()
+    payload = b'frozen-source-bytes'
+    digest = hashlib.sha256(payload).hexdigest()
+    relative = 'data/raw/labels/training_data.tsv'
+    records = [
+        {'path': 'data/raw/gtdb/size-preflight.json', 'sha256': 'skip', 'url': None,
+         'bytes': 1, 'kind': 'local_process_receipt'},
+        {'path': relative, 'sha256': digest, 'url': 'https://example.invalid/training_data.tsv',
+         'bytes': len(payload), 'kind': 'verified_release_asset'},
+        {'path': 'data/raw/source-audit/historical.json', 'sha256': 'historical', 'url': None,
+         'bytes': 1, 'kind': 'downloaded_source_record'},
+    ]
+    manifest = root / 'data/source-manifest.json'
+    manifest.parent.mkdir(parents=True)
+    manifest.write_text(json.dumps({'records': records}, indent=2) + '\n')
+    before = manifest.read_bytes()
+
+    class Response:
+        def __init__(self, data: bytes) -> None:
+            self._data = data
+            self._sent = False
+
+        def read(self, _size: int) -> bytes:
+            if self._sent:
+                return b''
+            self._sent = True
+            return self._data
+
+        def __enter__(self) -> 'Response':
+            return self
+
+        def __exit__(self, *_args: object) -> None:
+            return None
+
+    def fake_urlopen(_url: str, timeout: int = 120) -> Response:
+        assert timeout == 120
+        return Response(payload)
+
+    with patch.object(acquire, 'ROOT', root), patch.object(acquire, 'MANIFEST', manifest), \
+            patch('scripts.acquire.check_space'), \
+            patch('scripts.acquire.urllib.request.urlopen', fake_urlopen):
+        acquire.replay()
+    assert manifest.read_bytes() == before
+    assert (root / relative).read_bytes() == payload
+    kept = json.loads(manifest.read_text())['records'][1]
+    assert kept['kind'] == 'verified_release_asset'
+    assert kept['path'] == relative
+
+
 def test_pinned_gtdb_rebuild_does_not_require_new_size_requests(tmp_path: object) -> None:
     import hashlib
     import json
