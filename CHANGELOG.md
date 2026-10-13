@@ -2,9 +2,11 @@
 
 ## Outer scoring recorded, 2026-10-12
 
-Locked outer scoring, the measure-next comparison and the public result tables are in the tree. Target 1 and target 2 failed. Target 3 horizon estimates are complete, and publication is still pending. Target 4 passed. See [docs/RESULTS.md](docs/RESULTS.md) and [docs/PHASE2_STATUS.md](docs/PHASE2_STATUS.md). The pre-registration text is unchanged.
+Locked outer scoring, the measure-next comparison and the public result tables are in the tree. Target 1 and target 2 failed. Target 3 horizon estimates are complete, and publication is still pending. Target 4 (report any B1 win): passed. It is a reporting duty whose win list is computed from the order-rank records. See [docs/RESULTS.md](docs/RESULTS.md) and [docs/PHASE2_STATUS.md](docs/PHASE2_STATUS.md). The pre-registration text is unchanged.
 
 ## Freeze chronology
+
+Each pre-registration version is frozen by local git commit; not registered externally.
 
 | Name | Commit | Time |
 | --- | --- | --- |

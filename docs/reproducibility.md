@@ -19,7 +19,7 @@ uv run --project release --frozen python -m scripts.release
 
 This command acquires missing official inputs, verifies cached source hashes, reconstructs the frozen analysis, verifies the pre-registration, scores the locked outer folds, runs measurement selection and generates the public package. Analysis and rendering locks are separate. It needs a network connection or a checksum-verified copy of the raw inputs. It is not an offline check.
 
-`data/raw/` and `data/gtdb-derived/local/` (fitted trees and individual predictions) are not redistributed. The pinned replay inputs under `data/raw/labels/`, `data/raw/verification/` and `data/raw/gtdb/` total 254,404,224 bytes in `data/source-manifest.json`. Acquisition stops if free space on `/` is below 25 GB. Scratch is confined to `work-tmp.noindex/`, which is listed in `.gitignore`; the entry point also adds it to the local Git exclude list and sets TMPDIR there.
+`data/raw/` and `data/gtdb-derived/local/` (fitted trees and individual predictions) are not redistributed. The pinned replay inputs under `data/raw/labels/`, `data/raw/verification/upstream/`, `data/raw/verification/sequences/` and `data/raw/gtdb/` total 254,404,224 bytes in `data/source-manifest.json`. Acquisition stops if free space on `/` is below 25 GB. Scratch is confined to `work-tmp.noindex/`, which is listed in `.gitignore`; the entry point also adds it to the local Git exclude list and sets TMPDIR there.
 
 The recorded final replay used a fresh local clone with checksum-verified source-cache files only. No population, fitted estimator, fold, calibration score or individual prediction was copied. That replay does not claim a new from-empty-network download. Output hashes are in `data/release-manifest.json`; process, fixture and scan receipts are in `data/checks`. Committed outer-fold results are already in `data/gtdb-derived/results/`. `scripts.release` is the command that scores those folds. A later run is expected to match the pinned scientific outputs.
 
@@ -34,6 +34,8 @@ uv run --frozen python -m scripts.rebuild
 This command replays pinned sources and rebuilds phase 1 fits. It does not score outer folds. Numeric intervals and oxygen sets on outer genomes remain uncomputed by this command. Rebuilding is distinct from publishing, and phase 2's locked scoring is absent from this command. Those limits describe `scripts.rebuild` only. They do not describe `scripts.release` or the committed outer-fold results.
 
 ## Earlier frozen reconstructions
+
+The pre-registration is frozen by local git commit; not registered externally.
 
 
 Table-level experimental provenance is accepted for the exact authorised

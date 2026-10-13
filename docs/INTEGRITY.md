@@ -1,10 +1,10 @@
 # Scoring chronology and integrity
 
-Pre-registration v2 is unchanged at SHA-256 cabc7ecffdd2e11246c8ab7b08b3103b09819f3fde1bcae87ab9cb649330a179, frozen at 54d803ce before any outer number. CHANGELOG.md records the two earlier v2-era freezes.
+Pre-registration v2 is unchanged at SHA-256 cabc7ecffdd2e11246c8ab7b08b3103b09819f3fde1bcae87ab9cb649330a179, frozen at 54d803ce before any outer number. The pre-registration is frozen by local git commit; not registered externally. CHANGELOG.md records the two earlier v2-era freezes.
 
 The initial source-qualification stops preceded the accepted table-level experimental provenance. They were source findings, not accidental outer-scoring incidents. No quarantine was required. The earlier commits preserve those records.
 
-The scoring clarifications and secondary protocol were committed at 5dd9b24 before the authorised outer run. Implementation of fixed scoring was committed at c51852d. All point estimators, calibration scores, cuts and memberships were checksum-verified before scoring. No estimator, tuning choice, data exclusion, cut point, support rule or target was changed after the initial outer number.
+The scoring clarifications and secondary protocol were committed at 5dd9b24 before the authorised outer run. Implementation of fixed scoring was committed at c51852d, also before the first committed outer-number receipt. All point estimators, calibration scores, cuts and memberships were checksum-verified before scoring. No estimator, tuning choice, data exclusion, cut point, support rule or target was changed after the initial outer number.
 
 A reporting correction selects the farthest supported calibration bin rather than the farthest bin observed among outer rows. This enforces the frozen target definition; it is not a new bin rule. The recorded scoring replay completed with exit 0. The original pre-registration and fitted artefact manifest remain unchanged. B0 is constructed deterministically from the specified training sides.
 

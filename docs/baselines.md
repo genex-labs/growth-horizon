@@ -26,6 +26,7 @@ representative, then the smallest assembly accession. Assemblies mapped to the
 same representative have zero distance. The bacterial and archaeal trees are
 separate: no artificial interdomain branch is added. Absence of a training
 leaf in the domain leads to abstention, never an invented distance.
+The latent numeric zero fill (oxygen probabilities 0.5 and 0.5) is a known limit for a missing in-domain neighbour; no published fold reaches it, with every outer_distance_nonfinite count equal to 0.
 
 B3 uses the 20 `all_aa_*` whole-proteome frequencies: ridge for numeric traits
 and balanced logistic regression for oxygen. Regularisation is selected from
@@ -39,7 +40,7 @@ predictor receives distance-aware intervals; all baselines also receive that
 procedure and the naive random-split interval for comparison.
 
 B4 is not run. The paper (doi 10.1038/s42003-025-08313-3) names
-`LeibnizDSMZ/bacdive-AI`. Its public repository tree and README were inspected
+the linked public repository maintained by LeibnizDSMZ. Its public tree and README were inspected
 2026-10-11; the licence endpoint returned 404 and neither a licence file nor
 an explicit licence declaration was present. No code or models from this
 repository are reused. Its application consumes InterPro/Pfam annotation
